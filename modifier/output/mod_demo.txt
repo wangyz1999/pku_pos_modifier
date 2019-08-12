@@ -1,0 +1,22 @@
+﻿3
+<original_sent>“/w 在/p 当前/t 贸易/vn 保护主义/n 抬头/v 背景/n 下/f ，/w 俄方/n 希望/v 与/p 中方/n 共同/d 应/v 对/p 风险/n ，/w 化/v 消极/a 因素/n 为/p 机遇/n ，/w 寻找/v 俄/b 中/b 贸易/vn 的/u 新/a 增长点/n ”/w ，/w 俄罗斯/ns 工业/n 和/c 贸易/vn 部长/n 丹尼斯·曼图罗/nr 夫/Ng 日前/t 在/p 接受/v 新华社记者/n 专访/vn 时/Ng 说/v 。/w
+</original_sent>
+<modified_sent>“/w 在/p 当前/t 贸易/vn 保护主义/n 抬头/v 背景/n 下/f ，/w 俄方/n 希望/v 与/p 中方/n 共同/d 应对/v 风险/n ，/w 化/v 消极/a 因素/n 为/p 机遇/n ，/w 寻找/v 俄/b 中/b 贸易/vn 的/u 新/a 增长点/n ”/w ，/w 俄罗斯/ns 工业/n 和/c 贸易/vn 部长/n 丹尼斯·曼图罗/nr 夫/Ng 日前/t 在/p 接受/v 新华社记者/n 专访/vn 时/Ng 说/v 。/w
+</modified_sent>
+<pos_modification>
+	<result>[应/v 对/p]改为[应对/v]</result>
+	<pattern>ANY/d+KEY应/v+对/p->[应/v 对/p]MERGE[应对/v]</pattern>
+</pos_modification>
+
+7
+<original_sent>曼图罗夫/nr 说/v ，/w 俄/b 工业/n 和/c 贸易/vn 部/n 在/p 本届/r 论坛/n 上/f 与/p 俄/b 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 一/m 家/q 矿业/n 公司/n 负责人/n 进行/v 磋商/vn ，/w 以/p 落实/v 中方/n 企业/n 持有/v 该/r 公司/n 股份/n 的/u 相关/vn 事宜/n 。/w 根据/p 相关/vn 协议/n ，/w 俄/b 中/b 企业/n 将/d 在/p 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 金矿/n 区/n 联合/vd 勘探/v 。/w 据/p 俄方/n 估算/vn ，/w 这/r 一/m 俄/b 中/b 合作/vn 项目/n 有望/v 年产/v 黄金/n 约/d 6.5/m 吨/q ，/w 在/p 2020年/t 前/f 使/v 该/r 边疆/s 区/n 贵金属/n 开采/vn 量/n 比/p 目前/t 增加/v 约/d 40%/m ，/w 从而/c 有力/ad 促进/v 当地/s 经济/n 发展/vn 。/w
+</original_sent>
+<modified_sent>曼图罗夫/nr 说/v ，/w 俄/b 工业/n 和/c 贸易/vn 部/n 在/p 本届/r 论坛/n 上/f 与/p 俄/b 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 一/m 家/q 矿业/n 公司/n 负责人/n 进行/v 磋商/v ，/w 以/p 落实/v 中方/n 企业/n 持有/v 该/r 公司/n 股份/n 的/u 相关/b 事宜/n 。/w 根据/p 相关/vn 协议/n ，/w 俄/b 中/b 企业/n 将/d 在/p 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 金矿/n 区/n 联合/vd 勘探/v 。/w 据/p 俄方/n 估算/vn ，/w 这/r 一/m 俄/b 中/b 合作/vn 项目/n 有望/v 年产/v 黄金/n 约/d 6.5/m 吨/q ，/w 在/p 2020年/t 前/f 使/v 该/r 边疆/s 区/n 贵金属/n 开采/vn 量/n 比/p 目前/t 增加/v 约/d 40%/m ，/w 从而/c 有力/ad 促进/v 当地/s 经济/n 发展/vn 。/w
+</modified_sent>
+<pos_modification>
+	<result>[相关/vn]改为[相关/b]</result>
+	<pattern>KEY相关/ANY+ANY/n->ANY>>b</pattern>
+	<result>[磋商/vn]改为[磋商/v]</result>
+	<pattern>进行/v+KEYANY/vn->vn>>v</pattern>
+</pos_modification>
+
