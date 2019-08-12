@@ -1,0 +1,2049 @@
+﻿// 特殊config
+// KEY数字/t+ANY/n->t>>m
+// // 2017/t 年度/n 全球/n
+// KEY数字/t+年度/n->t正确
+// KEY符号/ANY->ANY>>w
+
+//KEY在/v->v>>p
+KEY了/v->v>>u
+
+KEY显存/ANY->ANY>>n
+KEY对焦/ANY->ANY>>vn
+KEY想要/ANY->ANY>>v
+KEY制程/ANY->ANY>>n
+KEY水冷/ANY->ANY>>n
+KEY此前/ANY->ANY>>t
+KEY旗下/ANY->ANY>>n
+ANY/d+KEY中/v+ANY/n->v正确
+KEY还/d+ANY/n->d>>v
+KEY还/d+ANY/nr->d>>v
+KEY还/d+ANY/nz->d>>v
+KEY还/d+ANY/r->d>>v
+ANY/d+KEY热卖/a+的/ANY->a正确
+KEY搭载/vn+n/ANY->vn>>v
+KEY搭载/vn+vn/ANY->vn>>v
+ANY/vn+KEY需要/ANY+ANY/vn->ANY>>v
+ANY/n+KEY需要/ANY+ANY/vn->ANY>>v
+ANY/vn+KEY需要/ANY+ANY/n->ANY>>v
+ANY/n+KEY需要/ANY+ANY/n->ANY>>v
+KEY带给/vn+ANY/n->vn>>v
+KEY带给/vn+ANY/r->vn>>v
+无/v+KEY需/vn->vn>>v
+ANY/s+KEY活动/v->v>>vn
+KEY将/ANY~活动/v+ANY/v->ANY>>p
+将/ANY~KEY活动/v+ANY/v->v>>vn
+KEY活动/v~截止/v->v>>vn
+KEY活动/v~结束/v->v>>vn
+KEY采用/vn~设计/vn->vn>>v
+KEY采用/vn~的/ANY->vn>>v
+得以/ANY+KEYANY/vn->vn>>v
+进行/v+KEYANY/vn->vn>>v
+KEY搜索/v+ANY/n->v正确
+KEY搜索/v+ANY/v+的/ANY->v正确
+KEY对外/vn+ANY/vn->vn>>v
+对外/vn+KEYANY/vn->vn>> v
+ANY/m+ANY/q+KEYANY/v+和/ANY+ANY/n->v>>vn
+ANY/d+KEY内置/ANY->ANY>>v
+KEY内置/vn+了/ANY->vn>>v
+KEY内置/vn+ANY/p->vn>>v
+KEY内置/vn+ANY/m->vn>>v
+KEY内置/vn+ANY/d->vn>>v
+ANY/v+KEY内置/vn->vn>>b
+ANY/m+KEY后置/ANY->ANY>>b
+ANY/u+KEY前置/ANY+ANY/n->ANY>>b
+ANY/d+KEY内置/ANY->ANY>>v
+ANY/w+KEY内置/ANY->ANY>>v
+还/v+KEYANY/vn->vn>>v
+还/v+KEYANY/b->b>>v
+KEY还/v+ANY/vn->v>>d
+KEY还/v+ANY/b->v>>d
+ANY/u+KEY内建/ANY+ANY/n->ANY>>b
+ANY/nx+KEY内建/ANY->ANY>>b
+KEY不过/v+了/y->v正确
+KEY对/v+了/y->v正确
+ANY/v+ANY/d+KEY着/v->v>>u
+ANY/v+ANY/u+KEY着/v->v>>u
+KEY等/u+着/v->u>>v 
+等/u+KEY着/v->v>>u
+KEY像/ANY~一样/ANY->ANY>>p
+KEY像/ANY~这样/ANY->ANY>>p
+KEY像/ANY~那样/ANY->ANY>>p
+红/v+KEY遍/v->v正确
+ANY/n+KEY会/n+ANY/v->n>>v
+ANY/vn+KEY会/n+ANY/v->n>>v
+ANY/r+KEY会/n+ANY/v->n>>v
+ANY/a+的/ANY+KEY像/ANY->ANY>>p
+KEY热卖/v+中/f->v正确
+在/p~KEY热卖/ANY->ANY>>v
+KEY可/d+ANY/d->d正确
+KEY可/d+ANY/p->d正确
+ANY/q+KEY像/ANY+ANY/n->ANY>>v
+KEY超大/ANY->ANY>>b
+喜欢/v+KEYANY/v+ANY/c+ANY/v+的/ANY->v>>vn
+喜欢/v+ANY/v+ANY/c+KEYANY/v+的/ANY->v>>vn
+KEY接口/v->v>>n
+归/v+KEYANY/ANY+所有/v->ANY>>n
+在/ANY+KEYANY/ANY+中/ANY->ANY>>n
+的/u+KEY下发/v->v>>vn
+ANY/c~KEY组合/v->v>>vn
+ANY/v+ANY/t+KEY中/v->v>>f
+ANY/f+KEY靠/v+ANY/f->v>>vn
+参照/v~KEY设计/vn+EOS->vn>>v
+参照/v~KEY设计/vn+的/ANY->vn>>v
+KEY少/d+不/d+了/v->[少/d 不/d 了/v]MERGE[少不了/l]
+KEY实拍/v+照样/d+张/ANY->[实拍/v 照样/d 张/ANY]MERGE[实拍照/n 样张/n]
+KEY因为/v+了/u->[因为/v 了/u]MERGE[因/c 为了/p]
+KEY一时半/m+会/n->[一时半/m 会/n]MERGE[一时半会/l]
+ANY/n+KEY所/u+在/v->[所/u 在/v]MERGE[所在/v]
+KEY多/v+了/u+解下/v->[多/v 了/u 解下/v]MERGE[多/d 了解/v 下/f]
+KEY而/c+言/Vg->[而/c 言/Vg]MERGE[而言/u]
+KEY移/v+除了/v->[移/v 除了/v]MERGE[移除/v 了/u]
+KEY可/d+是/v+ANY/a+ANY/u->[可/d 是/v]MERGE[可是/d]
+KEY插槽/a->a>>n
+KEY相关/ANY+ANY/n->ANY>>b
+KEY相关/ANY+ANY/v->ANY>>b
+KEY相关/v+的/ANY->v>>b
+KEY相关/vn+的/ANY->vn>>b
+ANY/q+KEYANY/a+的/u->a正确
+KEY满足/ANY+ANY/n->ANY>>v
+KEY满足/ANY+ANY/vn->ANY>>v
+ANY/d+KEYANY/a+的/u->a正确
+KEY太/a+ANY/a->a>>d
+KEY成/a+ANY/n->a>>v
+KEY独/a+此/r+一/m+家/q->[独/a_d 此/r 一/m 家/q]MERGE[独此一家/vl]
+KEY也/d+好/d->[也/d 好/d]MERGE[也好/y]
+KEY长/ANY+按/ANY->ANY>>ad
+长/ANY+KEY按/ANY->ANY>>v
+KEY按/ANY+上/ANY+ANY/m+下/q->ANY>>v
+KEY按/ANY+ANY/m+下/q->ANY>>v
+KEY随/ANY+按/ANY+随/ANY+拍/ANY->[随/ANY 按/ANY 随/ANY 拍/ANY]MERGE[随按随拍/l]
+的/ANY+KEY长/ANY+ANY/v->ANY>>n
+的/ANY+KEY宽/ANY+ANY/v->ANY>>n
+
+// 由于VA后面若是V, a 就会被替换成 ad, 担心下条config会用不到
+KEYANY/a+ANY/v->a>>d
+KEY好/d+选择/v->d>>a
+好/d+KEY选择/v->v>>vn
+KEY好/d+说/v->[好/d 说/v]MERGE[好说/a]
+比/p~KEYANY/d+多/v->d>>a
+比/p~KEYANY/d+多/v->v>>a
+KEY高/ANY+清/ANY->[高/ANY 清/ANY]MERGE[高清/a]
+KEY纤薄/ANY->ANY>>a
+KEY独立/v+ANY/vn->v>>a
+KEY好/d+评/v+如/v+潮/n->[好/d_a 评/v 如/v 潮/n]MERGE[好评如潮/l]
+KEY一/d+较/v+高下/n->[一/d 较/v 高下/n]MERGE[一较高下/l]
+KEY较/d+ANY/a->d正确
+KEY较/d~更为/ANY->d>>p
+KEY较/d~更/ANY->d>>p
+KEY想惩奸/n->[想惩奸/n]MERGE[想/v 惩奸/v]
+KEY除/v+恶么/n->[除/v 恶么/n]MERGE[除恶/v 么/e]
+KEY大家/r+电/n->[大家/r 电/n]MERGE[大家电/n]
+KEY可不/ANY+ANY/v->[可不/ANY]MERGE[可/d 不/d]
+KEY可不/ANY+ANY/a->[可不/ANY]MERGE[可/d 不/d]
+KEY卡上/ANY+不/d+了/ANY->[卡上/ANY]MERGE[卡/n 上/v]
+KEY屁颠屁/ANY+颠地/ANY->[屁颠屁/ANY 颠地/ANY]MERGE[屁颠屁颠地/d]
+KEY相/ANY+机会/n->[相/ANY 机会/n]MERGE[相机/n 会/v]
+是/v+KEY最/d+为/v->[最/d 为/v]MERGE[最为/d]
+KEY所有/b+EOS->b>>v
+
+KEY伴以/v->[伴以/v]MERGE[伴/v 以/p]
+KEY报以/v->[报以/v]MERGE[报/v 以/p]
+KEY乘以/v->[乘以/v]MERGE[乘/v 以/p]
+KEY代之以/v->[代之以/v]MERGE[代/v 之/r 以/p]
+KEY辅以/v->[辅以/v]MERGE[辅/v 以/p]
+KEY附以/v->[附以/v]MERGE[附/v 以/p]
+KEY覆以/v->[覆以/v]MERGE[覆/v 以/p]
+KEY冠以/v->[冠以/v]MERGE[冠/v 以/p]
+KEY藉以/v->[藉以/v]MERGE[藉/v 以/p]
+KEY配以/v->[配以/v]MERGE[配/v 以/p]
+KEY铺以/v->[铺以/v]MERGE[铺/v 以/p]
+KEY施以/v->[施以/v]MERGE[施/v 以/p]
+KEY饰以/v->[饰以/v]MERGE[饰/v 以/p]
+KEY授以/v->[授以/v]MERGE[授/v 以/p]
+KEY尤以/d->[尤以/d]MERGE[尤/d 以/p]
+KEY包含于/ANY->[包含于/ANY]MERGE[包含/v 于/p]
+KEY保存于/ANY->[保存于/ANY]MERGE[保存/v 于/p]
+KEY背负于/ANY->[背负于/ANY]MERGE[背负/v 于/p]
+KEY必起于/ANY->[必起于/ANY]MERGE[必/d 起/v 于/p]
+KEY毕业于/ANY->[毕业于/ANY]MERGE[毕业/v 于/p]
+KEY别于/ANY->[别于/ANY]MERGE[别/v 于/p]
+KEY不便于/ANY->[不便于/ANY]MERGE[不/d 便于/v]
+KEY不弱于/ANY->[不弱于/ANY]MERGE[不/d 弱/v 于/p]
+KEY不同于/ANY->[不同于/ANY]MERGE[不同/a 于/p]
+KEY不逊于/ANY->[不逊于/ANY]MERGE[不/d 逊/v 于/p]
+KEY不止于/ANY->[不止于/ANY]MERGE[不/d 止/v 于/p]
+KEY藏身于/ANY->[藏身于/ANY]MERGE[藏身/v 于/p]
+KEY侧重于/ANY->[侧重于/ANY]MERGE[侧重/v 于/p]
+KEY插于/ANY->[插于/ANY]MERGE[插/v 于/p]
+KEY差于/ANY->[差于/ANY]MERGE[差/a 于/p]
+KEY产于/ANY->[产于/ANY]MERGE[产/v 于/p]
+KEY成立于/ANY->[成立于/ANY]MERGE[成立/v 于/p]
+KEY承载于/ANY->[承载于/ANY]MERGE[承载/v 于/p]
+KEY驰骋于/ANY->[驰骋于/ANY]MERGE[驰骋/v 于/p]
+KEY迟于/ANY->[迟于/ANY]MERGE[迟/a 于/p]
+KEY出自于/ANY->[出自于/ANY]MERGE[出自/v 于/p]
+KEY传承于/ANY->[传承于/ANY]MERGE[传承/v 于/p]
+KEY存在于/ANY->[存在于/ANY]MERGE[存在/v 于/p]
+KEY搭载于/ANY->[搭载于/ANY]MERGE[搭载/v 于/p]
+KEY得力于/ANY->[得力于/ANY]MERGE[得力/v 于/p]
+KEY得名于/ANY->[得名于/ANY]MERGE[得名/v 于/p]
+KEY得益于/ANY->[得益于/ANY]MERGE[得益/v 于/p]
+KEY等同于/ANY->[等同于/ANY]MERGE[等同/v 于/p]
+KEY点杀于/ANY->[点杀于/ANY]MERGE[点杀/v 于/p]
+KEY订于/ANY->[订于/ANY]MERGE[订/v 于/p]
+KEY发迹于/ANY->[发迹于/ANY]MERGE[发迹/v 于/p]
+KEY发源于/ANY->[发源于/ANY]MERGE[发源/v 于/p]
+KEY放于/ANY->[放于/ANY]MERGE[放/v 于/p]
+KEY放置于/ANY->[放置于/ANY]MERGE[放置/v 于/p]
+KEY分布于/ANY->[分布于/ANY]MERGE[分布/v 于/p]
+KEY分置于/ANY->[分置于/ANY]MERGE[分置/v 于/p]
+KEY风靡于/ANY->[风靡于/ANY]MERGE[风靡/v 于/p]
+KEY服务于/ANY->[服务于/ANY]MERGE[服务/v 于/p]
+KEY浮于/ANY->[浮于/ANY]MERGE[浮/v 于/p]
+KEY根植于/ANY->[根植于/ANY]MERGE[根植/v 于/p]
+KEY公布于/ANY->[公布于/ANY]MERGE[公布/v 于/p]
+KEY供职于/ANY->[供职于/ANY]MERGE[供职/v 于/p]
+KEY挂于/ANY->[挂于/ANY]MERGE[挂/v 于/p]
+KEY贯穿于/ANY->[贯穿于/ANY]MERGE[贯穿/v 于/p]
+KEY惯于/ANY->[惯于/ANY]MERGE[惯/v 于/p]
+KEY归根于/ANY->[归根于/ANY]MERGE[归根/v 于/p]
+KEY归功于/ANY->[归功于/ANY]MERGE[归功/v 于/p]
+KEY归结于/ANY->[归结于/ANY]MERGE[归结/v 于/p]
+KEY归咎于/ANY->[归咎于/ANY]MERGE[归咎/v 于/p]
+KEY归类于/ANY->[归类于/ANY]MERGE[归类/v 于/p]
+KEY归属于/ANY->[归属于/ANY]MERGE[归属/v 于/p]
+KEY归罪于/ANY->[归罪于/ANY]MERGE[归罪/v 于/p]
+KEY行进于/ANY->[行进于/ANY]MERGE[行进/v 于/p]
+KEY好于/ANY->[好于/ANY]MERGE[好/a 于/p]
+KEY毁于/ANY->[毁于/ANY]MERGE[毁/v 于/p]
+KEY混迹于/ANY->[混迹于/ANY]MERGE[混迹/v 于/p]
+KEY活跃于/ANY->[活跃于/ANY]MERGE[活跃/a 于/p]
+KEY获益于/ANY->[获益于/ANY]MERGE[获益/v 于/p]
+KEY集成于/ANY->[集成于/ANY]MERGE[集成/v 于/p]
+KEY集中于/ANY->[集中于/ANY]MERGE[集中/v 于/p]
+KEY见诸于/ANY->[见诸于/ANY]MERGE[见/v 诸/r 于/p]
+KEY建于/ANY->[建于/ANY]MERGE[建/v 于/p]
+KEY接近于/ANY->[接近于/ANY]MERGE[接近/v 于/p]
+KEY截止于/ANY->[截止于/ANY]MERGE[截止/v 于/p]
+KEY借力于/ANY->[借力于/ANY]MERGE[借力/v 于/p]
+KEY紧跟于/ANY->[紧跟于/ANY]MERGE[紧跟/v 于/p]
+KEY尽收于/ANY->[尽收于/ANY]MERGE[尽收/v 于/p]
+KEY尽现于/ANY->[尽现于/ANY]MERGE[尽现/v 于/p]
+KEY近乎于/ANY->[近乎于/ANY]MERGE[近乎/v 于/p]
+KEY近似于/ANY->[近似于/ANY]MERGE[近似/v 于/p]
+KEY惊叹于/ANY->[惊叹于/ANY]MERGE[惊叹/v 于/p]
+KEY惊艳于/ANY->[惊艳于/ANY]MERGE[惊艳/v 于/p]
+KEY精于/ANY->[精于/ANY]MERGE[精/a 于/p]
+KEY纠结于/ANY->[纠结于/ANY]MERGE[纠结/v 于/p]
+KEY就读于/ANY->[就读于/ANY]MERGE[就读/v 于/p]
+KEY就职于/ANY->[就职于/ANY]MERGE[就职/v 于/p]
+KEY拘泥于/ANY->[拘泥于/ANY]MERGE[拘泥/v 于/p]
+KEY局限于/ANY->[局限于/ANY]MERGE[局限/v 于/p]
+KEY聚集于/ANY->[聚集于/ANY]MERGE[聚集/v 于/p]
+KEY聚焦于/ANY->[聚焦于/ANY]MERGE[聚焦/v 于/p]
+KEY开始于/ANY->[开始于/ANY]MERGE[开始/v 于/p]
+KEY快于/ANY->[快于/ANY]MERGE[快/a 于/p]
+KEY愧于/ANY->[愧于/ANY]MERGE[愧/a 于/p]
+KEY困于/ANY->[困于/ANY]MERGE[困/a 于/p]
+KEY来自于/ANY->[来自于/ANY]MERGE[来自/v 于/p]
+KEY类似于/ANY->[类似于/ANY]MERGE[类似/v 于/p]
+KEY立于/ANY->[立于/ANY]MERGE[立/v 于/p]
+KEY立志于/ANY->[立志于/ANY]MERGE[立志/v 于/p]
+KEY立足于/ANY->[立足于/ANY]MERGE[立足/v 于/p]
+KEY隶属于/ANY->[隶属于/ANY]MERGE[隶属/v 于/p]
+KEY连接于/ANY->[连接于/ANY]MERGE[连接/v 于/p]
+KEY亮相于/ANY->[亮相于/ANY]MERGE[亮相/v 于/p]
+KEY闲聊关于/ANY->[闲聊关于/ANY]MERGE[闲聊/v 关于/p]
+KEY列于/ANY->[列于/ANY]MERGE[列/v 于/p]
+KEY领跑于/ANY->[领跑于/ANY]MERGE[领跑/v 于/p]
+KEY领先于/ANY->[领先于/ANY]MERGE[领先/v 于/p]
+KEY流行于/ANY->[流行于/ANY]MERGE[流行/v 于/p]
+KEY流于/ANY->[流于/ANY]MERGE[流/v 于/p]
+KEY罗列于/ANY->[罗列于/ANY]MERGE[罗列/v 于/p]
+KEY落败于/ANY->[落败于/ANY]MERGE[落败/v 于/p]
+KEY落后于/ANY->[落后于/ANY]MERGE[落后/a 于/p]
+KEY落于/ANY->[落于/ANY]MERGE[落/v 于/p]
+KEY率先于/ANY->[率先于/ANY]MERGE[率先/v 于/p]
+KEY埋于/ANY->[埋于/ANY]MERGE[埋/v 于/p]
+KEY满足于/ANY->[满足于/ANY]MERGE[满足/v 于/p]
+KEY慢于/ANY->[慢于/ANY]MERGE[慢/a 于/p]
+KEY迷于/ANY->[迷于/ANY]MERGE[迷/v 于/p]
+KEY迷醉于/ANY->[迷醉于/ANY]MERGE[迷醉/v 于/p]
+KEY面向于/ANY->[面向于/ANY]MERGE[面向/v 于/p]
+KEY内置于/ANY->[内置于/ANY]MERGE[内置/v 于/p]
+KEY排于/ANY->[排于/ANY]MERGE[排/v 于/p]
+KEY佩戴于/ANY->[佩戴于/ANY]MERGE[佩戴/v 于/p]
+KEY配对于/ANY->[配对于/ANY]MERGE[配对/v 于/p]
+KEY配置于/ANY->[配置于/ANY]MERGE[配置/v 于/p]
+KEY捧于/ANY->[捧于/ANY]MERGE[捧/v 于/p]
+KEY疲于/ANY->[疲于/ANY]MERGE[疲/a 于/p]
+KEY偏向于/ANY->[偏向于/ANY]MERGE[偏向/v 于/p]
+KEY偏于/ANY->[偏于/ANY]MERGE[偏/v 于/p]
+KEY偏重于/ANY->[偏重于/ANY]MERGE[偏重/v 于/p]
+KEY起因于/ANY->[起因于/ANY]MERGE[起因/v 于/p]
+KEY起于/ANY->[起于/ANY]MERGE[起/v 于/p]
+KEY起源于/ANY->[起源于/ANY]MERGE[起源/v 于/p]
+KEY嵌于/ANY->[嵌于/ANY]MERGE[嵌/v 于/p]
+KEY强过于/ANY->[强过于/ANY]MERGE[强/a 过于/v]
+KEY强加于/ANY->[强加于/ANY]MERGE[强加/v 于/p]
+KEY强于/ANY->[强于/ANY]MERGE[强/a 于/p]
+KEY青睐于/ANY->[青睐于/ANY]MERGE[青睐/v 于/p]
+KEY轻于/ANY->[轻于/ANY]MERGE[轻/a 于/p]
+KEY倾力于/ANY->[倾力于/ANY]MERGE[倾力/v 于/p]
+KEY倾向于/ANY->[倾向于/ANY]MERGE[倾向/v 于/p]
+KEY请于/ANY->[请于/ANY]MERGE[请/v 于/p]
+KEY求助于/ANY->[求助于/ANY]MERGE[求助/v 于/p]
+KEY区别于/ANY->[区别于/ANY]MERGE[区别/v 于/p]
+KEY趋近于/ANY->[趋近于/ANY]MERGE[趋近/v 于/p]
+KEY趋同于/ANY->[趋同于/ANY]MERGE[趋同/v 于/p]
+KEY趋向于/ANY->[趋向于/ANY]MERGE[趋向/v 于/p]
+KEY取材于/ANY->[取材于/ANY]MERGE[取材/v 于/p]
+KEY取景于/ANY->[取景于/ANY]MERGE[取景/v 于/p]
+KEY取自于/ANY->[取自于/ANY]MERGE[取自/v 于/p]
+KEY让利于/ANY->[让利于/ANY]MERGE[让利/v 于/p]
+KEY热衷于/ANY->[热衷于/ANY]MERGE[热衷/v 于/p]
+KEY融于/ANY->[融于/ANY]MERGE[融/v 于/p]
+KEY如同于/ANY->[如同于/ANY]MERGE[如同/v 于/p]
+KEY弱于/ANY->[弱于/ANY]MERGE[弱/a 于/p]
+KEY散热于/ANY->[散热于/ANY]MERGE[散热/v 于/p]
+KEY设于/ANY->[设于/ANY]MERGE[设/v 于/p]
+KEY摄于/ANY->[摄于/ANY]MERGE[摄/v 于/p]
+KEY深耕于/ANY->[深耕于/ANY]MERGE[深耕/v 于/p]
+KEY渗透于/ANY->[渗透于/ANY]MERGE[渗透/v 于/p]
+KEY胜于/ANY->[胜于/ANY]MERGE[胜/v 于/p]
+KEY施放于/ANY->[施放于/ANY]MERGE[施放/v 于/p]
+KEY始建于/ANY->[始建于/ANY]MERGE[始建/v 于/p]
+KEY始于/ANY->[始于/ANY]MERGE[始/v 于/p]
+KEY适合于/ANY->[适合于/ANY]MERGE[适合/v 于/p]
+KEY适宜于/ANY->[适宜于/ANY]MERGE[适宜/v 于/p]
+KEY适用于/ANY->[适用于/ANY]MERGE[适用/v 于/p]
+KEY收益于/ANY->[收益于/ANY]MERGE[收益/v 于/p]
+KEY收于/ANY->[收于/ANY]MERGE[收/v 于/p]
+KEY首发于/ANY->[首发于/ANY]MERGE[首发/v 于/p]
+KEY受雇于/ANY->[受雇于/ANY]MERGE[受雇/v 于/p]
+KEY受惠于/ANY->[受惠于/ANY]MERGE[受惠/v 于/p]
+KEY受命于/ANY->[受命于/ANY]MERGE[受命/v 于/p]
+KEY受聘于/ANY->[受聘于/ANY]MERGE[受聘/v 于/p]
+KEY受限于/ANY->[受限于/ANY]MERGE[受限/v 于/p]
+KEY受益于/ANY->[受益于/ANY]MERGE[受益/v 于/p]
+KEY受用于/ANY->[受用于/ANY]MERGE[受用/v 于/p]
+KEY受制于/ANY->[受制于/ANY]MERGE[受制/v 于/p]
+KEY授权于/ANY->[授权于/ANY]MERGE[授权/v 于/p]
+KEY输于/ANY->[输于/ANY]MERGE[输/v 于/p]
+KEY顺从于/ANY->[顺从于/ANY]MERGE[顺从/v 于/p]
+KEY死于/ANY->[死于/ANY]MERGE[死/v 于/p]
+KEY贴近于/ANY->[贴近于/ANY]MERGE[贴近/v 于/p]
+KEY听令于/ANY->[听令于/ANY]MERGE[听令/v 于/p]
+KEY同于/ANY->[同于/ANY]MERGE[同/v 于/p]
+KEY投身于/ANY->[投身于/ANY]MERGE[投身/v 于/p]
+KEY投资于/ANY->[投资于/ANY]MERGE[投资/v 于/p]
+KEY突出于/ANY->[突出于/ANY]MERGE[突出/v 于/p]
+KEY脱胎于/ANY->[脱胎于/ANY]MERGE[脱胎/v 于/p]
+KEY完败于/ANY->[完败于/ANY]MERGE[完败/v 于/p]
+KEY完胜于/ANY->[完胜于/ANY]MERGE[完胜/v 于/p]
+KEY玩于/ANY->[玩于/ANY]MERGE[玩/v 于/p]
+KEY晚于/ANY->[晚于/ANY]MERGE[晚/a 于/p]
+KEY往返于/ANY->[往返于/ANY]MERGE[往返/v 于/p]
+KEY忘情于/ANY->[忘情于/ANY]MERGE[忘情/v 于/p]
+KEY无碍于/ANY->[无碍于/ANY]MERGE[无碍/v 于/p]
+KEY吸附于/ANY->[吸附于/ANY]MERGE[吸附/v 于/p]
+KEY希望于/ANY->[希望于/ANY]MERGE[希望/v 于/p]
+KEY习惯于/ANY->[习惯于/ANY]MERGE[习惯/v 于/p]
+KEY系于/ANY->[系于/ANY]MERGE[系/v 于/p]
+KEY相比于/ANY->[相比于/ANY]MERGE[相比/v 于/p]
+KEY相当于/ANY->[相当于/ANY]MERGE[相当/v 于/p]
+KEY相对于/ANY->[相对于/ANY]MERGE[相对/v 于/p]
+KEY相较于/ANY->[相较于/ANY]MERGE[相较/v 于/p]
+KEY相近于/ANY->[相近于/ANY]MERGE[相近/v 于/p]
+KEY相容于/ANY->[相容于/ANY]MERGE[相容/v 于/p]
+KEY镶嵌于/ANY->[镶嵌于/ANY]MERGE[镶嵌/v 于/p]
+KEY享于/ANY->[享于/ANY]MERGE[享/v 于/p]
+KEY消失于/ANY->[消失于/ANY]MERGE[消失/v 于/p]
+KEY欣慰于/ANY->[欣慰于/ANY]MERGE[欣慰/v 于/p]
+KEY逊色于/ANY->[逊色于/ANY]MERGE[逊色/a 于/p]
+KEY逊于/ANY->[逊于/ANY]MERGE[逊/a 于/p]
+KEY严于/ANY->[严于/ANY]MERGE[严/a 于/p]
+KEY仰赖于/ANY->[仰赖于/ANY]MERGE[仰赖/v 于/p]
+KEY依赖于/ANY->[依赖于/ANY]MERGE[依赖/v 于/p]
+KEY依托于/ANY->[依托于/ANY]MERGE[依托/v 于/p]
+KEY应用于/ANY->[应用于/ANY]MERGE[应用/v 于/p]
+KEY优胜于/ANY->[优胜于/ANY]MERGE[优胜/v 于/p]
+KEY优先于/ANY->[优先于/ANY]MERGE[优先/a 于/p]
+KEY犹豫于/ANY->[犹豫于/ANY]MERGE[犹豫/v 于/p]
+KEY有待于/ANY->[有待于/ANY]MERGE[有待/v 于/p]
+KEY有感于/ANY->[有感于/ANY]MERGE[有感/v 于/p]
+KEY有辱于/ANY->[有辱于/ANY]MERGE[有辱/v 于/p]
+KEY有望于/ANY->[有望于/ANY]MERGE[有望/v 于/p]
+KEY有益于/ANY->[有益于/ANY]MERGE[有益/v 于/p]
+KEY缘起于/ANY->[缘起于/ANY]MERGE[缘起/v 于/p]
+KEY源起于/ANY->[源起于/ANY]MERGE[源起/v 于/p]
+KEY源自于/ANY->[源自于/ANY]MERGE[源自/v 于/p]
+KEY远超于/ANY->[远超于/ANY]MERGE[远超/v 于/p]
+KEY远胜于/ANY->[远胜于/ANY]MERGE[远胜/v 于/p]
+KEY阅于/ANY->[阅于/ANY]MERGE[阅/v 于/p]
+KEY运行于/ANY->[运行于/ANY]MERGE[运行/v 于/p]
+KEY运用于/ANY->[运用于/ANY]MERGE[运用/v 于/p]
+KEY载于/ANY->[载于/ANY]MERGE[载/v 于/p]
+KEY早于/ANY->[早于/ANY]MERGE[早/a 于/p]
+KEY造福于/ANY->[造福于/ANY]MERGE[造福/v 于/p]
+KEY扎根于/ANY->[扎根于/ANY]MERGE[扎根/v 于/p]
+KEY粘于/ANY->[粘于/ANY]MERGE[粘/v 于/p]
+KEY整合于/ANY->[整合于/ANY]MERGE[整合/v 于/p]
+KEY执著于/ANY->[执著于/ANY]MERGE[执著/a 于/p]
+KEY钟情于/ANY->[钟情于/ANY]MERGE[钟情/v 于/p]
+KEY重于/ANY->[重于/ANY]MERGE[重/a 于/p]
+KEY注重于/ANY->[注重于/ANY]MERGE[注重/v 于/p]
+KEY作用于/ANY->[作用于/ANY]MERGE[作用/v 于/p]
+KEY作于/ANY->[作于/ANY]MERGE[作/v 于/p]
+KEY摆在/ANY->[摆在/ANY]MERGE[摆/v 在/p]
+KEY包在/ANY->[包在/ANY]MERGE[包/v 在/p]
+KEY辅之/ANY->[辅之/ANY]MERGE[辅/v 之/r]
+KEY辅之以/ANY->[辅之以/ANY]MERGE[辅/v 之/r 以/p]
+KEY踩在/ANY->[踩在/ANY]MERGE[踩/v 在/p]
+KEY插在/ANY->[插在/ANY]MERGE[插/v 在/p]
+KEY不像/ANY->[不像/ANY]MERGE[不/d 像/v]
+KEY出在/ANY->[出在/ANY]MERGE[出/v 在/p]
+KEY储存在/ANY->[储存在/ANY]MERGE[储存/v 在/p]
+KEY存于/ANY->[存于/ANY]MERGE[存/v 于/p]
+KEY挡在/ANY->[挡在/ANY]MERGE[挡/v 在/p]
+KEY浮在/ANY->[浮在/ANY]MERGE[浮/v 在/p]
+KEY挂在/ANY->[挂在/ANY]MERGE[挂/v 在/p]
+KEY焊在/ANY->[焊在/ANY]MERGE[焊/v 在/p]
+KEY混在/ANY->[混在/ANY]MERGE[混/v 在/p]
+KEY建在/ANY->[建在/ANY]MERGE[建/v 在/p]
+KEY接在/ANY->[接在/ANY]MERGE[接/v 在/p]
+KEY纠正在/ANY->[纠正在/ANY]MERGE[纠正/v 在/p]
+KEY靠在/ANY->[靠在/ANY]MERGE[靠/v 在/p]
+KEY刻在/ANY->[刻在/ANY]MERGE[刻/v 在/p]
+KEY烙在/ANY->[烙在/ANY]MERGE[烙/v 在/p]
+KEY晾在/ANY->[晾在/ANY]MERGE[晾/v 在/p]
+KEY留在/ANY->[留在/ANY]MERGE[留/v 在/p]
+KEY落在/ANY->[落在/ANY]MERGE[落/v 在/p]
+KEY排在/ANY->[排在/ANY]MERGE[排/v 在/p]
+KEY扔在/ANY->[扔在/ANY]MERGE[扔/v 在/p]
+KEY身在/ANY->[身在/ANY]MERGE[身/v 在/p]
+KEY套在/ANY->[套在/ANY]MERGE[套/v 在/p]
+KEY贴在/ANY->[贴在/ANY]MERGE[贴/v 在/p]
+KEY停在/ANY->[停在/ANY]MERGE[停/v 在/p]
+KEY同在/ANY->[同在/ANY]MERGE[同/v 在/p]
+KEY围在/ANY->[围在/ANY]MERGE[围/v 在/p]
+KEY压在/ANY->[压在/ANY]MERGE[压/v 在/p]
+KEY印在/ANY->[印在/ANY]MERGE[印/v 在/p]
+KEY赢在/ANY->[赢在/ANY]MERGE[赢/v 在/p]
+KEY砸在/ANY->[砸在/ANY]MERGE[砸/v 在/p]
+KEY粘在/ANY->[粘在/ANY]MERGE[粘/v 在/p]
+KEY站在/ANY->[站在/ANY]MERGE[站/v 在/p]
+KEY走在/ANY->[走在/ANY]MERGE[走/v 在/p]
+KEY被测/ANY->[被测/ANY]MERGE[被/p 测/v]
+KEY被撤/ANY->[被撤/ANY]MERGE[被/p 撤/v]
+KEY被劫/ANY->[被劫/ANY]MERGE[被/p 劫/v]
+KEY被困/ANY->[被困/ANY]MERGE[被/p 困/v]
+KEY被淋/ANY->[被淋/ANY]MERGE[被/p 淋/v]
+KEY被判/ANY->[被判/ANY]MERGE[被/p 判/v]
+KEY被侵/ANY->[被侵/ANY]MERGE[被/p 侵/v]
+KEY被授/ANY->[被授/ANY]MERGE[被/p 授/v]
+KEY被损/ANY->[被损/ANY]MERGE[被/p 损/v]
+KEY被宰/ANY->[被宰/ANY]MERGE[被/p 宰/v]
+KEY尚感/ANY+ANY/a->[尚感/ANY]MERGE[尚/d 感/v]
+KEY更为/ANY+ANY/a->ANY>>d
+KEY变/ANY+更为/ANY->[变/ANY 更为/ANY]MERGE[变更/v 为/v]
+KEY加之于/ANY->[加之于/ANY]MERGE[加之/c 于/p]
+KEY榜榜首/v->[榜榜首/v]MERGE[榜/n 榜首/n]
+KEY爆显存/v->[爆显存/v]MERGE[爆/v 显存/n]
+KEY边看/ANY->[边看/ANY]MERGE[边/d 看/v]
+KEY别再/ANY->[别再/ANY]MERGE[别/d 再/d]
+KEY不错呦/a->[不错呦/a]MERGE[不错/a 呦/e]
+KEY不妨刷/v->[不妨刷/v]MERGE[不妨/d 刷/v]
+KEY不复杂/a->[不复杂/a]MERGE[不/d 复杂/a]
+KEY不管是/v->[不管是/v]MERGE[不管/c 是/v]
+KEY不管刷/v->[不管刷/v]MERGE[不管/c 刷/v]
+KEY不减/v->[不减/v]MERGE[不/d 减/v]
+KEY不惧/ANY->[不惧/ANY]MERGE[不/d 惧/v]
+KEY不均/a->[不均/a]MERGE[不/d 均/a]
+KEY不来往/v->[不来往/v]MERGE[不/d 来往/v]
+KEY不老/a->[不老/a]MERGE[不/d 老/a]
+KEY不累/a->[不累/a]MERGE[不/d 累/a]
+KEY不灵敏/ANY->[不灵敏/ANY]MERGE[不/d 灵敏/a]
+KEY不瞒/v->[不瞒/v]MERGE[不/d 瞒/v]
+KEY不满足/ANY->[不满足/ANY]MERGE[不/d 满足/v]
+KEY不求/v->[不求/v]MERGE[不/d 求/v]
+KEY不弱/ANY->[不弱/ANY]MERGE[不/d 弱/a]
+KEY不删/ANY->[不删/ANY]MERGE[不/d 删/v]
+KEY不受/ANY->[不受/ANY]MERGE[不/d 受/v]
+KEY不熟/ANY->[不熟/ANY]MERGE[不/d 熟/a]
+KEY不说/ANY->[不说/ANY]MERGE[不/d 说/c]
+KEY不算靓/ANY->[不算靓/ANY]MERGE[不/d 算/v 靓/a]
+KEY不算是/ANY->[不算是/ANY]MERGE[不/d 算/v 是/v]
+KEY不谈/ANY->[不谈/ANY]MERGE[不/d 谈/v]
+KEY不忘/ANY->[不忘/ANY]MERGE[不/d 忘/v]
+KEY不限/ANY->[不限/ANY]MERGE[不/d 限/v]
+KEY不用/ANY+ANY/v->ANY>>d
+KEY不争/ANY->[不争/ANY]MERGE[不/d 争/v]
+KEY不正当/ANY->[不正当/ANY]MERGE[不/d 正当/a]
+KEY不值/ANY->[不值/ANY]MERGE[不/d 值/v]
+KEY不重/ANY->[不重/ANY]MERGE[不/d 重/a]
+KEY采自/ANY->[采自/ANY]MERGE[采/v 自/p]
+KEY参考呦/ANY->[参考呦/ANY]MERGE[参考/v 呦/o]
+KEY插拔骨伽/ANY->[插拔骨伽/ANY]MERGE[插拔/v 骨伽/n]
+KEY拆下来/ANY->[拆下来/ANY]MERGE[拆/v 下来/v]
+KEY产自/ANY->[产自/ANY]MERGE[产/v 自/p]
+KEY尝过/ANY->[尝过/ANY]MERGE[尝/v 过/u]
+KEY唱过/ANY->[唱过/ANY]MERGE[唱/v 过/u]
+KEY超百款/ANY->[超百款/ANY]MERGE[超/v 百/m 款/q]
+KEY超典雅/ANY->[超典雅/ANY]MERGE[超/d 典雅/a]
+KEY超给力/ANY->[超给力/ANY]MERGE[超/d 给力/a]
+KEY超光亮/ANY->[超光亮/ANY]MERGE[超/d 光亮/a]
+KEY超划算/ANY->[超划算/ANY]MERGE[超/d 划算/a]
+KEY超酷凉/ANY->[超酷凉/ANY]MERGE[超/d 酷凉/a]
+KEY超细腻/ANY->[超细腻/ANY]MERGE[超/d 细腻/a]
+KEY超震撼/ANY->[超震撼/ANY]MERGE[超/d 震撼/v]
+KEY超震撼/ANY->[超震撼/ANY]MERGE[超/d 震撼/v]
+KEY超值呦/ANY->[超值呦/ANY]MERGE[超值/a 呦/o]
+KEY成为继/ANY->[成为继/ANY]MERGE[成为/v 继/vg]
+KEY成为了/ANY->[成为了/ANY]MERGE[成为/v 了/u]
+KEY出货难/ANY->[出货难/ANY]MERGE[出货/v 难/a]
+KEY闯过/ANY->[闯过/ANY]MERGE[闯/v 过/u]
+KEY错过哦/ANY->[错过哦/ANY]MERGE[错过/v 哦/o]
+KEY错过哟/ANY->[错过哟/ANY]MERGE[错过/v 哟/o]
+KEY代表脑/ANY->[代表脑/ANY]MERGE[代表/v 脑/n]
+KEY当爹/v->[当爹/v]MERGE[当/v 爹/n]
+KEY等于零/ANY->[等于零/ANY]MERGE[等于/v 零/m]
+KEY多名/ANY->[多名/ANY]MERGE[多/m 名/q]
+KEY躲过/ANY->[躲过/ANY]MERGE[躲/v 过/u]
+KEY翻译成/v->[翻译成/v]MERGE[翻译/v 成/v]
+KEY返京券/ANY->[返京券/ANY]MERGE[返/v 京券/n]
+KEY犯愁么/v->[犯愁么/v]MERGE[犯愁/v 么/y]
+KEY放喇叭/ANY->[放喇叭/ANY]MERGE[放/v 喇叭/n]
+KEY非常重/ANY->[非常重/ANY]MERGE[非常/d 重/a]
+KEY分别是/ANY->[分别是/ANY]MERGE[分别/d 是/v]
+KEY分红么/ANY->[分红么/ANY]MERGE[分红/v 么/y]
+KEY奉献给/ANY->[奉献给/ANY]MERGE[奉献/v 给/p]
+KEY付宝券/ANY->[付宝券/ANY]MERGE[付/v 宝券/n]
+KEY付费么/ANY->[付费么/ANY]MERGE[付费/v 么/y]
+KEY付诸于/ANY->[付诸于/ANY]MERGE[付/v 诸/r 于/p]
+KEY改编自/ANY->[改编自/ANY]MERGE[改编/v 自/p]
+KEYMERGE了/ANY->[MERGE了/ANY]MERGE[MERGE/v 了/u]
+KEY改由/ANY->[改由/ANY]MERGE[改/v 由/p]
+KEY改装成/ANY->[改装成/ANY]MERGE[改装/v 成/v]
+KEY改自/ANY->[改自/ANY]MERGE[改/v 自/p]
+KEY赶紧戳/ANY->[赶紧戳/ANY]MERGE[赶紧/d 戳/v]
+KEY感踏实/ANY->[感踏实/ANY]MERGE[感/v 踏实/a]
+KEY感心寒/ANY->[感心寒/ANY]MERGE[感/v 心寒/a]
+KEY刚到/ANY->[刚到/ANY]MERGE[刚/d 到/v]
+KEY刚过/ANY->[刚过/ANY]MERGE[刚/d 过/v]
+KEY刚来/ANY->[刚来/ANY]MERGE[刚/d 来/v]
+KEY刚领/ANY->[刚领/ANY]MERGE[刚/d 领/v]
+KEY刚熄/ANY->[刚熄/ANY]MERGE[刚/d 熄/v]
+KEY更加萌/ANY->[更加萌/ANY]MERGE[更加/d 萌/a]
+KEY贡献出/ANY->[贡献出/ANY]MERGE[贡献/v 出/v]	
+KEY购该/ANY->[购该/ANY]MERGE[购/v 该/r]
+KEY购后/ANY->[购后/ANY]MERGE[购/v 后/f]
+KEY购华硕/ANY->[购华硕/ANY]MERGE[购/v 华硕/nz]
+KEY购仅/ANY->[购仅/ANY]MERGE[购/v 仅/d]
+KEY购买么/ANY->[购买么/ANY]MERGE[购买/v 么/y]
+KEY购自/ANY->[购自/ANY]MERGE[购/v 自/p]
+KEY关注呦/ANY->[关注呦/ANY]MERGE[关注/v 呦/o]
+KEY过暗/ANY->[过暗/ANY]MERGE[过/d 暗/a]
+KEY过饱/ANY->[过饱/ANY]MERGE[过/d 饱/a]
+KEY过低/ANY->[过低/ANY]MERGE[过/d 低/a]
+KEY过年喽/ANY->[过年喽/ANY]MERGE[过年/v 喽/o]
+KEY还带/ANY->[还带/ANY]MERGE[还/d 带/v]
+KEY还会/ANY->[还会/ANY]MERGE[还/d 会/v]
+KEY还没/ANY->[还没/ANY]MERGE[还/d 没/v]
+KEY还没有/ANY->[还没有/ANY]MERGE[还/d 没有/v]
+KEY还用/ANY->[还用/ANY]MERGE[还/d 用/v]
+KEY狠狠戳/ANY->[狠狠戳/ANY]MERGE[狠狠/d 戳/v]
+KEY划算呦/ANY->[划算呦/ANY]MERGE[划算/a 呦/o]
+KEY划一下/ANY->[划一下/ANY]MERGE[划/v 一下/m]
+KEY换个/ANY->[换个/ANY]MERGE[换/v 个/q]
+KEY荒唐么/ANY->[荒唐么/ANY]MERGE[荒唐/a 么/y]
+KEY回想起/ANY->[回想起/ANY]MERGE[回想/v 起/v]
+KEY混合成/ANY->[混合成/ANY]MERGE[混合/v 成/v]
+KEY或到/ANY->[或到/ANY]MERGE[或/c 到/v]
+KEY或刷/ANY->[或刷/ANY]MERGE[或/c 刷/v]
+KEY或许是/ANY->[或许是/ANY]MERGE[或许/d 是/v]
+KEY或用/ANY->[或用/ANY]MERGE[或/c 用/v]
+KEY或者发/ANY->[或者发/ANY]MERGE[或者/c 发/v]
+KEY或者是/ANY->[或者是/ANY]MERGE[或者/c 是/v]
+KEY或者用/ANY->[或者用/ANY]MERGE[或者/c 用/v]
+KEY即日起/ANY->[即日起/ANY]MERGE[即日/t 起/v]
+KEY即使粘/ANY->[即使粘/ANY]MERGE[即使/c 粘/v]
+KEY价低/ANY->[价低/ANY]MERGE[价/n 低/a]
+KEY价仅/ANY->[价仅/ANY]MERGE[价/n 仅/d]
+KEY肩负起/ANY->[肩负起/ANY]MERGE[肩负/v 起/v]
+KEY截止到/ANY->[截止到/ANY]MERGE[截止/v 到/v]
+KEY截止至/ANY->[截止至/ANY]MERGE[截止/v 至/v]
+KEY解释道/ANY->[解释道/ANY]MERGE[解释/v 道/v]
+KEY解释道/ANY->[解释道/ANY]MERGE[解释/v 道/v]
+KEY仅存/ANY->[仅存/ANY]MERGE[仅/d 存/v]
+KEY仅限/ANY->[仅限/ANY]MERGE[仅/d 限/v]
+KEY仅用/ANY->[仅用/ANY]MERGE[仅/d 用/v]
+KEY仅有/ANY->[仅有/ANY]MERGE[仅/d 有/v]
+KEY劲爆喔/ANY->[劲爆喔/ANY]MERGE[劲爆/a 喔/o]
+KEY经锐化/ANY->[经锐化/ANY]MERGE[经/p 锐化/vn]
+KEY纠结过/ANY->[纠结过/ANY]MERGE[纠结/v 过/u]
+KEY就算是/ANY->[就算是/ANY]MERGE[就算/d 是/v]
+KEY卡上/ANY->[卡上/ANY]MERGE[卡/n 上/f]
+KEY开发布会/ANY->[开发布会/ANY]MERGE[开/v 发布会/n]
+KEY开始呦/ANY->[开始呦/ANY]MERGE[开始/v 呦/o]
+KEY开张喽/ANY->[开张喽/ANY]MERGE[开张/v 喽/o]
+KEY看一下/ANY->[看一下/ANY]MERGE[看/v 一下/m]
+KEY康佳于/ANY->[康佳于/ANY]MERGE[康佳/nz 于/p]
+KEY拷贝进/ANY->[拷贝进/ANY]MERGE[拷贝/v 进/v]
+KEY可安装/ANY->[可安装/ANY]MERGE[可/v 安装/v]
+KEY可防止/ANY->[可防止/ANY]MERGE[可/v 防止/v]
+KEY可立减/ANY->[可立减/ANY]MERGE[可/v 立减/v]
+KEY可满足/ANY->[可满足/ANY]MERGE[可/v 满足/v]
+KEY可以撸/ANY->[可以撸/ANY]MERGE[可以/v 撸/v]
+KEY可以搜/ANY->[可以搜/ANY]MERGE[可以/v 搜/v]
+KEY可执行/ANY->[可执行/ANY]MERGE[可/v 执行/v]
+KEY抠下来/ANY->[抠下来/ANY]MERGE[抠/v 下来/v]
+KEY酷派于/ANY->[酷派于/ANY]MERGE[酷派/nz 于/p]
+KEY快得多/ANY->[快得多/ANY]MERGE[快/a 得/u 多/a]
+KEY困难么/ANY->[困难么/ANY]MERGE[困难/a 么/y]
+KEY拉手刹/ANY->[拉手刹/ANY]MERGE[拉/v 手刹/n]
+KEY来说道/ANY->[来说道/ANY]MERGE[来/v 说道/v]
+KEY来说说/ANY->[来说说/ANY]MERGE[来/v 说说/v]
+KEY力促销/ANY->[力促销/ANY]MERGE[力/d 促销/v]
+KEY立马减/ANY->[立马减/ANY]MERGE[立马/d 减/v]
+KEY连接至/ANY->[连接至/ANY]MERGE[连接/v 至/v]
+KEY连续充/ANY->[连续充/ANY]MERGE[连续/d 充/v]
+KEY联想起/ANY->[联想起/ANY]MERGE[联想/v 起/v]
+KEY聊手游/ANY->[聊手游/ANY]MERGE[聊/v 手游/n]
+KEY留空隙/ANY->[留空隙/ANY]MERGE[留/v 空隙/n]	
+KEY旅行用/ANY->[旅行用/ANY]MERGE[旅行/vn 用/v]
+KEY滤蓝光/ANY->[滤蓝光/ANY]MERGE[滤/v 蓝光/n]
+KEY略逊于/ANY->[略逊于/ANY]MERGE[略/d 逊/v 于/p]
+KEY买到手/ANY->[买到手/ANY]MERGE[买/v 到手/v]
+KEY买点/ANY->[买点/ANY]MERGE[买/v 点/q]
+KEY买个/ANY->[买个/ANY]MERGE[买/v 个/q]
+KEY买身/ANY->[买身/ANY]MERGE[买/v 身/q]
+KEY买账么/ANY->[买账么/ANY]MERGE[买账/v 么/y]
+KEY冒险么/ANY->[冒险么/ANY]MERGE[冒险/v 么/y]
+KEY没电/ANY->[没电/ANY]MERGE[没/v 电/n]
+KEY没多久/ANY->[没多久/ANY]MERGE[没/v 多久/r]
+KEY没用过/ANY->[没用过/ANY]MERGE[没/d 用/v 过/u]
+KEY没有钱/ANY->[没有钱/ANY]MERGE[没有/v 钱/n]
+KEY免费贴/ANY->[免费贴/ANY]MERGE[免费/v 贴/v]		
+KEY偶尔聚/ANY->[偶尔聚/ANY]MERGE[偶尔/d 聚/v]
+KEY抛光凸/ANY->[抛光凸/ANY]MERGE[抛光/v 凸/b]
+KEY跑不动/ANY->[跑不动/ANY]MERGE[跑/v 不/d 动/u]
+KEY跑不了/ANY->[跑不了/ANY]MERGE[跑/v 不/d 了/u]
+KEY配备有/ANY->[配备有/ANY]MERGE[配备/v 有/v]
+KEY凭此/ANY->[凭此/ANY]MERGE[凭/p 此/r]
+KEY起作用/ANY->[起作用/ANY]MERGE[起/v 作用/v]
+KEY抢红米/ANY->[抢红米/ANY]MERGE[抢/v 红米/n]	
+KEY区分开/ANY->[区分开/ANY]MERGE[区分/v 开/v]
+KEY取名叫/ANY->[取名叫/ANY]MERGE[取名/v 叫/v]
+KEY辱玩家/ANY->[辱玩家/ANY]MERGE[辱/v 玩家/n]
+KEY上下载/ANY->[上下载/ANY]MERGE[上/f 下载/v]
+KEY稍逊于/ANY->[稍逊于/ANY]MERGE[稍/d 逊/v 于/p]
+KEY设定宏/ANY->[设定宏/ANY]MERGE[设定/v 宏/b]
+KEY设计成/ANY->[设计成/ANY]MERGE[设计/v 成/v]
+KEY失用户/ANY->[失用户/ANY]MERGE[失/v 用户/n]
+KEY使负载/ANY->[使负载/ANY]MERGE[使/v 负载/vn]
+KEY受关注/ANY->[受关注/ANY]MERGE[受/v 关注/v]
+KEY受欢迎/ANY->[受欢迎/ANY]MERGE[受/v 欢迎/v]
+KEY受伤害/ANY->[受伤害/ANY]MERGE[受/v 伤害/v]
+KEY授权给/ANY->[授权给/ANY]MERGE[授权/v 给/p]
+KEY售价为/ANY->[售价为/ANY]MERGE[售价/n 为/v]
+KEY输红米/ANY->[输红米/ANY]MERGE[输/v 红米/nz]
+KEY输酷派/ANY->[输酷派/ANY]MERGE[输/v 酷派/nz]
+KEY刷干净/ANY->[刷干净/ANY]MERGE[刷/v 干净/a]
+KEY刷微信/ANY->[刷微信/ANY]MERGE[刷/v 微信/n]		
+KEY淘宝搜/ANY->[淘宝搜/ANY]MERGE[淘宝/nz 搜/v]
+KEY特别是/ANY->[特别是/ANY]MERGE[特别/d 是/v]
+KEY特意搜/ANY->[特意搜/ANY]MERGE[特意/d 搜/v]
+KEY提意见/ANY->[提意见/ANY]MERGE[提/v 意见/n]
+KEY贴合快/ANY->[贴合快/ANY]MERGE[贴合/v 快/a]
+KEY听说过/ANY->[听说过/ANY]MERGE[听说/v 过/u]
+KEY挺有用/ANY->[挺有用/ANY]MERGE[挺/d 有用/a]
+KEY同学们/ANY->ANY>>n
+KEY同样爽/ANY->[同样爽/ANY]MERGE[同样/d 爽/a]
+KEY玩出点/ANY->[玩出点/ANY]MERGE[玩/v 出/v 点/q]
+KEY玩家们/ANY->ANY>>n
+KEY玩手游/ANY->[玩手游/ANY]MERGE[玩/v 手游/n]
+KEY玩音染/ANY->[玩音染/ANY]MERGE[玩/v 音染/n]
+KEY玩游戏/ANY->[玩游戏/ANY]MERGE[玩/v 游戏/n]
+KEY枉叫做/ANY->[枉叫做/ANY]MERGE[枉/d 叫做/v]
+KEY忘不了/ANY->[忘不了/ANY]MERGE[忘/v 不/d 了/u]
+KEY忘记拔/ANY->[忘记拔/ANY]MERGE[忘记/v 拔/v]
+KEY微博晒/ANY->[微博晒/ANY]MERGE[微博/n 晒/v]
+KEY微博问/ANY->[微博问/ANY]MERGE[微博/n 问/v]
+KEY微卡顿/ANY->[微卡顿/ANY]MERGE[微/d 卡顿/v]
+KEY为本/ANY->[为本/ANY]MERGE[为/v 本/n]
+KEY为佳/ANY->[为佳/ANY]MERGE[为/v 佳/a]
+KEY为乐/ANY->[为乐/ANY]MERGE[为/v 乐/n]
+KEY为例/ANY->[为例/ANY]MERGE[为/v 例/n]
+KEY为妙/ANY->[为妙/ANY]MERGE[为/v 妙/a]
+KEY为荣/ANY->[为荣/ANY]MERGE[为/v 荣/a]
+KEY为王/ANY->[为王/ANY]MERGE[为/v 王/n]
+KEY为限/ANY->[为限/ANY]MERGE[为/v 限/n]
+KEY为宜/ANY->[为宜/ANY]MERGE[为/v 宜/a]
+KEY为准/ANY->[为准/ANY]MERGE[为/v 准/a]
+KEY伪装成/ANY->[伪装成/ANY]MERGE[伪装/v 成/v]
+KEY无遗漏/ANY->[无遗漏/ANY]MERGE[无/d 遗漏/v]
+KEY无音染/ANY->[无音染/ANY]MERGE[无/v 音染/n]
+KEY误导人/ANY->[误导人/ANY]MERGE[误导/v 人/n]
+KEY喜欢么/ANY->[喜欢么/ANY]MERGE[喜欢/v 么/y]
+KEY吓唬人/ANY->[吓唬人/ANY]MERGE[吓唬/v 人/n]
+KEY先给/ANY->[先给/ANY]MERGE[先/d 给/v]
+KEY显示出/ANY->[显示出/ANY]MERGE[显示/v 出/v]
+KEY相比起/ANY->[相比起/ANY]MERGE[相/d 比起/v]
+KEY相持平/ANY->[相持平/ANY]MERGE[相/d 持平/v]
+KEY消磨掉/ANY->[消磨掉/ANY]MERGE[消磨/v 掉/v]
+KEY心动么/ANY->[心动么/ANY]MERGE[心动/v 么/y]
+KEY需用/ANY->[需用/ANY]MERGE[需/v 用/v]
+KEY演绎出/ANY->[演绎出/ANY]MERGE[演绎/d 出/v]
+KEY已定/ANY->[已定/ANY]MERGE[已/d 定/v]
+KEY已经刷/ANY->[已经刷/ANY]MERGE[已经/d 刷/v]
+KEY已领/ANY->[已领/ANY]MERGE[已/d 领/v]
+KEY亦或是/ANY->[亦或是/ANY]MERGE[亦或/d 是/v]
+KEY意思是/ANY->[意思是/ANY]MERGE[意思/n 是/v]
+KEY尤其是/ANY->[尤其是/ANY]MERGE[尤其/d 是/v]
+KEY有才华/ANY->[有才华/ANY]MERGE[有/v 才华/n]
+KEY有点贵/ANY->[有点贵/ANY]MERGE[有点/d 贵/a]
+KEY有点卡/ANY->[有点卡/ANY]MERGE[有点/d 卡/v]
+KEY有么/ANY->[有么/ANY]MERGE[有/v 么/y]
+KEY有没有/ANY->[有没有/ANY]MERGE[有/v 没有/v]
+KEY有品味/ANY->[有品味/ANY]MERGE[有/v 品味/n]
+KEY有啥/ANY->[有啥/ANY]MERGE[有/v 啥/r]
+KEY元起/ANY->[元起/ANY]MERGE[元/q 起/v]
+KEY熨衣服/ANY->[熨衣服/ANY]MERGE[熨/v 衣服/n]
+KEY在一起/ANY->[在一起/ANY]MERGE[在/p 一起/s]
+KEY攒金币/ANY->[攒金币/ANY]MERGE[攒/v 金币/n]
+KEY摘下来/ANY->[摘下来/ANY]MERGE[摘/v 下来/v]
+KEY转换成/ANY->[转换成/ANY]MERGE[转换/v 成/v]
+KEY琢磨去/ANY->[琢磨去/ANY]MERGE[琢磨/v 去/v]
+KEY走高端/ANY->[走高端/ANY]MERGE[走/v 高端/b]
+KEY走红毯/ANY->[走红毯/ANY]MERGE[走/v 红毯/n]
+KEY盛装/ANY+开业/ANY->[盛装/ANY 开业/ANY]MERGE[盛装开业/v]
+KEY身着/ANY+盛装/ANY->ANY>>v
+身着/ANY+KEY盛装/ANY->ANY>>n
+着/u+KEY盛装/ANY->ANY>>n
+KEY新浪官/n+微/ANY->[新浪官/n 微/ANY]MERGE[新浪官微/n]
+KEY发微/ANY+博/ANY->[发微/ANY 博/ANY]MERGE[发/v 微博/n]
+KEY重约/ANY+ANY/m->[重约/ANY]MERGE[重/a 约/d]
+种/q+KEYANY/v+的->v>>vn
+类/q+KEYANY/v+的->v>>vn
+KEY有/v+没/d+有/v->[有/v 没/d 有/v]MERGE[有/v 没有/v]
+KEY正/d+在/p->[正/d 在/p]MERGE[正在/d]
+KEY被/p+迫/Vg->[被/p 迫/Vg]MERGE[被迫/d]
+KEY时/Ng+而/c->[时/Ng 而/c]MERGE[时而/d]
+KEY上/f+次/q->[上/f 次/q]MERGE[上次/t]
+KEY不/d+如/v->[不/d 如/v]MERGE[不如/v]
+KEY加/v+分项/n->[加/v 分项/n]MERGE[加分项/n]
+KEY学习/v+成绩/ANY->v>>n
+KEY补习/vn+班/n->[补习/vn 班/n]MERGE[补习班/n]
+KEY第三/ANY+者/ANY->[第三/ANY 者/ANY]MERGE[第三者/n]
+提供/v+KEY连接/ANY->ANY>>n
+在/ANY~KEY实践/v+ANY/f->v>>n
+KEY栖息/ANY+地/ANY->[栖息/ANY 地/ANY]MERGE[栖息地/n]
+由/p~ANY/n+KEY管理/ANY->ANY>>v
+最/d+KEYANY/v+的/ANY->v>>a
+的/ANY+KEY比较/d->d>>n
+KEY下略/ANY+ANY/v->[下略/ANY]MERGE[下/f 略/d]
+KEY同时/ANY+段/ANY->[同时/ANY 段/ANY]MERGE[同时段/n]
+KEY打/v+招呼/v->v>>n
+用于/v+KEYANY/v->v>>vn
+一/m+KEY丢/v+丢/v->v>>q
+一/m+丢/v+KEY丢/v->v>>q
+KEY使用/ANY+说明/ANY->[使用/ANY 说明/ANY]MERGE[使用说明/n]
+ANY/m+ANY/q+KEY设置/v->v>>vn
+KEY微博火/ANY+到/p->[微博火/ANY]MERGE[微博/n 火/v]
+KEY于微博/ANY->[于微博/ANY]MERGE[于/p 微博/n]
+KEY微博向/ANY->[微博向/ANY]MERGE[微博/n 向/p]
+KEY读长/n+文章/n->[读长/n 文章/n]MERGE[读/v 长/a 文章/n]
+KEY微信上/ANY->[微信上/ANY]MERGE[微信/n 上/f]
+KEY对公号/ANY->[对公号/ANY]MERGE[对/p 公号/n]
+KEY微博上/ANY->[微博上/ANY]MERGE[微博/n 上/f]
+KEY自/p+媒体/n->[自/p 媒体/n]MERGE[自媒体/n]
+KEY粥里放/ANY->[粥里放/ANY]MERGE[粥/n 里/f 放/v]
+KEY粥中/ANY->[粥中/ANY]MERGE[粥/n 中/f]
+KEY熬制/n+的/u->n>>v
+KEY粥开/v+花/n->[粥开/v 花/n]MERGE[粥/n 开花/v]
+KEY闻闻粥/ANY->[闻闻粥/ANY]MERGE[闻闻/v 粥/n]
+KEY粥黏稠/ANY->[粥黏稠/ANY]MERGE[粥/n 黏稠/a]
+KEY高速/b+飙车/n->b>>d
+高速/b+KEY飙车/n->n>>vn
+KEY执/v+着/u->[执/v 着/u]MERGE[执著/a]
+ANY/v+KEY少/a->a正确
+ANY/v+ANY/d+KEY少/a->a正确
+KEY少/a+了/ANY+ANY/a->a>>v
+KEY少/a+了/ANY+ANY/n->a>>v
+KEY少/a+了/ANY+ANY/m->a>>v
+KEY少/a+了/ANY+ANY/j->a>>v
+ANY/v+KEY信用/n+分/v->[信用/n 分/v]MERGE[信用分/n]
+KEY锁/n+车/n->n>>v
+KEY对下/v+ANY/m->[对下/v]MERGE[对/p 下/f]
+KEY并不/d+会/v->[并不/d 会/v]MERGE[并/d 不会/v]
+ANY/v+KEY理性/n+思考/vn->n>>d
+ANY/v+理性/n+KEY思考/vn->vn>>v
+KEY没有/d+ANY/n->d>>v
+KEY性侵犯/n+罪/n->[性侵犯/n 罪/n]MERGE[性侵/n 犯罪/n]
+KEY并不/d+是/v->[并不/d 是/v]MERGE[并/d 不是/v]
+KEY重点/n+项目/n->n>>a
+KEY央企/ANY->ANY>>j
+噪音/n+KEY污染/v->v>>n
+月+ANY/m+KEY日/q->q>>n
+KEY发动/vn+机声/n->[发动/vn 机声/n]MERGE[发动机/n 声/n]
+ANY/q+KEYANY/v+EOS->v>>vn
+KEY狗/n+血玛丽苏/ANY->[狗/n 血玛丽苏/ANY]MERGE[狗血/a 玛丽苏/n]
+KEY主持/v+是/v->v>>n
+致辞/v+KEY会/v+上/v->v>>n
+致辞/v+会/v+KEY上/v->v>>f
+KEY从/p+小/d~影响/ANY->[从/p 小/d]MERGE[从小/d]
+KEY从/p+小/d~熏陶/ANY->[从/p 小/d]MERGE[从小/d]
+KEY从/p+小/d+受到/ANY->[从/p 小/d]MERGE[从小/d]
+KEY从/p+小/d+就/d->[从/p 小/d]MERGE[从小/d]
+KEY不/d+难/a+ANY/v->[不/d 难/a]MERGE[不难/d]
+ANY/v+KEYANY/a+ANY/v->a正确
+ANY/d+KEYANY/a+了/u->a>>v
+做/v+ANY/r+KEYANY/v->v>>vn
+KEY重点/n+项目/n->n>>a
+KEY古/a+装扮/v+相/d->[古/a 装扮/v 相/d]MERGE[古装/n 扮相/n]
+KEY古/a+装扮/v+演/v->[古/a 装扮/v 演/v]MERGE[古装/n 扮演/v]
+演技/n+KEYANY/a->a正确
+KEY摊/ANY+薄/ANY->[摊/ANY 薄/ANY]MERGE[摊薄/v]
+KEY的话/ANY->[的话/ANY]MERGE[的/u 话/n]
+ANY/m+KEY大/a+召开/v->a>>j
+KEY小/a+卖/v+铺/v->[小/a 卖/v 铺/v]MERGE[小卖铺/n]
+KEY在/v+ANY/r->v>>p
+KEY难看/a+出/v->[难看/a 出/v]MERGE[难/d 看出/v]
+KEY小/a+编为/v+ANY/n->[小/a 编为/v]MERGE[小编/n 为/p]
+KEY小/a+编为/v+ANY/r->[小/a 编为/v]MERGE[小编/n 为/p]
+KEY小/a+编/v->[小/a 编/v]MERGE[小编/n]
+KEY个/q+别的/r->[个/q 别的/r]MERGE[个别/a 的/u]
+ANY/d+KEY好/a+用/v->[好/a 用/v]MERGE[好用/a]
+KEY湿/a+热/a->[湿/a 热/a]MERGE[湿热/a]
+KEY就/d+着/v->d>>v
+就/d+KEY着/v->v>>u
+KEY打/v+招呼/v->[打/v 招呼/v]MERGE[打招呼/v]
+//量词词性纠正模式
+// ANY/r+KEY℃/ANY->ANY>>q
+// ANY/r+KEY埃/ANY->ANY>>q
+// ANY/r+KEY埃镑/ANY->ANY>>q
+// ANY/r+KEY安培/ANY->ANY>>q
+// ANY/r+KEY案/ANY->ANY>>q
+// ANY/r+KEY盎司/ANY->ANY>>q
+// ANY/r+KEY澳元/ANY->ANY>>q
+// ANY/r+KEY巴/ANY->ANY>>q
+// ANY/r+KEY把/ANY->ANY>>q
+// ANY/r+KEY靶/ANY->ANY>>q
+// ANY/r+KEY班/ANY->ANY>>q
+// ANY/r+KEY瓣/ANY->ANY>>q
+// ANY/r+KEY帮/ANY->ANY>>q
+// ANY/r+KEY棒/ANY->ANY>>q
+// ANY/r+KEY磅/ANY->ANY>>q
+// ANY/r+KEY镑/ANY->ANY>>q
+// ANY/r+KEY包/ANY->ANY>>q
+// ANY/r+KEY抱/ANY->ANY>>q
+// ANY/r+KEY杯/ANY->ANY>>q
+// ANY/r+KEY杯杯/ANY->ANY>>q
+// ANY/r+KEY倍/ANY->ANY>>q
+// ANY/r+KEY辈/ANY->ANY>>q
+// ANY/r+KEY辈子/ANY->ANY>>q
+// ANY/r+KEY本/ANY->ANY>>q
+// ANY/r+KEY比索/ANY->ANY>>q
+// ANY/r+KEY笔/ANY->ANY>>q
+// ANY/r+KEY壁/ANY->ANY>>q
+// ANY/r+KEY边/ANY->ANY>>q
+// ANY/r+KEY便士/ANY->ANY>>q
+// ANY/r+KEY遍/ANY->ANY>>q
+// ANY/r+KEY标/ANY->ANY>>q
+// ANY/r+KEY彪/ANY->ANY>>q
+// ANY/r+KEY拨/ANY->ANY>>q
+// ANY/r+KEY步/ANY->ANY>>q
+// ANY/r+KEY步步/ANY->ANY>>q
+// ANY/r+KEY部/ANY->ANY>>q
+// ANY/r+KEY餐/ANY->ANY>>q
+// ANY/r+KEY册/ANY->ANY>>q
+// ANY/r+KEY层/ANY->ANY>>q
+// ANY/r+KEY层层/ANY->ANY>>q
+// ANY/r+KEY茬/ANY->ANY>>q
+// ANY/r+KEY场/ANY->ANY>>q
+// ANY/r+KEY场场/ANY->ANY>>q
+// ANY/r+KEY场次/ANY->ANY>>q
+// ANY/r+KEY朝/ANY->ANY>>q
+// ANY/r+KEY车/ANY->ANY>>q
+// ANY/r+KEY车次/ANY->ANY>>q
+// ANY/r+KEY成/ANY->ANY>>q
+// ANY/r+KEY程/ANY->ANY>>q
+// ANY/r+KEY池/ANY->ANY>>q
+// ANY/r+KEY尺/ANY->ANY>>q
+// ANY/r+KEY出/ANY->ANY>>q
+// ANY/r+KEY处/ANY->ANY>>q
+// ANY/r+KEY处处/ANY->ANY>>q
+// ANY/r+KEY串/ANY->ANY>>q
+// ANY/r+KEY床/ANY->ANY>>q
+// ANY/r+KEY锤/ANY->ANY>>q
+// ANY/r+KEY次/ANY->ANY>>q
+// ANY/r+KEY次次/ANY->ANY>>q
+// ANY/r+KEY丛丛/ANY->ANY>>q
+// ANY/r+KEY簇/ANY->ANY>>q
+// ANY/r+KEY簇簇/ANY->ANY>>q
+// ANY/r+KEY村村/ANY->ANY>>q
+// ANY/r+KEY寸/ANY->ANY>>q
+// ANY/r+KEY撮/ANY->ANY>>q
+// ANY/r+KEY打/ANY->ANY>>q
+// ANY/r+KEY大卡/ANY->ANY>>q
+// ANY/r+KEY代/ANY->ANY>>q
+// ANY/r+KEY袋/ANY->ANY>>q
+// ANY/r+KEY担/ANY->ANY>>q
+// ANY/r+KEY旦/ANY->ANY>>q
+// ANY/r+KEY挡/ANY->ANY>>q
+// ANY/r+KEY档/ANY->ANY>>q
+// ANY/r+KEY档子/ANY->ANY>>q
+// ANY/r+KEY刀/ANY->ANY>>q
+// ANY/r+KEY道/ANY->ANY>>q
+// ANY/r+KEY道道/ANY->ANY>>q
+// ANY/r+KEY等/ANY->ANY>>q
+// ANY/r+KEY滴/ANY->ANY>>q
+// ANY/r+KEY点/ANY->ANY>>q
+// ANY/r+KEY点点/ANY->ANY>>q
+// ANY/r+KEY点儿/ANY->ANY>>q
+// ANY/r+KEY吊/ANY->ANY>>q
+// ANY/r+KEY叠/ANY->ANY>>q
+// ANY/r+KEY碟/ANY->ANY>>q
+// ANY/r+KEY顶/ANY->ANY>>q
+// ANY/r+KEY定/ANY->ANY>>q
+// ANY/r+KEY锭/ANY->ANY>>q
+// ANY/r+KEY栋/ANY->ANY>>q
+// ANY/r+KEY兜/ANY->ANY>>q
+// ANY/r+KEY兜儿/ANY->ANY>>q
+// ANY/r+KEY斗/ANY->ANY>>q
+// ANY/r+KEY堵/ANY->ANY>>q
+// ANY/r+KEY肚子/ANY->ANY>>q
+// ANY/r+KEY度/ANY->ANY>>q
+// ANY/r+KEY端/ANY->ANY>>q
+// ANY/r+KEY段/ANY->ANY>>q
+// ANY/r+KEY堆/ANY->ANY>>q
+// ANY/r+KEY队/ANY->ANY>>q
+// ANY/r+KEY对/ANY->ANY>>q
+// ANY/r+KEY吨/ANY->ANY>>q
+// ANY/r+KEY吨公里/ANY->ANY>>q
+// ANY/r+KEY墩/ANY->ANY>>q
+// ANY/r+KEY盾/ANY->ANY>>q
+// ANY/r+KEY顿/ANY->ANY>>q
+// ANY/r+KEY多种/ANY->ANY>>q
+// ANY/r+KEY朵/ANY->ANY>>q
+// ANY/r+KEY朵朵/ANY->ANY>>q
+// ANY/r+KEY垛/ANY->ANY>>q
+// ANY/r+KEY尔格/ANY->ANY>>q
+// ANY/r+KEY发/ANY->ANY>>q
+// ANY/r+KEY法拉/ANY->ANY>>q
+// ANY/r+KEY法郎/ANY->ANY>>q
+// ANY/r+KEY番/ANY->ANY>>q
+// ANY/r+KEY方/ANY->ANY>>q
+// ANY/r+KEY房/ANY->ANY>>q
+// ANY/r+KEY分/ANY->ANY>>q
+// ANY/r+KEY分贝/ANY->ANY>>q
+// ANY/r+KEY分米/ANY->ANY>>q
+// ANY/r+KEY分钟/ANY->ANY>>q
+// ANY/r+KEY份/ANY->ANY>>q
+// ANY/r+KEY份儿/ANY->ANY>>q
+// ANY/r+KEY封/ANY->ANY>>q
+// ANY/r+KEY峰/ANY->ANY>>q
+// ANY/r+KEY伏/ANY->ANY>>q
+// ANY/r+KEY伏安/ANY->ANY>>q
+// ANY/r+KEY伏特/ANY->ANY>>q
+// ANY/r+KEY服/ANY->ANY>>q
+// ANY/r+KEY幅/ANY->ANY>>q
+// ANY/r+KEY付/ANY->ANY>>q
+// ANY/r+KEY副/ANY->ANY>>q
+// ANY/r+KEY杆/ANY->ANY>>q
+// ANY/r+KEY缸/ANY->ANY>>q
+// ANY/r+KEY港元/ANY->ANY>>q
+// ANY/r+KEY歌/ANY->ANY>>q
+// ANY/r+KEY个/ANY->ANY>>q
+// ANY/r+KEY个个/ANY->ANY>>q
+// ANY/r+KEY根/ANY->ANY>>q
+// ANY/r+KEY公尺/ANY->ANY>>q
+// ANY/r+KEY公寸/ANY->ANY>>q
+// ANY/r+KEY公担/ANY->ANY>>q
+// ANY/r+KEY公分/ANY->ANY>>q
+// ANY/r+KEY公斤/ANY->ANY>>q
+// ANY/r+KEY公厘/ANY->ANY>>q
+// ANY/r+KEY公里/ANY->ANY>>q
+// ANY/r+KEY公亩/ANY->ANY>>q
+// ANY/r+KEY公顷/ANY->ANY>>q
+// ANY/r+KEY公升/ANY->ANY>>q
+// ANY/r+KEY股/ANY->ANY>>q
+// ANY/r+KEY股子/ANY->ANY>>q
+// ANY/r+KEY挂/ANY->ANY>>q
+// ANY/r+KEY管/ANY->ANY>>q
+// ANY/r+KEY罐/ANY->ANY>>q
+// ANY/r+KEY光年/ANY->ANY>>q
+// ANY/r+KEY锅/ANY->ANY>>q
+// ANY/r+KEY海里/ANY->ANY>>q
+// ANY/r+KEY韩元/ANY->ANY>>q
+// ANY/r+KEY行/ANY->ANY>>q
+// ANY/r+KEY毫/ANY->ANY>>q
+// ANY/r+KEY毫安/ANY->ANY>>q
+// ANY/r+KEY毫克/ANY->ANY>>q
+// ANY/r+KEY毫米/ANY->ANY>>q
+// ANY/r+KEY毫秒/ANY->ANY>>q
+// ANY/r+KEY毫升/ANY->ANY>>q
+// ANY/r+KEY毫瓦/ANY->ANY>>q
+// ANY/r+KEY毫微米/ANY->ANY>>q
+// ANY/r+KEY毫微秒/ANY->ANY>>q
+// ANY/r+KEY号/ANY->ANY>>q
+// ANY/r+KEY合/ANY->ANY>>q
+// ANY/r+KEY和/ANY->ANY>>q
+// ANY/r+KEY河/ANY->ANY>>q
+// ANY/r+KEY盒/ANY->ANY>>q
+// ANY/r+KEY赫兹/ANY->ANY>>q
+// ANY/r+KEY忽/ANY->ANY>>q
+// ANY/r+KEY忽米/ANY->ANY>>q
+// ANY/r+KEY壶/ANY->ANY>>q
+// ANY/r+KEY户/ANY->ANY>>q
+// ANY/r+KEY户户/ANY->ANY>>q
+// ANY/r+KEY华里/ANY->ANY>>q
+// ANY/r+KEY画/ANY->ANY>>q
+// ANY/r+KEY回/ANY->ANY>>q
+// ANY/r+KEY会儿/ANY->ANY>>q
+// ANY/r+KEY伙/ANY->ANY>>q
+// ANY/r+KEY级/ANY->ANY>>q
+// ANY/r+KEY集/ANY->ANY>>q
+// ANY/r+KEY辑/ANY->ANY>>q
+// ANY/r+KEY记/ANY->ANY>>q
+// ANY/r+KEY季/ANY->ANY>>q
+// ANY/r+KEY剂/ANY->ANY>>q
+// ANY/r+KEY加仑/ANY->ANY>>q
+// ANY/r+KEY加元/ANY->ANY>>q
+// ANY/r+KEY家/ANY->ANY>>q
+// ANY/r+KEY家家/ANY->ANY>>q
+// ANY/r+KEY驾/ANY->ANY>>q
+// ANY/r+KEY架/ANY->ANY>>q
+// ANY/r+KEY架次/ANY->ANY>>q
+// ANY/r+KEY坚戈/ANY->ANY>>q
+// ANY/r+KEY间/ANY->ANY>>q
+// ANY/r+KEY煎/ANY->ANY>>q
+// ANY/r+KEY件/ANY->ANY>>q
+// ANY/r+KEY江/ANY->ANY>>q
+// ANY/r+KEY焦耳/ANY->ANY>>q
+// ANY/r+KEY角/ANY->ANY>>q
+// ANY/r+KEY绞/ANY->ANY>>q
+// ANY/r+KEY节/ANY->ANY>>q
+// ANY/r+KEY截/ANY->ANY>>q
+// ANY/r+KEY截儿/ANY->ANY>>q
+// ANY/r+KEY届/ANY->ANY>>q
+// ANY/r+KEY斤/ANY->ANY>>q
+// ANY/r+KEY居里/ANY->ANY>>q
+// ANY/r+KEY局/ANY->ANY>>q
+// ANY/r+KEY句/ANY->ANY>>q
+// ANY/r+KEY句句/ANY->ANY>>q
+// ANY/r+KEY具/ANY->ANY>>q
+// ANY/r+KEY卷/ANY->ANY>>q
+// ANY/r+KEY钧/ANY->ANY>>q
+// ANY/r+KEY卡/ANY->ANY>>q
+// ANY/r+KEY卡车/ANY->ANY>>q
+// ANY/r+KEY卡路里/ANY->ANY>>q
+// ANY/r+KEY开/ANY->ANY>>q
+// ANY/r+KEY棵/ANY->ANY>>q
+// ANY/r+KEY颗/ANY->ANY>>q
+// ANY/r+KEY克/ANY->ANY>>q
+// ANY/r+KEY克拉/ANY->ANY>>q
+// ANY/r+KEY克朗/ANY->ANY>>q
+// ANY/r+KEY克子/ANY->ANY>>q
+// ANY/r+KEY刻/ANY->ANY>>q
+// ANY/r+KEY口/ANY->ANY>>q
+// ANY/r+KEY库仑/ANY->ANY>>q
+// ANY/r+KEY夸脱/ANY->ANY>>q
+// ANY/r+KEY块/ANY->ANY>>q
+// ANY/r+KEY款/ANY->ANY>>q
+// ANY/r+KEY筐/ANY->ANY>>q
+// ANY/r+KEY框/ANY->ANY>>q
+// ANY/r+KEY捆/ANY->ANY>>q
+// ANY/r+KEY兰特/ANY->ANY>>q
+// ANY/r+KEY勒/ANY->ANY>>q
+// ANY/r+KEY类/ANY->ANY>>q
+// ANY/r+KEY厘/ANY->ANY>>q
+// ANY/r+KEY厘米/ANY->ANY>>q
+// ANY/r+KEY犁/ANY->ANY>>q
+// ANY/r+KEY里/ANY->ANY>>q
+// ANY/r+KEY里拉/ANY->ANY>>q
+// ANY/r+KEY哩/ANY->ANY>>q
+// ANY/r+KEY立方/ANY->ANY>>q
+// ANY/r+KEY立方米/ANY->ANY>>q
+// ANY/r+KEY例/ANY->ANY>>q
+// ANY/r+KEY粒/ANY->ANY>>q
+// ANY/r+KEY脸/ANY->ANY>>q
+// ANY/r+KEY链/ANY->ANY>>q
+// 这/r+KEY两/ANY->ANY>>m
+// 那/r+KEY两/ANY->ANY>>m
+// ANY/r+KEY辆/ANY->ANY>>q
+// ANY/r+KEY辆次/ANY->ANY>>q
+// ANY/r+KEY料/ANY->ANY>>q
+// ANY/r+KEY列/ANY->ANY>>q
+// ANY/r+KEY列伊/ANY->ANY>>q
+// ANY/r+KEY领/ANY->ANY>>q
+// ANY/r+KEY令/ANY->ANY>>q
+// ANY/r+KEY溜/ANY->ANY>>q
+// ANY/r+KEY流/ANY->ANY>>q
+// ANY/r+KEY搂/ANY->ANY>>q
+// ANY/r+KEY篓/ANY->ANY>>q
+// ANY/r+KEY卢比/ANY->ANY>>q
+// ANY/r+KEY路/ANY->ANY>>q
+// ANY/r+KEY伦琴/ANY->ANY>>q
+// ANY/r+KEY轮/ANY->ANY>>q
+// ANY/r+KEY罗/ANY->ANY>>q
+// ANY/r+KEY缕/ANY->ANY>>q
+// ANY/r+KEY麻袋/ANY->ANY>>q
+// ANY/r+KEY马克/ANY->ANY>>q
+// ANY/r+KEY马力/ANY->ANY>>q
+// ANY/r+KEY码/ANY->ANY>>q
+// ANY/r+KEY迈/ANY->ANY>>q
+// ANY/r+KEY毛/ANY->ANY>>q
+// ANY/r+KEY枚/ANY->ANY>>q
+// ANY/r+KEY美分/ANY->ANY>>q
+// ANY/r+KEY美金/ANY->ANY>>q
+// ANY/r+KEY美元/ANY->ANY>>q
+// ANY/r+KEY门/ANY->ANY>>q
+// ANY/r+KEY米/ANY->ANY>>q
+// ANY/r+KEY面/ANY->ANY>>q
+// ANY/r+KEY秒/ANY->ANY>>q
+// ANY/r+KEY秒钟/ANY->ANY>>q
+// ANY/r+KEY名/ANY->ANY>>q
+// ANY/r+KEY抹/ANY->ANY>>q
+// ANY/r+KEY亩/ANY->ANY>>q
+// ANY/r+KEY目/ANY->ANY>>q
+// ANY/r+KEY幕/ANY->ANY>>q
+// ANY/r+KEY纳米/ANY->ANY>>q
+// ANY/r+KEY年/ANY->ANY>>q
+// ANY/r+KEY年年/ANY->ANY>>q
+// ANY/r+KEY牛顿/ANY->ANY>>q
+// ANY/r+KEY欧姆/ANY->ANY>>q
+// ANY/r+KEY欧元/ANY->ANY>>q
+// ANY/r+KEY排/ANY->ANY>>q
+// ANY/r+KEY派/ANY->ANY>>q
+// ANY/r+KEY盘/ANY->ANY>>q
+// ANY/r+KEY泡/ANY->ANY>>q
+// ANY/r+KEY盆/ANY->ANY>>q
+// ANY/r+KEY蓬/ANY->ANY>>q
+// ANY/r+KEY捧/ANY->ANY>>q
+// ANY/r+KEY批/ANY->ANY>>q
+// ANY/r+KEY匹/ANY->ANY>>q
+// ANY/r+KEY篇/ANY->ANY>>q
+// ANY/r+KEY篇篇/ANY->ANY>>q
+// ANY/r+KEY片/ANY->ANY>>q
+// ANY/r+KEY片儿/ANY->ANY>>q
+// ANY/r+KEY片片/ANY->ANY>>q
+// ANY/r+KEY瓢/ANY->ANY>>q
+// ANY/r+KEY票/ANY->ANY>>q
+// ANY/r+KEY撇/ANY->ANY>>q
+// ANY/r+KEY品/ANY->ANY>>q
+// ANY/r+KEY品脱/ANY->ANY>>q
+// ANY/r+KEY平方/ANY->ANY>>q
+// ANY/r+KEY平方尺/ANY->ANY>>q
+// ANY/r+KEY平方公里/ANY->ANY>>q
+// ANY/r+KEY平方里/ANY->ANY>>q
+// ANY/r+KEY平方米/ANY->ANY>>q
+// ANY/r+KEY平方英寸/ANY->ANY>>q
+// ANY/r+KEY平米/ANY->ANY>>q
+// ANY/r+KEY瓶/ANY->ANY>>q
+// ANY/r+KEY普特/ANY->ANY>>q
+// ANY/r+KEY期/ANY->ANY>>q
+// ANY/r+KEY畦/ANY->ANY>>q
+// ANY/r+KEY起/ANY->ANY>>q
+// ANY/r+KEY千伏/ANY->ANY>>q
+// ANY/r+KEY千伏安/ANY->ANY>>q
+// ANY/r+KEY千赫/ANY->ANY>>q
+// ANY/r+KEY千斤/ANY->ANY>>q
+// ANY/r+KEY千卡/ANY->ANY>>q
+// ANY/r+KEY千克/ANY->ANY>>q
+// ANY/r+KEY千米/ANY->ANY>>q
+// ANY/r+KEY千升/ANY->ANY>>q
+// ANY/r+KEY千瓦/ANY->ANY>>q
+// ANY/r+KEY千瓦时/ANY->ANY>>q
+// ANY/r+KEY千瓦小时/ANY->ANY>>q
+// ANY/r+KEY枪/ANY->ANY>>q
+// ANY/r+KEY腔/ANY->ANY>>q
+// ANY/r+KEY顷/ANY->ANY>>q
+// ANY/r+KEY丘/ANY->ANY>>q
+// ANY/r+KEY曲/ANY->ANY>>q
+// ANY/r+KEY圈/ANY->ANY>>q
+// ANY/r+KEY拳/ANY->ANY>>q
+// ANY/r+KEY群/ANY->ANY>>q
+// ANY/r+KEY人/ANY->ANY>>q
+// ANY/r+KEY人次/ANY->ANY>>q
+// ANY/r+KEY人年/ANY->ANY>>q
+// ANY/r+KEY任/ANY->ANY>>q
+// ANY/r+KEY日/ANY->ANY>>q
+// ANY/r+KEY日日/ANY->ANY>>q
+// ANY/r+KEY日元/ANY->ANY>>q
+// ANY/r+KEY瑞士法郎/ANY->ANY>>q
+// ANY/r+KEY嗓/ANY->ANY>>q
+// ANY/r+KEY霎/ANY->ANY>>q
+// ANY/r+KEY扇/ANY->ANY>>q
+// ANY/r+KEY晌/ANY->ANY>>q
+// ANY/r+KEY勺/ANY->ANY>>q
+// ANY/r+KEY哨/ANY->ANY>>q
+// ANY/r+KEY舍/ANY->ANY>>q
+// ANY/r+KEY摄氏度/ANY->ANY>>q
+// ANY/r+KEY身/ANY->ANY>>q
+// ANY/r+KEY升/ANY->ANY>>q
+// ANY/r+KEY声/ANY->ANY>>q
+// ANY/r+KEY声声/ANY->ANY>>q
+// ANY/r+KEY石/ANY->ANY>>q
+// ANY/r+KEY时/ANY->ANY>>q
+// ANY/r+KEY市尺/ANY->ANY>>q
+// ANY/r+KEY市斤/ANY->ANY>>q
+// ANY/r+KEY手/ANY->ANY>>q
+// ANY/r+KEY首/ANY->ANY>>q
+// ANY/r+KEY书架/ANY->ANY>>q
+// ANY/r+KEY束/ANY->ANY>>q
+// ANY/r+KEY树/ANY->ANY>>q
+// ANY/r+KEY双/ANY->ANY>>q
+// ANY/r+KEY丝/ANY->ANY>>q
+// ANY/r+KEY丝米/ANY->ANY>>q
+// ANY/r+KEY宋/ANY->ANY>>q
+// ANY/r+KEY艘/ANY->ANY>>q
+// ANY/r+KEY岁/ANY->ANY>>q
+// ANY/r+KEY胎/ANY->ANY>>q
+// ANY/r+KEY台/ANY->ANY>>q
+// ANY/r+KEY台次/ANY->ANY>>q
+// ANY/r+KEY抬/ANY->ANY>>q
+// ANY/r+KEY摊/ANY->ANY>>q
+// ANY/r+KEY坛/ANY->ANY>>q
+// ANY/r+KEY堂/ANY->ANY>>q
+// ANY/r+KEY趟/ANY->ANY>>q
+// ANY/r+KEY套/ANY->ANY>>q
+// ANY/r+KEY天/ANY->ANY>>q
+// ANY/r+KEY天天/ANY->ANY>>q
+// ANY/r+KEY挑/ANY->ANY>>q
+// ANY/r+KEY条/ANY->ANY>>q
+// ANY/r+KEY条条/ANY->ANY>>q
+// ANY/r+KEY帖/ANY->ANY>>q
+// ANY/r+KEY贴/ANY->ANY>>q
+// ANY/r+KEY停/ANY->ANY>>q
+// ANY/r+KEY挺/ANY->ANY>>q
+// ANY/r+KEY通/ANY->ANY>>q
+// ANY/r+KEY桶/ANY->ANY>>q
+// ANY/r+KEY头/ANY->ANY>>q
+// ANY/r+KEY头头/ANY->ANY>>q
+// ANY/r+KEY团/ANY->ANY>>q
+// ANY/r+KEY团团/ANY->ANY>>q
+// ANY/r+KEY托/ANY->ANY>>q
+// ANY/r+KEY拖拉机/ANY->ANY>>q
+// ANY/r+KEY瓦/ANY->ANY>>q
+// ANY/r+KEY瓦特/ANY->ANY>>q
+// ANY/r+KEY弯/ANY->ANY>>q
+// ANY/r+KEY丸/ANY->ANY>>q
+// ANY/r+KEY碗/ANY->ANY>>q
+// ANY/r+KEY万顷/ANY->ANY>>q
+// ANY/r+KEY汪/ANY->ANY>>q
+// ANY/r+KEY微米/ANY->ANY>>q
+// ANY/r+KEY微秒/ANY->ANY>>q
+// ANY/r+KEY围/ANY->ANY>>q
+// ANY/r+KEY维/ANY->ANY>>q
+// ANY/r+KEY尾/ANY->ANY>>q
+// ANY/r+KEY位/ANY->ANY>>q
+// ANY/r+KEY味/ANY->ANY>>q
+// ANY/r+KEY文/ANY->ANY>>q
+// ANY/r+KEY窝/ANY->ANY>>q
+// ANY/r+KEY席/ANY->ANY>>q
+// ANY/r+KEY袭/ANY->ANY>>q
+// ANY/r+KEY系列/ANY->ANY>>q
+// ANY/r+KEY下/ANY->ANY>>q
+// ANY/r+KEY先令/ANY->ANY>>q
+// ANY/r+KEY线/ANY->ANY>>q
+// ANY/r+KEY乡/ANY->ANY>>q
+// ANY/r+KEY乡乡/ANY->ANY>>q
+// ANY/r+KEY箱/ANY->ANY>>q
+// ANY/r+KEY响/ANY->ANY>>q
+// ANY/r+KEY项/ANY->ANY>>q
+// ANY/r+KEY些/ANY->ANY>>q
+// ANY/r+KEY心/ANY->ANY>>q
+// ANY/r+KEY芯/ANY->ANY>>q
+// ANY/r+KEY星星/ANY->ANY>>q
+// ANY/r+KEY宿/ANY->ANY>>q
+// ANY/r+KEY旬/ANY->ANY>>q
+// ANY/r+KEY寻/ANY->ANY>>q
+// ANY/r+KEY巡/ANY->ANY>>q
+// ANY/r+KEY眼/ANY->ANY>>q
+// ANY/r+KEY样/ANY->ANY>>q
+// ANY/r+KEY样样/ANY->ANY>>q
+// ANY/r+KEY叶/ANY->ANY>>q
+// ANY/r+KEY页/ANY->ANY>>q
+// ANY/r+KEY夜/ANY->ANY>>q
+// ANY/r+KEY引/ANY->ANY>>q
+// ANY/r+KEY英镑/ANY->ANY>>q
+// ANY/r+KEY英尺/ANY->ANY>>q
+// ANY/r+KEY英寸/ANY->ANY>>q
+// ANY/r+KEY英里/ANY->ANY>>q
+// ANY/r+KEY英两/ANY->ANY>>q
+// ANY/r+KEY英亩/ANY->ANY>>q
+// ANY/r+KEY羽/ANY->ANY>>q
+// ANY/r+KEY元/ANY->ANY>>q
+// ANY/r+KEY员/ANY->ANY>>q
+// ANY/r+KEY圆/ANY->ANY>>q
+// ANY/r+KEY月/ANY->ANY>>q
+// ANY/r+KEY匝/ANY->ANY>>q
+// ANY/r+KEY载/ANY->ANY>>q
+// ANY/r+KEY遭/ANY->ANY>>q
+// ANY/r+KEY则/ANY->ANY>>q
+// ANY/r+KEY札/ANY->ANY>>q
+// ANY/r+KEY盏/ANY->ANY>>q
+// ANY/r+KEY站/ANY->ANY>>q
+// ANY/r+KEY张/ANY->ANY>>q
+// ANY/r+KEY章/ANY->ANY>>q
+// ANY/r+KEY丈/ANY->ANY>>q
+// ANY/r+KEY帐/ANY->ANY>>q
+// ANY/r+KEY招/ANY->ANY>>q
+// ANY/r+KEY兆赫/ANY->ANY>>q
+// ANY/r+KEY兆瓦/ANY->ANY>>q
+// ANY/r+KEY折/ANY->ANY>>q
+// ANY/r+KEY着/ANY->ANY>>q
+// ANY/r+KEY帧/ANY->ANY>>q
+// ANY/r+KEY阵/ANY->ANY>>q
+// ANY/r+KEY阵阵/ANY->ANY>>q
+// ANY/r+KEY阵子/ANY->ANY>>q
+// ANY/r+KEY支/ANY->ANY>>q
+// ANY/r+KEY只/ANY->ANY>>q
+// ANY/r+KEY只只/ANY->ANY>>q
+// ANY/r+KEY枝/ANY->ANY>>q
+// ANY/r+KEY纸/ANY->ANY>>q
+// ANY/r+KEY种/ANY->ANY>>q
+// ANY/r+KEY种种/ANY->ANY>>q
+// ANY/r+KEY重/ANY->ANY>>q
+// ANY/r+KEY周/ANY->ANY>>q
+// ANY/r+KEY周年/ANY->ANY>>q
+// ANY/r+KEY周岁/ANY->ANY>>q
+// ANY/r+KEY轴/ANY->ANY>>q
+// ANY/r+KEY昼夜/ANY->ANY>>q
+// ANY/r+KEY株/ANY->ANY>>q
+// ANY/r+KEY柱/ANY->ANY>>q
+// ANY/r+KEY转/ANY->ANY>>q
+// ANY/r+KEY桩/ANY->ANY>>q
+// ANY/r+KEY幢/ANY->ANY>>q
+// ANY/r+KEY桌/ANY->ANY>>q
+// ANY/r+KEY子/ANY->ANY>>q
+// ANY/r+KEY宗/ANY->ANY>>q
+// ANY/r+KEY组/ANY->ANY>>q
+// ANY/r+KEY组组/ANY->ANY>>q
+// ANY/r+KEY尊/ANY->ANY>>q
+// ANY/r+KEY座/ANY->ANY>>q
+// ANY/r+KEY所/ANY->ANY>>q
+//
+ANY/m+KEY℃/ANY->ANY>>q
+ANY/m+KEY埃/ANY->ANY>>q
+ANY/m+KEY埃镑/ANY->ANY>>q
+ANY/m+KEY安培/ANY->ANY>>q
+ANY/m+KEY案/ANY->ANY>>q
+ANY/m+KEY盎司/ANY->ANY>>q
+ANY/m+KEY澳元/ANY->ANY>>q
+ANY/m+KEY巴/ANY->ANY>>q
+ANY/m+KEY把/ANY->ANY>>q
+ANY/m+KEY靶/ANY->ANY>>q
+ANY/m+KEY班/ANY->ANY>>q
+ANY/m+KEY瓣/ANY->ANY>>q
+ANY/m+KEY帮/ANY->ANY>>q
+ANY/m+KEY棒/ANY->ANY>>q
+ANY/m+KEY磅/ANY->ANY>>q
+ANY/m+KEY镑/ANY->ANY>>q
+ANY/m+KEY包/ANY->ANY>>q
+ANY/m+KEY抱/ANY->ANY>>q
+ANY/m+KEY杯/ANY->ANY>>q
+ANY/m+KEY杯杯/ANY->ANY>>q
+ANY/m+KEY倍/ANY->ANY>>q
+ANY/m+KEY辈/ANY->ANY>>q
+ANY/m+KEY辈子/ANY->ANY>>q
+ANY/m+KEY本/ANY->ANY>>q
+ANY/m+KEY比索/ANY->ANY>>q
+ANY/m+KEY笔/ANY->ANY>>q
+ANY/m+KEY壁/ANY->ANY>>q
+ANY/m+KEY边/ANY->ANY>>q
+ANY/m+KEY便士/ANY->ANY>>q
+ANY/m+KEY遍/ANY->ANY>>q
+ANY/m+KEY标/ANY->ANY>>q
+ANY/m+KEY彪/ANY->ANY>>q
+ANY/m+KEY拨/ANY->ANY>>q
+ANY/m+KEY步/ANY->ANY>>q
+ANY/m+KEY步步/ANY->ANY>>q
+ANY/m+KEY部/ANY->ANY>>q
+ANY/m+KEY餐/ANY->ANY>>q
+ANY/m+KEY册/ANY->ANY>>q
+ANY/m+KEY层/ANY->ANY>>q
+ANY/m+KEY层层/ANY->ANY>>q
+ANY/m+KEY茬/ANY->ANY>>q
+ANY/m+KEY场/ANY->ANY>>q
+ANY/m+KEY场场/ANY->ANY>>q
+ANY/m+KEY场次/ANY->ANY>>q
+ANY/m+KEY朝/ANY->ANY>>q
+ANY/m+KEY车/ANY->ANY>>q
+ANY/m+KEY车次/ANY->ANY>>q
+ANY/m+KEY成/ANY->ANY>>q
+ANY/m+KEY程/ANY->ANY>>q
+ANY/m+KEY池/ANY->ANY>>q
+ANY/m+KEY尺/ANY->ANY>>q
+ANY/m+KEY出/ANY->ANY>>q
+ANY/m+KEY处/ANY->ANY>>q
+ANY/m+KEY处处/ANY->ANY>>q
+ANY/m+KEY串/ANY->ANY>>q
+ANY/m+KEY床/ANY->ANY>>q
+ANY/m+KEY锤/ANY->ANY>>q
+ANY/m+KEY次/ANY->ANY>>q
+ANY/m+KEY次次/ANY->ANY>>q
+ANY/m+KEY丛丛/ANY->ANY>>q
+ANY/m+KEY簇/ANY->ANY>>q
+ANY/m+KEY簇簇/ANY->ANY>>q
+ANY/m+KEY村村/ANY->ANY>>q
+ANY/m+KEY寸/ANY->ANY>>q
+ANY/m+KEY撮/ANY->ANY>>q
+ANY/m+KEY打/ANY->ANY>>q
+ANY/m+KEY大卡/ANY->ANY>>q
+ANY/m+KEY代/ANY->ANY>>q
+ANY/m+KEY袋/ANY->ANY>>q
+ANY/m+KEY担/ANY->ANY>>q
+ANY/m+KEY旦/ANY->ANY>>q
+ANY/m+KEY挡/ANY->ANY>>q
+ANY/m+KEY档/ANY->ANY>>q
+ANY/m+KEY档子/ANY->ANY>>q
+ANY/m+KEY刀/ANY->ANY>>q
+ANY/m+KEY道/ANY->ANY>>q
+ANY/m+KEY道道/ANY->ANY>>q
+ANY/m+KEY等/ANY->ANY>>q
+ANY/m+KEY滴/ANY->ANY>>q
+ANY/m+KEY点/ANY->ANY>>q
+ANY/m+KEY点点/ANY->ANY>>q
+ANY/m+KEY点儿/ANY->ANY>>q
+ANY/m+KEY吊/ANY->ANY>>q
+ANY/m+KEY叠/ANY->ANY>>q
+ANY/m+KEY碟/ANY->ANY>>q
+ANY/m+KEY顶/ANY->ANY>>q
+ANY/m+KEY定/ANY->ANY>>q
+ANY/m+KEY锭/ANY->ANY>>q
+ANY/m+KEY栋/ANY->ANY>>q
+ANY/m+KEY兜/ANY->ANY>>q
+ANY/m+KEY兜儿/ANY->ANY>>q
+ANY/m+KEY斗/ANY->ANY>>q
+ANY/m+KEY堵/ANY->ANY>>q
+ANY/m+KEY肚子/ANY->ANY>>q
+ANY/m+KEY度/ANY->ANY>>q
+ANY/m+KEY端/ANY->ANY>>q
+ANY/m+KEY段/ANY->ANY>>q
+ANY/m+KEY堆/ANY->ANY>>q
+ANY/m+KEY队/ANY->ANY>>q
+ANY/m+KEY对/ANY->ANY>>q
+ANY/m+KEY吨/ANY->ANY>>q
+ANY/m+KEY吨公里/ANY->ANY>>q
+ANY/m+KEY墩/ANY->ANY>>q
+ANY/m+KEY盾/ANY->ANY>>q
+ANY/m+KEY顿/ANY->ANY>>q
+ANY/m+KEY多种/ANY->ANY>>q
+ANY/m+KEY朵/ANY->ANY>>q
+ANY/m+KEY朵朵/ANY->ANY>>q
+ANY/m+KEY垛/ANY->ANY>>q
+ANY/m+KEY尔格/ANY->ANY>>q
+ANY/m+KEY发/ANY->ANY>>q
+ANY/m+KEY法拉/ANY->ANY>>q
+ANY/m+KEY法郎/ANY->ANY>>q
+ANY/m+KEY番/ANY->ANY>>q
+ANY/m+KEY方/ANY->ANY>>q
+ANY/m+KEY房/ANY->ANY>>q
+ANY/m+KEY分/ANY->ANY>>q
+ANY/m+KEY分贝/ANY->ANY>>q
+ANY/m+KEY分米/ANY->ANY>>q
+ANY/m+KEY分钟/ANY->ANY>>q
+ANY/m+KEY份/ANY->ANY>>q
+ANY/m+KEY份儿/ANY->ANY>>q
+ANY/m+KEY封/ANY->ANY>>q
+ANY/m+KEY峰/ANY->ANY>>q
+ANY/m+KEY伏/ANY->ANY>>q
+ANY/m+KEY伏安/ANY->ANY>>q
+ANY/m+KEY伏特/ANY->ANY>>q
+ANY/m+KEY服/ANY->ANY>>q
+ANY/m+KEY幅/ANY->ANY>>q
+ANY/m+KEY付/ANY->ANY>>q
+ANY/m+KEY副/ANY->ANY>>q
+ANY/m+KEY杆/ANY->ANY>>q
+ANY/m+KEY缸/ANY->ANY>>q
+ANY/m+KEY港元/ANY->ANY>>q
+ANY/m+KEY歌/ANY->ANY>>q
+ANY/m+KEY个/ANY->ANY>>q
+ANY/m+KEY个个/ANY->ANY>>q
+ANY/m+KEY根/ANY->ANY>>q
+ANY/m+KEY公尺/ANY->ANY>>q
+ANY/m+KEY公寸/ANY->ANY>>q
+ANY/m+KEY公担/ANY->ANY>>q
+ANY/m+KEY公分/ANY->ANY>>q
+ANY/m+KEY公斤/ANY->ANY>>q
+ANY/m+KEY公厘/ANY->ANY>>q
+ANY/m+KEY公里/ANY->ANY>>q
+ANY/m+KEY公亩/ANY->ANY>>q
+ANY/m+KEY公顷/ANY->ANY>>q
+ANY/m+KEY公升/ANY->ANY>>q
+ANY/m+KEY股/ANY->ANY>>q
+ANY/m+KEY股子/ANY->ANY>>q
+ANY/m+KEY挂/ANY->ANY>>q
+ANY/m+KEY管/ANY->ANY>>q
+ANY/m+KEY罐/ANY->ANY>>q
+ANY/m+KEY光年/ANY->ANY>>q
+ANY/m+KEY锅/ANY->ANY>>q
+ANY/m+KEY海里/ANY->ANY>>q
+ANY/m+KEY韩元/ANY->ANY>>q
+ANY/m+KEY行/ANY->ANY>>q
+ANY/m+KEY毫/ANY->ANY>>q
+ANY/m+KEY毫安/ANY->ANY>>q
+ANY/m+KEY毫克/ANY->ANY>>q
+ANY/m+KEY毫米/ANY->ANY>>q
+ANY/m+KEY毫秒/ANY->ANY>>q
+ANY/m+KEY毫升/ANY->ANY>>q
+ANY/m+KEY毫瓦/ANY->ANY>>q
+ANY/m+KEY毫微米/ANY->ANY>>q
+ANY/m+KEY毫微秒/ANY->ANY>>q
+ANY/m+KEY号/ANY->ANY>>q
+ANY/m+KEY合/ANY->ANY>>q
+
+ANY/m+KEY河/ANY->ANY>>q
+ANY/m+KEY盒/ANY->ANY>>q
+ANY/m+KEY赫兹/ANY->ANY>>q
+ANY/m+KEY忽/ANY->ANY>>q
+ANY/m+KEY忽米/ANY->ANY>>q
+ANY/m+KEY壶/ANY->ANY>>q
+ANY/m+KEY户/ANY->ANY>>q
+ANY/m+KEY户户/ANY->ANY>>q
+ANY/m+KEY华里/ANY->ANY>>q
+ANY/m+KEY画/ANY->ANY>>q
+ANY/m+KEY回/ANY->ANY>>q
+ANY/m+KEY会儿/ANY->ANY>>q
+ANY/m+KEY伙/ANY->ANY>>q
+ANY/m+KEY级/ANY->ANY>>q
+ANY/m+KEY集/ANY->ANY>>q
+ANY/m+KEY辑/ANY->ANY>>q
+ANY/m+KEY记/ANY->ANY>>q
+ANY/m+KEY季/ANY->ANY>>q
+ANY/m+KEY剂/ANY->ANY>>q
+ANY/m+KEY加仑/ANY->ANY>>q
+ANY/m+KEY加元/ANY->ANY>>q
+ANY/m+KEY家/ANY->ANY>>q
+ANY/m+KEY家家/ANY->ANY>>q
+ANY/m+KEY驾/ANY->ANY>>q
+ANY/m+KEY架/ANY->ANY>>q
+ANY/m+KEY架次/ANY->ANY>>q
+ANY/m+KEY坚戈/ANY->ANY>>q
+ANY/m+KEY间/ANY->ANY>>q
+ANY/m+KEY煎/ANY->ANY>>q
+ANY/m+KEY件/ANY->ANY>>q
+ANY/m+KEY江/ANY->ANY>>q
+ANY/m+KEY焦耳/ANY->ANY>>q
+ANY/m+KEY角/ANY->ANY>>q
+ANY/m+KEY绞/ANY->ANY>>q
+ANY/m+KEY节/ANY->ANY>>q
+ANY/m+KEY截/ANY->ANY>>q
+ANY/m+KEY截儿/ANY->ANY>>q
+ANY/m+KEY届/ANY->ANY>>q
+ANY/m+KEY斤/ANY->ANY>>q
+ANY/m+KEY居里/ANY->ANY>>q
+ANY/m+KEY局/ANY->ANY>>q
+ANY/m+KEY句/ANY->ANY>>q
+ANY/m+KEY句句/ANY->ANY>>q
+ANY/m+KEY具/ANY->ANY>>q
+ANY/m+KEY卷/ANY->ANY>>q
+ANY/m+KEY钧/ANY->ANY>>q
+ANY/m+KEY卡/ANY->ANY>>q
+ANY/m+KEY卡车/ANY->ANY>>q
+ANY/m+KEY卡路里/ANY->ANY>>q
+ANY/m+KEY开/ANY->ANY>>q
+ANY/m+KEY棵/ANY->ANY>>q
+ANY/m+KEY颗/ANY->ANY>>q
+ANY/m+KEY克/ANY->ANY>>q
+ANY/m+KEY克拉/ANY->ANY>>q
+ANY/m+KEY克朗/ANY->ANY>>q
+ANY/m+KEY克子/ANY->ANY>>q
+ANY/m+KEY刻/ANY->ANY>>q
+ANY/m+KEY口/ANY->ANY>>q
+ANY/m+KEY库仑/ANY->ANY>>q
+ANY/m+KEY夸脱/ANY->ANY>>q
+ANY/m+KEY块/ANY->ANY>>q
+ANY/m+KEY款/ANY->ANY>>q
+ANY/m+KEY筐/ANY->ANY>>q
+ANY/m+KEY框/ANY->ANY>>q
+ANY/m+KEY捆/ANY->ANY>>q
+ANY/m+KEY兰特/ANY->ANY>>q
+ANY/m+KEY勒/ANY->ANY>>q
+ANY/m+KEY类/ANY->ANY>>q
+ANY/m+KEY厘/ANY->ANY>>q
+ANY/m+KEY厘米/ANY->ANY>>q
+ANY/m+KEY犁/ANY->ANY>>q
+ANY/m+KEY里/ANY->ANY>>q
+ANY/m+KEY里拉/ANY->ANY>>q
+ANY/m+KEY哩/ANY->ANY>>q
+ANY/m+KEY立方/ANY->ANY>>q
+ANY/m+KEY立方米/ANY->ANY>>q
+ANY/m+KEY例/ANY->ANY>>q
+ANY/m+KEY粒/ANY->ANY>>q
+ANY/m+KEY脸/ANY->ANY>>q
+ANY/m+KEY链/ANY->ANY>>q
+
+ANY/m+KEY辆/ANY->ANY>>q
+ANY/m+KEY辆次/ANY->ANY>>q
+ANY/m+KEY料/ANY->ANY>>q
+ANY/m+KEY列/ANY->ANY>>q
+ANY/m+KEY列伊/ANY->ANY>>q
+ANY/m+KEY领/ANY->ANY>>q
+ANY/m+KEY令/ANY->ANY>>q
+ANY/m+KEY溜/ANY->ANY>>q
+ANY/m+KEY流/ANY->ANY>>q
+ANY/m+KEY搂/ANY->ANY>>q
+ANY/m+KEY篓/ANY->ANY>>q
+ANY/m+KEY卢比/ANY->ANY>>q
+ANY/m+KEY路/ANY->ANY>>q
+ANY/m+KEY伦琴/ANY->ANY>>q
+ANY/m+KEY轮/ANY->ANY>>q
+ANY/m+KEY罗/ANY->ANY>>q
+ANY/m+KEY缕/ANY->ANY>>q
+ANY/m+KEY麻袋/ANY->ANY>>q
+ANY/m+KEY马克/ANY->ANY>>q
+ANY/m+KEY马力/ANY->ANY>>q
+ANY/m+KEY码/ANY->ANY>>q
+ANY/m+KEY迈/ANY->ANY>>q
+ANY/m+KEY毛/ANY->ANY>>q
+ANY/m+KEY枚/ANY->ANY>>q
+ANY/m+KEY美分/ANY->ANY>>q
+ANY/m+KEY美金/ANY->ANY>>q
+ANY/m+KEY美元/ANY->ANY>>q
+ANY/m+KEY门/ANY->ANY>>q
+ANY/m+KEY米/ANY->ANY>>q
+ANY/m+KEY面/ANY->ANY>>q
+ANY/m+KEY秒/ANY->ANY>>q
+ANY/m+KEY秒钟/ANY->ANY>>q
+ANY/m+KEY名/ANY->ANY>>q
+ANY/m+KEY抹/ANY->ANY>>q
+ANY/m+KEY亩/ANY->ANY>>q
+ANY/m+KEY目/ANY->ANY>>q
+ANY/m+KEY幕/ANY->ANY>>q
+ANY/m+KEY纳米/ANY->ANY>>q
+ANY/m+KEY年/ANY->ANY>>q
+ANY/m+KEY年年/ANY->ANY>>q
+ANY/m+KEY牛顿/ANY->ANY>>q
+ANY/m+KEY欧姆/ANY->ANY>>q
+ANY/m+KEY欧元/ANY->ANY>>q
+ANY/m+KEY排/ANY->ANY>>q
+ANY/m+KEY派/ANY->ANY>>q
+ANY/m+KEY盘/ANY->ANY>>q
+ANY/m+KEY泡/ANY->ANY>>q
+ANY/m+KEY盆/ANY->ANY>>q
+ANY/m+KEY蓬/ANY->ANY>>q
+ANY/m+KEY捧/ANY->ANY>>q
+ANY/m+KEY批/ANY->ANY>>q
+ANY/m+KEY匹/ANY->ANY>>q
+ANY/m+KEY篇/ANY->ANY>>q
+ANY/m+KEY篇篇/ANY->ANY>>q
+ANY/m+KEY片/ANY->ANY>>q
+ANY/m+KEY片儿/ANY->ANY>>q
+ANY/m+KEY片片/ANY->ANY>>q
+ANY/m+KEY瓢/ANY->ANY>>q
+ANY/m+KEY票/ANY->ANY>>q
+ANY/m+KEY撇/ANY->ANY>>q
+ANY/m+KEY品/ANY->ANY>>q
+ANY/m+KEY品脱/ANY->ANY>>q
+ANY/m+KEY平方/ANY->ANY>>q
+ANY/m+KEY平方尺/ANY->ANY>>q
+ANY/m+KEY平方公里/ANY->ANY>>q
+ANY/m+KEY平方里/ANY->ANY>>q
+ANY/m+KEY平方米/ANY->ANY>>q
+ANY/m+KEY平方英寸/ANY->ANY>>q
+ANY/m+KEY平米/ANY->ANY>>q
+ANY/m+KEY瓶/ANY->ANY>>q
+ANY/m+KEY普特/ANY->ANY>>q
+ANY/m+KEY期/ANY->ANY>>q
+ANY/m+KEY畦/ANY->ANY>>q
+ANY/m+KEY起/ANY->ANY>>q
+ANY/m+KEY千伏/ANY->ANY>>q
+ANY/m+KEY千伏安/ANY->ANY>>q
+ANY/m+KEY千赫/ANY->ANY>>q
+ANY/m+KEY千斤/ANY->ANY>>q
+ANY/m+KEY千卡/ANY->ANY>>q
+ANY/m+KEY千克/ANY->ANY>>q
+ANY/m+KEY千米/ANY->ANY>>q
+ANY/m+KEY千升/ANY->ANY>>q
+ANY/m+KEY千瓦/ANY->ANY>>q
+ANY/m+KEY千瓦时/ANY->ANY>>q
+ANY/m+KEY千瓦小时/ANY->ANY>>q
+ANY/m+KEY枪/ANY->ANY>>q
+ANY/m+KEY腔/ANY->ANY>>q
+ANY/m+KEY顷/ANY->ANY>>q
+ANY/m+KEY丘/ANY->ANY>>q
+ANY/m+KEY曲/ANY->ANY>>q
+ANY/m+KEY圈/ANY->ANY>>q
+ANY/m+KEY拳/ANY->ANY>>q
+ANY/m+KEY群/ANY->ANY>>q
+ANY/m+KEY人次/ANY->ANY>>q
+ANY/m+KEY人年/ANY->ANY>>q
+ANY/m+KEY任/ANY->ANY>>q
+ANY/m+KEY日/ANY->ANY>>q
+ANY/m+KEY日日/ANY->ANY>>q
+ANY/m+KEY日元/ANY->ANY>>q
+ANY/m+KEY瑞士法郎/ANY->ANY>>q
+ANY/m+KEY嗓/ANY->ANY>>q
+ANY/m+KEY霎/ANY->ANY>>q
+ANY/m+KEY扇/ANY->ANY>>q
+ANY/m+KEY晌/ANY->ANY>>q
+ANY/m+KEY勺/ANY->ANY>>q
+ANY/m+KEY哨/ANY->ANY>>q
+ANY/m+KEY舍/ANY->ANY>>q
+ANY/m+KEY摄氏度/ANY->ANY>>q
+ANY/m+KEY身/ANY->ANY>>q
+ANY/m+KEY升/ANY->ANY>>q
+ANY/m+KEY声/ANY->ANY>>q
+ANY/m+KEY声声/ANY->ANY>>q
+ANY/m+KEY石/ANY->ANY>>q
+ANY/m+KEY时/ANY->ANY>>q
+ANY/m+KEY市尺/ANY->ANY>>q
+ANY/m+KEY市斤/ANY->ANY>>q
+ANY/m+KEY手/ANY->ANY>>q
+ANY/m+KEY首/ANY->ANY>>q
+ANY/m+KEY书架/ANY->ANY>>q
+ANY/m+KEY束/ANY->ANY>>q
+ANY/m+KEY树/ANY->ANY>>q
+ANY/m+KEY双/ANY->ANY>>q
+ANY/m+KEY丝/ANY->ANY>>q
+ANY/m+KEY丝米/ANY->ANY>>q
+ANY/m+KEY宋/ANY->ANY>>q
+ANY/m+KEY艘/ANY->ANY>>q
+ANY/m+KEY岁/ANY->ANY>>q
+ANY/m+KEY所/ANY->ANY>>q
+ANY/m+KEY胎/ANY->ANY>>q
+ANY/m+KEY台/ANY->ANY>>q
+ANY/m+KEY台次/ANY->ANY>>q
+ANY/m+KEY抬/ANY->ANY>>q
+ANY/m+KEY摊/ANY->ANY>>q
+ANY/m+KEY坛/ANY->ANY>>q
+ANY/m+KEY堂/ANY->ANY>>q
+ANY/m+KEY趟/ANY->ANY>>q
+ANY/m+KEY套/ANY->ANY>>q
+ANY/m+KEY天/ANY->ANY>>q
+ANY/m+KEY天天/ANY->ANY>>q
+ANY/m+KEY挑/ANY->ANY>>q
+ANY/m+KEY条/ANY->ANY>>q
+ANY/m+KEY条条/ANY->ANY>>q
+ANY/m+KEY帖/ANY->ANY>>q
+ANY/m+KEY贴/ANY->ANY>>q
+ANY/m+KEY停/ANY->ANY>>q
+ANY/m+KEY挺/ANY->ANY>>q
+ANY/m+KEY通/ANY->ANY>>q
+ANY/m+KEY桶/ANY->ANY>>q
+ANY/m+KEY头/ANY->ANY>>q
+ANY/m+KEY头头/ANY->ANY>>q
+ANY/m+KEY团/ANY->ANY>>q
+ANY/m+KEY团团/ANY->ANY>>q
+ANY/m+KEY托/ANY->ANY>>q
+ANY/m+KEY拖拉机/ANY->ANY>>q
+ANY/m+KEY瓦/ANY->ANY>>q
+ANY/m+KEY瓦特/ANY->ANY>>q
+ANY/m+KEY弯/ANY->ANY>>q
+ANY/m+KEY丸/ANY->ANY>>q
+ANY/m+KEY碗/ANY->ANY>>q
+ANY/m+KEY万顷/ANY->ANY>>q
+ANY/m+KEY汪/ANY->ANY>>q
+ANY/m+KEY微米/ANY->ANY>>q
+ANY/m+KEY微秒/ANY->ANY>>q
+ANY/m+KEY围/ANY->ANY>>q
+ANY/m+KEY维/ANY->ANY>>q
+ANY/m+KEY尾/ANY->ANY>>q
+ANY/m+KEY位/ANY->ANY>>q
+ANY/m+KEY味/ANY->ANY>>q
+ANY/m+KEY文/ANY->ANY>>q
+ANY/m+KEY窝/ANY->ANY>>q
+ANY/m+KEY席/ANY->ANY>>q
+ANY/m+KEY袭/ANY->ANY>>q
+ANY/m+KEY系列/ANY->ANY>>q
+ANY/m+KEY下/ANY->ANY>>q
+ANY/m+KEY先令/ANY->ANY>>q
+ANY/m+KEY乡/ANY->ANY>>q
+ANY/m+KEY乡乡/ANY->ANY>>q
+ANY/m+KEY箱/ANY->ANY>>q
+ANY/m+KEY响/ANY->ANY>>q
+ANY/m+KEY项/ANY->ANY>>q
+ANY/m+KEY些/ANY->ANY>>q
+ANY/m+KEY心/ANY->ANY>>q
+ANY/m+KEY芯/ANY->ANY>>q
+ANY/m+KEY星星/ANY->ANY>>q
+ANY/m+KEY宿/ANY->ANY>>q
+ANY/m+KEY旬/ANY->ANY>>q
+ANY/m+KEY寻/ANY->ANY>>q
+ANY/m+KEY巡/ANY->ANY>>q
+ANY/m+KEY眼/ANY->ANY>>q
+ANY/m+KEY样/ANY->ANY>>q
+ANY/m+KEY样样/ANY->ANY>>q
+ANY/m+KEY叶/ANY->ANY>>q
+ANY/m+KEY页/ANY->ANY>>q
+ANY/m+KEY夜/ANY->ANY>>q
+ANY/m+KEY引/ANY->ANY>>q
+ANY/m+KEY英镑/ANY->ANY>>q
+ANY/m+KEY英尺/ANY->ANY>>q
+ANY/m+KEY英寸/ANY->ANY>>q
+ANY/m+KEY英里/ANY->ANY>>q
+ANY/m+KEY英两/ANY->ANY>>q
+ANY/m+KEY英亩/ANY->ANY>>q
+ANY/m+KEY羽/ANY->ANY>>q
+ANY/m+KEY元/ANY->ANY>>q
+ANY/m+KEY员/ANY->ANY>>q
+ANY/m+KEY圆/ANY->ANY>>q
+ANY/m+KEY月/ANY->ANY>>q
+ANY/m+KEY匝/ANY->ANY>>q
+ANY/m+KEY载/ANY->ANY>>q
+ANY/m+KEY遭/ANY->ANY>>q
+ANY/m+KEY则/ANY->ANY>>q
+ANY/m+KEY札/ANY->ANY>>q
+ANY/m+KEY盏/ANY->ANY>>q
+ANY/m+KEY站/ANY->ANY>>q
+ANY/m+KEY张/ANY->ANY>>q
+ANY/m+KEY章/ANY->ANY>>q
+ANY/m+KEY丈/ANY->ANY>>q
+ANY/m+KEY帐/ANY->ANY>>q
+ANY/m+KEY兆赫/ANY->ANY>>q
+ANY/m+KEY兆瓦/ANY->ANY>>q
+ANY/m+KEY折/ANY->ANY>>q
+ANY/m+KEY着/ANY->ANY>>q
+ANY/m+KEY帧/ANY->ANY>>q
+ANY/m+KEY阵/ANY->ANY>>q
+ANY/m+KEY阵阵/ANY->ANY>>q
+ANY/m+KEY阵子/ANY->ANY>>q
+ANY/m+KEY支/ANY->ANY>>q
+ANY/m+KEY只/ANY->ANY>>q
+ANY/m+KEY只只/ANY->ANY>>q
+ANY/m+KEY枝/ANY->ANY>>q
+ANY/m+KEY纸/ANY->ANY>>q
+ANY/m+KEY种/ANY->ANY>>q
+ANY/m+KEY种种/ANY->ANY>>q
+ANY/m+KEY重/ANY->ANY>>q
+ANY/m+KEY周/ANY->ANY>>q
+ANY/m+KEY周年/ANY->ANY>>q
+ANY/m+KEY周岁/ANY->ANY>>q
+ANY/m+KEY轴/ANY->ANY>>q
+ANY/m+KEY昼夜/ANY->ANY>>q
+ANY/m+KEY株/ANY->ANY>>q
+ANY/m+KEY柱/ANY->ANY>>q
+ANY/m+KEY转/ANY->ANY>>q
+ANY/m+KEY桩/ANY->ANY>>q
+ANY/m+KEY幢/ANY->ANY>>q
+ANY/m+KEY桌/ANY->ANY>>q
+ANY/m+KEY子/ANY->ANY>>q
+ANY/m+KEY宗/ANY->ANY>>q
+ANY/m+KEY组/ANY->ANY>>q
+ANY/m+KEY组组/ANY->ANY>>q
+ANY/m+KEY尊/ANY->ANY>>q
+ANY/m+KEY座/ANY->ANY>>q
+
+//
+KEY应用/n+端/n->[应用/n 端/n]MERGE[应用端/n]
+KEY自/n+媒体/n->[自/n 媒体/n]MERGE[自媒体/n]
+KEY同量/d+级/n->[同量/d 级/n]MERGE[同量级/n]
+KEY于微博/ANY->[于微博/ANY]MERGE[于/p 微博/n]
+KEY跨/v+国/n+企业/n->[跨/v 国/n 企业/n]MERGE[跨国企业/n]
+KEY二/m+次/q+元/ns->[二/m 次/q 元/ns]MERGE[二次元/n]
+KEY因/p+此/r->[因/p 此/r]MERGE[因此/c]
+KEY信用/n+分/ANY->[信用/n 分/ANY]MERGE[信用分/n]
+
+// KEY对/p~来/u+说/v->[来/u 说/v]MERGE[来说/u]
+对/p~KEY来/u+说/v->[来/u 说/v]MERGE[来说/v]
+
+KEY学习/n+成绩/n->[学习/n 成绩/n]MERGE[学习成绩/n]
+KEY摸/v+金/ANY->[摸/v 金/ANY]MERGE[摸金/v]
+KEY烂/b+片/n->[烂/b 片/n]MERGE[烂片/n]
+KEY孤单/ANY+感/ANY->[孤单/ANY 感/ANY]MERGE[孤单感/n]
+KEY致辞/v+会/n->[致辞/v 会/n]MERGE[致辞会/n]
+KEY载客/n+量/n->[载客/n 量/n]MERGE[载客量/n]
+KEY飞/v+控/v->[飞/v 控/v]MERGE[飞控/n]
+KEY副/b+驾驶/n->[副/b 驾驶/n]MERGE[副驾驶/n]
+KEY中国/ns+人/n->[中国/ns 人/n]MERGE[中国人/n]
+KEY下/ANY+一个/d->[下/ANY 一个/d]MERGE[下一个/n]
+KEY人工/ANY+智能/n->[人工/ANY 智能/n]MERGE[人工智能/n]
+KEY分/v+为/ANY->[分/v 为/ANY]MERGE[分为/v]
+KEY钱/n+包/v->[钱/n 包/v]MERGE[钱包/n]
+KEY贴/ANY+上/v->[贴/ANY 上/v]MERGE[贴上/v]
+KEY再造/v+力/n->[再造/v 力/n]MERGE[再造力/n]
+KEY占/v+比/ANY->[占/v 比/ANY]MERGE[占比/n]
+KEY创/v+新/ANY->[创/v 新/ANY]MERGE[创新/vn]
+KEY再/d+创新/ANY->[再/d 创新/ANY]MERGE[再创新/n]
+KEY中/f+关村/ns->[中/f 关村/ns]MERGE[中关村/ns]
+KEY一/ANY+带/ANY+一/ANY+路/ANY->[一/ANY 带/ANY 一/ANY 路/ANY]MERGE[一带一路/j]
+KEY两/ANY+廊/ANY+一/ANY+圈/ANY->[两/ANY 廊/ANY 一/ANY 圈/ANY]MERGE[两廊一圈/j]
+KEY前/f+不久/ANY->[前/f+不久/ANY]MERGE[前不久/t]
+KEY分享/ANY+会上/ANY->[分享/ANY 会上/ANY]MERGE[分享/v 会/n 上/f]
+KEY上/r+世纪/n->[上/r 世纪/n]MERGE[上世纪/t]
+KEY访/ANY+港/ANY+旅客/n->[访/ANY 港/ANY 旅客/n]MERGE[访港旅客/n]
+KEY大数/ANY+据/ANY->[大数/ANY 据/ANY]MERGE[大数据/n]
+
+// *** 针对"新/b 品呢/n"，增加
+KEY品呢/ANY->[品呢/ANY]MERGE[品/n 呢/y]
+
+// 针对“的/u 体验/vn 会当/n 中/f”，增加以下
+KEY体验/ANY+会当/n+中/f->[体验/ANY 会当/n 中/f]MERGE[体验/vn 会/n 当中/f]
+
+KEY召开的/ANY->[召开的/ANY]MERGE[召开/v 的/u]
+KEY占/v+比的/n->[占/v 比的/n]MERGE[占/v 比/n 的/u]
+
+// 留意“KEY比的/n+ANY/v->[比的/n ANY/v]MERGE[比/v 的/u ANY/v]”的结果可能有问题！
+KEY比的/n+ANY/v->[比的/n]MERGE[比/v 的/u]
+
+// 针对“天/n 猫了/n”，增加
+KEY猫了/n+EOS->[猫了/n]MERGE[猫/n 了/y]
+
+的/u+KEYANY/v+ANY/n->v>>vn
+KEY所/ANY+示/v->q>>u
+KEY所/ANY+示/vn->q>>u
+KEY所/ANY+示/vd->q>>u
+ANY/v+KEY为/ANY->ANY>>v
+KEY空气质量/ANY->ANY>>n
+KEY钛合金/ANY->ANY>>n
+//KEY由于/ANY->ANY>>c
+双/m+KEY发/ANY+EOS->ANY>>v
+
+//*** 对"让/v 相机/n 的/u 成片/d 率/v 比较/d"，增加以下
+的/ANY+ANY/d+KEY率/v->v>>vn
+KEY率/v+ANY/d->v>>vn
+
+// 针对“还/d 得/v 忍受/v”，增加
+KEY得/ANY+ANY/v->ANY>>u
+KEY得/ANY+ANY/d->ANY>>u
+KEY得/ANY+ANY/a->ANY>>u
+
+// 针对“会/v 为/p 每/r”、“会/v 为/v 我们/r”，增加
+会/v+KEY为/p+ANY/r->p正确
+会/v+KEY为/v+ANY/r->v>>p
+
+的/ANY+KEYANY/a+ANY/v->a正确
+ANY/m+KEY转/v+ANY/m->v正确
+
+// 针对“可以/v 有效/a 的/u 进入/v 相册/n”，“的”是错别字，增加
+ANY/a+的/u+KEYANY/v->v正确
+
+// 针对“外观/n 独特/a 是/v”，增加
+ANY/n+KEY独特/a->a正确
+
+//ANY/m+KEY人/ANY->ANY>>q
+//ANY/m+KEY线/ANY->ANY>>q
+//ANY/m+KEY招/ANY->ANY>>q
+
+// KEY为/v~服务/ANY->v>>p
+//云/ns 计算/v 、/w 大/b 数据/n 、/w 区块/n 链/n 、/w 人工智能/n 为/v 代表/n 的/u 新/b 科技/n 正/d 深刻/d 改变/v 着/u 传统/b 金融/n 的/u 商业/n 模式/n 和/c 服务/n 行为/n
+KEY为/v+服务/ANY->v>>p
+
+// 的/ANY+KEY高/ANY+ANY/v->ANY>>n
+的/ANY+KEY高/a+ANY/v->a>>n
+
+KEY少不了/d->[少不了/d]MERGE[少/a 不/d 了/u]
+
+//***针对“是/v 为/p”，增加
+是/v+KEY为/p->p正确
+
+对/ANY~KEY而言/f->f>>u
+// 对于/ANY~KEY而言/f->f>>u
+对于/ANY~KEY而言/f->f>>v
+
+//ANY/m+KEY和/ANY->ANY>>q
+// 反例“赠送/v GAMING/nx 游戏/n 鼠标垫/n 一个/m 和/c GAMING/nx 棒球帽/n 一个/m”
+
+//*** 针对“老百姓/n 三十/m 开/v 电视/n”，增加
+ANY/m+KEY开/v->v正确
+//*** 针对“听/v 声图/n 热闹/a”，增加
+KEY声图/n+ANY/a->[声图/n]MERGE[声/n 图/v]
+
+//*** 针对“两千/m 多/d 来/v 块/q 钱/n”
+ANY/m+多/d+KEY来/v->v>>m
+ANY/m+KEY来/v->v>>m
+
+KEY鲛鲨/v->v>>n
+
+的/ANY+KEY把/P+控/n->[把/P 控/n]MERGE[把控/vn]
+KEY把/P+控/n+能力/n->[把/P 控/n 能力/n]MERGE[把控/vn 能力/n]
+KEY使/v+用时/v->[使/v 用时/v]MERGE[使用/v 时/n]
+ANY/d+KEY应/v+对/p->[应/v 对/p]MERGE[应对/v]
+ANY/v+KEY应/v+对/p->[应/v 对/p]MERGE[应对/v]
+
+// 有问题: 的/u+KEYANY/v+ANY/n->v>>vn
+的/u+KEY是/v+ANY/n->v正确
+的/u+KEY是/v->v正确
+
+// 那/d 可是/d 4000/m 块/q 啊/y
+KEY那/d+可是/d+ANY/m->[那/d 可是/d]MERGE[那/r 可/d 是/v]
+KEY那/d+可是/d+ANY/n->[那/d 可是/d]MERGE[那/r 可/d 是/v]
+
+// 甚至/d 大部分/m 交易网/n 站/v 的/u 服务器/n 都/d 在/v 国外/n
+KEY交易网/n+站/v->[交易网/n 站/v]MERGE[交易/vn 网站/n]
+
+KEY想惩奸/v->[想惩奸/v]MERGE[想/v 惩奸/v]
+KEY超/v+快/a->v>>d
+KEY有话/v+费/v->[有话/v 费/v]MERGE[有/v 话费/n]
+KEY方便/n+的/u->n>>a
+KEY大/d+有所/v+在/p->[大/d 有所/v 在/p]MERGE[大有所在/v]
+KEY宽和/b->[宽和/b]MERGE[宽/a 和/c]
+KEY高显/n+存/v->[高显/n 存/v]MERGE[高/a 显存/n]
+KEY键以及/d->[键以及/d]MERGE[键/n 以及/c]
+有/v+KEY需要/n->n>>vn
+KEY中/ns+上部/n->[中/ns 上部/n]MERGE[中上部/n]
+
+// 各种/n 身材/n 的/u 会选/n 不同/a 款式/n 的/u 服装/n
+KEY会选/n->[会选/n]MERGE[会/v 选/v]
+
+KEY比公版/n->[比公版/n]MERGE[比/p 公版/n]
+
+// 我/r 会/v 认为/v 它/r 的/u 定价/n 会/v 有/v 些/q 高/a
+KEY有/v+些/q+ANY/a->[有/v 些/q]MERGE[有些/d]
+KEY有/v+些/q+ANY/n->[有/v 些/q]MERGE[有些/m]
+
+KEY可穿/d+戴/v->[可穿/d 戴/v]MERGE[可/v 穿戴/v]
+依然/d+KEYANY/n->n>>a
+KEY出/q+行话/n->[出/q 行话/n]MERGE[出行/v 话/n]
+KEY不/d+必/v+ANY/v->[不/d 必/v]MERGE[不必/d]
+KEY开/v+机键/n->[开/v 机键/n]MERGE[开机/v 键/n]
+KEY抢/v+购价/n->[抢/v 购价/n]MERGE[抢购/v 价/n]
+KEY贴/v+合/v->[贴/v 合/v]MERGE[贴合/v]
+KEY重/b+启键/n->[重/b 启键/n]MERGE[重启/v 键/n]
+KEY情况下/n->[情况下/n]MERGE[情况/n 下/f]
+是/v+KEY其四/n+核/n+极/d+速/d->[其四/n 核/n 极/d 速/d]MERGE[其/r 四核/n 极速/a]
+KEY而迪士尼/ns->[而迪士尼/ns]MERGE[而/c 迪士尼/ns]
+KEY内/n+存均/n->[内/n 存均/n]MERGE[内存/n 均/d]
+KEY把/P+控/v->[把/P 控/v]MERGE[把控/v]
+标准/n+KEY高度/d->d>>n
+KEY基础上/n->[基础上/n]MERGE[基础/n 上/f]
+KEY对/p+决/n->[对/p 决/n]MERGE[对决/vn]
+KEY低/b+价外/n->[低/b 价外/n]MERGE[低价/n 外/f]
+KEY型/n+号为/v->[型/n 号为/v]MERGE[型号/n 为/v]
+KEY保持/n+ANY/n->n>>v
+KEY保障/n+ANY/n->n>>v
+KEY时必/d+然/v->[时必/d 然/v]MERGE[时/n 必然/d]
+
+KEY一/m+款型/n+号为/v->[一/m 款型/n 号为/v]MERGE[一/m 款/q 型号/n 为/v]
+KEY提/v+出/v->[提/v 出/v]MERGE[提出/v]
+KEY会议上/n->[会议上/n]MERGE[会议/n 上/f]
+KEY反间谍/n->[反间谍/n]MERGE[反/v 间谍/n]
+KEY骨干力量/d->d>>n
+反/v+KEY恐/d->d>>n
+KEY被/p+诈骗案/n->[被/p 诈骗案/n]MERGE[被/p 诈骗/v 案/n]
+KEY京/ns+津冀/n->[京/ns 津冀/n]MERGE[京津冀/j]
+过/v+KEY好/b+ANY/n->b>>a
+KEY实/n+刑/ns->[实/n 刑/ns]MERGE[实刑/b]
+KEY一/m+线/q+ANY/v->[一/m 线/q]MERGE[一线/b]
+KEY一/m+线/q+ANY/n->[一/m 线/q]MERGE[一线/b]
+KEY使/v+用权/n->[使/v 用权/n]MERGE[使用/v 权/n]
+ANY/m+ANY/n+KEY外行/n+为/v->[外行/n 为/v]MERGE[外/f 行为/n]
+KEY各省/ns+级/n->[各省/ns 级/n]MERGE[各/r 省级/n]
+KEY全/r+覆盖/n->[全/r 覆盖/n]MERGE[全/d 覆盖/v]
+KEY微/d+博微/v+信/n->[微/d 博微/v 信/n]MERGE[微博/n 微信/n]
+KEY全/r+过程/n->r>>a
+KEY主要矛盾/n->[主要矛盾/n]MERGE[主要/a 矛盾/n]
+KEY保障人民/v->[保障人民/v]MERGE[保障/v 人民/n]
+KEY科技/n+创/v+新和/b->[科技/n 创/v 新和/b]MERGE[科技/n 创新/v 和/c]
+KEY行政诉讼/v->v>>n
+KEY刑事诉讼/v->v>>n
+KEY援/v+藏/v->[援/v 藏/v]MERGE[援/v 藏/ns]
+
+// ANY/m+KEY两/ANY->ANY>>q
+//例子：一/m 两/m 秒/q 钟/n 的/u
+ANY/m+KEY两/m->m正确
+
+// KEY只/d+有/v->[只/d 有/v]MERGE[只有/v]
+KEY只/d+有/v+ANY/m->d正确
+KEY只/d+有/v+ANY/v->[只/d 有/v]MERGE[只有/c]
+BOS+KEY只/d+有/v->[只/d 有/v]MERGE[只有/c]
+BOS+ANY/d+KEY只/d+有/v->[只/d 有/v]MERGE[只有/c]
+
+KEY可/v+为/p->p正确
+KEY可以/v+为/p->p正确
+KEY能/v+为/p->p正确
+KEY能够/v+为/p->p正确
