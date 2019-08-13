@@ -1,0 +1,60 @@
+﻿// 个人
+ANY/m+KEY个人/ANY->[个人/ANY]MERGE[个/q 人/n]
+整/b+KEY个人/ANY->[个人/ANY]MERGE[个/q 人/n]
+换/b+KEY个人/ANY->[个人/ANY]MERGE[个/q 人/n]
+夺得/v+KEY个人/ANY->[个人/ANY]MERGE[个/q 人/n]
+ANY/nr+KEY个人/ANY->[个人/ANY]MERGE[个/q 人/n]
+KEY个/q+人/n+2ANY/n->[个/q 人/n]MERGE[个人/n]
+这/r+KEY个人/n->[个人/n]MERGE[个/q 人/n]
+你/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+我/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+他/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+她/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+你们/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+我们/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+他们/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+她们/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+任何/ANY+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+哪些/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+什么/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+这些/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+那些/r+KEY个/q+人/n->[个/q 人/n]MERGE[个人/n]
+
+// 人手
+KEY人/n+手/n+一个/m->[人/n 手/n]MERGE[人手/n]
+KEY人/n+手/n+2ANY/a->[人/n 手/n]MERGE[人手/n]
+KEY人/n+手/n+2ANY/ad->[人/n 手/n]MERGE[人手/n]
+KEY人手/n+持/v->[人手/n]MERGE[人/n 手/n]
+ANY/m+KEY人手/n->[人手/n]MERGE[人/n 手/n]
+ANY/m+ANY/q+KEY人手/n->[人手/n]MERGE[人/n 手/n]
+KEY人手/n+的/ANY->[人手/n]MERGE[人/n 手/n]
+KEY人/n+手/n+一/ANY->[人/n 手/n][人手/n]
+
+// 人为
+KEY人/ANY+为/ANY+因素/ANY->[人/ANY 为/ANY]MERGE[人为/d]
+KEY人/ANY+为/ANY+限制/ANY->[人/ANY 为/ANY]MERGE[人为/d]
+KEY人/ANY+为/ANY+影响/ANY->[人/ANY 为/ANY]MERGE[人为/d]
+KEY人/ANY+为/ANY+活动/ANY->[人/ANY 为/ANY]MERGE[人为/d]
+KEY人/ANY+为/ANY+ANY/v->[人/ANY 为/ANY]MERGE[人为/d]
+ANY/d+KEY人/ANY+为/ANY->[人/ANY 为/ANY]MERGE[人为/d]
+KEY人/ANY+为/ANY+ANY/vn->[人/ANY 为/ANY]MERGE[人为/d]
+债券/ANY+KEY人为/ANY->[人为/ANY]MERGE[人/n 为/v]
+代表/ANY+KEY人为/ANY->[人为/ANY]MERGE[人/n 为/v]
+权/ANY+KEY人为/ANY->[人为/ANY]MERGE[人/n 为/v]
+文化/n+KEY人为/ANY->[人为/ANY]MERGE[人/n 为/v]
+控制/v+KEY人为/ANY->[人为/ANY]MERGE[人/n 为/v]
+牵头/vi+KEY人为/ANY->[人为/ANY]MERGE[人/n 为/v]
+实/ad+控/v+KEY人为/ANY->[人为/ANY]MERGE[人/n 为/v]
+
+// 将要
+KEY将要/ANY+ANY/n->[将要/ANY]MERGE[将/d 要/v]
+KEY将要/ANY+ANY/Ng->[将要/ANY]MERGE[将/d 要/v]
+KEY将要/ANY+ANY/nr->[将要/ANY]MERGE[将/d 要/v]
+KEY将要/ANY+ANY/ns->[将要/ANY]MERGE[将/d 要/v]
+KEY将要/ANY+ANY/nt->[将要/ANY]MERGE[将/d 要/v]
+KEY将要/ANY+ANY/nz->[将要/ANY]MERGE[将/d 要/v]
+
+// 就是
+BOS+KEY就/ANY+是/ANY->[就/ANY 是/ANY]MERGE[就是/d]
+
+// 附加赛
