@@ -1,22 +1,20 @@
-﻿3
-<original_sent>“/w 在/p 当前/t 贸易/vn 保护主义/n 抬头/v 背景/n 下/f ，/w 俄方/n 希望/v 与/p 中方/n 共同/d 应/v 对/p 风险/n ，/w 化/v 消极/a 因素/n 为/p 机遇/n ，/w 寻找/v 俄/b 中/b 贸易/vn 的/u 新/a 增长点/n ”/w ，/w 俄罗斯/ns 工业/n 和/c 贸易/vn 部长/n 丹尼斯·曼图罗/nr 夫/Ng 日前/t 在/p 接受/v 新华社记者/n 专访/vn 时/Ng 说/v 。/w
+﻿4
+<original_sent>曼图/ns 罗夫/ns 表示/v ，/w 中国/ns 一直/d 是/v 俄/ns 重要/a 的/u 战略/n 协作/n 伙伴/n 。/w 当前/t 俄中/ns 关系/n 保持/v 快速/b 发展/n ，/w 双方/r 不断/d 在/p 贸易/n 和/c 工业/n 领域/n 寻找/v 新/a 的/u 合作/n 点/n 。/w 据/p 他/r 介绍/v ，/w 今年/t 1月/t 至/c 7月/t ，/w 俄/ns 中/ns 双边/b 贸易额/n 同比/n 增长/v 超/v 25%/m ，/w 达/v 近/d 600亿/m 美元/q 。/w
 </original_sent>
-<modified_sent>“/w 在/p 当前/t 贸易/vn 保护主义/n 抬头/v 背景/n 下/f ，/w 俄方/n 希望/v 与/p 中方/n 共同/d 应对/v 风险/n ，/w 化/v 消极/a 因素/n 为/p 机遇/n ，/w 寻找/v 俄/b 中/b 贸易/vn 的/u 新/a 增长点/n ”/w ，/w 俄罗斯/ns 工业/n 和/c 贸易/vn 部长/n 丹尼斯·曼图罗/nr 夫/Ng 日前/t 在/p 接受/v 新华社记者/n 专访/vn 时/Ng 说/v 。/w
+<modified_sent>曼图/ns 罗夫/ns 表示/v ，/w 中国/ns 一直/d 是/v 俄/ns 重要/a 的/u 战略/n 协作/n 伙伴/n 。/w 当前/t 俄/b 中/b 关系/n 保持/v 快速/b 发展/n ，/w 双方/r 不断/d 在/p 贸易/n 和/c 工业/n 领域/n 寻找/v 新/a 的/u 合作/n 点/n 。/w 据/p 他/r 介绍/v ，/w 今年/t 1月/t 至/c 7月/t ，/w 俄/ns 中/ns 双边/b 贸易额/n 同比/n 增长/v 超/v 25%/m ，/w 达/v 近/d 600亿/m 美元/q 。/w
 </modified_sent>
 <pos_modification>
-	<result>[应/v 对/p]改为[应对/v]</result>
-	<pattern>ANY/d+KEY应/v+对/p->[应/v 对/p]MERGE[应对/v]</pattern>
+	<result>[俄中/ns]改为[俄/b 中/b]</result>
+	<pattern>KEY俄中/ANY->[俄中/ANY]MERGE[俄/b 中/b]</pattern>
 </pos_modification>
 
-7
-<original_sent>曼图罗夫/nr 说/v ，/w 俄/b 工业/n 和/c 贸易/vn 部/n 在/p 本届/r 论坛/n 上/f 与/p 俄/b 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 一/m 家/q 矿业/n 公司/n 负责人/n 进行/v 磋商/vn ，/w 以/p 落实/v 中方/n 企业/n 持有/v 该/r 公司/n 股份/n 的/u 相关/vn 事宜/n 。/w 根据/p 相关/vn 协议/n ，/w 俄/b 中/b 企业/n 将/d 在/p 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 金矿/n 区/n 联合/vd 勘探/v 。/w 据/p 俄方/n 估算/vn ，/w 这/r 一/m 俄/b 中/b 合作/vn 项目/n 有望/v 年产/v 黄金/n 约/d 6.5/m 吨/q ，/w 在/p 2020年/t 前/f 使/v 该/r 边疆/s 区/n 贵金属/n 开采/vn 量/n 比/p 目前/t 增加/v 约/d 40%/m ，/w 从而/c 有力/ad 促进/v 当地/s 经济/n 发展/vn 。/w
+5
+<original_sent>曼图/ns 罗夫/ns 说/v ，/w 俄/ns 中/ns 两/m 国/n 正在/d 飞机/n 轮船/n 和/c 其他/r 交通/n 工具/n 制造/v 、/w 无线电/n 设备/n 研发/n 、/w 制药/n 和/c 化工/n 等/u 工业/n 领域/n 开展/v 合作/n 。/w 俄中/n 投资/n 基金/n 支持/v 了/u 两/m 国/n 众多/b 开发/n 项目/n ，/w 投资/n 方对/n 该/v 基金/n 继续/v 注资/v 的/u 兴趣/n 十分/d 浓厚/a 。/w
 </original_sent>
-<modified_sent>曼图罗夫/nr 说/v ，/w 俄/b 工业/n 和/c 贸易/vn 部/n 在/p 本届/r 论坛/n 上/f 与/p 俄/b 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 一/m 家/q 矿业/n 公司/n 负责人/n 进行/v 磋商/v ，/w 以/p 落实/v 中方/n 企业/n 持有/v 该/r 公司/n 股份/n 的/u 相关/b 事宜/n 。/w 根据/p 相关/vn 协议/n ，/w 俄/b 中/b 企业/n 将/d 在/p 外/f 贝/Ng 加/v 尔/r 边疆/s 区/n 的/u 金矿/n 区/n 联合/vd 勘探/v 。/w 据/p 俄方/n 估算/vn ，/w 这/r 一/m 俄/b 中/b 合作/vn 项目/n 有望/v 年产/v 黄金/n 约/d 6.5/m 吨/q ，/w 在/p 2020年/t 前/f 使/v 该/r 边疆/s 区/n 贵金属/n 开采/vn 量/n 比/p 目前/t 增加/v 约/d 40%/m ，/w 从而/c 有力/ad 促进/v 当地/s 经济/n 发展/vn 。/w
+<modified_sent>曼图/ns 罗夫/ns 说/v ，/w 俄/ns 中/ns 两/m 国/n 正在/d 飞机/n 轮船/n 和/c 其他/r 交通/n 工具/n 制造/v 、/w 无线电/n 设备/n 研发/n 、/w 制药/n 和/c 化工/n 等/u 工业/n 领域/n 开展/v 合作/n 。/w 俄/b 中/b 投资/n 基金/n 支持/v 了/u 两/m 国/n 众多/b 开发/n 项目/n ，/w 投资/n 方对/n 该/v 基金/n 继续/v 注资/v 的/u 兴趣/n 十分/d 浓厚/a 。/w
 </modified_sent>
 <pos_modification>
-	<result>[相关/vn]改为[相关/b]</result>
-	<pattern>KEY相关/ANY+ANY/n->ANY>>b</pattern>
-	<result>[磋商/vn]改为[磋商/v]</result>
-	<pattern>进行/v+KEYANY/vn->vn>>v</pattern>
+	<result>[俄中/n]改为[俄/b 中/b]</result>
+	<pattern>KEY俄中/ANY->[俄中/ANY]MERGE[俄/b 中/b]</pattern>
 </pos_modification>
 

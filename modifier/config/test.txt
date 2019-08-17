@@ -1,0 +1,4 @@
+﻿KEY轻量化/ANY->[轻量化/ANY]MERGE[轻量/b 化/k]
+KEY轻/ANY+量化/ANY->[轻/ANY 量化/ANY]MERGE[轻量/b 化/k]
+KEY轻量/ANY+化/ANY->ANY>>b
+轻量/ANY+KEY化/ANY->ANY>>k

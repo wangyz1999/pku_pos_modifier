@@ -1,0 +1,72 @@
+﻿1
+<original_sent>这是/a 一个/m 轻量/e 化/t 的/u 什么/n 东西/n
+</original_sent>
+<modified_sent>这是/a 一个/m 轻量/b 化/k 的/u 什么/n 东西/n
+</modified_sent>
+<pos_modification>
+	<result>[轻量/e]改为[轻量/b]</result>
+	<pattern>KEY轻量/ANY+化/ANY->ANY>>b</pattern>
+	<result>[化/t]改为[化/k]</result>
+	<pattern>轻量/ANY+KEY化/ANY->ANY>>k</pattern>
+</pos_modification>
+
+2
+<original_sent>这是/a 一个/m 轻量/b 化/t 的/u 什么/n 东西/n
+</original_sent>
+<modified_sent>这是/a 一个/m 轻量/b 化/k 的/u 什么/n 东西/n
+</modified_sent>
+<pos_modification>
+	<result>[化/t]改为[化/k]</result>
+	<pattern>轻量/ANY+KEY化/ANY->ANY>>k</pattern>
+</pos_modification>
+
+3
+<original_sent>这是/a 一个/m 轻量/e 化/k 的/u 什么/n 东西/n
+</original_sent>
+<modified_sent>这是/a 一个/m 轻量/b 化/k 的/u 什么/n 东西/n
+</modified_sent>
+<pos_modification>
+	<result>[轻量/e]改为[轻量/b]</result>
+	<pattern>KEY轻量/ANY+化/ANY->ANY>>b</pattern>
+</pos_modification>
+
+5
+<original_sent>这是/a 一个/m 轻量化/t 的/u 什么/n 东西/n
+</original_sent>
+<modified_sent>这是/a 一个/m 轻量/b 化/k 的/u 什么/n 东西/n
+</modified_sent>
+<pos_modification>
+	<result>[轻量化/t]改为[轻量/b 化/k]</result>
+	<pattern>KEY轻量化/ANY->[轻量化/ANY]MERGE[轻量/b 化/k]</pattern>
+</pos_modification>
+
+6
+<original_sent>这是/a 一个/m 轻/b 量化/t 的/u 什么/n 东西/n
+</original_sent>
+<modified_sent>这是/a 一个/m 轻量/b 化/k 的/u 什么/n 东西/n
+</modified_sent>
+<pos_modification>
+	<result>[轻/b 量化/t]改为[轻量/b 化/k]</result>
+	<pattern>KEY轻/ANY+量化/ANY->[轻/ANY 量化/ANY]MERGE[轻量/b 化/k]</pattern>
+</pos_modification>
+
+7
+<original_sent>这是/a 一个/m 轻/b 量化/k 的/u 什么/n 东西/n
+</original_sent>
+<modified_sent>这是/a 一个/m 轻量/b 化/k 的/u 什么/n 东西/n
+</modified_sent>
+<pos_modification>
+	<result>[轻/b 量化/k]改为[轻量/b 化/k]</result>
+	<pattern>KEY轻/ANY+量化/ANY->[轻/ANY 量化/ANY]MERGE[轻量/b 化/k]</pattern>
+</pos_modification>
+
+8
+<original_sent>这是/a 一个/m 轻/s 量化/k 的/u 什么/n 东西/
+</original_sent>
+<modified_sent>这是/a 一个/m 轻量/b 化/k 的/u 什么/n 东西/n
+</modified_sent>
+<pos_modification>
+	<result>[轻/s 量化/k]改为[轻量/b 化/k]</result>
+	<pattern>KEY轻/ANY+量化/ANY->[轻/ANY 量化/ANY]MERGE[轻量/b 化/k]</pattern>
+</pos_modification>
+

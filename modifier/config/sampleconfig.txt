@@ -14,12 +14,12 @@ KEY制程/ANY->ANY>>n
 KEY水冷/ANY->ANY>>n
 KEY此前/ANY->ANY>>t
 KEY旗下/ANY->ANY>>n
-ANY/d+KEY中/v+ANY/n->v正确
+//ANY/d+KEY中/v+ANY/n->v正确
 KEY还/d+ANY/n->d>>v
 KEY还/d+ANY/nr->d>>v
 KEY还/d+ANY/nz->d>>v
 KEY还/d+ANY/r->d>>v
-ANY/d+KEY热卖/a+的/ANY->a正确
+//ANY/d+KEY热卖/a+的/ANY->a正确
 KEY搭载/vn+n/ANY->vn>>v
 KEY搭载/vn+vn/ANY->vn>>v
 ANY/vn+KEY需要/ANY+ANY/vn->ANY>>v
@@ -38,8 +38,8 @@ KEY采用/vn~设计/vn->vn>>v
 KEY采用/vn~的/ANY->vn>>v
 得以/ANY+KEYANY/vn->vn>>v
 进行/v+KEYANY/vn->vn>>v
-KEY搜索/v+ANY/n->v正确
-KEY搜索/v+ANY/v+的/ANY->v正确
+//KEY搜索/v+ANY/n->v正确
+//KEY搜索/v+ANY/v+的/ANY->v正确
 KEY对外/vn+ANY/vn->vn>>v
 对外/vn+KEYANY/vn->vn>> v
 ANY/m+ANY/q+KEYANY/v+和/ANY+ANY/n->v>>vn
@@ -59,24 +59,24 @@ KEY还/v+ANY/vn->v>>d
 KEY还/v+ANY/b->v>>d
 ANY/u+KEY内建/ANY+ANY/n->ANY>>b
 ANY/nx+KEY内建/ANY->ANY>>b
-KEY不过/v+了/y->v正确
-KEY对/v+了/y->v正确
+//KEY不过/v+了/y->v正确
+//KEY对/v+了/y->v正确
 ANY/v+ANY/d+KEY着/v->v>>u
 ANY/v+ANY/u+KEY着/v->v>>u
-KEY等/u+着/v->u>>v 
+KEY等/u+着/v->u>>v
 等/u+KEY着/v->v>>u
 KEY像/ANY~一样/ANY->ANY>>p
 KEY像/ANY~这样/ANY->ANY>>p
 KEY像/ANY~那样/ANY->ANY>>p
-红/v+KEY遍/v->v正确
+//红/v+KEY遍/v->v正确
 ANY/n+KEY会/n+ANY/v->n>>v
 ANY/vn+KEY会/n+ANY/v->n>>v
 ANY/r+KEY会/n+ANY/v->n>>v
 ANY/a+的/ANY+KEY像/ANY->ANY>>p
-KEY热卖/v+中/f->v正确
+//KEY热卖/v+中/f->v正确
 在/p~KEY热卖/ANY->ANY>>v
-KEY可/d+ANY/d->d正确
-KEY可/d+ANY/p->d正确
+//KEY可/d+ANY/d->d正确
+//KEY可/d+ANY/p->d正确
 ANY/q+KEY像/ANY+ANY/n->ANY>>v
 KEY超大/ANY->ANY>>b
 喜欢/v+KEYANY/v+ANY/c+ANY/v+的/ANY->v>>vn
@@ -104,10 +104,10 @@ KEY相关/ANY+ANY/n->ANY>>b
 KEY相关/ANY+ANY/v->ANY>>b
 KEY相关/v+的/ANY->v>>b
 KEY相关/vn+的/ANY->vn>>b
-ANY/q+KEYANY/a+的/u->a正确
+//ANY/q+KEYANY/a+的/u->a正确
 KEY满足/ANY+ANY/n->ANY>>v
 KEY满足/ANY+ANY/vn->ANY>>v
-ANY/d+KEYANY/a+的/u->a正确
+//ANY/d+KEYANY/a+的/u->a正确
 KEY太/a+ANY/a->a>>d
 KEY成/a+ANY/n->a>>v
 KEY独/a+此/r+一/m+家/q->[独/a_d 此/r 一/m 家/q]MERGE[独此一家/vl]
@@ -132,7 +132,7 @@ KEY纤薄/ANY->ANY>>a
 KEY独立/v+ANY/vn->v>>a
 KEY好/d+评/v+如/v+潮/n->[好/d_a 评/v 如/v 潮/n]MERGE[好评如潮/l]
 KEY一/d+较/v+高下/n->[一/d 较/v 高下/n]MERGE[一较高下/l]
-KEY较/d+ANY/a->d正确
+//KEY较/d+ANY/a->d正确
 KEY较/d~更为/ANY->d>>p
 KEY较/d~更/ANY->d>>p
 KEY想惩奸/n->[想惩奸/n]MERGE[想/v 惩奸/v]
@@ -535,7 +535,7 @@ KEY刚来/ANY->[刚来/ANY]MERGE[刚/d 来/v]
 KEY刚领/ANY->[刚领/ANY]MERGE[刚/d 领/v]
 KEY刚熄/ANY->[刚熄/ANY]MERGE[刚/d 熄/v]
 KEY更加萌/ANY->[更加萌/ANY]MERGE[更加/d 萌/a]
-KEY贡献出/ANY->[贡献出/ANY]MERGE[贡献/v 出/v]	
+KEY贡献出/ANY->[贡献出/ANY]MERGE[贡献/v 出/v]
 KEY购该/ANY->[购该/ANY]MERGE[购/v 该/r]
 KEY购后/ANY->[购后/ANY]MERGE[购/v 后/f]
 KEY购华硕/ANY->[购华硕/ANY]MERGE[购/v 华硕/nz]
@@ -610,7 +610,7 @@ KEY连接至/ANY->[连接至/ANY]MERGE[连接/v 至/v]
 KEY连续充/ANY->[连续充/ANY]MERGE[连续/d 充/v]
 KEY联想起/ANY->[联想起/ANY]MERGE[联想/v 起/v]
 KEY聊手游/ANY->[聊手游/ANY]MERGE[聊/v 手游/n]
-KEY留空隙/ANY->[留空隙/ANY]MERGE[留/v 空隙/n]	
+KEY留空隙/ANY->[留空隙/ANY]MERGE[留/v 空隙/n]
 KEY旅行用/ANY->[旅行用/ANY]MERGE[旅行/vn 用/v]
 KEY滤蓝光/ANY->[滤蓝光/ANY]MERGE[滤/v 蓝光/n]
 KEY略逊于/ANY->[略逊于/ANY]MERGE[略/d 逊/v 于/p]
@@ -624,7 +624,7 @@ KEY没电/ANY->[没电/ANY]MERGE[没/v 电/n]
 KEY没多久/ANY->[没多久/ANY]MERGE[没/v 多久/r]
 KEY没用过/ANY->[没用过/ANY]MERGE[没/d 用/v 过/u]
 KEY没有钱/ANY->[没有钱/ANY]MERGE[没有/v 钱/n]
-KEY免费贴/ANY->[免费贴/ANY]MERGE[免费/v 贴/v]		
+KEY免费贴/ANY->[免费贴/ANY]MERGE[免费/v 贴/v]
 KEY偶尔聚/ANY->[偶尔聚/ANY]MERGE[偶尔/d 聚/v]
 KEY抛光凸/ANY->[抛光凸/ANY]MERGE[抛光/v 凸/b]
 KEY跑不动/ANY->[跑不动/ANY]MERGE[跑/v 不/d 动/u]
@@ -632,7 +632,7 @@ KEY跑不了/ANY->[跑不了/ANY]MERGE[跑/v 不/d 了/u]
 KEY配备有/ANY->[配备有/ANY]MERGE[配备/v 有/v]
 KEY凭此/ANY->[凭此/ANY]MERGE[凭/p 此/r]
 KEY起作用/ANY->[起作用/ANY]MERGE[起/v 作用/v]
-KEY抢红米/ANY->[抢红米/ANY]MERGE[抢/v 红米/n]	
+KEY抢红米/ANY->[抢红米/ANY]MERGE[抢/v 红米/n]
 KEY区分开/ANY->[区分开/ANY]MERGE[区分/v 开/v]
 KEY取名叫/ANY->[取名叫/ANY]MERGE[取名/v 叫/v]
 KEY辱玩家/ANY->[辱玩家/ANY]MERGE[辱/v 玩家/n]
@@ -650,7 +650,7 @@ KEY售价为/ANY->[售价为/ANY]MERGE[售价/n 为/v]
 KEY输红米/ANY->[输红米/ANY]MERGE[输/v 红米/nz]
 KEY输酷派/ANY->[输酷派/ANY]MERGE[输/v 酷派/nz]
 KEY刷干净/ANY->[刷干净/ANY]MERGE[刷/v 干净/a]
-KEY刷微信/ANY->[刷微信/ANY]MERGE[刷/v 微信/n]		
+KEY刷微信/ANY->[刷微信/ANY]MERGE[刷/v 微信/n]
 KEY淘宝搜/ANY->[淘宝搜/ANY]MERGE[淘宝/nz 搜/v]
 KEY特别是/ANY->[特别是/ANY]MERGE[特别/d 是/v]
 KEY特意搜/ANY->[特意搜/ANY]MERGE[特意/d 搜/v]
@@ -767,8 +767,8 @@ KEY粥黏稠/ANY->[粥黏稠/ANY]MERGE[粥/n 黏稠/a]
 KEY高速/b+飙车/n->b>>d
 高速/b+KEY飙车/n->n>>vn
 KEY执/v+着/u->[执/v 着/u]MERGE[执著/a]
-ANY/v+KEY少/a->a正确
-ANY/v+ANY/d+KEY少/a->a正确
+//ANY/v+KEY少/a->a正确
+//ANY/v+ANY/d+KEY少/a->a正确
 KEY少/a+了/ANY+ANY/a->a>>v
 KEY少/a+了/ANY+ANY/n->a>>v
 KEY少/a+了/ANY+ANY/m->a>>v
@@ -797,13 +797,13 @@ KEY从/p+小/d~熏陶/ANY->[从/p 小/d]MERGE[从小/d]
 KEY从/p+小/d+受到/ANY->[从/p 小/d]MERGE[从小/d]
 KEY从/p+小/d+就/d->[从/p 小/d]MERGE[从小/d]
 KEY不/d+难/a+ANY/v->[不/d 难/a]MERGE[不难/d]
-ANY/v+KEYANY/a+ANY/v->a正确
+//ANY/v+KEYANY/a+ANY/v->a正确
 ANY/d+KEYANY/a+了/u->a>>v
 做/v+ANY/r+KEYANY/v->v>>vn
 KEY重点/n+项目/n->n>>a
 KEY古/a+装扮/v+相/d->[古/a 装扮/v 相/d]MERGE[古装/n 扮相/n]
 KEY古/a+装扮/v+演/v->[古/a 装扮/v 演/v]MERGE[古装/n 扮演/v]
-演技/n+KEYANY/a->a正确
+//演技/n+KEYANY/a->a正确
 KEY摊/ANY+薄/ANY->[摊/ANY 薄/ANY]MERGE[摊薄/v]
 KEY的话/ANY->[的话/ANY]MERGE[的/u 话/n]
 ANY/m+KEY大/a+召开/v->a>>j
@@ -1860,7 +1860,11 @@ KEY占/v+比/ANY->[占/v 比/ANY]MERGE[占比/n]
 KEY创/v+新/ANY->[创/v 新/ANY]MERGE[创新/vn]
 KEY再/d+创新/ANY->[再/d 创新/ANY]MERGE[再创新/n]
 KEY中/f+关村/ns->[中/f 关村/ns]MERGE[中关村/ns]
+
 KEY一/ANY+带/ANY+一/ANY+路/ANY->[一/ANY 带/ANY 一/ANY 路/ANY]MERGE[一带一路/j]
+KEY一/ANY+带/ANY+一路/ANY->[一/ANY 带/ANY 一路/ANY]MERGE[一带一路/j]
+KEY一带/ANY+一路/ANY->[一带/ANY 一路/ANY]MERGE[一带一路/j]
+KEY一带一路/ANY->ANY>>j
 KEY两/ANY+廊/ANY+一/ANY+圈/ANY->[两/ANY 廊/ANY 一/ANY 圈/ANY]MERGE[两廊一圈/j]
 KEY前/f+不久/ANY->[前/f+不久/ANY]MERGE[前不久/t]
 KEY分享/ANY+会上/ANY->[分享/ANY 会上/ANY]MERGE[分享/v 会/n 上/f]
@@ -1903,17 +1907,17 @@ KEY得/ANY+ANY/d->ANY>>u
 KEY得/ANY+ANY/a->ANY>>u
 
 // 针对“会/v 为/p 每/r”、“会/v 为/v 我们/r”，增加
-会/v+KEY为/p+ANY/r->p正确
+//会/v+KEY为/p+ANY/r->p正确
 会/v+KEY为/v+ANY/r->v>>p
 
-的/ANY+KEYANY/a+ANY/v->a正确
-ANY/m+KEY转/v+ANY/m->v正确
+//的/ANY+KEYANY/a+ANY/v->a正确
+//ANY/m+KEY转/v+ANY/m->v正确
 
 // 针对“可以/v 有效/a 的/u 进入/v 相册/n”，“的”是错别字，增加
-ANY/a+的/u+KEYANY/v->v正确
+//ANY/a+的/u+KEYANY/v->v正确
 
 // 针对“外观/n 独特/a 是/v”，增加
-ANY/n+KEY独特/a->a正确
+//ANY/n+KEY独特/a->a正确
 
 //ANY/m+KEY人/ANY->ANY>>q
 //ANY/m+KEY线/ANY->ANY>>q
@@ -1929,7 +1933,7 @@ KEY为/v+服务/ANY->v>>p
 KEY少不了/d->[少不了/d]MERGE[少/a 不/d 了/u]
 
 //***针对“是/v 为/p”，增加
-是/v+KEY为/p->p正确
+//是/v+KEY为/p->p正确
 
 对/ANY~KEY而言/f->f>>u
 // 对于/ANY~KEY而言/f->f>>u
@@ -1939,7 +1943,7 @@ KEY少不了/d->[少不了/d]MERGE[少/a 不/d 了/u]
 // 反例“赠送/v GAMING/nx 游戏/n 鼠标垫/n 一个/m 和/c GAMING/nx 棒球帽/n 一个/m”
 
 //*** 针对“老百姓/n 三十/m 开/v 电视/n”，增加
-ANY/m+KEY开/v->v正确
+//ANY/m+KEY开/v->v正确
 //*** 针对“听/v 声图/n 热闹/a”，增加
 KEY声图/n+ANY/a->[声图/n]MERGE[声/n 图/v]
 
@@ -1956,8 +1960,8 @@ ANY/d+KEY应/v+对/p->[应/v 对/p]MERGE[应对/v]
 ANY/v+KEY应/v+对/p->[应/v 对/p]MERGE[应对/v]
 
 // 有问题: 的/u+KEYANY/v+ANY/n->v>>vn
-的/u+KEY是/v+ANY/n->v正确
-的/u+KEY是/v->v正确
+//的/u+KEY是/v+ANY/n->v正确
+//的/u+KEY是/v->v正确
 
 // 那/d 可是/d 4000/m 块/q 啊/y
 KEY那/d+可是/d+ANY/m->[那/d 可是/d]MERGE[那/r 可/d 是/v]
@@ -2035,15 +2039,15 @@ KEY援/v+藏/v->[援/v 藏/v]MERGE[援/v 藏/ns]
 
 // ANY/m+KEY两/ANY->ANY>>q
 //例子：一/m 两/m 秒/q 钟/n 的/u
-ANY/m+KEY两/m->m正确
+//ANY/m+KEY两/m->m正确
 
 // KEY只/d+有/v->[只/d 有/v]MERGE[只有/v]
-KEY只/d+有/v+ANY/m->d正确
+//KEY只/d+有/v+ANY/m->d正确
 KEY只/d+有/v+ANY/v->[只/d 有/v]MERGE[只有/c]
 BOS+KEY只/d+有/v->[只/d 有/v]MERGE[只有/c]
 BOS+ANY/d+KEY只/d+有/v->[只/d 有/v]MERGE[只有/c]
 
-KEY可/v+为/p->p正确
-KEY可以/v+为/p->p正确
-KEY能/v+为/p->p正确
-KEY能够/v+为/p->p正确
+//KEY可/v+为/p->p正确
+//KEY可以/v+为/p->p正确
+//KEY能/v+为/p->p正确
+//KEY能够/v+为/p->p正确

@@ -1,0 +1,163 @@
+//-----------------------------------------------
+// 需要优先处理的 X + 了 形式
+// 更细化的config 会在 rest_hard.txt 中重写一部分
+//-----------------------------------------------
+
+
+好/ANY+KEY了/ANY->ANY>>u
+KEY好了/ANY->[好了/ANY]MERGE[好/a 了/u]
+
+丢/ANY+KEY了/ANY->ANY>>u
+KEY丢了/ANY->[丢了/ANY]MERGE[丢/v 了/u]
+
+坏/ANY+KEY了/ANY->ANY>>u
+KEY坏了/ANY->[坏了/ANY]MERGE[坏/v 了/u]
+
+完/ANY+KEY了/ANY->ANY>>u
+KEY完了/ANY->[完了/ANY]MERGE[完/v 了/u]
+
+死/ANY+KEY了/ANY->ANY>>u
+KEY死了/ANY->[死了/ANY]MERGE[死/v 了/u]
+
+累/ANY+KEY了/ANY->ANY>>u
+KEY累了/ANY->[累了/ANY]MERGE[累/a 了/u]
+
+错/ANY+KEY了/ANY->ANY>>u
+KEY错了/ANY->[错了/ANY]MERGE[错/v 了/u]
+
+够/ANY+KEY了/ANY->ANY>>u
+KEY够了/ANY->[够了/ANY]MERGE[够/v 了/u]
+
+没/ANY+KEY了/ANY->ANY>>u
+KEY没了/ANY->[没了/ANY]MERGE[没/v 了/u]
+
+毁/ANY+KEY了/ANY->ANY>>u
+KEY毁了/ANY->[毁了/ANY]MERGE[毁/v 了/u]
+
+过去/ANY+KEY了/ANY->ANY>>u
+KEY过去了/ANY->[过去了/ANY]MERGE[过去/vf 了/u]
+
+跑/ANY+KEY了/ANY->ANY>>u
+KEY跑了/ANY->[跑了/ANY]MERGE[跑/v 了/u]
+
+干/ANY+KEY了/ANY->ANY>>u
+KEY干了/ANY->[干了/ANY]MERGE[干/v 了/u]
+
+醒/ANY+KEY了/ANY->ANY>>u
+KEY醒了/ANY->[醒了/ANY]MERGE[醒/vi 了/u]
+
+久/ANY+KEY了/ANY->ANY>>u
+KEY久了/ANY->[久了/ANY]MERGE[久/vi 了/u]
+
+断/ANY+KEY了/ANY->ANY>>u
+KEY断了/ANY->[断了/ANY]MERGE[断/v 了/u]
+
+笑/ANY+KEY了/ANY->ANY>>u
+KEY笑了/ANY->[笑了/ANY]MERGE[笑/v 了/u]
+
+爆/ANY+KEY了/ANY->ANY>>u
+KEY爆了/ANY->[爆了/ANY]MERGE[爆/v 了/u]
+
+赢/ANY+KEY了/ANY->ANY>>u
+KEY赢了/ANY->[赢了/ANY]MERGE[赢/v 了/u]
+
+碎/ANY+KEY了/ANY->ANY>>u
+KEY碎了/ANY->[碎了/ANY]MERGE[碎/v 了/u]
+
+唱/ANY+KEY了/ANY->ANY>>u
+KEY唱了/ANY->[唱了/ANY]MERGE[唱/v 了/u]
+
+傻/ANY+KEY了/ANY->ANY>>u
+KEY傻了/ANY->[傻了/ANY]MERGE[傻/a 了/u]
+
+熟/ANY+KEY了/ANY->ANY>>u
+KEY熟了/ANY->[熟了/ANY]MERGE[熟/a 了/u]
+
+停/ANY+KEY了/ANY->ANY>>u
+KEY停了/ANY->[停了/ANY]MERGE[停/v 了/u]
+
+卖/ANY+KEY了/ANY->ANY>>u
+KEY卖了/ANY->[卖了/ANY]MERGE[卖/v 了/u]
+
+晚/ANY+KEY了/ANY->ANY>>u
+KEY晚了/ANY->[晚了/ANY]MERGE[晚/a 了/u]
+
+垮/ANY+KEY了/ANY->ANY>>u
+KEY垮了/ANY->[垮了/ANY]MERGE[垮/v 了/u]
+
+亏/ANY+KEY了/ANY->ANY>>u
+KEY亏了/ANY->[亏了/ANY]MERGE[亏/v 了/u]
+
+迟/ANY+KEY了/ANY->ANY>>u
+KEY迟了/ANY->[迟了/ANY]MERGE[迟/a 了/u]
+
+删/ANY+KEY了/ANY->ANY>>u
+KEY删了/ANY->[删了/ANY]MERGE[删/v 了/u]
+
+偷/ANY+KEY了/ANY->ANY>>u
+KEY偷了/ANY->[偷了/ANY]MERGE[偷/v 了/u]
+
+胖/ANY+KEY了/ANY->ANY>>u
+KEY胖了/ANY->[胖了/ANY]MERGE[胖/a 了/u]
+
+亮/ANY+KEY了/ANY->ANY>>u
+KEY亮了/ANY->[亮了/ANY]MERGE[亮/v 了/u]
+
+散/ANY+KEY了/ANY->ANY>>u
+KEY散了/ANY->[散了/ANY]MERGE[散/v 了/u]
+
+睡/ANY+KEY了/ANY->ANY>>u
+KEY睡了/ANY->[睡了/ANY]MERGE[睡/v 了/u]
+
+甩/ANY+KEY了/ANY->ANY>>u
+KEY甩了/ANY->[甩了/ANY]MERGE[甩/v 了/u]
+
+学/ANY+KEY了/ANY->ANY>>u
+KEY学了/ANY->[学了/ANY]MERGE[学/v 了/u]
+
+慢/ANY+KEY了/ANY->ANY>>u
+KEY慢了/ANY->[慢了/ANY]MERGE[慢/a 了/u]
+
+烦/ANY+KEY了/ANY->ANY>>u
+KEY烦了/ANY->[烦了/ANY]MERGE[烦/v 了/u]
+
+黑/ANY+KEY了/ANY->ANY>>u
+KEY黑了/ANY->[黑了/ANY]MERGE[黑/a 了/u]
+
+推/ANY+KEY了/ANY->ANY>>u
+KEY推了/ANY->[推了/ANY]MERGE[推/v 了/u]
+
+抓/ANY+KEY了/ANY->ANY>>u
+KEY抓了/ANY->[抓了/ANY]MERGE[抓/v 了/u]
+
+管/ANY+KEY了/ANY->ANY>>u
+KEY管了/ANY->[管了/ANY]MERGE[管/v 了/u]
+
+闹/ANY+KEY了/ANY->ANY>>u
+KEY闹了/ANY->[闹了/ANY]MERGE[闹/v 了/u]
+
+肿/ANY+KEY了/ANY->ANY>>u
+KEY肿了/ANY->[肿了/ANY]MERGE[肿/v 了/u]
+
+值/ANY+KEY了/ANY->ANY>>u
+KEY值了/ANY->[值了/ANY]MERGE[值/v 了/u]
+
+病/ANY+KEY了/ANY->ANY>>u
+ANY/d+KEY病了/ANY->[病了/ANY]MERGE[病/v 了/u]
+ANY/n+KEY病了/ANY->[病了/ANY]MERGE[病/v 了/u]
+ANY/nr+KEY病了/ANY->[病了/ANY]MERGE[病/v 了/u]
+ANY/r+KEY病了/ANY->[病了/ANY]MERGE[病/v 了/u]
+ANY/v+KEY病了/ANY->[病了/ANY]MERGE[病/n 了/u]
+ANY/q+KEY病了/ANY->[病了/ANY]MERGE[病/n 了/u]
+的/ANY+KEY病了/ANY->[病了/ANY]MERGE[病/n 了/u]
+
+
+站/ANY+KEY了/ANY->ANY>>u
+KEY站了/ANY+起来/ANY->[站了/ANY]MERGE[站/v 了/u]
+KEY站了/ANY+出来/ANY->[站了/ANY]MERGE[站/v 了/u]
+KEY站了/ANY+很久/ANY->[站了/ANY]MERGE[站/v 了/u]
+KEY站了/ANY+ANY/m->[站了/ANY]MERGE[站/v 了/u]
+KEY站了/ANY+EOS->[站了/ANY]MERGE[站/n 了/y]
+
+空/ANY+KEY了/ANY->ANY>>u
+KEY空了/ANY->[空了/ANY]MERGE[空/v 了/u]
