@@ -1,0 +1,4671 @@
+﻿// ========================================
+//
+//	争议很大的情况 共 919 词 2019/08/18
+//
+// ========================================
+
+
+// ========================================
+//
+//	Ictclas 有 f 共 273 词
+//
+// ========================================
+
+// 外卖
+KEY外卖/ANY->[外卖/ANY]MERGE[外/f 卖/v]
+KEY外/ANY+卖/ANY->ANY>>f
+外/ANY+KEY卖/ANY->ANY>>v
+
+// 线上
+KEY线上/ANY->[线上/ANY]MERGE[线/n 上/f]
+KEY线/ANY+上/ANY->ANY>>n
+线/ANY+KEY上/ANY->ANY>>f
+
+// 卒中
+KEY卒中/ANY->[卒中/ANY]MERGE[卒/Ng 中/f]
+KEY卒/ANY+中/ANY->ANY>>Ng
+卒/ANY+KEY中/ANY->ANY>>f
+
+// 内置
+KEY内置/ANY->[内置/ANY]MERGE[内/f 置/v]
+KEY内/ANY+置/ANY->ANY>>f
+内/ANY+KEY置/ANY->ANY>>v
+
+// 前置
+KEY前/ANY+置/ANY->ANY>>f
+前/ANY+KEY置/ANY->ANY>>v
+KEY前置/ANY->[前置/ANY]MERGE[前/f 置/v]
+
+// 床上
+KEY床/ANY+上/ANY->ANY>>n
+床/ANY+KEY上/ANY->ANY>>f
+KEY床上/ANY->[床上/ANY]MERGE[床/n 上/f]
+
+// 外媒
+KEY外媒/ANY->[外媒/ANY]MERGE[外/f 媒/Ng]
+KEY外/ANY+媒/ANY->ANY>>f
+外/ANY+KEY媒/ANY->ANY>>Ng
+
+// 内敛
+KEY内敛/ANY->[内敛/ANY]MERGE[内/f 敛/vg]
+KEY内/ANY+敛/ANY->ANY>>f
+内/ANY+KEY敛/ANY->ANY>>vg
+
+// 后置
+KEY后/ANY+置/ANY->ANY>>f
+后/ANY+KEY置/ANY->ANY>>v
+KEY后置/ANY->[后置/ANY]MERGE[后/f 置/v]
+
+// 上世纪
+KEY上世纪/ANY->[上世纪/ANY]MERGE[上/f 世纪/n]
+KEY上/ANY+世纪/ANY->ANY>>f
+上/ANY+KEY世纪/ANY->ANY>>n
+
+// 上传
+KEY上传/ANY->[上传/ANY]MERGE[上/f 传/v]
+KEY上/ANY+传/ANY->ANY>>f
+上/ANY+KEY传/ANY->ANY>>v
+
+// 术后
+KEY术/ANY+后/ANY->ANY>>Ng
+术/ANY+KEY后/ANY->ANY>>f
+KEY术后/ANY->[术后/ANY]MERGE[术/Ng 后/f]
+
+// 头上
+KEY头上/ANY->[头上/ANY]MERGE[头/n 上/f]
+KEY头/ANY+上/ANY->ANY>>n
+头/ANY+KEY上/ANY->ANY>>f
+
+// 辖内
+KEY辖内/ANY->[辖内/ANY]MERGE[辖/v 内/f]
+KEY辖/ANY+内/ANY->ANY>>v
+辖/ANY+KEY内/ANY->ANY>>f
+
+// 下潜
+KEY下/ANY+潜/ANY->ANY>>f
+下/ANY+KEY潜/ANY->ANY>>vg
+KEY下潜/ANY->[下潜/ANY]MERGE[下/f 潜/vg]
+
+// 售后
+KEY售/ANY+后/ANY->ANY>>v
+售/ANY+KEY后/ANY->ANY>>f
+KEY售后/ANY->[售后/ANY]MERGE[售/v 后/f]
+
+// 影后
+KEY影/ANY+后/ANY->ANY>>Ng
+影/ANY+KEY后/ANY->ANY>>f
+KEY影后/ANY->[影后/ANY]MERGE[影/Ng 后/f]
+
+// 内饰
+KEY内饰/ANY->[内饰/ANY]MERGE[内/f 饰/v]
+KEY内/ANY+饰/ANY->ANY>>f
+内/ANY+KEY饰/ANY->ANY>>v
+
+// 下称
+KEY下称/ANY->[下称/ANY]MERGE[下/f 称/v]
+KEY下/ANY+称/ANY->ANY>>f
+下/ANY+KEY称/ANY->ANY>>v
+
+// 抄底
+KEY抄底/ANY->[抄底/ANY]MERGE[抄/v 底/f]
+KEY抄/ANY+底/ANY->ANY>>v
+抄/ANY+KEY底/ANY->ANY>>f
+
+// 坊间
+KEY坊间/ANY->[坊间/ANY]MERGE[坊/Ng 间/f]
+KEY坊/ANY+间/ANY->ANY>>Ng
+坊/ANY+KEY间/ANY->ANY>>f
+
+// 中邮
+KEY中/ANY+邮/ANY->ANY>>f
+中/ANY+KEY邮/ANY->ANY>>v
+KEY中邮/ANY->[中邮/ANY]MERGE[中/f 邮/v]
+
+// 外墙
+KEY外/ANY+墙/ANY->ANY>>f
+外/ANY+KEY墙/ANY->ANY>>n
+KEY外墙/ANY->[外墙/ANY]MERGE[外/f 墙/n]
+
+// 睡前
+KEY睡前/ANY->[睡前/ANY]MERGE[睡/v 前/f]
+KEY睡/ANY+前/ANY->ANY>>v
+睡/ANY+KEY前/ANY->ANY>>f
+
+// 戏中
+KEY戏中/ANY->[戏中/ANY]MERGE[戏/n 中/f]
+KEY戏/ANY+中/ANY->ANY>>n
+戏/ANY+KEY中/ANY->ANY>>f
+
+// 嘴上
+KEY嘴/ANY+上/ANY->ANY>>n
+嘴/ANY+KEY上/ANY->ANY>>f
+KEY嘴上/ANY->[嘴上/ANY]MERGE[嘴/n 上/f]
+
+// 水里
+KEY水里/ANY->[水里/ANY]MERGE[水/n 里/f]
+KEY水/ANY+里/ANY->ANY>>n
+水/ANY+KEY里/ANY->ANY>>f
+
+// 外溢
+KEY外溢/ANY->[外溢/ANY]MERGE[外/f 溢/v]
+KEY外/ANY+溢/ANY->ANY>>f
+外/ANY+KEY溢/ANY->ANY>>v
+
+// 北路
+KEY北路/ANY->[北路/ANY]MERGE[北/f 路/n]
+KEY北/ANY+路/ANY->ANY>>f
+北/ANY+KEY路/ANY->ANY>>n
+
+// 地里
+KEY地里/ANY->[地里/ANY]MERGE[地/n 里/f]
+KEY地/ANY+里/ANY->ANY>>n
+地/ANY+KEY里/ANY->ANY>>f
+
+// 内嵌
+KEY内嵌/ANY->[内嵌/ANY]MERGE[内/f 嵌/v]
+KEY内/ANY+嵌/ANY->ANY>>f
+内/ANY+KEY嵌/ANY->ANY>>v
+
+// 里约
+KEY里约/ANY->[里约/ANY]MERGE[里/f 约/d]
+KEY里/ANY+约/ANY->ANY>>f
+里/ANY+KEY约/ANY->ANY>>d
+
+// 体外
+KEY体外/ANY->[体外/ANY]MERGE[体/Ng 外/f]
+KEY体/ANY+外/ANY->ANY>>Ng
+体/ANY+KEY外/ANY->ANY>>f
+
+// 中航
+KEY中/ANY+航/ANY->ANY>>f
+中/ANY+KEY航/ANY->ANY>>vg
+KEY中航/ANY->[中航/ANY]MERGE[中/f 航/vg]
+
+// 外包
+KEY外包/ANY->[外包/ANY]MERGE[外/f 包/v]
+KEY外/ANY+包/ANY->ANY>>f
+外/ANY+KEY包/ANY->ANY>>v
+
+// 后厨
+KEY后厨/ANY->[后厨/ANY]MERGE[后/f 厨/Ng]
+KEY后/ANY+厨/ANY->ANY>>f
+后/ANY+KEY厨/ANY->ANY>>Ng
+
+// 延后
+KEY延后/ANY->[延后/ANY]MERGE[延/vg 后/f]
+KEY延/ANY+后/ANY->ANY>>vg
+延/ANY+KEY后/ANY->ANY>>f
+
+// 剧里
+KEY剧/ANY+里/ANY->ANY>>n
+剧/ANY+KEY里/ANY->ANY>>f
+KEY剧里/ANY->[剧里/ANY]MERGE[剧/n 里/f]
+
+// 纸上
+KEY纸上/ANY->[纸上/ANY]MERGE[纸/n 上/f]
+KEY纸/ANY+上/ANY->ANY>>n
+纸/ANY+KEY上/ANY->ANY>>f
+
+// 前作
+KEY前作/ANY->[前作/ANY]MERGE[前/f 作/v]
+KEY前/ANY+作/ANY->ANY>>f
+前/ANY+KEY作/ANY->ANY>>v
+
+// 外迁
+KEY外迁/ANY->[外迁/ANY]MERGE[外/f 迁/v]
+KEY外/ANY+迁/ANY->ANY>>f
+外/ANY+KEY迁/ANY->ANY>>v
+
+// 外宣
+KEY外/ANY+宣/ANY->ANY>>f
+外/ANY+KEY宣/ANY->ANY>>nr
+KEY外宣/ANY->[外宣/ANY]MERGE[外/f 宣/nr]
+
+// 旁骛
+KEY旁骛/ANY->[旁骛/ANY]MERGE[旁/f 骛/w]
+KEY旁/ANY+骛/ANY->ANY>>f
+旁/ANY+KEY骛/ANY->ANY>>w
+
+// 内胆
+KEY内胆/ANY->[内胆/ANY]MERGE[内/f 胆/n]
+KEY内/ANY+胆/ANY->ANY>>f
+内/ANY+KEY胆/ANY->ANY>>n
+
+// 东路
+KEY东/ANY+路/ANY->ANY>>f
+东/ANY+KEY路/ANY->ANY>>n
+KEY东路/ANY->[东路/ANY]MERGE[东/f 路/n]
+
+// 锅里
+KEY锅里/ANY->[锅里/ANY]MERGE[锅/n 里/f]
+KEY锅/ANY+里/ANY->ANY>>n
+锅/ANY+KEY里/ANY->ANY>>f
+
+// 外教
+KEY外/ANY+教/ANY->ANY>>f
+外/ANY+KEY教/ANY->ANY>>v
+KEY外教/ANY->[外教/ANY]MERGE[外/f 教/v]
+
+// 锅中
+KEY锅中/ANY->[锅中/ANY]MERGE[锅/n 中/f]
+KEY锅/ANY+中/ANY->ANY>>n
+锅/ANY+KEY中/ANY->ANY>>f
+
+// 内壁
+KEY内/ANY+壁/ANY->ANY>>f
+内/ANY+KEY壁/ANY->ANY>>Ng
+KEY内壁/ANY->[内壁/ANY]MERGE[内/f 壁/Ng]
+
+// 税前
+KEY税前/ANY->[税前/ANY]MERGE[税/n 前/f]
+KEY税/ANY+前/ANY->ANY>>n
+税/ANY+KEY前/ANY->ANY>>f
+
+// 腹中
+KEY腹/ANY+中/ANY->ANY>>Ng
+腹/ANY+KEY中/ANY->ANY>>f
+KEY腹中/ANY->[腹中/ANY]MERGE[腹/Ng 中/f]
+
+// 庭上
+KEY庭上/ANY->[庭上/ANY]MERGE[庭/Ng 上/f]
+KEY庭/ANY+上/ANY->ANY>>Ng
+庭/ANY+KEY上/ANY->ANY>>f
+
+// 阜外
+KEY阜/ANY+外/ANY->ANY>>w
+阜/ANY+KEY外/ANY->ANY>>f
+KEY阜外/ANY->[阜外/ANY]MERGE[阜/w 外/f]
+
+// 腰间
+KEY腰/ANY+间/ANY->ANY>>n
+腰/ANY+KEY间/ANY->ANY>>f
+KEY腰间/ANY->[腰间/ANY]MERGE[腰/n 间/f]
+
+// 脚上
+KEY脚/ANY+上/ANY->ANY>>n
+脚/ANY+KEY上/ANY->ANY>>f
+KEY脚上/ANY->[脚上/ANY]MERGE[脚/n 上/f]
+
+// 表外
+KEY表外/ANY->[表外/ANY]MERGE[表/n 外/f]
+KEY表/ANY+外/ANY->ANY>>n
+表/ANY+KEY外/ANY->ANY>>f
+
+// 东站
+KEY东/ANY+站/ANY->ANY>>f
+东/ANY+KEY站/ANY->ANY>>v
+KEY东站/ANY->[东站/ANY]MERGE[东/f 站/v]
+
+// 簿上
+KEY簿上/ANY->[簿上/ANY]MERGE[簿/Ng 上/f]
+KEY簿/ANY+上/ANY->ANY>>Ng
+簿/ANY+KEY上/ANY->ANY>>f
+
+// 掌上
+KEY掌/ANY+上/ANY->ANY>>n
+掌/ANY+KEY上/ANY->ANY>>f
+KEY掌上/ANY->[掌上/ANY]MERGE[掌/n 上/f]
+
+// 中建
+KEY中/ANY+建/ANY->ANY>>f
+中/ANY+KEY建/ANY->ANY>>v
+KEY中建/ANY->[中建/ANY]MERGE[中/f 建/v]
+
+// 而下
+KEY而下/ANY->[而下/ANY]MERGE[而/c 下/f]
+KEY而/ANY+下/ANY->ANY>>c
+而/ANY+KEY下/ANY->ANY>>f
+
+// 题中
+KEY题/ANY+中/ANY->ANY>>n
+题/ANY+KEY中/ANY->ANY>>f
+KEY题中/ANY->[题中/ANY]MERGE[题/n 中/f]
+
+// 脑后
+KEY脑后/ANY->[脑后/ANY]MERGE[脑/n 后/f]
+KEY脑/ANY+后/ANY->ANY>>n
+脑/ANY+KEY后/ANY->ANY>>f
+
+// 山中
+KEY山/ANY+中/ANY->ANY>>n
+山/ANY+KEY中/ANY->ANY>>f
+KEY山中/ANY->[山中/ANY]MERGE[山/n 中/f]
+
+// 期内
+KEY期/ANY+内/ANY->ANY>>q
+期/ANY+KEY内/ANY->ANY>>f
+KEY期内/ANY->[期内/ANY]MERGE[期/q 内/f]
+
+// 中端
+KEY中端/ANY->[中端/ANY]MERGE[中/f 端/v]
+KEY中/ANY+端/ANY->ANY>>f
+中/ANY+KEY端/ANY->ANY>>v
+
+// 腿上
+KEY腿上/ANY->[腿上/ANY]MERGE[腿/n 上/f]
+KEY腿/ANY+上/ANY->ANY>>n
+腿/ANY+KEY上/ANY->ANY>>f
+
+// 术前
+KEY术前/ANY->[术前/ANY]MERGE[术/Ng 前/f]
+KEY术/ANY+前/ANY->ANY>>Ng
+术/ANY+KEY前/ANY->ANY>>f
+
+// 颅内
+KEY颅/ANY+内/ANY->ANY>>Ng
+颅/ANY+KEY内/ANY->ANY>>f
+KEY颅内/ANY->[颅内/ANY]MERGE[颅/Ng 内/f]
+
+// 餐后
+KEY餐/ANY+后/ANY->ANY>>Ng
+餐/ANY+KEY后/ANY->ANY>>f
+KEY餐后/ANY->[餐后/ANY]MERGE[餐/Ng 后/f]
+
+// 右脚
+KEY右/ANY+脚/ANY->ANY>>f
+右/ANY+KEY脚/ANY->ANY>>n
+KEY右脚/ANY->[右脚/ANY]MERGE[右/f 脚/n]
+
+// 外星
+KEY外星/ANY->[外星/ANY]MERGE[外/f 星/n]
+KEY外/ANY+星/ANY->ANY>>f
+外/ANY+KEY星/ANY->ANY>>n
+
+// 内膜
+KEY内膜/ANY->[内膜/ANY]MERGE[内/f 膜/n]
+KEY内/ANY+膜/ANY->ANY>>f
+内/ANY+KEY膜/ANY->ANY>>n
+
+// 书上
+KEY书上/ANY->[书上/ANY]MERGE[书/n 上/f]
+KEY书/ANY+上/ANY->ANY>>n
+书/ANY+KEY上/ANY->ANY>>f
+
+// 林下
+KEY林/ANY+下/ANY->ANY>>Ng
+林/ANY+KEY下/ANY->ANY>>f
+KEY林下/ANY->[林下/ANY]MERGE[林/Ng 下/f]
+
+// 前晚
+KEY前晚/ANY->[前晚/ANY]MERGE[前/f 晚/tg]
+KEY前/ANY+晚/ANY->ANY>>f
+前/ANY+KEY晚/ANY->ANY>>tg
+
+// 触底
+KEY触底/ANY->[触底/ANY]MERGE[触/v 底/f]
+KEY触/ANY+底/ANY->ANY>>v
+触/ANY+KEY底/ANY->ANY>>f
+
+// 跳下
+KEY跳/ANY+下/ANY->ANY>>v
+跳/ANY+KEY下/ANY->ANY>>f
+KEY跳下/ANY->[跳下/ANY]MERGE[跳/v 下/f]
+
+// 北疆
+KEY北/ANY+疆/ANY->ANY>>f
+北/ANY+KEY疆/ANY->ANY>>b
+KEY北疆/ANY->[北疆/ANY]MERGE[北/f 疆/b]
+
+// 课上
+KEY课/ANY+上/ANY->ANY>>n
+课/ANY+KEY上/ANY->ANY>>f
+KEY课上/ANY->[课上/ANY]MERGE[课/n 上/f]
+
+// 班上
+KEY班/ANY+上/ANY->ANY>>n
+班/ANY+KEY上/ANY->ANY>>f
+KEY班上/ANY->[班上/ANY]MERGE[班/n 上/f]
+
+// 门上
+KEY门上/ANY->[门上/ANY]MERGE[门/n 上/f]
+KEY门/ANY+上/ANY->ANY>>n
+门/ANY+KEY上/ANY->ANY>>f
+
+// 前移
+KEY前移/ANY->[前移/ANY]MERGE[前/f 移/v]
+KEY前/ANY+移/ANY->ANY>>f
+前/ANY+KEY移/ANY->ANY>>v
+
+// 账上
+KEY账上/ANY->[账上/ANY]MERGE[账/n 上/f]
+KEY账/ANY+上/ANY->ANY>>n
+账/ANY+KEY上/ANY->ANY>>f
+
+// 墓中
+KEY墓/ANY+中/ANY->ANY>>n
+墓/ANY+KEY中/ANY->ANY>>f
+KEY墓中/ANY->[墓中/ANY]MERGE[墓/n 中/f]
+
+// 内含
+KEY内含/ANY->[内含/ANY]MERGE[内/f 含/v]
+KEY内/ANY+含/ANY->ANY>>f
+内/ANY+KEY含/ANY->ANY>>v
+
+// 碗里
+KEY碗里/ANY->[碗里/ANY]MERGE[碗/n 里/f]
+KEY碗/ANY+里/ANY->ANY>>n
+碗/ANY+KEY里/ANY->ANY>>f
+
+// 屏下
+KEY屏下/ANY->[屏下/ANY]MERGE[屏/Ng 下/f]
+KEY屏/ANY+下/ANY->ANY>>Ng
+屏/ANY+KEY下/ANY->ANY>>f
+
+// 中分
+KEY中/ANY+分/ANY->ANY>>f
+中/ANY+KEY分/ANY->ANY>>v
+KEY中分/ANY->[中分/ANY]MERGE[中/f 分/v]
+
+// 这下
+KEY这下/ANY->[这下/ANY]MERGE[这/r 下/f]
+KEY这/ANY+下/ANY->ANY>>r
+这/ANY+KEY下/ANY->ANY>>f
+
+// 外壁
+KEY外壁/ANY->[外壁/ANY]MERGE[外/f 壁/Ng]
+KEY外/ANY+壁/ANY->ANY>>f
+外/ANY+KEY壁/ANY->ANY>>Ng
+
+// 右路
+KEY右/ANY+路/ANY->ANY>>f
+右/ANY+KEY路/ANY->ANY>>n
+KEY右路/ANY->[右路/ANY]MERGE[右/f 路/n]
+
+// 舰上
+KEY舰上/ANY->[舰上/ANY]MERGE[舰/Ng 上/f]
+KEY舰/ANY+上/ANY->ANY>>Ng
+舰/ANY+KEY上/ANY->ANY>>f
+
+// 外接
+KEY外接/ANY->[外接/ANY]MERGE[外/f 接/v]
+KEY外/ANY+接/ANY->ANY>>f
+外/ANY+KEY接/ANY->ANY>>v
+
+// 一路上
+KEY一路/ANY+上/ANY->ANY>>m
+一路/ANY+KEY上/ANY->ANY>>f
+KEY一/ANY+路上/ANY->[一/ANY 路上/ANY]MERGE[一路/m 上/f]
+KEY一路上/ANY->[一路上/ANY]MERGE[一路/m 上/f]
+
+// 外劳
+KEY外/ANY+劳/ANY->ANY>>f
+外/ANY+KEY劳/ANY->ANY>>v
+KEY外劳/ANY->[外劳/ANY]MERGE[外/f 劳/v]
+
+// 后端
+KEY后/ANY+端/ANY->ANY>>f
+后/ANY+KEY端/ANY->ANY>>v
+KEY后端/ANY->[后端/ANY]MERGE[后/f 端/v]
+
+// 左上角
+KEY左上/ANY+角/ANY->ANY>>f
+左上/ANY+KEY角/ANY->ANY>>n
+KEY左/ANY+上/ANY+角/ANY->[左/ANY 上/ANY 角/ANY]MERGE[左上/f 角/n]
+KEY左上角/ANY->[左上角/ANY]MERGE[左上/f 角/n]
+
+// 托底
+KEY托/ANY+底/ANY->ANY>>v
+托/ANY+KEY底/ANY->ANY>>f
+KEY托底/ANY->[托底/ANY]MERGE[托/v 底/f]
+
+// 雪上
+KEY雪/ANY+上/ANY->ANY>>n
+雪/ANY+KEY上/ANY->ANY>>f
+KEY雪上/ANY->[雪上/ANY]MERGE[雪/n 上/f]
+
+// 上载
+KEY上/ANY+载/ANY->ANY>>f
+上/ANY+KEY载/ANY->ANY>>v
+KEY上载/ANY->[上载/ANY]MERGE[上/f 载/v]
+
+// 任内
+KEY任内/ANY->[任内/ANY]MERGE[任/v 内/f]
+KEY任/ANY+内/ANY->ANY>>v
+任/ANY+KEY内/ANY->ANY>>f
+
+// 屋外
+KEY屋/ANY+外/ANY->ANY>>n
+屋/ANY+KEY外/ANY->ANY>>f
+KEY屋外/ANY->[屋外/ANY]MERGE[屋/n 外/f]
+
+// 黔东南
+KEY黔东南/ANY->[黔东南/ANY]MERGE[黔/b 东南/f]
+KEY黔/ANY+东南/ANY->ANY>>b
+黔/ANY+KEY东南/ANY->ANY>>f
+
+// 右转
+KEY右/ANY+转/ANY->ANY>>f
+右/ANY+KEY转/ANY->ANY>>v
+KEY右转/ANY->[右转/ANY]MERGE[右/f 转/v]
+
+// 内镜
+KEY内镜/ANY->[内镜/ANY]MERGE[内/f 镜/Ng]
+KEY内/ANY+镜/ANY->ANY>>f
+内/ANY+KEY镜/ANY->ANY>>Ng
+
+// 前代
+KEY前代/ANY->[前代/ANY]MERGE[前/f 代/v]
+KEY前/ANY+代/ANY->ANY>>f
+前/ANY+KEY代/ANY->ANY>>v
+
+// 表内
+KEY表/ANY+内/ANY->ANY>>n
+表/ANY+KEY内/ANY->ANY>>f
+KEY表内/ANY->[表内/ANY]MERGE[表/n 内/f]
+
+// 庭外
+KEY庭/ANY+外/ANY->ANY>>Ng
+庭/ANY+KEY外/ANY->ANY>>f
+KEY庭外/ANY->[庭外/ANY]MERGE[庭/Ng 外/f]
+
+// 东门
+KEY东门/ANY->[东门/ANY]MERGE[东/f 门/n]
+KEY东/ANY+门/ANY->ANY>>f
+东/ANY+KEY门/ANY->ANY>>n
+
+// 前场
+KEY前/ANY+场/ANY->ANY>>f
+前/ANY+KEY场/ANY->ANY>>q
+KEY前场/ANY->[前场/ANY]MERGE[前/f 场/q]
+
+// 左转
+KEY左/ANY+转/ANY->ANY>>f
+左/ANY+KEY转/ANY->ANY>>v
+KEY左转/ANY->[左转/ANY]MERGE[左/f 转/v]
+
+// 北控
+KEY北控/ANY->[北控/ANY]MERGE[北/f 控/v]
+KEY北/ANY+控/ANY->ANY>>f
+北/ANY+KEY控/ANY->ANY>>v
+
+// 外储
+KEY外/ANY+储/ANY->ANY>>f
+外/ANY+KEY储/ANY->ANY>>vg
+KEY外储/ANY->[外储/ANY]MERGE[外/f 储/vg]
+
+// 雨后
+KEY雨/ANY+后/ANY->ANY>>n
+雨/ANY+KEY后/ANY->ANY>>f
+KEY雨后/ANY->[雨后/ANY]MERGE[雨/n 后/f]
+
+// 总体上
+KEY总体上/ANY->[总体上/ANY]MERGE[总体/n 上/f]
+KEY总体/ANY+上/ANY->ANY>>n
+总体/ANY+KEY上/ANY->ANY>>f
+
+// 内皮
+KEY内皮/ANY->[内皮/ANY]MERGE[内/f 皮/n]
+KEY内/ANY+皮/ANY->ANY>>f
+内/ANY+KEY皮/ANY->ANY>>n
+
+// 后仰
+KEY后仰/ANY->[后仰/ANY]MERGE[后/f 仰/v]
+KEY后/ANY+仰/ANY->ANY>>f
+后/ANY+KEY仰/ANY->ANY>>v
+
+// 外型
+KEY外/ANY+型/ANY->ANY>>f
+外/ANY+KEY型/ANY->ANY>>k
+KEY外型/ANY->[外型/ANY]MERGE[外/f 型/k]
+
+// 外置
+KEY外/ANY+置/ANY->ANY>>f
+外/ANY+KEY置/ANY->ANY>>v
+KEY外置/ANY->[外置/ANY]MERGE[外/f 置/v]
+
+// 岗前
+KEY岗/ANY+前/ANY->ANY>>n
+岗/ANY+KEY前/ANY->ANY>>f
+KEY岗前/ANY->[岗前/ANY]MERGE[岗/n 前/f]
+
+// 实质上
+KEY实质/ANY+上/ANY->ANY>>n
+实质/ANY+KEY上/ANY->ANY>>f
+KEY实质上/ANY->[实质上/ANY]MERGE[实质/n 上/f]
+KEY实/ANY+质上/ANY->[实/ANY 质上/ANY]MERGE[实质/n 上/f]
+
+// 下穿
+KEY下/ANY+穿/ANY->ANY>>f
+下/ANY+KEY穿/ANY->ANY>>v
+KEY下穿/ANY->[下穿/ANY]MERGE[下/f 穿/v]
+
+// 后部
+KEY后部/ANY->[后部/ANY]MERGE[后/f 部/q]
+KEY后/ANY+部/ANY->ANY>>f
+后/ANY+KEY部/ANY->ANY>>q
+
+// 税后
+KEY税后/ANY->[税后/ANY]MERGE[税/n 后/f]
+KEY税/ANY+后/ANY->ANY>>n
+税/ANY+KEY后/ANY->ANY>>f
+
+// 诉前
+KEY诉/ANY+前/ANY->ANY>>vg
+诉/ANY+KEY前/ANY->ANY>>f
+KEY诉前/ANY->[诉前/ANY]MERGE[诉/vg 前/f]
+
+// 楼里
+KEY楼里/ANY->[楼里/ANY]MERGE[楼/n 里/f]
+KEY楼/ANY+里/ANY->ANY>>n
+楼/ANY+KEY里/ANY->ANY>>f
+
+// 衬底
+KEY衬底/ANY->[衬底/ANY]MERGE[衬/v 底/f]
+KEY衬/ANY+底/ANY->ANY>>v
+衬/ANY+KEY底/ANY->ANY>>f
+
+// 厂里
+KEY厂里/ANY->[厂里/ANY]MERGE[厂/n 里/f]
+KEY厂/ANY+里/ANY->ANY>>n
+厂/ANY+KEY里/ANY->ANY>>f
+
+// 其上
+KEY其上/ANY->[其上/ANY]MERGE[其/r 上/f]
+KEY其/ANY+上/ANY->ANY>>r
+其/ANY+KEY上/ANY->ANY>>f
+
+// 洒下
+KEY洒/ANY+下/ANY->ANY>>v
+洒/ANY+KEY下/ANY->ANY>>f
+KEY洒下/ANY->[洒下/ANY]MERGE[洒/v 下/f]
+
+// 前倾
+KEY前/ANY+倾/ANY->ANY>>f
+前/ANY+KEY倾/ANY->ANY>>v
+KEY前倾/ANY->[前倾/ANY]MERGE[前/f 倾/v]
+
+// 底裤
+KEY底/ANY+裤/ANY->ANY>>f
+底/ANY+KEY裤/ANY->ANY>>Ng
+KEY底裤/ANY->[底裤/ANY]MERGE[底/f 裤/Ng]
+
+// 上移
+KEY上/ANY+移/ANY->ANY>>f
+上/ANY+KEY移/ANY->ANY>>v
+KEY上移/ANY->[上移/ANY]MERGE[上/f 移/v]
+
+// 案后
+KEY案/ANY+后/ANY->ANY>>Ng
+案/ANY+KEY后/ANY->ANY>>f
+KEY案后/ANY->[案后/ANY]MERGE[案/Ng 后/f]
+
+// 腔内
+KEY腔/ANY+内/ANY->ANY>>Ng
+腔/ANY+KEY内/ANY->ANY>>f
+KEY腔内/ANY->[腔内/ANY]MERGE[腔/Ng 内/f]
+
+// 席上
+KEY席/ANY+上/ANY->ANY>>q
+席/ANY+KEY上/ANY->ANY>>f
+KEY席上/ANY->[席上/ANY]MERGE[席/q 上/f]
+
+// 釉里
+KEY釉里/ANY->[釉里/ANY]MERGE[釉/n 里/f]
+KEY釉/ANY+里/ANY->ANY>>n
+釉/ANY+KEY里/ANY->ANY>>f
+
+// 表中
+KEY表中/ANY->[表中/ANY]MERGE[表/n 中/f]
+KEY表/ANY+中/ANY->ANY>>n
+表/ANY+KEY中/ANY->ANY>>f
+
+// 北门
+KEY北/ANY+门/ANY->ANY>>f
+北/ANY+KEY门/ANY->ANY>>n
+KEY北门/ANY->[北门/ANY]MERGE[北/f 门/n]
+
+// 前部
+KEY前/ANY+部/ANY->ANY>>f
+前/ANY+KEY部/ANY->ANY>>q
+KEY前部/ANY->[前部/ANY]MERGE[前/f 部/q]
+
+// 南迁
+KEY南迁/ANY->[南迁/ANY]MERGE[南/f 迁/v]
+KEY南/ANY+迁/ANY->ANY>>f
+南/ANY+KEY迁/ANY->ANY>>v
+
+// 炕上
+KEY炕上/ANY->[炕上/ANY]MERGE[炕/n 上/f]
+KEY炕/ANY+上/ANY->ANY>>n
+炕/ANY+KEY上/ANY->ANY>>f
+
+// 考前
+KEY考前/ANY->[考前/ANY]MERGE[考/v 前/f]
+KEY考/ANY+前/ANY->ANY>>v
+考/ANY+KEY前/ANY->ANY>>f
+
+// 椅上
+KEY椅上/ANY->[椅上/ANY]MERGE[椅/Ng 上/f]
+KEY椅/ANY+上/ANY->ANY>>Ng
+椅/ANY+KEY上/ANY->ANY>>f
+
+// 墓前
+KEY墓前/ANY->[墓前/ANY]MERGE[墓/n 前/f]
+KEY墓/ANY+前/ANY->ANY>>n
+墓/ANY+KEY前/ANY->ANY>>f
+
+// 内筒
+KEY内筒/ANY->[内筒/ANY]MERGE[内/f 筒/Ng]
+KEY内/ANY+筒/ANY->ANY>>f
+内/ANY+KEY筒/ANY->ANY>>Ng
+
+// 贷后
+KEY贷后/ANY->[贷后/ANY]MERGE[贷/v 后/f]
+KEY贷/ANY+后/ANY->ANY>>v
+贷/ANY+KEY后/ANY->ANY>>f
+
+// 上锁
+KEY上/ANY+锁/ANY->ANY>>f
+上/ANY+KEY锁/ANY->ANY>>v
+KEY上锁/ANY->[上锁/ANY]MERGE[上/f 锁/v]
+
+// 楼内
+KEY楼/ANY+内/ANY->ANY>>n
+楼/ANY+KEY内/ANY->ANY>>f
+KEY楼内/ANY->[楼内/ANY]MERGE[楼/n 内/f]
+
+// 坑里
+KEY坑里/ANY->[坑里/ANY]MERGE[坑/n 里/f]
+KEY坑/ANY+里/ANY->ANY>>n
+坑/ANY+KEY里/ANY->ANY>>f
+
+// 杯中
+KEY杯/ANY+中/ANY->ANY>>Ng
+杯/ANY+KEY中/ANY->ANY>>f
+KEY杯中/ANY->[杯中/ANY]MERGE[杯/Ng 中/f]
+
+// 机内
+KEY机/ANY+内/ANY->ANY>>Ng
+机/ANY+KEY内/ANY->ANY>>f
+KEY机内/ANY->[机内/ANY]MERGE[机/Ng 内/f]
+
+// 事中
+KEY事中/ANY->[事中/ANY]MERGE[事/n 中/f]
+KEY事/ANY+中/ANY->ANY>>n
+事/ANY+KEY中/ANY->ANY>>f
+
+// 靠后
+KEY靠/ANY+后/ANY->ANY>>v
+靠/ANY+KEY后/ANY->ANY>>f
+KEY靠后/ANY->[靠后/ANY]MERGE[靠/v 后/f]
+
+// 身前
+KEY身/ANY+前/ANY->ANY>>Ng
+身/ANY+KEY前/ANY->ANY>>f
+KEY身前/ANY->[身前/ANY]MERGE[身/Ng 前/f]
+
+// 上影
+KEY上/ANY+影/ANY->ANY>>f
+上/ANY+KEY影/ANY->ANY>>Ng
+KEY上影/ANY->[上影/ANY]MERGE[上/f 影/Ng]
+
+// 赣北
+KEY赣/ANY+北/ANY->ANY>>b
+赣/ANY+KEY北/ANY->ANY>>f
+KEY赣北/ANY->[赣北/ANY]MERGE[赣/b 北/f]
+
+// 梦里
+KEY梦里/ANY->[梦里/ANY]MERGE[梦/n 里/f]
+KEY梦/ANY+里/ANY->ANY>>n
+梦/ANY+KEY里/ANY->ANY>>f
+
+// 店外
+KEY店/ANY+外/ANY->ANY>>n
+店/ANY+KEY外/ANY->ANY>>f
+KEY店外/ANY->[店外/ANY]MERGE[店/n 外/f]
+
+// 东扩
+KEY东扩/ANY->[东扩/ANY]MERGE[东/f 扩/vg]
+KEY东/ANY+扩/ANY->ANY>>f
+东/ANY+KEY扩/ANY->ANY>>vg
+
+// 雪中
+KEY雪/ANY+中/ANY->ANY>>n
+雪/ANY+KEY中/ANY->ANY>>f
+KEY雪中/ANY->[雪中/ANY]MERGE[雪/n 中/f]
+
+// 朝下
+KEY朝/ANY+下/ANY->ANY>>tg
+朝/ANY+KEY下/ANY->ANY>>f
+KEY朝下/ANY->[朝下/ANY]MERGE[朝/tg 下/f]
+
+// 东线
+KEY东线/ANY->[东线/ANY]MERGE[东/f 线/n]
+KEY东/ANY+线/ANY->ANY>>f
+东/ANY+KEY线/ANY->ANY>>n
+
+// 北坡
+KEY北坡/ANY->[北坡/ANY]MERGE[北/f 坡/n]
+KEY北/ANY+坡/ANY->ANY>>f
+北/ANY+KEY坡/ANY->ANY>>n
+
+// 西行
+KEY西行/ANY->[西行/ANY]MERGE[西/f 行/v]
+KEY西/ANY+行/ANY->ANY>>f
+西/ANY+KEY行/ANY->ANY>>v
+
+// 胃中
+KEY胃/ANY+中/ANY->ANY>>n
+胃/ANY+KEY中/ANY->ANY>>f
+KEY胃中/ANY->[胃中/ANY]MERGE[胃/n 中/f]
+
+// 见底
+KEY见/ANY+底/ANY->ANY>>v
+见/ANY+KEY底/ANY->ANY>>f
+KEY见底/ANY->[见底/ANY]MERGE[见/v 底/f]
+
+// 探底
+KEY探/ANY+底/ANY->ANY>>v
+探/ANY+KEY底/ANY->ANY>>f
+KEY探底/ANY->[探底/ANY]MERGE[探/v 底/f]
+
+// 寺内
+KEY寺/ANY+内/ANY->ANY>>Ng
+寺/ANY+KEY内/ANY->ANY>>f
+KEY寺内/ANY->[寺内/ANY]MERGE[寺/Ng 内/f]
+
+// 队中
+KEY队中/ANY->[队中/ANY]MERGE[队/n 中/f]
+KEY队/ANY+中/ANY->ANY>>n
+队/ANY+KEY中/ANY->ANY>>f
+
+// 风中
+KEY风/ANY+中/ANY->ANY>>n
+风/ANY+KEY中/ANY->ANY>>f
+KEY风中/ANY->[风中/ANY]MERGE[风/n 中/f]
+
+// 听后
+KEY听/ANY+后/ANY->ANY>>v
+听/ANY+KEY后/ANY->ANY>>f
+KEY听后/ANY->[听后/ANY]MERGE[听/v 后/f]
+
+// 胃内
+KEY胃/ANY+内/ANY->ANY>>n
+胃/ANY+KEY内/ANY->ANY>>f
+KEY胃内/ANY->[胃内/ANY]MERGE[胃/n 内/f]
+
+// 南投
+KEY南/ANY+投/ANY->ANY>>f
+南/ANY+KEY投/ANY->ANY>>v
+KEY南投/ANY->[南投/ANY]MERGE[南/f 投/v]
+
+// 外卡
+KEY外/ANY+卡/ANY->ANY>>f
+外/ANY+KEY卡/ANY->ANY>>v
+KEY外卡/ANY->[外卡/ANY]MERGE[外/f 卡/v]
+
+// 管内
+KEY管/ANY+内/ANY->ANY>>v
+管/ANY+KEY内/ANY->ANY>>f
+KEY管内/ANY->[管内/ANY]MERGE[管/v 内/f]
+
+// 网下
+KEY网/ANY+下/ANY->ANY>>n
+网/ANY+KEY下/ANY->ANY>>f
+KEY网下/ANY->[网下/ANY]MERGE[网/n 下/f]
+
+// 外聘
+KEY外/ANY+聘/ANY->ANY>>f
+外/ANY+KEY聘/ANY->ANY>>v
+KEY外聘/ANY->[外聘/ANY]MERGE[外/f 聘/v]
+
+// 区里
+KEY区/ANY+里/ANY->ANY>>n
+区/ANY+KEY里/ANY->ANY>>f
+KEY区里/ANY->[区里/ANY]MERGE[区/n 里/f]
+
+// 前胸
+KEY前/ANY+胸/ANY->ANY>>f
+前/ANY+KEY胸/ANY->ANY>>Ng
+KEY前胸/ANY->[前胸/ANY]MERGE[前/f 胸/Ng]
+
+// 肠内
+KEY肠/ANY+内/ANY->ANY>>n
+肠/ANY+KEY内/ANY->ANY>>f
+KEY肠内/ANY->[肠内/ANY]MERGE[肠/n 内/f]
+
+// 项下
+KEY项下/ANY->[项下/ANY]MERGE[项/q 下/f]
+KEY项/ANY+下/ANY->ANY>>q
+项/ANY+KEY下/ANY->ANY>>f
+
+// 外送
+KEY外送/ANY->[外送/ANY]MERGE[外/f 送/v]
+KEY外/ANY+送/ANY->ANY>>f
+外/ANY+KEY送/ANY->ANY>>v
+
+// 门后
+KEY门后/ANY->[门后/ANY]MERGE[门/n 后/f]
+KEY门/ANY+后/ANY->ANY>>n
+门/ANY+KEY后/ANY->ANY>>f
+
+// 棚里
+KEY棚里/ANY->[棚里/ANY]MERGE[棚/n 里/f]
+KEY棚/ANY+里/ANY->ANY>>n
+棚/ANY+KEY里/ANY->ANY>>f
+
+// 殿内
+KEY殿内/ANY->[殿内/ANY]MERGE[殿/Ng 内/f]
+KEY殿/ANY+内/ANY->ANY>>Ng
+殿/ANY+KEY内/ANY->ANY>>f
+
+// 表上
+KEY表/ANY+上/ANY->ANY>>n
+表/ANY+KEY上/ANY->ANY>>f
+KEY表上/ANY->[表上/ANY]MERGE[表/n 上/f]
+
+// 内里
+KEY内里/ANY->[内里/ANY]MERGE[内/f 里/f]
+KEY内/ANY+里/ANY->ANY>>f
+内/ANY+KEY里/ANY->ANY>>f
+
+// 宴上
+KEY宴上/ANY->[宴上/ANY]MERGE[宴/Ng 上/f]
+KEY宴/ANY+上/ANY->ANY>>Ng
+宴/ANY+KEY上/ANY->ANY>>f
+
+// 姜末
+KEY姜/ANY+末/ANY->ANY>>n
+姜/ANY+KEY末/ANY->ANY>>f
+KEY姜末/ANY->[姜末/ANY]MERGE[姜/n 末/f]
+
+// 洞里
+KEY洞/ANY+里/ANY->ANY>>n
+洞/ANY+KEY里/ANY->ANY>>f
+KEY洞里/ANY->[洞里/ANY]MERGE[洞/n 里/f]
+
+// 前车
+KEY前/ANY+车/ANY->ANY>>f
+前/ANY+KEY车/ANY->ANY>>n
+KEY前车/ANY->[前车/ANY]MERGE[前/f 车/n]
+
+// 洞内
+KEY洞/ANY+内/ANY->ANY>>n
+洞/ANY+KEY内/ANY->ANY>>f
+KEY洞内/ANY->[洞内/ANY]MERGE[洞/n 内/f]
+
+// 朝上
+KEY朝上/ANY->[朝上/ANY]MERGE[朝/tg 上/f]
+KEY朝/ANY+上/ANY->ANY>>tg
+朝/ANY+KEY上/ANY->ANY>>f
+
+// 走后
+KEY走后/ANY->[走后/ANY]MERGE[走/v 后/f]
+KEY走/ANY+后/ANY->ANY>>v
+走/ANY+KEY后/ANY->ANY>>f
+
+// 下述
+KEY下述/ANY->[下述/ANY]MERGE[下/f 述/vg]
+KEY下/ANY+述/ANY->ANY>>f
+下/ANY+KEY述/ANY->ANY>>vg
+
+// 河东
+KEY河东/ANY->[河东/ANY]MERGE[河/n 东/f]
+KEY河/ANY+东/ANY->ANY>>n
+河/ANY+KEY东/ANY->ANY>>f
+
+// 袋中
+KEY袋中/ANY->[袋中/ANY]MERGE[袋/Ng 中/f]
+KEY袋/ANY+中/ANY->ANY>>Ng
+袋/ANY+KEY中/ANY->ANY>>f
+
+// 闽北
+KEY闽北/ANY->[闽北/ANY]MERGE[闽/b 北/f]
+KEY闽/ANY+北/ANY->ANY>>b
+闽/ANY+KEY北/ANY->ANY>>f
+
+// 北街
+KEY北/ANY+街/ANY->ANY>>f
+北/ANY+KEY街/ANY->ANY>>n
+KEY北街/ANY->[北街/ANY]MERGE[北/f 街/n]
+
+// 看后
+KEY看/ANY+后/ANY->ANY>>v
+看/ANY+KEY后/ANY->ANY>>f
+KEY看后/ANY->[看后/ANY]MERGE[看/v 后/f]
+
+// 堆里
+KEY堆里/ANY->[堆里/ANY]MERGE[堆/v 里/f]
+KEY堆/ANY+里/ANY->ANY>>v
+堆/ANY+KEY里/ANY->ANY>>f
+
+// 中晚期
+KEY中晚期/ANY->[中晚期/ANY]MERGE[中/f 晚期/t]
+KEY中/ANY+晚期/ANY->ANY>>f
+中/ANY+KEY晚期/ANY->ANY>>t
+
+// 袋里
+KEY袋里/ANY->[袋里/ANY]MERGE[袋/Ng 里/f]
+KEY袋/ANY+里/ANY->ANY>>Ng
+袋/ANY+KEY里/ANY->ANY>>f
+
+// 飞上
+KEY飞/ANY+上/ANY->ANY>>v
+飞/ANY+KEY上/ANY->ANY>>f
+KEY飞上/ANY->[飞上/ANY]MERGE[飞/v 上/f]
+
+// 东段
+KEY东/ANY+段/ANY->ANY>>f
+东/ANY+KEY段/ANY->ANY>>q
+KEY东段/ANY->[东段/ANY]MERGE[东/f 段/q]
+
+// 网中
+KEY网中/ANY->[网中/ANY]MERGE[网/n 中/f]
+KEY网/ANY+中/ANY->ANY>>n
+网/ANY+KEY中/ANY->ANY>>f
+
+// 跳上
+KEY跳上/ANY->[跳上/ANY]MERGE[跳/v 上/f]
+KEY跳/ANY+上/ANY->ANY>>v
+跳/ANY+KEY上/ANY->ANY>>f
+
+// 内府
+KEY内/ANY+府/ANY->ANY>>f
+内/ANY+KEY府/ANY->ANY>>Ng
+KEY内府/ANY->[内府/ANY]MERGE[内/f 府/Ng]
+
+// 上拍
+KEY上拍/ANY->[上拍/ANY]MERGE[上/f 拍/v]
+KEY上/ANY+拍/ANY->ANY>>f
+上/ANY+KEY拍/ANY->ANY>>v
+
+// 耳东
+KEY耳/ANY+东/ANY->ANY>>n
+耳/ANY+KEY东/ANY->ANY>>f
+KEY耳东/ANY->[耳东/ANY]MERGE[耳/n 东/f]
+
+// 体中
+KEY体/ANY+中/ANY->ANY>>Ng
+体/ANY+KEY中/ANY->ANY>>f
+KEY体中/ANY->[体中/ANY]MERGE[体/Ng 中/f]
+
+// 后港
+KEY后/ANY+港/ANY->ANY>>f
+后/ANY+KEY港/ANY->ANY>>n
+KEY后港/ANY->[后港/ANY]MERGE[后/f 港/n]
+
+// 廊下
+KEY廊/ANY+下/ANY->ANY>>Ng
+廊/ANY+KEY下/ANY->ANY>>f
+KEY廊下/ANY->[廊下/ANY]MERGE[廊/Ng 下/f]
+
+// 路北
+KEY路/ANY+北/ANY->ANY>>n
+路/ANY+KEY北/ANY->ANY>>f
+KEY路北/ANY->[路北/ANY]MERGE[路/n 北/f]
+
+// 肝内
+KEY肝内/ANY->[肝内/ANY]MERGE[肝/n 内/f]
+KEY肝/ANY+内/ANY->ANY>>n
+肝/ANY+KEY内/ANY->ANY>>f
+
+// 省内外
+KEY省/ANY+内外/ANY->ANY>>n
+省/ANY+KEY内外/ANY->ANY>>f
+KEY省内外/ANY->[省内外/ANY]MERGE[省/n 内外/f]
+
+// 餐前
+KEY餐/ANY+前/ANY->ANY>>Ng
+餐/ANY+KEY前/ANY->ANY>>f
+KEY餐前/ANY->[餐前/ANY]MERGE[餐/Ng 前/f]
+
+// 楼前
+KEY楼/ANY+前/ANY->ANY>>n
+楼/ANY+KEY前/ANY->ANY>>f
+KEY楼前/ANY->[楼前/ANY]MERGE[楼/n 前/f]
+
+// 盆底
+KEY盆/ANY+底/ANY->ANY>>n
+盆/ANY+KEY底/ANY->ANY>>f
+KEY盆底/ANY->[盆底/ANY]MERGE[盆/n 底/f]
+
+// 框内
+KEY框/ANY+内/ANY->ANY>>Ng
+框/ANY+KEY内/ANY->ANY>>f
+KEY框内/ANY->[框内/ANY]MERGE[框/Ng 内/f]
+
+// 盆中
+KEY盆/ANY+中/ANY->ANY>>n
+盆/ANY+KEY中/ANY->ANY>>f
+KEY盆中/ANY->[盆中/ANY]MERGE[盆/n 中/f]
+
+// 底栖
+KEY底栖/ANY->[底栖/ANY]MERGE[底/f 栖/vg]
+KEY底/ANY+栖/ANY->ANY>>f
+底/ANY+KEY栖/ANY->ANY>>vg
+
+// 前体
+KEY前/ANY+体/ANY->ANY>>f
+前/ANY+KEY体/ANY->ANY>>Ng
+KEY前体/ANY->[前体/ANY]MERGE[前/f 体/Ng]
+
+// 湖上
+KEY湖上/ANY->[湖上/ANY]MERGE[湖/n 上/f]
+KEY湖/ANY+上/ANY->ANY>>n
+湖/ANY+KEY上/ANY->ANY>>f
+
+// 园中
+KEY园/ANY+中/ANY->ANY>>Ng
+园/ANY+KEY中/ANY->ANY>>f
+KEY园中/ANY->[园中/ANY]MERGE[园/Ng 中/f]
+
+// 轴上
+KEY轴上/ANY->[轴上/ANY]MERGE[轴/n 上/f]
+KEY轴/ANY+上/ANY->ANY>>n
+轴/ANY+KEY上/ANY->ANY>>f
+
+// 墙外
+KEY墙外/ANY->[墙外/ANY]MERGE[墙/n 外/f]
+KEY墙/ANY+外/ANY->ANY>>n
+墙/ANY+KEY外/ANY->ANY>>f
+
+// 屏东
+KEY屏东/ANY->[屏东/ANY]MERGE[屏/Ng 东/f]
+KEY屏/ANY+东/ANY->ANY>>Ng
+屏/ANY+KEY东/ANY->ANY>>f
+
+// 内援
+KEY内援/ANY->[内援/ANY]MERGE[内/f 援/vg]
+KEY内/ANY+援/ANY->ANY>>f
+内/ANY+KEY援/ANY->ANY>>vg
+
+// 外佣
+KEY外佣/ANY->[外佣/ANY]MERGE[外/f 佣/Ng]
+KEY外/ANY+佣/ANY->ANY>>f
+外/ANY+KEY佣/ANY->ANY>>Ng
+
+// 后转
+KEY后/ANY+转/ANY->ANY>>f
+后/ANY+KEY转/ANY->ANY>>v
+KEY后转/ANY->[后转/ANY]MERGE[后/f 转/v]
+
+// 天外
+KEY天外/ANY->[天外/ANY]MERGE[天/q 外/f]
+KEY天/ANY+外/ANY->ANY>>q
+天/ANY+KEY外/ANY->ANY>>f
+
+// 内酯
+KEY内/ANY+酯/ANY->ANY>>f
+内/ANY+KEY酯/ANY->ANY>>Ng
+KEY内酯/ANY->[内酯/ANY]MERGE[内/f 酯/Ng]
+
+// 罐里
+KEY罐/ANY+里/ANY->ANY>>Ng
+罐/ANY+KEY里/ANY->ANY>>f
+KEY罐里/ANY->[罐里/ANY]MERGE[罐/Ng 里/f]
+
+// 府中
+KEY府/ANY+中/ANY->ANY>>Ng
+府/ANY+KEY中/ANY->ANY>>f
+KEY府中/ANY->[府中/ANY]MERGE[府/Ng 中/f]
+
+// 末位
+KEY末/ANY+位/ANY->ANY>>f
+末/ANY+KEY位/ANY->ANY>>q
+KEY末位/ANY->[末位/ANY]MERGE[末/f 位/q]
+
+// 最南端
+KEY最南/ANY+端/ANY->[最南/ANY 端/ANY]MERGE[最/d 南端/f]
+KEY最南端/ANY->[最南端/ANY]MERGE[最/d 南端/f]
+KEY最/ANY+南端/ANY->ANY>>d
+最/ANY+KEY南端/ANY->ANY>>f
+
+// 初年
+KEY初年/ANY->[初年/ANY]MERGE[初/f 年/q]
+KEY初/ANY+年/ANY->ANY>>f
+初/ANY+KEY年/ANY->ANY>>q
+
+// 座上
+KEY座上/ANY->[座上/ANY]MERGE[座/q 上/f]
+KEY座/ANY+上/ANY->ANY>>q
+座/ANY+KEY上/ANY->ANY>>f
+
+// 内燃
+KEY内/ANY+燃/ANY->ANY>>f
+内/ANY+KEY燃/ANY->ANY>>vg
+KEY内燃/ANY->[内燃/ANY]MERGE[内/f 燃/vg]
+
+// 规上
+KEY规/ANY+上/ANY->ANY>>Ng
+规/ANY+KEY上/ANY->ANY>>f
+KEY规上/ANY->[规上/ANY]MERGE[规/Ng 上/f]
+
+// 底端
+KEY底端/ANY->[底端/ANY]MERGE[底/f 端/v]
+KEY底/ANY+端/ANY->ANY>>f
+底/ANY+KEY端/ANY->ANY>>v
+
+// 后继
+KEY后继/ANY->[后继/ANY]MERGE[后/f 继/vg]
+KEY后/ANY+继/ANY->ANY>>f
+后/ANY+KEY继/ANY->ANY>>vg
+
+// 下册
+KEY下册/ANY->[下册/ANY]MERGE[下/f 册/q]
+KEY下/ANY+册/ANY->ANY>>f
+下/ANY+KEY册/ANY->ANY>>q
+
+// 舱里
+KEY舱里/ANY->[舱里/ANY]MERGE[舱/n 里/f]
+KEY舱/ANY+里/ANY->ANY>>n
+舱/ANY+KEY里/ANY->ANY>>f
+
+// 洞中
+KEY洞/ANY+中/ANY->ANY>>n
+洞/ANY+KEY中/ANY->ANY>>f
+KEY洞中/ANY->[洞中/ANY]MERGE[洞/n 中/f]
+
+// 外派
+KEY外派/ANY->[外派/ANY]MERGE[外/f 派/n]
+KEY外/ANY+派/ANY->ANY>>f
+外/ANY+KEY派/ANY->ANY>>n
+
+// 牌上
+KEY牌/ANY+上/ANY->ANY>>n
+牌/ANY+KEY上/ANY->ANY>>f
+KEY牌上/ANY->[牌上/ANY]MERGE[牌/n 上/f]
+
+// 内层
+KEY内/ANY+层/ANY->ANY>>f
+内/ANY+KEY层/ANY->ANY>>q
+KEY内层/ANY->[内层/ANY]MERGE[内/f 层/q]
+
+// 后海
+KEY后/ANY+海/ANY->ANY>>f
+后/ANY+KEY海/ANY->ANY>>n
+KEY后海/ANY->[后海/ANY]MERGE[后/f 海/n]
+
+// 下起
+KEY下起/ANY->[下起/ANY]MERGE[下/f 起/v]
+KEY下/ANY+起/ANY->ANY>>f
+下/ANY+KEY起/ANY->ANY>>v
+
+// 押后
+KEY押后/ANY->[押后/ANY]MERGE[押/v 后/f]
+KEY押/ANY+后/ANY->ANY>>v
+押/ANY+KEY后/ANY->ANY>>f
+
+// 火上
+KEY火/ANY+上/ANY->ANY>>n
+火/ANY+KEY上/ANY->ANY>>f
+KEY火上/ANY->[火上/ANY]MERGE[火/n 上/f]
+
+// 右键
+KEY右/ANY+键/ANY->ANY>>f
+右/ANY+KEY键/ANY->ANY>>n
+KEY右键/ANY->[右键/ANY]MERGE[右/f 键/n]
+
+// 厅里
+KEY厅里/ANY->[厅里/ANY]MERGE[厅/n 里/f]
+KEY厅/ANY+里/ANY->ANY>>n
+厅/ANY+KEY里/ANY->ANY>>f
+
+// 镜中
+KEY镜/ANY+中/ANY->ANY>>Ng
+镜/ANY+KEY中/ANY->ANY>>f
+KEY镜中/ANY->[镜中/ANY]MERGE[镜/Ng 中/f]
+
+// 内装
+KEY内/ANY+装/ANY->ANY>>f
+内/ANY+KEY装/ANY->ANY>>v
+KEY内装/ANY->[内装/ANY]MERGE[内/f 装/v]
+
+// 床下
+KEY床/ANY+下/ANY->ANY>>n
+床/ANY+KEY下/ANY->ANY>>f
+KEY床下/ANY->[床下/ANY]MERGE[床/n 下/f]
+
+// 厂内
+KEY厂内/ANY->[厂内/ANY]MERGE[厂/n 内/f]
+KEY厂/ANY+内/ANY->ANY>>n
+厂/ANY+KEY内/ANY->ANY>>f
+
+// 半空中
+KEY半空/ANY+中/ANY->ANY>>s
+半空/ANY+KEY中/ANY->ANY>>f
+KEY半空中/ANY->[半空中/ANY]MERGE[半空/s 中/f]
+
+// 仇外
+KEY仇/ANY+外/ANY->ANY>>n
+仇/ANY+KEY外/ANY->ANY>>f
+KEY仇外/ANY->[仇外/ANY]MERGE[仇/n 外/f]
+
+// 地底
+KEY地底/ANY->[地底/ANY]MERGE[地/n 底/f]
+KEY地/ANY+底/ANY->ANY>>n
+地/ANY+KEY底/ANY->ANY>>f
+
+// 外移
+KEY外移/ANY->[外移/ANY]MERGE[外/f 移/v]
+KEY外/ANY+移/ANY->ANY>>f
+外/ANY+KEY移/ANY->ANY>>v
+
+// 内建
+KEY内/ANY+建/ANY->ANY>>f
+内/ANY+KEY建/ANY->ANY>>v
+KEY内建/ANY->[内建/ANY]MERGE[内/f 建/v]
+
+// 沟内
+KEY沟内/ANY->[沟内/ANY]MERGE[沟/n 内/f]
+KEY沟/ANY+内/ANY->ANY>>n
+沟/ANY+KEY内/ANY->ANY>>f
+
+// 外尔
+KEY外/ANY+尔/ANY->ANY>>f
+外/ANY+KEY尔/ANY->ANY>>r
+KEY外尔/ANY->[外尔/ANY]MERGE[外/f 尔/r]
+
+// 上漆
+KEY上漆/ANY->[上漆/ANY]MERGE[上/f 漆/v]
+KEY上/ANY+漆/ANY->ANY>>f
+上/ANY+KEY漆/ANY->ANY>>v
+
+// 外源
+KEY外/ANY+源/ANY->ANY>>f
+外/ANY+KEY源/ANY->ANY>>Ng
+KEY外源/ANY->[外源/ANY]MERGE[外/f 源/Ng]
+
+// 后羿
+KEY后/ANY+羿/ANY->ANY>>f
+后/ANY+KEY羿/ANY->ANY>>nr
+KEY后羿/ANY->[后羿/ANY]MERGE[后/f 羿/nr]
+
+// 焦外
+KEY焦外/ANY->[焦外/ANY]MERGE[焦/Ng 外/f]
+KEY焦/ANY+外/ANY->ANY>>Ng
+焦/ANY+KEY外/ANY->ANY>>f
+
+// 下端
+KEY下/ANY+端/ANY->ANY>>f
+下/ANY+KEY端/ANY->ANY>>v
+KEY下端/ANY->[下端/ANY]MERGE[下/f 端/v]
+
+// =====================================
+//
+//	Ictclas 有 m 共 134 词
+//
+// ======================================
+
+// 30日
+KEY30日/ANY->[30日/ANY]MERGE[30/m 日/q]
+KEY30/ANY+日/ANY->ANY>>m
+30/ANY+KEY日/ANY->ANY>>q
+
+// 多元
+KEY多元/ANY->[多元/ANY]MERGE[多/m 元/q]
+KEY多/ANY+元/ANY->ANY>>m
+多/ANY+KEY元/ANY->ANY>>q
+
+// 31日
+KEY31日/ANY->[31日/ANY]MERGE[31/m 日/q]
+KEY31/ANY+日/ANY->ANY>>m
+31/ANY+KEY日/ANY->ANY>>q
+
+// 30多
+KEY30/ANY+多/ANY->ANY>>m
+30/ANY+KEY多/ANY->ANY>>m
+KEY30多/ANY->[30多/ANY]MERGE[30/m 多/m]
+
+// 十多
+KEY十/ANY+多/ANY->ANY>>m
+十/ANY+KEY多/ANY->ANY>>m
+KEY十多/ANY->[十多/ANY]MERGE[十/m 多/m]
+
+// 千兆
+KEY千/ANY+兆/ANY->ANY>>m
+千/ANY+KEY兆/ANY->ANY>>vg
+KEY千兆/ANY->[千兆/ANY]MERGE[千/m 兆/vg]
+
+// 首页
+KEY首页/ANY->[首页/ANY]MERGE[首/m 页/q]
+KEY首/ANY+页/ANY->ANY>>m
+首/ANY+KEY页/ANY->ANY>>q
+
+// 10多
+KEY10多/ANY->[10多/ANY]MERGE[10/m 多/m]
+KEY10/ANY+多/ANY->ANY>>m
+10/ANY+KEY多/ANY->ANY>>m
+
+// 一点点
+KEY一点点/ANY->[一点点/ANY]MERGE[一点/m 点/n]
+KEY一点/ANY+点/ANY->ANY>>m
+一点/ANY+KEY点/ANY->ANY>>n
+
+// 首汽
+KEY首/ANY+汽/ANY->ANY>>m
+首/ANY+KEY汽/ANY->ANY>>w
+KEY首汽/ANY->[首汽/ANY]MERGE[首/m 汽/w]
+
+// 多措
+KEY多/ANY+措/ANY->ANY>>m
+多/ANY+KEY措/ANY->ANY>>vg
+KEY多措/ANY->[多措/ANY]MERGE[多/m 措/vg]
+
+// 90年代
+KEY90年代/ANY->[90年代/ANY]MERGE[90/m 年代/n]
+KEY90/ANY+年代/ANY->ANY>>m
+90/ANY+KEY年代/ANY->ANY>>n
+
+// 首部
+KEY首/ANY+部/ANY->ANY>>m
+首/ANY+KEY部/ANY->ANY>>q
+KEY首部/ANY->[首部/ANY]MERGE[首/m 部/q]
+
+// 百余
+KEY百余/ANY->[百余/ANY]MERGE[百/m 余/m]
+KEY百/ANY+余/ANY->ANY>>m
+百/ANY+KEY余/ANY->ANY>>m
+
+// 80年代
+KEY80年代/ANY->[80年代/ANY]MERGE[80/m 年代/n]
+KEY80/ANY+年代/ANY->ANY>>m
+80/ANY+KEY年代/ANY->ANY>>n
+
+// 整部
+KEY整部/ANY->[整部/ANY]MERGE[整/m 部/q]
+KEY整/ANY+部/ANY->ANY>>m
+整/ANY+KEY部/ANY->ANY>>q
+
+// 4G
+KEY4/ANY+G/ANY->ANY>>m
+4/ANY+KEYG/ANY->ANY>>o
+KEY4G/ANY->[4G/ANY]MERGE[4/m G/o]
+
+// 2000多
+KEY2000/ANY+多/ANY->ANY>>m
+2000/ANY+KEY多/ANY->ANY>>m
+KEY2000多/ANY->[2000多/ANY]MERGE[2000/m 多/m]
+
+// 双语
+KEY双语/ANY->[双语/ANY]MERGE[双/m 语/Ng]
+KEY双/ANY+语/ANY->ANY>>m
+双/ANY+KEY语/ANY->ANY>>Ng
+
+// 双腿
+KEY双/ANY+腿/ANY->ANY>>m
+双/ANY+KEY腿/ANY->ANY>>n
+KEY双腿/ANY->[双腿/ANY]MERGE[双/m 腿/n]
+
+// 二十多
+KEY二十多/ANY->[二十多/ANY]MERGE[二十/m 多/m]
+KEY二十/ANY+多/ANY->ANY>>m
+二十/ANY+KEY多/ANY->ANY>>m
+
+// 百态
+KEY百/ANY+态/ANY->ANY>>m
+百/ANY+KEY态/ANY->ANY>>Ng
+KEY百态/ANY->[百态/ANY]MERGE[百/m 态/Ng]
+
+// 3.5mm
+KEY3.5mm/ANY->[3.5mm/ANY]MERGE[3.5/m mm/nx]
+KEY3.5/ANY+mm/ANY->ANY>>m
+3.5/ANY+KEYmm/ANY->ANY>>nx
+
+// 400多
+KEY400多/ANY->[400多/ANY]MERGE[400/m 多/m]
+KEY400/ANY+多/ANY->ANY>>m
+400/ANY+KEY多/ANY->ANY>>m
+
+// 70年代
+KEY70年/ANY+代/ANY->[70年/ANY 代/ANY]MERGE[70/m 年代/n]
+KEY70年代/ANY->[70年代/ANY]MERGE[70/m 年代/n]
+KEY70/ANY+年代/ANY->ANY>>m
+70/ANY+KEY年代/ANY->ANY>>n
+
+// 一瞥
+KEY一/ANY+瞥/ANY->ANY>>m
+一/ANY+KEY瞥/ANY->ANY>>q
+KEY一瞥/ANY->[一瞥/ANY]MERGE[一/m 瞥/q]
+
+// 第几
+KEY第/ANY+几/ANY->ANY>>m
+第/ANY+KEY几/ANY->ANY>>m
+KEY第几/ANY->[第几/ANY]MERGE[第/m 几/m]
+
+// 兄弟俩
+KEY兄弟俩/ANY->[兄弟俩/ANY]MERGE[兄弟/n 俩/m]
+KEY兄弟/ANY+俩/ANY->ANY>>n
+兄弟/ANY+KEY俩/ANY->ANY>>m
+
+// 丙肝
+KEY丙/ANY+肝/ANY->ANY>>m
+丙/ANY+KEY肝/ANY->ANY>>n
+KEY丙肝/ANY->[丙肝/ANY]MERGE[丙/m 肝/n]
+
+// 千余
+KEY千/ANY+余/ANY->ANY>>m
+千/ANY+KEY余/ANY->ANY>>m
+KEY千余/ANY->[千余/ANY]MERGE[千/m 余/m]
+
+// 2.5D
+KEY2.5/ANY+D/ANY->ANY>>m
+2.5/ANY+KEYD/ANY->ANY>>o
+KEY2.5D/ANY->[2.5D/ANY]MERGE[2.5/m D/o]
+
+// ２０１７年
+KEY２０１７/ANY+年/ANY->ANY>>m
+２０１７/ANY+KEY年/ANY->ANY>>q
+KEY２０１７年/ANY->[２０１７年/ANY]MERGE[２０１７/m 年/q]
+
+// 厨余
+KEY厨/ANY+余/ANY->ANY>>Ng
+厨/ANY+KEY余/ANY->ANY>>m
+KEY厨余/ANY->[厨余/ANY]MERGE[厨/Ng 余/m]
+
+// 1080P
+KEY1080P/ANY->[1080P/ANY]MERGE[1080/m P/o]
+KEY1080/ANY+P/ANY->ANY>>m
+1080/ANY+KEYP/ANY->ANY>>o
+
+// 60年代
+KEY60年代/ANY->[60年代/ANY]MERGE[60/m 年代/n]
+KEY60/ANY+年代/ANY->ANY>>m
+60/ANY+KEY年代/ANY->ANY>>n
+
+// 600多
+KEY600多/ANY->[600多/ANY]MERGE[600/m 多/m]
+KEY600/ANY+多/ANY->ANY>>m
+600/ANY+KEY多/ANY->ANY>>m
+
+// 多汁
+KEY多/ANY+汁/ANY->ANY>>m
+多/ANY+KEY汁/ANY->ANY>>Ng
+KEY多汁/ANY->[多汁/ANY]MERGE[多/m 汁/Ng]
+
+// ２０１６年
+KEY２０１６年/ANY->[２０１６年/ANY]MERGE[２０１６/m 年/q]
+KEY２０１６/ANY+年/ANY->ANY>>m
+２０１６/ANY+KEY年/ANY->ANY>>q
+
+// 5000多
+KEY5000多/ANY->[5000多/ANY]MERGE[5000/m 多/m]
+KEY5000/ANY+多/ANY->ANY>>m
+5000/ANY+KEY多/ANY->ANY>>m
+
+// 万丈
+KEY万丈/ANY->[万丈/ANY]MERGE[万/m 丈/q]
+KEY万/ANY+丈/ANY->ANY>>m
+万/ANY+KEY丈/ANY->ANY>>q
+
+// 大二
+KEY大/ANY+二/ANY->ANY>>a
+大/ANY+KEY二/ANY->ANY>>m
+KEY大二/ANY->[大二/ANY]MERGE[大/a 二/m]
+
+// 8K
+KEY8K/ANY->[8K/ANY]MERGE[8/m K/v]
+KEY8/ANY+K/ANY->ANY>>m
+8/ANY+KEYK/ANY->ANY>>v
+
+// 多肽
+KEY多肽/ANY->[多肽/ANY]MERGE[多/m 肽/Ng]
+KEY多/ANY+肽/ANY->ANY>>m
+多/ANY+KEY肽/ANY->ANY>>Ng
+
+// ２０１５年
+KEY２０１５年/ANY->[２０１５年/ANY]MERGE[２０１５/m 年/q]
+KEY２０１５/ANY+年/ANY->ANY>>m
+２０１５/ANY+KEY年/ANY->ANY>>q
+
+// 百出
+KEY百出/ANY->[百出/ANY]MERGE[百/m 出/v]
+KEY百/ANY+出/ANY->ANY>>m
+百/ANY+KEY出/ANY->ANY>>v
+
+// 50年代
+KEY50年代/ANY->[50年代/ANY]MERGE[50/m 年代/n]
+KEY50/ANY+年代/ANY->ANY>>m
+50/ANY+KEY年代/ANY->ANY>>n
+
+// 十几万
+KEY十/ANY+几万/ANY->ANY>>m
+十/ANY+KEY几万/ANY->ANY>>m
+KEY十几/ANY+万/ANY->[十几/ANY 万/ANY]MERGE[十/m 几万/m]
+KEY十几万/ANY->[十几万/ANY]MERGE[十/m 几万/m]
+
+// 三十多
+KEY三十/ANY+多/ANY->ANY>>m
+三十/ANY+KEY多/ANY->ANY>>m
+KEY三十多/ANY->[三十多/ANY]MERGE[三十/m 多/m]
+
+// 4000多
+KEY4000多/ANY->[4000多/ANY]MERGE[4000/m 多/m]
+KEY4000/ANY+多/ANY->ANY>>m
+4000/ANY+KEY多/ANY->ANY>>m
+
+// 双线
+KEY双线/ANY->[双线/ANY]MERGE[双/m 线/q]
+KEY双/ANY+线/ANY->ANY>>m
+双/ANY+KEY线/ANY->ANY>>q
+
+// 居首
+KEY居首/ANY->[居首/ANY]MERGE[居/v 首/m]
+KEY居/ANY+首/ANY->ANY>>v
+居/ANY+KEY首/ANY->ANY>>m
+
+// 大四
+KEY大/ANY+四/ANY->ANY>>a
+大/ANY+KEY四/ANY->ANY>>m
+KEY大四/ANY->[大四/ANY]MERGE[大/a 四/m]
+
+// 4GB
+KEY4GB/ANY->[4GB/ANY]MERGE[4/m GB/nx]
+KEY4/ANY+GB/ANY->ANY>>m
+4/ANY+KEYGB/ANY->ANY>>nx
+
+// 咱俩
+KEY咱俩/ANY->[咱俩/ANY]MERGE[咱/r 俩/m]
+KEY咱/ANY+俩/ANY->ANY>>r
+咱/ANY+KEY俩/ANY->ANY>>m
+
+// 三湘
+KEY三/ANY+湘/ANY->ANY>>m
+三/ANY+KEY湘/ANY->ANY>>b
+KEY三湘/ANY->[三湘/ANY]MERGE[三/m 湘/b]
+
+// 半裙
+KEY半裙/ANY->[半裙/ANY]MERGE[半/m 裙/Ng]
+KEY半/ANY+裙/ANY->ANY>>m
+半/ANY+KEY裙/ANY->ANY>>Ng
+
+// 尺八
+KEY尺/ANY+八/ANY->ANY>>q
+尺/ANY+KEY八/ANY->ANY>>m
+KEY尺八/ANY->[尺八/ANY]MERGE[尺/q 八/m]
+
+// 四三九九
+KEY四三九九/ANY->[四三九九/ANY]MERGE[四/m 三九九/m]
+KEY四/ANY+三九九/ANY->ANY>>m
+四/ANY+KEY三九九/ANY->ANY>>m
+
+// 百分百
+KEY百分百/ANY->[百分百/ANY]MERGE[百分/m 百/m]
+KEY百分/ANY+百/ANY->ANY>>m
+百分/ANY+KEY百/ANY->ANY>>m
+
+// 二合一
+KEY二合一/ANY->[二合一/ANY]MERGE[二/m 合一/v]
+KEY二/ANY+合/ANY+一/ANY->[二/ANY 合/ANY 一/ANY]MERGE[二/m 合一/v]
+KEY二/ANY+合一/ANY->ANY>>m
+二/ANY+KEY合一/ANY->ANY>>v
+
+// 双击
+KEY双击/ANY->[双击/ANY]MERGE[双/m 击/vg]
+KEY双/ANY+击/ANY->ANY>>m
+双/ANY+KEY击/ANY->ANY>>vg
+
+// 两分钟
+KEY两/ANY+分钟/ANY->ANY>>m
+两/ANY+KEY分钟/ANY->ANY>>q
+KEY两分钟/ANY->[两分钟/ANY]MERGE[两/m 分钟/q]
+
+// 2.0T
+KEY2.0T/ANY->[2.0T/ANY]MERGE[2.0/m T/r]
+KEY2.0/ANY+T/ANY->ANY>>m
+2.0/ANY+KEYT/ANY->ANY>>r
+
+// 3G
+KEY3G/ANY->[3G/ANY]MERGE[3/m G/o]
+KEY3/ANY+G/ANY->ANY>>m
+3/ANY+KEYG/ANY->ANY>>o
+
+// 3000余
+KEY3000/ANY+余/ANY->ANY>>m
+3000/ANY+KEY余/ANY->ANY>>m
+KEY3000余/ANY->[3000余/ANY]MERGE[3000/m 余/m]
+
+// 一点一点
+KEY一点一点/ANY->[一点一点/ANY]MERGE[一点/m 一点/m]
+KEY一点/ANY+一点/ANY->ANY>>m
+一点/ANY+KEY一点/ANY->ANY>>m
+
+// 100年
+KEY100/ANY+年/ANY->ANY>>m
+100/ANY+KEY年/ANY->ANY>>q
+KEY100年/ANY->[100年/ANY]MERGE[100/m 年/q]
+
+// 双膝
+KEY双/ANY+膝/ANY->ANY>>m
+双/ANY+KEY膝/ANY->ANY>>Ng
+KEY双膝/ANY->[双膝/ANY]MERGE[双/m 膝/Ng]
+
+// 父子俩
+KEY父子/ANY+俩/ANY->ANY>>n
+父子/ANY+KEY俩/ANY->ANY>>m
+KEY父子俩/ANY->[父子俩/ANY]MERGE[父子/n 俩/m]
+
+// 2D
+KEY2/ANY+D/ANY->ANY>>m
+2/ANY+KEYD/ANY->ANY>>o
+KEY2D/ANY->[2D/ANY]MERGE[2/m D/o]
+
+// 挑一
+KEY挑一/ANY->[挑一/ANY]MERGE[挑/v 一/m]
+KEY挑/ANY+一/ANY->ANY>>v
+挑/ANY+KEY一/ANY->ANY>>m
+
+// ２０１８年
+KEY２０１８年/ANY->[２０１８年/ANY]MERGE[２０１８/m 年/q]
+KEY２０１８/ANY+年/ANY->ANY>>m
+２０１８/ANY+KEY年/ANY->ANY>>q
+
+// 1.5T
+KEY1.5/ANY+T/ANY->ANY>>m
+1.5/ANY+KEYT/ANY->ANY>>r
+KEY1.5T/ANY->[1.5T/ANY]MERGE[1.5/m T/r]
+
+// 双盲
+KEY双/ANY+盲/ANY->ANY>>m
+双/ANY+KEY盲/ANY->ANY>>Ng
+KEY双盲/ANY->[双盲/ANY]MERGE[双/m 盲/Ng]
+
+// 二十几
+KEY二十/ANY+几/ANY->[二十/ANY 几/ANY]MERGE[二/m 十几/m]
+KEY二/ANY+十几/ANY->ANY>>m
+二/ANY+KEY十几/ANY->ANY>>m
+KEY二十几/ANY->[二十几/ANY]MERGE[二/m 十几/m]
+
+// 半透明
+KEY半/ANY+透明/ANY->ANY>>m
+半/ANY+KEY透明/ANY->ANY>>a
+KEY半透明/ANY->[半透明/ANY]MERGE[半/m 透明/a]
+
+// 7000多
+KEY7000多/ANY->[7000多/ANY]MERGE[7000/m 多/m]
+KEY7000/ANY+多/ANY->ANY>>m
+7000/ANY+KEY多/ANY->ANY>>m
+
+// 无双
+KEY无/ANY+双/ANY->ANY>>v
+无/ANY+KEY双/ANY->ANY>>m
+KEY无双/ANY->[无双/ANY]MERGE[无/v 双/m]
+
+// 万余
+KEY万/ANY+余/ANY->ANY>>m
+万/ANY+KEY余/ANY->ANY>>m
+KEY万余/ANY->[万余/ANY]MERGE[万/m 余/m]
+
+// 二爷
+KEY二/ANY+爷/ANY->ANY>>m
+二/ANY+KEY爷/ANY->ANY>>Ng
+KEY二爷/ANY->[二爷/ANY]MERGE[二/m 爷/Ng]
+
+// 2G
+KEY2G/ANY->[2G/ANY]MERGE[2/m G/o]
+KEY2/ANY+G/ANY->ANY>>m
+2/ANY+KEYG/ANY->ANY>>o
+
+// 老四
+KEY老四/ANY->[老四/ANY]MERGE[老/a 四/m]
+KEY老/ANY+四/ANY->ANY>>a
+老/ANY+KEY四/ANY->ANY>>m
+
+// 90多
+KEY90/ANY+多/ANY->ANY>>m
+90/ANY+KEY多/ANY->ANY>>m
+KEY90多/ANY->[90多/ANY]MERGE[90/m 多/m]
+
+// 双模
+KEY双模/ANY->[双模/ANY]MERGE[双/m 模/Ng]
+KEY双/ANY+模/ANY->ANY>>m
+双/ANY+KEY模/ANY->ANY>>Ng
+
+// 双唇
+KEY双唇/ANY->[双唇/ANY]MERGE[双/m 唇/Ng]
+KEY双/ANY+唇/ANY->ANY>>m
+双/ANY+KEY唇/ANY->ANY>>Ng
+
+// ２０１４年
+KEY２０１４年/ANY->[２０１４年/ANY]MERGE[２０１４/m 年/q]
+KEY２０１４/ANY+年/ANY->ANY>>m
+２０１４/ANY+KEY年/ANY->ANY>>q
+
+// 130多
+KEY130多/ANY->[130多/ANY]MERGE[130/m 多/m]
+KEY130/ANY+多/ANY->ANY>>m
+130/ANY+KEY多/ANY->ANY>>m
+
+// 八十年代
+KEY八十年代/ANY->[八十年代/ANY]MERGE[八十/m 年代/n]
+KEY八十/ANY+年代/ANY->ANY>>m
+八十/ANY+KEY年代/ANY->ANY>>n
+
+// 九十年代
+KEY九十/ANY+年代/ANY->ANY>>m
+九十/ANY+KEY年代/ANY->ANY>>n
+KEY九十年代/ANY->[九十年代/ANY]MERGE[九十/m 年代/n]
+
+// 百度度
+KEY百/ANY+度度/ANY->ANY>>m
+百/ANY+KEY度度/ANY->ANY>>v
+KEY百度度/ANY->[百度度/ANY]MERGE[百/m 度度/v]
+KEY百度/ANY+度/ANY->[百度/ANY 度/ANY]MERGE[百/m 度度/v]
+
+// 二叔
+KEY二/ANY+叔/ANY->ANY>>m
+二/ANY+KEY叔/ANY->ANY>>n
+KEY二叔/ANY->[二叔/ANY]MERGE[二/m 叔/n]
+
+// ２０１３年
+KEY２０１３年/ANY->[２０１３年/ANY]MERGE[２０１３/m 年/q]
+KEY２０１３/ANY+年/ANY->ANY>>m
+２０１３/ANY+KEY年/ANY->ANY>>q
+
+// 35年
+KEY35/ANY+年/ANY->ANY>>m
+35/ANY+KEY年/ANY->ANY>>q
+KEY35年/ANY->[35年/ANY]MERGE[35/m 年/q]
+
+// 多栖
+KEY多栖/ANY->[多栖/ANY]MERGE[多/m 栖/vg]
+KEY多/ANY+栖/ANY->ANY>>m
+多/ANY+KEY栖/ANY->ANY>>vg
+
+// 2万余
+KEY2万/ANY+余/ANY->ANY>>m
+2万/ANY+KEY余/ANY->ANY>>m
+KEY2/ANY+万余/ANY->[2/ANY 万余/ANY]MERGE[2万/m 余/m]
+KEY2万余/ANY->[2万余/ANY]MERGE[2万/m 余/m]
+
+// 四十多
+KEY四十多/ANY->[四十多/ANY]MERGE[四十/m 多/m]
+KEY四十/ANY+多/ANY->ANY>>m
+四十/ANY+KEY多/ANY->ANY>>m
+
+// 120多
+KEY120多/ANY->[120多/ANY]MERGE[120/m 多/m]
+KEY120/ANY+多/ANY->ANY>>m
+120/ANY+KEY多/ANY->ANY>>m
+
+// 任一
+KEY任一/ANY->[任一/ANY]MERGE[任/v 一/m]
+KEY任/ANY+一/ANY->ANY>>v
+任/ANY+KEY一/ANY->ANY>>m
+
+// 1.5L
+KEY1.5/ANY+L/ANY->ANY>>m
+1.5/ANY+KEYL/ANY->ANY>>o
+KEY1.5L/ANY->[1.5L/ANY]MERGE[1.5/m L/o]
+
+// 3万余
+KEY3万余/ANY->[3万余/ANY]MERGE[3万/m 余/m]
+KEY3万/ANY+余/ANY->ANY>>m
+3万/ANY+KEY余/ANY->ANY>>m
+
+// 4000余
+KEY4000/ANY+余/ANY->ANY>>m
+4000/ANY+KEY余/ANY->ANY>>m
+KEY4000余/ANY->[4000余/ANY]MERGE[4000/m 余/m]
+
+// 双筒
+KEY双筒/ANY->[双筒/ANY]MERGE[双/m 筒/q]
+KEY双/ANY+筒/ANY->ANY>>m
+双/ANY+KEY筒/ANY->ANY>>q
+
+// 半裸
+KEY半裸/ANY->[半裸/ANY]MERGE[半/m 裸/Ag]
+KEY半/ANY+裸/ANY->ANY>>m
+半/ANY+KEY裸/ANY->ANY>>Ag
+
+// 多档
+KEY多档/ANY->[多档/ANY]MERGE[多/m 档/q]
+KEY多/ANY+档/ANY->ANY>>m
+多/ANY+KEY档/ANY->ANY>>q
+
+// 2.0L
+KEY2.0L/ANY->[2.0L/ANY]MERGE[2.0/m L/o]
+KEY2.0/ANY+L/ANY->ANY>>m
+2.0/ANY+KEYL/ANY->ANY>>o
+
+// 零担
+KEY零/ANY+担/ANY->ANY>>m
+零/ANY+KEY担/ANY->ANY>>q
+KEY零担/ANY->[零担/ANY]MERGE[零/m 担/q]
+
+// 4000mAh
+KEY4000mAh/ANY->[4000mAh/ANY]MERGE[4000/m mAh/n]
+KEY4000/ANY+mAh/ANY->ANY>>m
+4000/ANY+KEYmAh/ANY->ANY>>n
+
+// 多式
+KEY多式/ANY->[多式/ANY]MERGE[多/m 式/k]
+KEY多/ANY+式/ANY->ANY>>m
+多/ANY+KEY式/ANY->ANY>>k
+
+// 壹桥
+KEY壹桥/ANY->[壹桥/ANY]MERGE[壹/m 桥/n]
+KEY壹/ANY+桥/ANY->ANY>>m
+壹/ANY+KEY桥/ANY->ANY>>n
+
+// 五邑
+KEY五/ANY+邑/ANY->ANY>>m
+五/ANY+KEY邑/ANY->ANY>>Ng
+KEY五邑/ANY->[五邑/ANY]MERGE[五/m 邑/Ng]
+
+// 30年代
+KEY30/ANY+年代/ANY->ANY>>m
+30/ANY+KEY年代/ANY->ANY>>n
+KEY30年代/ANY->[30年代/ANY]MERGE[30/m 年代/n]
+
+// 19号
+KEY19号/ANY->[19号/ANY]MERGE[19/m 号/q]
+KEY19/ANY+号/ANY->ANY>>m
+19/ANY+KEY号/ANY->ANY>>q
+
+// 双廊
+KEY双/ANY+廊/ANY->ANY>>m
+双/ANY+KEY廊/ANY->ANY>>Ng
+KEY双廊/ANY->[双廊/ANY]MERGE[双/m 廊/Ng]
+
+// 壹心
+KEY壹心/ANY->[壹心/ANY]MERGE[壹/m 心/n]
+KEY壹/ANY+心/ANY->ANY>>m
+壹/ANY+KEY心/ANY->ANY>>n
+
+// 双亡
+KEY双亡/ANY->[双亡/ANY]MERGE[双/m 亡/vg]
+KEY双/ANY+亡/ANY->ANY>>m
+双/ANY+KEY亡/ANY->ANY>>vg
+
+// ２０１２年
+KEY２０１２年/ANY->[２０１２年/ANY]MERGE[２０１２/m 年/q]
+KEY２０１２/ANY+年/ANY->ANY>>m
+２０１２/ANY+KEY年/ANY->ANY>>q
+
+// 18W
+KEY18/ANY+W/ANY->ANY>>m
+18/ANY+KEYW/ANY->ANY>>n
+KEY18W/ANY->[18W/ANY]MERGE[18/m W/n]
+
+// 半途
+KEY半/ANY+途/ANY->ANY>>m
+半/ANY+KEY途/ANY->ANY>>Ng
+KEY半途/ANY->[半途/ANY]MERGE[半/m 途/Ng]
+
+// 半夏
+KEY半/ANY+夏/ANY->ANY>>m
+半/ANY+KEY夏/ANY->ANY>>tg
+KEY半夏/ANY->[半夏/ANY]MERGE[半/m 夏/tg]
+
+// 第N
+KEY第/ANY+N/ANY->ANY>>m
+第/ANY+KEYN/ANY->ANY>>o
+KEY第N/ANY->[第N/ANY]MERGE[第/m N/o]
+
+// 08年
+KEY08年/ANY->[08年/ANY]MERGE[08/m 年/q]
+KEY08/ANY+年/ANY->ANY>>m
+08/ANY+KEY年/ANY->ANY>>q
+
+// 3GB
+KEY3/ANY+GB/ANY->ANY>>m
+3/ANY+KEYGB/ANY->ANY>>nx
+KEY3GB/ANY->[3GB/ANY]MERGE[3/m GB/nx]
+
+// 33年
+KEY33年/ANY->[33年/ANY]MERGE[33/m 年/q]
+KEY33/ANY+年/ANY->ANY>>m
+33/ANY+KEY年/ANY->ANY>>q
+
+// 200年
+KEY200/ANY+年/ANY->ANY>>m
+200/ANY+KEY年/ANY->ANY>>q
+KEY200年/ANY->[200年/ANY]MERGE[200/m 年/q]
+
+// 1990年代
+KEY1990/ANY+年代/ANY->ANY>>m
+1990/ANY+KEY年代/ANY->ANY>>n
+KEY1990年代/ANY->[1990年代/ANY]MERGE[1990/m 年代/n]
+
+// 6000余
+KEY6000/ANY+余/ANY->ANY>>m
+6000/ANY+KEY余/ANY->ANY>>m
+KEY6000余/ANY->[6000余/ANY]MERGE[6000/m 余/m]
+
+// 170多
+KEY170多/ANY->[170多/ANY]MERGE[170/m 多/m]
+KEY170/ANY+多/ANY->ANY>>m
+170/ANY+KEY多/ANY->ANY>>m
+
+// ２０２０年
+KEY２０２０/ANY+年/ANY->ANY>>m
+２０２０/ANY+KEY年/ANY->ANY>>q
+KEY２０２０年/ANY->[２０２０年/ANY]MERGE[２０２０/m 年/q]
+
+// 1980年代
+KEY1980年代/ANY->[1980年代/ANY]MERGE[1980/m 年代/n]
+KEY1980/ANY+年代/ANY->ANY>>m
+1980/ANY+KEY年代/ANY->ANY>>n
+
+// 10g
+KEY10g/ANY->[10g/ANY]MERGE[10/m g/o]
+KEY10/ANY+g/ANY->ANY>>m
+10/ANY+KEYg/ANY->ANY>>o
+
+// 3000mAh
+KEY3000/ANY+mAh/ANY->ANY>>m
+3000/ANY+KEYmAh/ANY->ANY>>n
+KEY3000mAh/ANY->[3000mAh/ANY]MERGE[3000/m mAh/n]
+
+// 1600多
+KEY1600多/ANY->[1600多/ANY]MERGE[1600/m 多/m]
+KEY1600/ANY+多/ANY->ANY>>m
+1600/ANY+KEY多/ANY->ANY>>m
+
+// ２０１１年
+KEY２０１１/ANY+年/ANY->ANY>>m
+２０１１/ANY+KEY年/ANY->ANY>>q
+KEY２０１１年/ANY->[２０１１年/ANY]MERGE[２０１１/m 年/q]
+
+// 1970年代
+KEY1970年代/ANY->[1970年代/ANY]MERGE[1970/m 年代/n]
+KEY1970/ANY+年代/ANY->ANY>>m
+1970/ANY+KEY年代/ANY->ANY>>n
+
+// =============================================
+//
+//	Ictclas 有 p 共 223 词
+//
+// =============================================
+
+// 占比
+KEY占/ANY+比/ANY->ANY>>v
+占/ANY+KEY比/ANY->ANY>>p
+KEY占比/ANY->[占比/ANY]MERGE[占/v 比/p]
+
+// 躺在
+KEY躺在/ANY->[躺在/ANY]MERGE[躺/v 在/p]
+KEY躺/ANY+在/ANY->ANY>>v
+躺/ANY+KEY在/ANY->ANY>>p
+
+// 致力于
+KEY致力/ANY+于/ANY->ANY>>v
+致力/ANY+KEY于/ANY->ANY>>p
+KEY致力于/ANY->[致力于/ANY]MERGE[致力/v 于/p]
+
+// 对决
+KEY对/ANY+决/ANY->ANY>>p
+对/ANY+KEY决/ANY->ANY>>vg
+KEY对决/ANY->[对决/ANY]MERGE[对/p 决/vg]
+
+// 环比
+KEY环/ANY+比/ANY->ANY>>v
+环/ANY+KEY比/ANY->ANY>>p
+KEY环比/ANY->[环比/ANY]MERGE[环/v 比/p]
+
+// 靶向
+KEY靶/ANY+向/ANY->ANY>>q
+靶/ANY+KEY向/ANY->ANY>>p
+KEY靶向/ANY->[靶向/ANY]MERGE[靶/q 向/p]
+
+// 降至
+KEY降至/ANY->[降至/ANY]MERGE[降/v 至/p]
+KEY降/ANY+至/ANY->ANY>>v
+降/ANY+KEY至/ANY->ANY>>p
+
+// 躲在
+KEY躲在/ANY->[躲在/ANY]MERGE[躲/v 在/p]
+KEY躲/ANY+在/ANY->ANY>>v
+躲/ANY+KEY在/ANY->ANY>>p
+
+// 带给
+KEY带/ANY+给/ANY->ANY>>v
+带/ANY+KEY给/ANY->ANY>>p
+KEY带给/ANY->[带给/ANY]MERGE[带/v 给/p]
+
+// 趴在
+KEY趴/ANY+在/ANY->ANY>>v
+趴/ANY+KEY在/ANY->ANY>>p
+KEY趴在/ANY->[趴在/ANY]MERGE[趴/v 在/p]
+
+// 并对
+KEY并对/ANY->[并对/ANY]MERGE[并/d 对/p]
+KEY并/ANY+对/ANY->ANY>>d
+并/ANY+KEY对/ANY->ANY>>p
+
+// 比拼
+KEY比拼/ANY->[比拼/ANY]MERGE[比/p 拼/v]
+KEY比/ANY+拼/ANY->ANY>>p
+比/ANY+KEY拼/ANY->ANY>>v
+
+// 杜比
+KEY杜比/ANY->[杜比/ANY]MERGE[杜/nr 比/p]
+KEY杜/ANY+比/ANY->ANY>>nr
+杜/ANY+KEY比/ANY->ANY>>p
+
+// 比肩
+KEY比/ANY+肩/ANY->ANY>>p
+比/ANY+KEY肩/ANY->ANY>>n
+KEY比肩/ANY->[比肩/ANY]MERGE[比/p 肩/n]
+
+// 乘用
+KEY乘/ANY+用/ANY->ANY>>v
+乘/ANY+KEY用/ANY->ANY>>p
+KEY乘用/ANY->[乘用/ANY]MERGE[乘/v 用/p]
+
+// 奔向
+KEY奔/ANY+向/ANY->ANY>>v
+奔/ANY+KEY向/ANY->ANY>>p
+KEY奔向/ANY->[奔向/ANY]MERGE[奔/v 向/p]
+
+// 向好
+KEY向/ANY+好/ANY->ANY>>p
+向/ANY+KEY好/ANY->ANY>>a
+KEY向好/ANY->[向好/ANY]MERGE[向/p 好/a]
+
+// 于此
+KEY于此/ANY->[于此/ANY]MERGE[于/p 此/r]
+KEY于/ANY+此/ANY->ANY>>p
+于/ANY+KEY此/ANY->ANY>>r
+
+// 对赌
+KEY对/ANY+赌/ANY->ANY>>p
+对/ANY+KEY赌/ANY->ANY>>v
+KEY对赌/ANY->[对赌/ANY]MERGE[对/p 赌/v]
+
+// 销往
+KEY销/ANY+往/ANY->ANY>>v
+销/ANY+KEY往/ANY->ANY>>p
+KEY销往/ANY->[销往/ANY]MERGE[销/v 往/p]
+
+// 沿江
+KEY沿江/ANY->[沿江/ANY]MERGE[沿/p 江/nr]
+KEY沿/ANY+江/ANY->ANY>>p
+沿/ANY+KEY江/ANY->ANY>>nr
+
+// 跌至
+KEY跌/ANY+至/ANY->ANY>>v
+跌/ANY+KEY至/ANY->ANY>>p
+KEY跌至/ANY->[跌至/ANY]MERGE[跌/v 至/p]
+
+// 伸向
+KEY伸/ANY+向/ANY->ANY>>v
+伸/ANY+KEY向/ANY->ANY>>p
+KEY伸向/ANY->[伸向/ANY]MERGE[伸/v 向/p]
+
+// 同城
+KEY同城/ANY->[同城/ANY]MERGE[同/p 城/n]
+KEY同/ANY+城/ANY->ANY>>p
+同/ANY+KEY城/ANY->ANY>>n
+
+// 蹲在
+KEY蹲在/ANY->[蹲在/ANY]MERGE[蹲/v 在/p]
+KEY蹲/ANY+在/ANY->ANY>>v
+蹲/ANY+KEY在/ANY->ANY>>p
+
+// 自旋
+KEY自旋/ANY->[自旋/ANY]MERGE[自/p 旋/vg]
+KEY自/ANY+旋/ANY->ANY>>p
+自/ANY+KEY旋/ANY->ANY>>vg
+
+// 涌向
+KEY涌/ANY+向/ANY->ANY>>v
+涌/ANY+KEY向/ANY->ANY>>p
+KEY涌向/ANY->[涌向/ANY]MERGE[涌/v 向/p]
+
+// 因病
+KEY因/ANY+病/ANY->ANY>>p
+因/ANY+KEY病/ANY->ANY>>n
+KEY因病/ANY->[因病/ANY]MERGE[因/p 病/n]
+
+// 经侦
+KEY经/ANY+侦/ANY->ANY>>p
+经/ANY+KEY侦/ANY->ANY>>vg
+KEY经侦/ANY->[经侦/ANY]MERGE[经/p 侦/vg]
+
+// 往下
+KEY往下/ANY->[往下/ANY]MERGE[往/p 下/f]
+KEY往/ANY+下/ANY->ANY>>p
+往/ANY+KEY下/ANY->ANY>>f
+
+// 向下
+KEY向/ANY+下/ANY->ANY>>p
+向/ANY+KEY下/ANY->ANY>>f
+KEY向下/ANY->[向下/ANY]MERGE[向/p 下/f]
+
+// 往前
+KEY往前/ANY->[往前/ANY]MERGE[往/p 前/f]
+KEY往/ANY+前/ANY->ANY>>p
+往/ANY+KEY前/ANY->ANY>>f
+
+// 呆在
+KEY呆/ANY+在/ANY->ANY>>v
+呆/ANY+KEY在/ANY->ANY>>p
+KEY呆在/ANY->[呆在/ANY]MERGE[呆/v 在/p]
+
+// 并以
+KEY并以/ANY->[并以/ANY]MERGE[并/d 以/p]
+KEY并/ANY+以/ANY->ANY>>d
+并/ANY+KEY以/ANY->ANY>>p
+
+// 往上
+KEY往/ANY+上/ANY->ANY>>p
+往/ANY+KEY上/ANY->ANY>>f
+KEY往上/ANY->[往上/ANY]MERGE[往/p 上/f]
+
+// 按下
+KEY按/ANY+下/ANY->ANY>>p
+按/ANY+KEY下/ANY->ANY>>f
+KEY按下/ANY->[按下/ANY]MERGE[按/p 下/f]
+
+// 移除
+KEY移除/ANY->[移除/ANY]MERGE[移/v 除/p]
+KEY移/ANY+除/ANY->ANY>>v
+移/ANY+KEY除/ANY->ANY>>p
+
+// 跪在
+KEY跪/ANY+在/ANY->ANY>>v
+跪/ANY+KEY在/ANY->ANY>>p
+KEY跪在/ANY->[跪在/ANY]MERGE[跪/v 在/p]
+
+// 迁至
+KEY迁至/ANY->[迁至/ANY]MERGE[迁/v 至/p]
+KEY迁/ANY+至/ANY->ANY>>v
+迁/ANY+KEY至/ANY->ANY>>p
+
+// 迁往
+KEY迁/ANY+往/ANY->ANY>>v
+迁/ANY+KEY往/ANY->ANY>>p
+KEY迁往/ANY->[迁往/ANY]MERGE[迁/v 往/p]
+
+// 自导
+KEY自/ANY+导/ANY->ANY>>p
+自/ANY+KEY导/ANY->ANY>>vg
+KEY自导/ANY->[自导/ANY]MERGE[自/p 导/vg]
+
+// 比对
+KEY比对/ANY->[比对/ANY]MERGE[比/p 对/p]
+KEY比/ANY+对/ANY->ANY>>p
+比/ANY+KEY对/ANY->ANY>>p
+
+// 写给
+KEY写给/ANY->[写给/ANY]MERGE[写/v 给/p]
+KEY写/ANY+给/ANY->ANY>>v
+写/ANY+KEY给/ANY->ANY>>p
+
+// 沿街
+KEY沿/ANY+街/ANY->ANY>>p
+沿/ANY+KEY街/ANY->ANY>>n
+KEY沿街/ANY->[沿街/ANY]MERGE[沿/p 街/n]
+
+// 堵在
+KEY堵在/ANY->[堵在/ANY]MERGE[堵/v 在/p]
+KEY堵/ANY+在/ANY->ANY>>v
+堵/ANY+KEY在/ANY->ANY>>p
+
+// 并把
+KEY并/ANY+把/ANY->ANY>>d
+并/ANY+KEY把/ANY->ANY>>p
+KEY并把/ANY->[并把/ANY]MERGE[并/d 把/p]
+
+// 并由
+KEY并/ANY+由/ANY->ANY>>d
+并/ANY+KEY由/ANY->ANY>>p
+KEY并由/ANY->[并由/ANY]MERGE[并/d 由/p]
+
+// 向外
+KEY向/ANY+外/ANY->ANY>>p
+向/ANY+KEY外/ANY->ANY>>f
+KEY向外/ANY->[向外/ANY]MERGE[向/p 外/f]
+
+// 开往
+KEY开往/ANY->[开往/ANY]MERGE[开/v 往/p]
+KEY开/ANY+往/ANY->ANY>>v
+开/ANY+KEY往/ANY->ANY>>p
+
+// 往外
+KEY往/ANY+外/ANY->ANY>>p
+往/ANY+KEY外/ANY->ANY>>f
+KEY往外/ANY->[往外/ANY]MERGE[往/p 外/f]
+
+// 正向
+KEY正/ANY+向/ANY->ANY>>d
+正/ANY+KEY向/ANY->ANY>>p
+KEY正向/ANY->[正向/ANY]MERGE[正/d 向/p]
+
+// 祛除
+KEY祛除/ANY->[祛除/ANY]MERGE[祛/vg 除/p]
+KEY祛/ANY+除/ANY->ANY>>vg
+祛/ANY+KEY除/ANY->ANY>>p
+
+// 沿边
+KEY沿边/ANY->[沿边/ANY]MERGE[沿/p 边/k]
+KEY沿/ANY+边/ANY->ANY>>p
+沿/ANY+KEY边/ANY->ANY>>k
+
+// 沿路
+KEY沿/ANY+路/ANY->ANY>>p
+沿/ANY+KEY路/ANY->ANY>>n
+KEY沿路/ANY->[沿路/ANY]MERGE[沿/p 路/n]
+
+// 以示
+KEY以/ANY+示/ANY->ANY>>p
+以/ANY+KEY示/ANY->ANY>>vg
+KEY以示/ANY->[以示/ANY]MERGE[以/p 示/vg]
+
+// 扑在
+KEY扑在/ANY->[扑在/ANY]MERGE[扑/v 在/p]
+KEY扑/ANY+在/ANY->ANY>>v
+扑/ANY+KEY在/ANY->ANY>>p
+
+// 除臭
+KEY除臭/ANY->[除臭/ANY]MERGE[除/p 臭/a]
+KEY除/ANY+臭/ANY->ANY>>p
+除/ANY+KEY臭/ANY->ANY>>a
+
+// 现为
+KEY现/ANY+为/ANY->ANY>>tg
+现/ANY+KEY为/ANY->ANY>>p
+KEY现为/ANY->[现为/ANY]MERGE[现/tg 为/p]
+
+// 并从
+KEY并/ANY+从/ANY->ANY>>d
+并/ANY+KEY从/ANY->ANY>>p
+KEY并从/ANY->[并从/ANY]MERGE[并/d 从/p]
+
+// 从轻
+KEY从轻/ANY->[从轻/ANY]MERGE[从/p 轻/a]
+KEY从/ANY+轻/ANY->ANY>>p
+从/ANY+KEY轻/ANY->ANY>>a
+
+// 应以
+KEY应以/ANY->[应以/ANY]MERGE[应/v 以/p]
+KEY应/ANY+以/ANY->ANY>>v
+应/ANY+KEY以/ANY->ANY>>p
+
+// 自演
+KEY自/ANY+演/ANY->ANY>>p
+自/ANY+KEY演/ANY->ANY>>v
+KEY自演/ANY->[自演/ANY]MERGE[自/p 演/v]
+
+// 溶于
+KEY溶/ANY+于/ANY->ANY>>v
+溶/ANY+KEY于/ANY->ANY>>p
+KEY溶于/ANY->[溶于/ANY]MERGE[溶/v 于/p]
+
+// 冲向
+KEY冲向/ANY->[冲向/ANY]MERGE[冲/v 向/p]
+KEY冲/ANY+向/ANY->ANY>>v
+冲/ANY+KEY向/ANY->ANY>>p
+
+// 藉由
+KEY藉由/ANY->[藉由/ANY]MERGE[藉/vg 由/p]
+KEY藉/ANY+由/ANY->ANY>>vg
+藉/ANY+KEY由/ANY->ANY>>p
+
+// 向后
+KEY向后/ANY->[向后/ANY]MERGE[向/p 后/f]
+KEY向/ANY+后/ANY->ANY>>p
+向/ANY+KEY后/ANY->ANY>>f
+
+// 寄给
+KEY寄给/ANY->[寄给/ANY]MERGE[寄/v 给/p]
+KEY寄/ANY+给/ANY->ANY>>v
+寄/ANY+KEY给/ANY->ANY>>p
+
+// 向东
+KEY向东/ANY->[向东/ANY]MERGE[向/p 东/f]
+KEY向/ANY+东/ANY->ANY>>p
+向/ANY+KEY东/ANY->ANY>>f
+
+// 降为
+KEY降为/ANY->[降为/ANY]MERGE[降/v 为/p]
+KEY降/ANY+为/ANY->ANY>>v
+降/ANY+KEY为/ANY->ANY>>p
+
+// 取自
+KEY取自/ANY->[取自/ANY]MERGE[取/v 自/p]
+KEY取/ANY+自/ANY->ANY>>v
+取/ANY+KEY自/ANY->ANY>>p
+
+// 以求
+KEY以求/ANY->[以求/ANY]MERGE[以/p 求/v]
+KEY以/ANY+求/ANY->ANY>>p
+以/ANY+KEY求/ANY->ANY>>v
+
+// 志在
+KEY志在/ANY->[志在/ANY]MERGE[志/n 在/p]
+KEY志/ANY+在/ANY->ANY>>n
+志/ANY+KEY在/ANY->ANY>>p
+
+// 自定义
+KEY自/ANY+定义/ANY->ANY>>p
+自/ANY+KEY定义/ANY->ANY>>n
+KEY自定义/ANY->[自定义/ANY]MERGE[自/p 定义/n]
+
+// 在旁
+KEY在旁/ANY->[在旁/ANY]MERGE[在/p 旁/f]
+KEY在/ANY+旁/ANY->ANY>>p
+在/ANY+KEY旁/ANY->ANY>>f
+
+// 自噬
+KEY自噬/ANY->[自噬/ANY]MERGE[自/p 噬/vg]
+KEY自/ANY+噬/ANY->ANY>>p
+自/ANY+KEY噬/ANY->ANY>>vg
+
+// 打在
+KEY打在/ANY->[打在/ANY]MERGE[打/v 在/p]
+KEY打/ANY+在/ANY->ANY>>v
+打/ANY+KEY在/ANY->ANY>>p
+
+// 拟向
+KEY拟向/ANY->[拟向/ANY]MERGE[拟/v 向/p]
+KEY拟/ANY+向/ANY->ANY>>v
+拟/ANY+KEY向/ANY->ANY>>p
+
+// 涂在
+KEY涂/ANY+在/ANY->ANY>>v
+涂/ANY+KEY在/ANY->ANY>>p
+KEY涂在/ANY->[涂在/ANY]MERGE[涂/v 在/p]
+
+// 送至
+KEY送至/ANY->[送至/ANY]MERGE[送/v 至/p]
+KEY送/ANY+至/ANY->ANY>>v
+送/ANY+KEY至/ANY->ANY>>p
+
+// 传给
+KEY传/ANY+给/ANY->ANY>>v
+传/ANY+KEY给/ANY->ANY>>p
+KEY传给/ANY->[传给/ANY]MERGE[传/v 给/p]
+
+// 同场
+KEY同场/ANY->[同场/ANY]MERGE[同/p 场/q]
+KEY同/ANY+场/ANY->ANY>>p
+同/ANY+KEY场/ANY->ANY>>q
+
+// 单凭
+KEY单凭/ANY->[单凭/ANY]MERGE[单/d 凭/p]
+KEY单/ANY+凭/ANY->ANY>>d
+单/ANY+KEY凭/ANY->ANY>>p
+
+// 路由
+KEY路由/ANY->[路由/ANY]MERGE[路/n 由/p]
+KEY路/ANY+由/ANY->ANY>>n
+路/ANY+KEY由/ANY->ANY>>p
+
+// 擅于
+KEY擅/ANY+于/ANY->ANY>>vg
+擅/ANY+KEY于/ANY->ANY>>p
+KEY擅于/ANY->[擅于/ANY]MERGE[擅/vg 于/p]
+
+// 于心
+KEY于心/ANY->[于心/ANY]MERGE[于/p 心/n]
+KEY于/ANY+心/ANY->ANY>>p
+于/ANY+KEY心/ANY->ANY>>n
+
+// 借由
+KEY借由/ANY->[借由/ANY]MERGE[借/v 由/p]
+KEY借/ANY+由/ANY->ANY>>v
+借/ANY+KEY由/ANY->ANY>>p
+
+// 借给
+KEY借给/ANY->[借给/ANY]MERGE[借/v 给/p]
+KEY借/ANY+给/ANY->ANY>>v
+借/ANY+KEY给/ANY->ANY>>p
+
+// 趁热
+KEY趁热/ANY->[趁热/ANY]MERGE[趁/p 热/n]
+KEY趁/ANY+热/ANY->ANY>>p
+趁/ANY+KEY热/ANY->ANY>>n
+
+// 以备
+KEY以备/ANY->[以备/ANY]MERGE[以/p 备/v]
+KEY以/ANY+备/ANY->ANY>>p
+以/ANY+KEY备/ANY->ANY>>v
+
+// 记在
+KEY记/ANY+在/ANY->ANY>>v
+记/ANY+KEY在/ANY->ANY>>p
+KEY记在/ANY->[记在/ANY]MERGE[记/v 在/p]
+
+// 扑向
+KEY扑向/ANY->[扑向/ANY]MERGE[扑/v 向/p]
+KEY扑/ANY+向/ANY->ANY>>v
+扑/ANY+KEY向/ANY->ANY>>p
+
+// 移至
+KEY移/ANY+至/ANY->ANY>>v
+移/ANY+KEY至/ANY->ANY>>p
+KEY移至/ANY->[移至/ANY]MERGE[移/v 至/p]
+
+// 往里
+KEY往里/ANY->[往里/ANY]MERGE[往/p 里/f]
+KEY往/ANY+里/ANY->ANY>>p
+往/ANY+KEY里/ANY->ANY>>f
+
+// 自创
+KEY自/ANY+创/ANY->ANY>>p
+自/ANY+KEY创/ANY->ANY>>vg
+KEY自创/ANY->[自创/ANY]MERGE[自/p 创/vg]
+
+// 搁在
+KEY搁在/ANY->[搁在/ANY]MERGE[搁/v 在/p]
+KEY搁/ANY+在/ANY->ANY>>v
+搁/ANY+KEY在/ANY->ANY>>p
+
+// 同住
+KEY同住/ANY->[同住/ANY]MERGE[同/p 住/v]
+KEY同/ANY+住/ANY->ANY>>p
+同/ANY+KEY住/ANY->ANY>>v
+
+// 配比
+KEY配/ANY+比/ANY->ANY>>v
+配/ANY+KEY比/ANY->ANY>>p
+KEY配比/ANY->[配比/ANY]MERGE[配/v 比/p]
+
+// 除菌
+KEY除菌/ANY->[除菌/ANY]MERGE[除/p 菌/n]
+KEY除/ANY+菌/ANY->ANY>>p
+除/ANY+KEY菌/ANY->ANY>>n
+
+// 当街
+KEY当街/ANY->[当街/ANY]MERGE[当/p 街/n]
+KEY当/ANY+街/ANY->ANY>>p
+当/ANY+KEY街/ANY->ANY>>n
+
+// 教给
+KEY教/ANY+给/ANY->ANY>>v
+教/ANY+KEY给/ANY->ANY>>p
+KEY教给/ANY->[教给/ANY]MERGE[教/v 给/p]
+
+// 发往
+KEY发往/ANY->[发往/ANY]MERGE[发/v 往/p]
+KEY发/ANY+往/ANY->ANY>>v
+发/ANY+KEY往/ANY->ANY>>p
+
+// 向右
+KEY向右/ANY->[向右/ANY]MERGE[向/p 右/f]
+KEY向/ANY+右/ANY->ANY>>p
+向/ANY+KEY右/ANY->ANY>>f
+
+// 用气
+KEY用气/ANY->[用气/ANY]MERGE[用/p 气/n]
+KEY用/ANY+气/ANY->ANY>>p
+用/ANY+KEY气/ANY->ANY>>n
+
+// 相向
+KEY相向/ANY->[相向/ANY]MERGE[相/d 向/p]
+KEY相/ANY+向/ANY->ANY>>d
+相/ANY+KEY向/ANY->ANY>>p
+
+// 或因
+KEY或因/ANY->[或因/ANY]MERGE[或/c 因/p]
+KEY或/ANY+因/ANY->ANY>>c
+或/ANY+KEY因/ANY->ANY>>p
+
+// 扩至
+KEY扩/ANY+至/ANY->ANY>>vg
+扩/ANY+KEY至/ANY->ANY>>p
+KEY扩至/ANY->[扩至/ANY]MERGE[扩/vg 至/p]
+
+// 拴在
+KEY拴/ANY+在/ANY->ANY>>v
+拴/ANY+KEY在/ANY->ANY>>p
+KEY拴在/ANY->[拴在/ANY]MERGE[拴/v 在/p]
+
+// 飞向
+KEY飞/ANY+向/ANY->ANY>>v
+飞/ANY+KEY向/ANY->ANY>>p
+KEY飞向/ANY->[飞向/ANY]MERGE[飞/v 向/p]
+
+// 羞于
+KEY羞于/ANY->[羞于/ANY]MERGE[羞/v 于/p]
+KEY羞/ANY+于/ANY->ANY>>v
+羞/ANY+KEY于/ANY->ANY>>p
+
+// 对谈
+KEY对谈/ANY->[对谈/ANY]MERGE[对/p 谈/v]
+KEY对/ANY+谈/ANY->ANY>>p
+对/ANY+KEY谈/ANY->ANY>>v
+
+// 尽在
+KEY尽在/ANY->[尽在/ANY]MERGE[尽/v 在/p]
+KEY尽/ANY+在/ANY->ANY>>v
+尽/ANY+KEY在/ANY->ANY>>p
+
+// 拟于
+KEY拟/ANY+于/ANY->ANY>>v
+拟/ANY+KEY于/ANY->ANY>>p
+KEY拟于/ANY->[拟于/ANY]MERGE[拟/v 于/p]
+
+// 自慰
+KEY自/ANY+慰/ANY->ANY>>p
+自/ANY+KEY慰/ANY->ANY>>vg
+KEY自慰/ANY->[自慰/ANY]MERGE[自/p 慰/vg]
+
+// 扔给
+KEY扔/ANY+给/ANY->ANY>>v
+扔/ANY+KEY给/ANY->ANY>>p
+KEY扔给/ANY->[扔给/ANY]MERGE[扔/v 给/p]
+
+// 用词
+KEY用词/ANY->[用词/ANY]MERGE[用/p 词/n]
+KEY用/ANY+词/ANY->ANY>>p
+用/ANY+KEY词/ANY->ANY>>n
+
+// 替考
+KEY替考/ANY->[替考/ANY]MERGE[替/p 考/v]
+KEY替/ANY+考/ANY->ANY>>p
+替/ANY+KEY考/ANY->ANY>>v
+
+// 用嘴
+KEY用/ANY+嘴/ANY->ANY>>p
+用/ANY+KEY嘴/ANY->ANY>>n
+KEY用嘴/ANY->[用嘴/ANY]MERGE[用/p 嘴/n]
+
+// 同理
+KEY同/ANY+理/ANY->ANY>>p
+同/ANY+KEY理/ANY->ANY>>n
+KEY同理/ANY->[同理/ANY]MERGE[同/p 理/n]
+
+// 运至
+KEY运/ANY+至/ANY->ANY>>v
+运/ANY+KEY至/ANY->ANY>>p
+KEY运至/ANY->[运至/ANY]MERGE[运/v 至/p]
+
+// 因私
+KEY因/ANY+私/ANY->ANY>>p
+因/ANY+KEY私/ANY->ANY>>Ag
+KEY因私/ANY->[因私/ANY]MERGE[因/p 私/Ag]
+
+// 对上
+KEY对/ANY+上/ANY->ANY>>p
+对/ANY+KEY上/ANY->ANY>>f
+KEY对上/ANY->[对上/ANY]MERGE[对/p 上/f]
+
+// 往北
+KEY往北/ANY->[往北/ANY]MERGE[往/p 北/f]
+KEY往/ANY+北/ANY->ANY>>p
+往/ANY+KEY北/ANY->ANY>>f
+
+// 形同
+KEY形同/ANY->[形同/ANY]MERGE[形/Ng 同/p]
+KEY形/ANY+同/ANY->ANY>>Ng
+形/ANY+KEY同/ANY->ANY>>p
+
+// 始自
+KEY始/ANY+自/ANY->ANY>>vg
+始/ANY+KEY自/ANY->ANY>>p
+KEY始自/ANY->[始自/ANY]MERGE[始/vg 自/p]
+
+// 轮替
+KEY轮/ANY+替/ANY->ANY>>q
+轮/ANY+KEY替/ANY->ANY>>p
+KEY轮替/ANY->[轮替/ANY]MERGE[轮/q 替/p]
+
+// 钉在
+KEY钉/ANY+在/ANY->ANY>>v
+钉/ANY+KEY在/ANY->ANY>>p
+KEY钉在/ANY->[钉在/ANY]MERGE[钉/v 在/p]
+
+// 戴在
+KEY戴/ANY+在/ANY->ANY>>v
+戴/ANY+KEY在/ANY->ANY>>p
+KEY戴在/ANY->[戴在/ANY]MERGE[戴/v 在/p]
+
+// 喂给
+KEY喂给/ANY->[喂给/ANY]MERGE[喂/v 给/p]
+KEY喂/ANY+给/ANY->ANY>>v
+喂/ANY+KEY给/ANY->ANY>>p
+
+// 和珅
+KEY和/ANY+珅/ANY->ANY>>p
+和/ANY+KEY珅/ANY->ANY>>w
+KEY和珅/ANY->[和珅/ANY]MERGE[和/p 珅/w]
+
+// 对错
+KEY对错/ANY->[对错/ANY]MERGE[对/p 错/v]
+KEY对/ANY+错/ANY->ANY>>p
+对/ANY+KEY错/ANY->ANY>>v
+
+// 减至
+KEY减至/ANY->[减至/ANY]MERGE[减/v 至/p]
+KEY减/ANY+至/ANY->ANY>>v
+减/ANY+KEY至/ANY->ANY>>p
+
+// 自洽
+KEY自/ANY+洽/ANY->ANY>>p
+自/ANY+KEY洽/ANY->ANY>>Ag
+KEY自洽/ANY->[自洽/ANY]MERGE[自/p 洽/Ag]
+
+// 对账
+KEY对账/ANY->[对账/ANY]MERGE[对/p 账/n]
+KEY对/ANY+账/ANY->ANY>>p
+对/ANY+KEY账/ANY->ANY>>n
+
+// 应于
+KEY应/ANY+于/ANY->ANY>>v
+应/ANY+KEY于/ANY->ANY>>p
+KEY应于/ANY->[应于/ANY]MERGE[应/v 于/p]
+
+// 在孵
+KEY在孵/ANY->[在孵/ANY]MERGE[在/p 孵/v]
+KEY在/ANY+孵/ANY->ANY>>p
+在/ANY+KEY孵/ANY->ANY>>v
+
+// 把玩
+KEY把玩/ANY->[把玩/ANY]MERGE[把/p 玩/v]
+KEY把/ANY+玩/ANY->ANY>>p
+把/ANY+KEY玩/ANY->ANY>>v
+
+// 派往
+KEY派往/ANY->[派往/ANY]MERGE[派/n 往/p]
+KEY派/ANY+往/ANY->ANY>>n
+派/ANY+KEY往/ANY->ANY>>p
+
+// 嵌在
+KEY嵌在/ANY->[嵌在/ANY]MERGE[嵌/v 在/p]
+KEY嵌/ANY+在/ANY->ANY>>v
+嵌/ANY+KEY在/ANY->ANY>>p
+
+// 政经
+KEY政经/ANY->[政经/ANY]MERGE[政/Ng 经/p]
+KEY政/ANY+经/ANY->ANY>>Ng
+政/ANY+KEY经/ANY->ANY>>p
+
+// 除冰
+KEY除/ANY+冰/ANY->ANY>>p
+除/ANY+KEY冰/ANY->ANY>>n
+KEY除冰/ANY->[除冰/ANY]MERGE[除/p 冰/n]
+
+// 以待
+KEY以待/ANY->[以待/ANY]MERGE[以/p 待/v]
+KEY以/ANY+待/ANY->ANY>>p
+以/ANY+KEY待/ANY->ANY>>v
+
+// 裹在
+KEY裹在/ANY->[裹在/ANY]MERGE[裹/v 在/p]
+KEY裹/ANY+在/ANY->ANY>>v
+裹/ANY+KEY在/ANY->ANY>>p
+
+// 除霜
+KEY除霜/ANY->[除霜/ANY]MERGE[除/p 霜/n]
+KEY除/ANY+霜/ANY->ANY>>p
+除/ANY+KEY霜/ANY->ANY>>n
+
+// 异于
+KEY异/ANY+于/ANY->ANY>>Ag
+异/ANY+KEY于/ANY->ANY>>p
+KEY异于/ANY->[异于/ANY]MERGE[异/Ag 于/p]
+
+// 向内
+KEY向/ANY+内/ANY->ANY>>p
+向/ANY+KEY内/ANY->ANY>>f
+KEY向内/ANY->[向内/ANY]MERGE[向/p 内/f]
+
+// 由省
+KEY由省/ANY->[由省/ANY]MERGE[由/p 省/n]
+KEY由/ANY+省/ANY->ANY>>p
+由/ANY+KEY省/ANY->ANY>>n
+
+// 以供
+KEY以供/ANY->[以供/ANY]MERGE[以/p 供/v]
+KEY以/ANY+供/ANY->ANY>>p
+以/ANY+KEY供/ANY->ANY>>v
+
+// 替人
+KEY替/ANY+人/ANY->ANY>>p
+替/ANY+KEY人/ANY->ANY>>n
+KEY替人/ANY->[替人/ANY]MERGE[替/p 人/n]
+
+// 往东
+KEY往/ANY+东/ANY->ANY>>p
+往/ANY+KEY东/ANY->ANY>>f
+KEY往东/ANY->[往东/ANY]MERGE[往/p 东/f]
+
+// 赐给
+KEY赐给/ANY->[赐给/ANY]MERGE[赐/v 给/p]
+KEY赐/ANY+给/ANY->ANY>>v
+赐/ANY+KEY给/ANY->ANY>>p
+
+// 滑向
+KEY滑/ANY+向/ANY->ANY>>v
+滑/ANY+KEY向/ANY->ANY>>p
+KEY滑向/ANY->[滑向/ANY]MERGE[滑/v 向/p]
+
+// 自上
+KEY自上/ANY->[自上/ANY]MERGE[自/p 上/f]
+KEY自/ANY+上/ANY->ANY>>p
+自/ANY+KEY上/ANY->ANY>>f
+
+// 德比
+KEY德/ANY+比/ANY->ANY>>n
+德/ANY+KEY比/ANY->ANY>>p
+KEY德比/ANY->[德比/ANY]MERGE[德/n 比/p]
+
+// 擦除
+KEY擦/ANY+除/ANY->ANY>>v
+擦/ANY+KEY除/ANY->ANY>>p
+KEY擦除/ANY->[擦除/ANY]MERGE[擦/v 除/p]
+
+// 同权
+KEY同/ANY+权/ANY->ANY>>p
+同/ANY+KEY权/ANY->ANY>>n
+KEY同权/ANY->[同权/ANY]MERGE[同/p 权/n]
+
+// 吊在
+KEY吊/ANY+在/ANY->ANY>>v
+吊/ANY+KEY在/ANY->ANY>>p
+KEY吊在/ANY->[吊在/ANY]MERGE[吊/v 在/p]
+
+// 甚于
+KEY甚/ANY+于/ANY->ANY>>Dg
+甚/ANY+KEY于/ANY->ANY>>p
+KEY甚于/ANY->[甚于/ANY]MERGE[甚/Dg 于/p]
+
+// 编为
+KEY编/ANY+为/ANY->ANY>>v
+编/ANY+KEY为/ANY->ANY>>p
+KEY编为/ANY->[编为/ANY]MERGE[编/v 为/p]
+
+// 抛向
+KEY抛向/ANY->[抛向/ANY]MERGE[抛/v 向/p]
+KEY抛/ANY+向/ANY->ANY>>v
+抛/ANY+KEY向/ANY->ANY>>p
+
+// 怠于
+KEY怠/ANY+于/ANY->ANY>>Ag
+怠/ANY+KEY于/ANY->ANY>>p
+KEY怠于/ANY->[怠于/ANY]MERGE[怠/Ag 于/p]
+
+// 不经
+KEY不经/ANY->[不经/ANY]MERGE[不/d 经/p]
+KEY不/ANY+经/ANY->ANY>>d
+不/ANY+KEY经/ANY->ANY>>p
+
+// 沉迷于
+KEY沉迷/ANY+于/ANY->ANY>>v
+沉迷/ANY+KEY于/ANY->ANY>>p
+KEY沉迷于/ANY->[沉迷于/ANY]MERGE[沉迷/v 于/p]
+
+// 同型
+KEY同/ANY+型/ANY->ANY>>p
+同/ANY+KEY型/ANY->ANY>>k
+KEY同型/ANY->[同型/ANY]MERGE[同/p 型/k]
+
+// 自体
+KEY自/ANY+体/ANY->ANY>>p
+自/ANY+KEY体/ANY->ANY>>Ng
+KEY自体/ANY->[自体/ANY]MERGE[自/p 体/Ng]
+
+// 与众
+KEY与/ANY+众/ANY->ANY>>p
+与/ANY+KEY众/ANY->ANY>>Ag
+KEY与众/ANY->[与众/ANY]MERGE[与/p 众/Ag]
+
+// 淳于
+KEY淳于/ANY->[淳于/ANY]MERGE[淳/Ag 于/p]
+KEY淳/ANY+于/ANY->ANY>>Ag
+淳/ANY+KEY于/ANY->ANY>>p
+
+// 对钛
+KEY对/ANY+钛/ANY->ANY>>p
+对/ANY+KEY钛/ANY->ANY>>n
+KEY对钛/ANY->[对钛/ANY]MERGE[对/p 钛/n]
+
+// 因应
+KEY因应/ANY->[因应/ANY]MERGE[因/p 应/v]
+KEY因/ANY+应/ANY->ANY>>p
+因/ANY+KEY应/ANY->ANY>>v
+
+// 附在
+KEY附/ANY+在/ANY->ANY>>v
+附/ANY+KEY在/ANY->ANY>>p
+KEY附在/ANY->[附在/ANY]MERGE[附/v 在/p]
+
+// 据信
+KEY据/ANY+信/ANY->ANY>>p
+据/ANY+KEY信/ANY->ANY>>n
+KEY据信/ANY->[据信/ANY]MERGE[据/p 信/n]
+
+// 同庆
+KEY同/ANY+庆/ANY->ANY>>p
+同/ANY+KEY庆/ANY->ANY>>vg
+KEY同庆/ANY->[同庆/ANY]MERGE[同/p 庆/vg]
+
+// 射向
+KEY射/ANY+向/ANY->ANY>>v
+射/ANY+KEY向/ANY->ANY>>p
+KEY射向/ANY->[射向/ANY]MERGE[射/v 向/p]
+
+// 寄往
+KEY寄往/ANY->[寄往/ANY]MERGE[寄/v 往/p]
+KEY寄/ANY+往/ANY->ANY>>v
+寄/ANY+KEY往/ANY->ANY>>p
+
+// 故在
+KEY故/ANY+在/ANY->ANY>>c
+故/ANY+KEY在/ANY->ANY>>p
+KEY故在/ANY->[故在/ANY]MERGE[故/c 在/p]
+
+// 对撞
+KEY对/ANY+撞/ANY->ANY>>p
+对/ANY+KEY撞/ANY->ANY>>v
+KEY对撞/ANY->[对撞/ANY]MERGE[对/p 撞/v]
+
+// 当它
+KEY当/ANY+它/ANY->ANY>>p
+当/ANY+KEY它/ANY->ANY>>r
+KEY当它/ANY->[当它/ANY]MERGE[当/p 它/r]
+
+// 经期
+KEY经/ANY+期/ANY->ANY>>p
+经/ANY+KEY期/ANY->ANY>>q
+KEY经期/ANY->[经期/ANY]MERGE[经/p 期/q]
+
+// 若以
+KEY若/ANY+以/ANY->ANY>>c
+若/ANY+KEY以/ANY->ANY>>p
+KEY若以/ANY->[若以/ANY]MERGE[若/c 以/p]
+
+// 同轴
+KEY同/ANY+轴/ANY->ANY>>p
+同/ANY+KEY轴/ANY->ANY>>n
+KEY同轴/ANY->[同轴/ANY]MERGE[同/p 轴/n]
+
+// 猜对
+KEY猜对/ANY->[猜对/ANY]MERGE[猜/v 对/p]
+KEY猜/ANY+对/ANY->ANY>>v
+猜/ANY+KEY对/ANY->ANY>>p
+
+// 用煤
+KEY用煤/ANY->[用煤/ANY]MERGE[用/p 煤/n]
+KEY用/ANY+煤/ANY->ANY>>p
+用/ANY+KEY煤/ANY->ANY>>n
+
+// 同责
+KEY同责/ANY->[同责/ANY]MERGE[同/p 责/Ng]
+KEY同/ANY+责/ANY->ANY>>p
+同/ANY+KEY责/ANY->ANY>>Ng
+
+// 给药
+KEY给/ANY+药/ANY->ANY>>p
+给/ANY+KEY药/ANY->ANY>>n
+KEY给药/ANY->[给药/ANY]MERGE[给/p 药/n]
+
+// 从影
+KEY从/ANY+影/ANY->ANY>>p
+从/ANY+KEY影/ANY->ANY>>Ng
+KEY从影/ANY->[从影/ANY]MERGE[从/p 影/Ng]
+
+// 同构
+KEY同构/ANY->[同构/ANY]MERGE[同/p 构/vg]
+KEY同/ANY+构/ANY->ANY>>p
+同/ANY+KEY构/ANY->ANY>>vg
+
+// 按年
+KEY按年/ANY->[按年/ANY]MERGE[按/p 年/q]
+KEY按/ANY+年/ANY->ANY>>p
+按/ANY+KEY年/ANY->ANY>>q
+
+// 往回
+KEY往/ANY+回/ANY->ANY>>p
+往/ANY+KEY回/ANY->ANY>>v
+KEY往回/ANY->[往回/ANY]MERGE[往/p 回/v]
+
+// 须经
+KEY须经/ANY->[须经/ANY]MERGE[须/d 经/p]
+KEY须/ANY+经/ANY->ANY>>d
+须/ANY+KEY经/ANY->ANY>>p
+
+// 肝经
+KEY肝经/ANY->[肝经/ANY]MERGE[肝/n 经/p]
+KEY肝/ANY+经/ANY->ANY>>n
+肝/ANY+KEY经/ANY->ANY>>p
+
+// 按蚊
+KEY按蚊/ANY->[按蚊/ANY]MERGE[按/p 蚊/Ng]
+KEY按/ANY+蚊/ANY->ANY>>p
+按/ANY+KEY蚊/ANY->ANY>>Ng
+
+// 除魔
+KEY除魔/ANY->[除魔/ANY]MERGE[除/p 魔/Ag]
+KEY除/ANY+魔/ANY->ANY>>p
+除/ANY+KEY魔/ANY->ANY>>Ag
+
+// 经查
+KEY经查/ANY->[经查/ANY]MERGE[经/p 查/v]
+KEY经/ANY+查/ANY->ANY>>p
+经/ANY+KEY查/ANY->ANY>>v
+
+// 把牢
+KEY把牢/ANY->[把牢/ANY]MERGE[把/p 牢/a]
+KEY把/ANY+牢/ANY->ANY>>p
+把/ANY+KEY牢/ANY->ANY>>a
+
+// 为魂
+KEY为魂/ANY->[为魂/ANY]MERGE[为/p 魂/n]
+KEY为/ANY+魂/ANY->ANY>>p
+为/ANY+KEY魂/ANY->ANY>>n
+
+// 氪经
+KEY氪/ANY+经/ANY->ANY>>w
+氪/ANY+KEY经/ANY->ANY>>p
+KEY氪经/ANY->[氪经/ANY]MERGE[氪/w 经/p]
+
+// 谨向
+KEY谨/ANY+向/ANY->ANY>>d
+谨/ANY+KEY向/ANY->ANY>>p
+KEY谨向/ANY->[谨向/ANY]MERGE[谨/d 向/p]
+
+// 从下
+KEY从下/ANY->[从下/ANY]MERGE[从/p 下/f]
+KEY从/ANY+下/ANY->ANY>>p
+从/ANY+KEY下/ANY->ANY>>f
+
+// 同侪
+KEY同/ANY+侪/ANY->ANY>>p
+同/ANY+KEY侪/ANY->ANY>>w
+KEY同侪/ANY->[同侪/ANY]MERGE[同/p 侪/w]
+
+// 披在
+KEY披/ANY+在/ANY->ANY>>v
+披/ANY+KEY在/ANY->ANY>>p
+KEY披在/ANY->[披在/ANY]MERGE[披/v 在/p]
+
+// 随团
+KEY随/ANY+团/ANY->ANY>>p
+随/ANY+KEY团/ANY->ANY>>n
+KEY随团/ANY->[随团/ANY]MERGE[随/p 团/n]
+
+// 塞在
+KEY塞在/ANY->[塞在/ANY]MERGE[塞/v 在/p]
+KEY塞/ANY+在/ANY->ANY>>v
+塞/ANY+KEY在/ANY->ANY>>p
+
+// 滤除
+KEY滤/ANY+除/ANY->ANY>>v
+滤/ANY+KEY除/ANY->ANY>>p
+KEY滤除/ANY->[滤除/ANY]MERGE[滤/v 除/p]
+
+// 按日
+KEY按/ANY+日/ANY->ANY>>p
+按/ANY+KEY日/ANY->ANY>>b
+KEY按日/ANY->[按日/ANY]MERGE[按/p 日/b]
+
+// 跟车
+KEY跟车/ANY->[跟车/ANY]MERGE[跟/p 车/n]
+KEY跟/ANY+车/ANY->ANY>>p
+跟/ANY+KEY车/ANY->ANY>>n
+
+// 为求
+KEY为求/ANY->[为求/ANY]MERGE[为/p 求/v]
+KEY为/ANY+求/ANY->ANY>>p
+为/ANY+KEY求/ANY->ANY>>v
+
+// 卸除
+KEY卸除/ANY->[卸除/ANY]MERGE[卸/v 除/p]
+KEY卸/ANY+除/ANY->ANY>>v
+卸/ANY+KEY除/ANY->ANY>>p
+
+// 至高
+KEY至/ANY+高/ANY->ANY>>p
+至/ANY+KEY高/ANY->ANY>>a
+KEY至高/ANY->[至高/ANY]MERGE[至/p 高/a]
+
+// 从东
+KEY从东/ANY->[从东/ANY]MERGE[从/p 东/f]
+KEY从/ANY+东/ANY->ANY>>p
+从/ANY+KEY东/ANY->ANY>>f
+
+// 为证
+KEY为/ANY+证/ANY->ANY>>p
+为/ANY+KEY证/ANY->ANY>>n
+KEY为证/ANY->[为证/ANY]MERGE[为/p 证/n]
+
+// 缩在
+KEY缩/ANY+在/ANY->ANY>>v
+缩/ANY+KEY在/ANY->ANY>>p
+KEY缩在/ANY->[缩在/ANY]MERGE[缩/v 在/p]
+
+// 沿湖
+KEY沿/ANY+湖/ANY->ANY>>p
+沿/ANY+KEY湖/ANY->ANY>>n
+KEY沿湖/ANY->[沿湖/ANY]MERGE[沿/p 湖/n]
+
+// 以致于
+KEY以致于/ANY->[以致于/ANY]MERGE[以致/c 于/p]
+KEY以致/ANY+于/ANY->ANY>>c
+以致/ANY+KEY于/ANY->ANY>>p
+KEY以/ANY+致于/ANY->[以/ANY 致于/ANY]MERGE[以致/c 于/p]
+
+// 选自
+KEY选自/ANY->[选自/ANY]MERGE[选/v 自/p]
+KEY选/ANY+自/ANY->ANY>>v
+选/ANY+KEY自/ANY->ANY>>p
+
+// 悬于
+KEY悬/ANY+于/ANY->ANY>>v
+悬/ANY+KEY于/ANY->ANY>>p
+KEY悬于/ANY->[悬于/ANY]MERGE[悬/v 于/p]
+
+// 臻于
+KEY臻于/ANY->[臻于/ANY]MERGE[臻/vg 于/p]
+KEY臻/ANY+于/ANY->ANY>>vg
+臻/ANY+KEY于/ANY->ANY>>p
+
+// 燃用
+KEY燃用/ANY->[燃用/ANY]MERGE[燃/vg 用/p]
+KEY燃/ANY+用/ANY->ANY>>vg
+燃/ANY+KEY用/ANY->ANY>>p
+
+// 胃经
+KEY胃/ANY+经/ANY->ANY>>n
+胃/ANY+KEY经/ANY->ANY>>p
+KEY胃经/ANY->[胃经/ANY]MERGE[胃/n 经/p]
+
+// 联同
+KEY联/ANY+同/ANY->ANY>>vg
+联/ANY+KEY同/ANY->ANY>>p
+KEY联同/ANY->[联同/ANY]MERGE[联/vg 同/p]
+
+// 须向
+KEY须向/ANY->[须向/ANY]MERGE[须/d 向/p]
+KEY须/ANY+向/ANY->ANY>>d
+须/ANY+KEY向/ANY->ANY>>p
+
+// 须由
+KEY须由/ANY->[须由/ANY]MERGE[须/d 由/p]
+KEY须/ANY+由/ANY->ANY>>d
+须/ANY+KEY由/ANY->ANY>>p
+
+// 向钛
+KEY向钛/ANY->[向钛/ANY]MERGE[向/p 钛/n]
+KEY向/ANY+钛/ANY->ANY>>p
+向/ANY+KEY钛/ANY->ANY>>n
+
+// 即对
+KEY即对/ANY->[即对/ANY]MERGE[即/v 对/p]
+KEY即/ANY+对/ANY->ANY>>v
+即/ANY+KEY对/ANY->ANY>>p
+
+// 讲给
+KEY讲给/ANY->[讲给/ANY]MERGE[讲/v 给/p]
+KEY讲/ANY+给/ANY->ANY>>v
+讲/ANY+KEY给/ANY->ANY>>p
+
+// ======================================
+//
+//	Ictclas 有 u 共 170 词 
+//
+// ======================================
+
+// 变得
+KEY变/ANY+得/ANY->ANY>>v
+变/ANY+KEY得/ANY->ANY>>u
+KEY变得/ANY->[变得/ANY]MERGE[变/v 得/u]
+
+// 执着
+KEY执/ANY+着/ANY->ANY>>v
+执/ANY+KEY着/ANY->ANY>>u
+KEY执着/ANY->[执着/ANY]MERGE[执/v 着/u]
+
+// 冒着
+KEY冒着/ANY->[冒着/ANY]MERGE[冒/v 着/u]
+KEY冒/ANY+着/ANY->ANY>>v
+冒/ANY+KEY着/ANY->ANY>>u
+
+// 之时
+KEY之/ANY+时/ANY->ANY>>u
+之/ANY+KEY时/ANY->ANY>>Ng
+KEY之时/ANY->[之时/ANY]MERGE[之/u 时/Ng]
+
+// 对着
+KEY对着/ANY->[对着/ANY]MERGE[对/p 着/u]
+KEY对/ANY+着/ANY->ANY>>p
+对/ANY+KEY着/ANY->ANY>>u
+
+// 所致
+KEY所致/ANY->[所致/ANY]MERGE[所/u 致/v]
+KEY所/ANY+致/ANY->ANY>>u
+所/ANY+KEY致/ANY->ANY>>v
+
+// 之初
+KEY之初/ANY->[之初/ANY]MERGE[之/u 初/Ng]
+KEY之/ANY+初/ANY->ANY>>u
+之/ANY+KEY初/ANY->ANY>>Ng
+
+// 所幸
+KEY所幸/ANY->[所幸/ANY]MERGE[所/u 幸/vg]
+KEY所/ANY+幸/ANY->ANY>>u
+所/ANY+KEY幸/ANY->ANY>>vg
+
+// 忙着
+KEY忙着/ANY->[忙着/ANY]MERGE[忙/v 着/u]
+KEY忙/ANY+着/ANY->ANY>>v
+忙/ANY+KEY着/ANY->ANY>>u
+
+// 披着
+KEY披着/ANY->[披着/ANY]MERGE[披/v 着/u]
+KEY披/ANY+着/ANY->ANY>>v
+披/ANY+KEY着/ANY->ANY>>u
+
+// 所述
+KEY所述/ANY->[所述/ANY]MERGE[所/u 述/vg]
+KEY所/ANY+述/ANY->ANY>>u
+所/ANY+KEY述/ANY->ANY>>vg
+
+// 靠着
+KEY靠着/ANY->[靠着/ANY]MERGE[靠/v 着/u]
+KEY靠/ANY+着/ANY->ANY>>v
+靠/ANY+KEY着/ANY->ANY>>u
+
+// 闲着
+KEY闲着/ANY->[闲着/ANY]MERGE[闲/v 着/u]
+KEY闲/ANY+着/ANY->ANY>>v
+闲/ANY+KEY着/ANY->ANY>>u
+
+// 惹得
+KEY惹/ANY+得/ANY->ANY>>v
+惹/ANY+KEY得/ANY->ANY>>u
+KEY惹得/ANY->[惹得/ANY]MERGE[惹/v 得/u]
+
+// 隔着
+KEY隔/ANY+着/ANY->ANY>>v
+隔/ANY+KEY着/ANY->ANY>>u
+KEY隔着/ANY->[隔着/ANY]MERGE[隔/v 着/u]
+
+// 所言
+KEY所言/ANY->[所言/ANY]MERGE[所/u 言/vg]
+KEY所/ANY+言/ANY->ANY>>u
+所/ANY+KEY言/ANY->ANY>>vg
+
+// 指着
+KEY指着/ANY->[指着/ANY]MERGE[指/v 着/u]
+KEY指/ANY+着/ANY->ANY>>v
+指/ANY+KEY着/ANY->ANY>>u
+
+// 躺着
+KEY躺/ANY+着/ANY->ANY>>v
+躺/ANY+KEY着/ANY->ANY>>u
+KEY躺着/ANY->[躺着/ANY]MERGE[躺/v 着/u]
+
+// 太过
+KEY太/ANY+过/ANY->ANY>>d
+太/ANY+KEY过/ANY->ANY>>u
+KEY太过/ANY->[太过/ANY]MERGE[太/d 过/u]
+
+// 急着
+KEY急着/ANY->[急着/ANY]MERGE[急/v 着/u]
+KEY急/ANY+着/ANY->ANY>>v
+急/ANY+KEY着/ANY->ANY>>u
+
+// 之义
+KEY之义/ANY->[之义/ANY]MERGE[之/u 义/Ng]
+KEY之/ANY+义/ANY->ANY>>u
+之/ANY+KEY义/ANY->ANY>>Ng
+
+// 冻得
+KEY冻得/ANY->[冻得/ANY]MERGE[冻/v 得/u]
+KEY冻/ANY+得/ANY->ANY>>v
+冻/ANY+KEY得/ANY->ANY>>u
+
+// 逗得
+KEY逗/ANY+得/ANY->ANY>>v
+逗/ANY+KEY得/ANY->ANY>>u
+KEY逗得/ANY->[逗得/ANY]MERGE[逗/v 得/u]
+
+// 瞒着
+KEY瞒着/ANY->[瞒着/ANY]MERGE[瞒/v 着/u]
+KEY瞒/ANY+着/ANY->ANY>>v
+瞒/ANY+KEY着/ANY->ANY>>u
+
+// 弄得
+KEY弄得/ANY->[弄得/ANY]MERGE[弄/v 得/u]
+KEY弄/ANY+得/ANY->ANY>>v
+弄/ANY+KEY得/ANY->ANY>>u
+
+// 女的
+KEY女/ANY+的/ANY->ANY>>b
+女/ANY+KEY的/ANY->ANY>>u
+KEY女的/ANY->[女的/ANY]MERGE[女/b 的/u]
+
+// 踩着
+KEY踩/ANY+着/ANY->ANY>>v
+踩/ANY+KEY着/ANY->ANY>>u
+KEY踩着/ANY->[踩着/ANY]MERGE[踩/v 着/u]
+
+// 冲着
+KEY冲着/ANY->[冲着/ANY]MERGE[冲/v 着/u]
+KEY冲/ANY+着/ANY->ANY>>v
+冲/ANY+KEY着/ANY->ANY>>u
+
+// 扶着
+KEY扶着/ANY->[扶着/ANY]MERGE[扶/v 着/u]
+KEY扶/ANY+着/ANY->ANY>>v
+扶/ANY+KEY着/ANY->ANY>>u
+
+// 贴着
+KEY贴/ANY+着/ANY->ANY>>v
+贴/ANY+KEY着/ANY->ANY>>u
+KEY贴着/ANY->[贴着/ANY]MERGE[贴/v 着/u]
+
+// 忍着
+KEY忍着/ANY->[忍着/ANY]MERGE[忍/v 着/u]
+KEY忍/ANY+着/ANY->ANY>>v
+忍/ANY+KEY着/ANY->ANY>>u
+
+// 演得
+KEY演得/ANY->[演得/ANY]MERGE[演/v 得/u]
+KEY演/ANY+得/ANY->ANY>>v
+演/ANY+KEY得/ANY->ANY>>u
+
+// 连线
+KEY连线/ANY->[连线/ANY]MERGE[连/u 线/n]
+KEY连/ANY+线/ANY->ANY>>u
+连/ANY+KEY线/ANY->ANY>>n
+
+// 过猛
+KEY过猛/ANY->[过猛/ANY]MERGE[过/u 猛/a]
+KEY过/ANY+猛/ANY->ANY>>u
+过/ANY+KEY猛/ANY->ANY>>a
+
+// 捂着
+KEY捂/ANY+着/ANY->ANY>>v
+捂/ANY+KEY着/ANY->ANY>>u
+KEY捂着/ANY->[捂着/ANY]MERGE[捂/v 着/u]
+
+// 迈过
+KEY迈过/ANY->[迈过/ANY]MERGE[迈/v 过/u]
+KEY迈/ANY+过/ANY->ANY>>v
+迈/ANY+KEY过/ANY->ANY>>u
+
+// 胶着
+KEY胶/ANY+着/ANY->ANY>>n
+胶/ANY+KEY着/ANY->ANY>>u
+KEY胶着/ANY->[胶着/ANY]MERGE[胶/n 着/u]
+
+// 守着
+KEY守/ANY+着/ANY->ANY>>v
+守/ANY+KEY着/ANY->ANY>>u
+KEY守着/ANY->[守着/ANY]MERGE[守/v 着/u]
+
+// 挣得
+KEY挣得/ANY->[挣得/ANY]MERGE[挣/v 得/u]
+KEY挣/ANY+得/ANY->ANY>>v
+挣/ANY+KEY得/ANY->ANY>>u
+
+// 循着
+KEY循着/ANY->[循着/ANY]MERGE[循/vg 着/u]
+KEY循/ANY+着/ANY->ANY>>vg
+循/ANY+KEY着/ANY->ANY>>u
+
+// 妈的
+KEY妈的/ANY->[妈的/ANY]MERGE[妈/n 的/u]
+KEY妈/ANY+的/ANY->ANY>>n
+妈/ANY+KEY的/ANY->ANY>>u
+
+// 迎着
+KEY迎/ANY+着/ANY->ANY>>v
+迎/ANY+KEY着/ANY->ANY>>u
+KEY迎着/ANY->[迎着/ANY]MERGE[迎/v 着/u]
+
+// 涩的
+KEY涩/ANY+的/ANY->ANY>>a
+涩/ANY+KEY的/ANY->ANY>>u
+KEY涩的/ANY->[涩的/ANY]MERGE[涩/a 的/u]
+
+// 胖的
+KEY胖/ANY+的/ANY->ANY>>a
+胖/ANY+KEY的/ANY->ANY>>u
+KEY胖的/ANY->[胖的/ANY]MERGE[胖/a 的/u]
+
+// 帮着
+KEY帮着/ANY->[帮着/ANY]MERGE[帮/v 着/u]
+KEY帮/ANY+着/ANY->ANY>>v
+帮/ANY+KEY着/ANY->ANY>>u
+
+// 过长
+KEY过长/ANY->[过长/ANY]MERGE[过/u 长/a]
+KEY过/ANY+长/ANY->ANY>>u
+过/ANY+KEY长/ANY->ANY>>a
+
+// 之功
+KEY之功/ANY->[之功/ANY]MERGE[之/u 功/n]
+KEY之/ANY+功/ANY->ANY>>u
+之/ANY+KEY功/ANY->ANY>>n
+
+// 提着
+KEY提/ANY+着/ANY->ANY>>v
+提/ANY+KEY着/ANY->ANY>>u
+KEY提着/ANY->[提着/ANY]MERGE[提/v 着/u]
+
+// 那般
+KEY那/ANY+般/ANY->ANY>>r
+那/ANY+KEY般/ANY->ANY>>u
+KEY那般/ANY->[那般/ANY]MERGE[那/r 般/u]
+
+// 过快
+KEY过/ANY+快/ANY->ANY>>u
+过/ANY+KEY快/ANY->ANY>>a
+KEY过快/ANY->[过快/ANY]MERGE[过/u 快/a]
+
+// 跪着
+KEY跪着/ANY->[跪着/ANY]MERGE[跪/v 着/u]
+KEY跪/ANY+着/ANY->ANY>>v
+跪/ANY+KEY着/ANY->ANY>>u
+
+// 飘着
+KEY飘/ANY+着/ANY->ANY>>v
+飘/ANY+KEY着/ANY->ANY>>u
+KEY飘着/ANY->[飘着/ANY]MERGE[飘/v 着/u]
+
+// 过河
+KEY过/ANY+河/ANY->ANY>>u
+过/ANY+KEY河/ANY->ANY>>n
+KEY过河/ANY->[过河/ANY]MERGE[过/u 河/n]
+
+// 哭得
+KEY哭得/ANY->[哭得/ANY]MERGE[哭/v 得/u]
+KEY哭/ANY+得/ANY->ANY>>v
+哭/ANY+KEY得/ANY->ANY>>u
+
+// 穿得
+KEY穿得/ANY->[穿得/ANY]MERGE[穿/v 得/u]
+KEY穿/ANY+得/ANY->ANY>>v
+穿/ANY+KEY得/ANY->ANY>>u
+
+// 般若
+KEY般若/ANY->[般若/ANY]MERGE[般/u 若/v]
+KEY般/ANY+若/ANY->ANY>>u
+般/ANY+KEY若/ANY->ANY>>v
+
+// 踢得
+KEY踢/ANY+得/ANY->ANY>>v
+踢/ANY+KEY得/ANY->ANY>>u
+KEY踢得/ANY->[踢得/ANY]MERGE[踢/v 得/u]
+
+// 所迫
+KEY所/ANY+迫/ANY->ANY>>u
+所/ANY+KEY迫/ANY->ANY>>vg
+KEY所迫/ANY->[所迫/ANY]MERGE[所/u 迫/vg]
+
+// 所愿
+KEY所/ANY+愿/ANY->ANY>>u
+所/ANY+KEY愿/ANY->ANY>>v
+KEY所愿/ANY->[所愿/ANY]MERGE[所/u 愿/v]
+
+// 累得
+KEY累/ANY+得/ANY->ANY>>v
+累/ANY+KEY得/ANY->ANY>>u
+KEY累得/ANY->[累得/ANY]MERGE[累/v 得/u]
+
+// 蹲着
+KEY蹲/ANY+着/ANY->ANY>>v
+蹲/ANY+KEY着/ANY->ANY>>u
+KEY蹲着/ANY->[蹲着/ANY]MERGE[蹲/v 着/u]
+
+// 抬着
+KEY抬着/ANY->[抬着/ANY]MERGE[抬/v 着/u]
+KEY抬/ANY+着/ANY->ANY>>v
+抬/ANY+KEY着/ANY->ANY>>u
+
+// 总的
+KEY总/ANY+的/ANY->ANY>>b
+总/ANY+KEY的/ANY->ANY>>u
+KEY总的/ANY->[总的/ANY]MERGE[总/b 的/u]
+
+// 气得
+KEY气/ANY+得/ANY->ANY>>n
+气/ANY+KEY得/ANY->ANY>>u
+KEY气得/ANY->[气得/ANY]MERGE[气/n 得/u]
+
+// 追着
+KEY追/ANY+着/ANY->ANY>>v
+追/ANY+KEY着/ANY->ANY>>u
+KEY追着/ANY->[追着/ANY]MERGE[追/v 着/u]
+
+// 等症
+KEY等/ANY+症/ANY->ANY>>u
+等/ANY+KEY症/ANY->ANY>>Ng
+KEY等症/ANY->[等症/ANY]MERGE[等/u 症/Ng]
+
+// 挑了
+KEY挑/ANY+了/ANY->ANY>>v
+挑/ANY+KEY了/ANY->ANY>>u
+KEY挑了/ANY->[挑了/ANY]MERGE[挑/v 了/u]
+
+// 筹得
+KEY筹/ANY+得/ANY->ANY>>v
+筹/ANY+KEY得/ANY->ANY>>u
+KEY筹得/ANY->[筹得/ANY]MERGE[筹/v 得/u]
+
+// 着墨
+KEY着墨/ANY->[着墨/ANY]MERGE[着/u 墨/n]
+KEY着/ANY+墨/ANY->ANY>>u
+着/ANY+KEY墨/ANY->ANY>>n
+
+// 水源地
+KEY水/ANY+源地/ANY->[水/ANY 源地/ANY]MERGE[水源/n 地/u]
+KEY水源地/ANY->[水源地/ANY]MERGE[水源/n 地/u]
+KEY水源/ANY+地/ANY->ANY>>n
+水源/ANY+KEY地/ANY->ANY>>u
+
+// 挤得
+KEY挤/ANY+得/ANY->ANY>>v
+挤/ANY+KEY得/ANY->ANY>>u
+KEY挤得/ANY->[挤得/ANY]MERGE[挤/v 得/u]
+
+// 相对来说
+KEY相对/ANY+来说/ANY->ANY>>d
+相对/ANY+KEY来说/ANY->ANY>>u
+KEY相对来说/ANY->[相对来说/ANY]MERGE[相对/d 来说/u]
+
+// 闭着
+KEY闭着/ANY->[闭着/ANY]MERGE[闭/v 着/u]
+KEY闭/ANY+着/ANY->ANY>>v
+闭/ANY+KEY着/ANY->ANY>>u
+
+// 攥着
+KEY攥着/ANY->[攥着/ANY]MERGE[攥/v 着/u]
+KEY攥/ANY+着/ANY->ANY>>v
+攥/ANY+KEY着/ANY->ANY>>u
+
+// 星地
+KEY星/ANY+地/ANY->ANY>>n
+星/ANY+KEY地/ANY->ANY>>u
+KEY星地/ANY->[星地/ANY]MERGE[星/n 地/u]
+
+// 军地
+KEY军/ANY+地/ANY->ANY>>n
+军/ANY+KEY地/ANY->ANY>>u
+KEY军地/ANY->[军地/ANY]MERGE[军/n 地/u]
+
+// 雇了
+KEY雇/ANY+了/ANY->ANY>>v
+雇/ANY+KEY了/ANY->ANY>>u
+KEY雇了/ANY->[雇了/ANY]MERGE[雇/v 了/u]
+
+// 挽着
+KEY挽着/ANY->[挽着/ANY]MERGE[挽/v 着/u]
+KEY挽/ANY+着/ANY->ANY>>v
+挽/ANY+KEY着/ANY->ANY>>u
+
+// 学着
+KEY学着/ANY->[学着/ANY]MERGE[学/v 着/u]
+KEY学/ANY+着/ANY->ANY>>v
+学/ANY+KEY着/ANY->ANY>>u
+
+// 唱得
+KEY唱得/ANY->[唱得/ANY]MERGE[唱/v 得/u]
+KEY唱/ANY+得/ANY->ANY>>v
+唱/ANY+KEY得/ANY->ANY>>u
+
+// 悬着
+KEY悬/ANY+着/ANY->ANY>>v
+悬/ANY+KEY着/ANY->ANY>>u
+KEY悬着/ANY->[悬着/ANY]MERGE[悬/v 着/u]
+
+// 叫得
+KEY叫得/ANY->[叫得/ANY]MERGE[叫/v 得/u]
+KEY叫/ANY+得/ANY->ANY>>v
+叫/ANY+KEY得/ANY->ANY>>u
+
+// 落得
+KEY落得/ANY->[落得/ANY]MERGE[落/v 得/u]
+KEY落/ANY+得/ANY->ANY>>v
+落/ANY+KEY得/ANY->ANY>>u
+
+// 连署
+KEY连署/ANY->[连署/ANY]MERGE[连/u 署/Ng]
+KEY连/ANY+署/ANY->ANY>>u
+连/ANY+KEY署/ANY->ANY>>Ng
+
+// 流着
+KEY流/ANY+着/ANY->ANY>>v
+流/ANY+KEY着/ANY->ANY>>u
+KEY流着/ANY->[流着/ANY]MERGE[流/v 着/u]
+
+// 捏着
+KEY捏着/ANY->[捏着/ANY]MERGE[捏/v 着/u]
+KEY捏/ANY+着/ANY->ANY>>v
+捏/ANY+KEY着/ANY->ANY>>u
+
+// 患了
+KEY患了/ANY->[患了/ANY]MERGE[患/v 了/u]
+KEY患/ANY+了/ANY->ANY>>v
+患/ANY+KEY了/ANY->ANY>>u
+
+// 之恩
+KEY之恩/ANY->[之恩/ANY]MERGE[之/u 恩/Ng]
+KEY之/ANY+恩/ANY->ANY>>u
+之/ANY+KEY恩/ANY->ANY>>Ng
+
+// 梅的
+KEY梅的/ANY->[梅的/ANY]MERGE[梅/Ng 的/u]
+KEY梅/ANY+的/ANY->ANY>>Ng
+梅/ANY+KEY的/ANY->ANY>>u
+
+// 摔得
+KEY摔/ANY+得/ANY->ANY>>v
+摔/ANY+KEY得/ANY->ANY>>u
+KEY摔得/ANY->[摔得/ANY]MERGE[摔/v 得/u]
+
+// 冲过
+KEY冲过/ANY->[冲过/ANY]MERGE[冲/v 过/u]
+KEY冲/ANY+过/ANY->ANY>>v
+冲/ANY+KEY过/ANY->ANY>>u
+
+// 聊得
+KEY聊得/ANY->[聊得/ANY]MERGE[聊/v 得/u]
+KEY聊/ANY+得/ANY->ANY>>v
+聊/ANY+KEY得/ANY->ANY>>u
+
+// 挑着
+KEY挑/ANY+着/ANY->ANY>>v
+挑/ANY+KEY着/ANY->ANY>>u
+KEY挑着/ANY->[挑着/ANY]MERGE[挑/v 着/u]
+
+// 开过
+KEY开/ANY+过/ANY->ANY>>v
+开/ANY+KEY过/ANY->ANY>>u
+KEY开过/ANY->[开过/ANY]MERGE[开/v 过/u]
+
+// 瞪着
+KEY瞪/ANY+着/ANY->ANY>>v
+瞪/ANY+KEY着/ANY->ANY>>u
+KEY瞪着/ANY->[瞪着/ANY]MERGE[瞪/v 着/u]
+
+// 所限
+KEY所限/ANY->[所限/ANY]MERGE[所/u 限/v]
+KEY所/ANY+限/ANY->ANY>>u
+所/ANY+KEY限/ANY->ANY>>v
+
+// 扯着
+KEY扯/ANY+着/ANY->ANY>>v
+扯/ANY+KEY着/ANY->ANY>>u
+KEY扯着/ANY->[扯着/ANY]MERGE[扯/v 着/u]
+
+// 学过
+KEY学/ANY+过/ANY->ANY>>v
+学/ANY+KEY过/ANY->ANY>>u
+KEY学过/ANY->[学过/ANY]MERGE[学/v 过/u]
+
+// 之徒
+KEY之/ANY+徒/ANY->ANY>>u
+之/ANY+KEY徒/ANY->ANY>>Ng
+KEY之徒/ANY->[之徒/ANY]MERGE[之/u 徒/Ng]
+
+// 碰过
+KEY碰过/ANY->[碰过/ANY]MERGE[碰/v 过/u]
+KEY碰/ANY+过/ANY->ANY>>v
+碰/ANY+KEY过/ANY->ANY>>u
+
+// 连身
+KEY连/ANY+身/ANY->ANY>>u
+连/ANY+KEY身/ANY->ANY>>Ng
+KEY连身/ANY->[连身/ANY]MERGE[连/u 身/Ng]
+
+// 之士
+KEY之/ANY+士/ANY->ANY>>u
+之/ANY+KEY士/ANY->ANY>>Ng
+KEY之士/ANY->[之士/ANY]MERGE[之/u 士/Ng]
+
+// 谋得
+KEY谋/ANY+得/ANY->ANY>>v
+谋/ANY+KEY得/ANY->ANY>>u
+KEY谋得/ANY->[谋得/ANY]MERGE[谋/v 得/u]
+
+// 迈着
+KEY迈/ANY+着/ANY->ANY>>v
+迈/ANY+KEY着/ANY->ANY>>u
+KEY迈着/ANY->[迈着/ANY]MERGE[迈/v 着/u]
+
+// 熏得
+KEY熏/ANY+得/ANY->ANY>>v
+熏/ANY+KEY得/ANY->ANY>>u
+KEY熏得/ANY->[熏得/ANY]MERGE[熏/v 得/u]
+
+// 过滥
+KEY过滥/ANY->[过滥/ANY]MERGE[过/u 滥/a]
+KEY过/ANY+滥/ANY->ANY>>u
+过/ANY+KEY滥/ANY->ANY>>a
+
+// 记着
+KEY记着/ANY->[记着/ANY]MERGE[记/v 着/u]
+KEY记/ANY+着/ANY->ANY>>v
+记/ANY+KEY着/ANY->ANY>>u
+
+// 差等
+KEY差/ANY+等/ANY->ANY>>a
+差/ANY+KEY等/ANY->ANY>>u
+KEY差等/ANY->[差等/ANY]MERGE[差/a 等/u]
+
+// 嚷着
+KEY嚷/ANY+着/ANY->ANY>>v
+嚷/ANY+KEY着/ANY->ANY>>u
+KEY嚷着/ANY->[嚷着/ANY]MERGE[嚷/v 着/u]
+
+// 摇着
+KEY摇/ANY+着/ANY->ANY>>v
+摇/ANY+KEY着/ANY->ANY>>u
+KEY摇着/ANY->[摇着/ANY]MERGE[摇/v 着/u]
+
+// 冒了
+KEY冒/ANY+了/ANY->ANY>>v
+冒/ANY+KEY了/ANY->ANY>>u
+KEY冒了/ANY->[冒了/ANY]MERGE[冒/v 了/u]
+
+// 压着
+KEY压着/ANY->[压着/ANY]MERGE[压/v 着/u]
+KEY压/ANY+着/ANY->ANY>>v
+压/ANY+KEY着/ANY->ANY>>u
+
+// 拍着
+KEY拍/ANY+着/ANY->ANY>>v
+拍/ANY+KEY着/ANY->ANY>>u
+KEY拍着/ANY->[拍着/ANY]MERGE[拍/v 着/u]
+
+// 粘着
+KEY粘/ANY+着/ANY->ANY>>v
+粘/ANY+KEY着/ANY->ANY>>u
+KEY粘着/ANY->[粘着/ANY]MERGE[粘/v 着/u]
+
+// 等车
+KEY等/ANY+车/ANY->ANY>>u
+等/ANY+KEY车/ANY->ANY>>n
+KEY等车/ANY->[等车/ANY]MERGE[等/u 车/n]
+
+// 学得
+KEY学/ANY+得/ANY->ANY>>v
+学/ANY+KEY得/ANY->ANY>>u
+KEY学得/ANY->[学得/ANY]MERGE[学/v 得/u]
+
+// 沉得
+KEY沉/ANY+得/ANY->ANY>>v
+沉/ANY+KEY得/ANY->ANY>>u
+KEY沉得/ANY->[沉得/ANY]MERGE[沉/v 得/u]
+
+// 撕得
+KEY撕/ANY+得/ANY->ANY>>v
+撕/ANY+KEY得/ANY->ANY>>u
+KEY撕得/ANY->[撕得/ANY]MERGE[撕/v 得/u]
+
+// 晒得
+KEY晒/ANY+得/ANY->ANY>>v
+晒/ANY+KEY得/ANY->ANY>>u
+KEY晒得/ANY->[晒得/ANY]MERGE[晒/v 得/u]
+
+// 抢得
+KEY抢得/ANY->[抢得/ANY]MERGE[抢/v 得/u]
+KEY抢/ANY+得/ANY->ANY>>v
+抢/ANY+KEY得/ANY->ANY>>u
+
+// 推了
+KEY推了/ANY->[推了/ANY]MERGE[推/v 了/u]
+KEY推/ANY+了/ANY->ANY>>v
+推/ANY+KEY了/ANY->ANY>>u
+
+// 爱得
+KEY爱得/ANY->[爱得/ANY]MERGE[爱/v 得/u]
+KEY爱/ANY+得/ANY->ANY>>v
+爱/ANY+KEY得/ANY->ANY>>u
+
+// 拔了
+KEY拔/ANY+了/ANY->ANY>>v
+拔/ANY+KEY了/ANY->ANY>>u
+KEY拔了/ANY->[拔了/ANY]MERGE[拔/v 了/u]
+
+// 饿着
+KEY饿着/ANY->[饿着/ANY]MERGE[饿/v 着/u]
+KEY饿/ANY+着/ANY->ANY>>v
+饿/ANY+KEY着/ANY->ANY>>u
+
+// 争着
+KEY争着/ANY->[争着/ANY]MERGE[争/v 着/u]
+KEY争/ANY+着/ANY->ANY>>v
+争/ANY+KEY着/ANY->ANY>>u
+
+// 连廊
+KEY连/ANY+廊/ANY->ANY>>u
+连/ANY+KEY廊/ANY->ANY>>Ng
+KEY连廊/ANY->[连廊/ANY]MERGE[连/u 廊/Ng]
+
+// 裹得
+KEY裹/ANY+得/ANY->ANY>>v
+裹/ANY+KEY得/ANY->ANY>>u
+KEY裹得/ANY->[裹得/ANY]MERGE[裹/v 得/u]
+
+// 睁着
+KEY睁着/ANY->[睁着/ANY]MERGE[睁/v 着/u]
+KEY睁/ANY+着/ANY->ANY>>v
+睁/ANY+KEY着/ANY->ANY>>u
+
+// 哼着
+KEY哼/ANY+着/ANY->ANY>>v
+哼/ANY+KEY着/ANY->ANY>>u
+KEY哼着/ANY->[哼着/ANY]MERGE[哼/v 着/u]
+
+// 近地
+KEY近地/ANY->[近地/ANY]MERGE[近/a 地/u]
+KEY近/ANY+地/ANY->ANY>>a
+近/ANY+KEY地/ANY->ANY>>u
+
+// 擦着
+KEY擦/ANY+着/ANY->ANY>>v
+擦/ANY+KEY着/ANY->ANY>>u
+KEY擦着/ANY->[擦着/ANY]MERGE[擦/v 着/u]
+
+// 拾得
+KEY拾/ANY+得/ANY->ANY>>v
+拾/ANY+KEY得/ANY->ANY>>u
+KEY拾得/ANY->[拾得/ANY]MERGE[拾/v 得/u]
+
+// 捡的
+KEY捡/ANY+的/ANY->ANY>>v
+捡/ANY+KEY的/ANY->ANY>>u
+KEY捡的/ANY->[捡的/ANY]MERGE[捡/v 的/u]
+
+// 定地
+KEY定地/ANY->[定地/ANY]MERGE[定/v 地/u]
+KEY定/ANY+地/ANY->ANY>>v
+定/ANY+KEY地/ANY->ANY>>u
+
+// 均匀地
+KEY均匀地/ANY->[均匀地/ANY]MERGE[均匀/a 地/u]
+KEY均匀/ANY+地/ANY->ANY>>a
+均匀/ANY+KEY地/ANY->ANY>>u
+
+// 爬过
+KEY爬过/ANY->[爬过/ANY]MERGE[爬/v 过/u]
+KEY爬/ANY+过/ANY->ANY>>v
+爬/ANY+KEY过/ANY->ANY>>u
+
+// 斜着
+KEY斜着/ANY->[斜着/ANY]MERGE[斜/v 着/u]
+KEY斜/ANY+着/ANY->ANY>>v
+斜/ANY+KEY着/ANY->ANY>>u
+
+// 冻着
+KEY冻着/ANY->[冻着/ANY]MERGE[冻/v 着/u]
+KEY冻/ANY+着/ANY->ANY>>v
+冻/ANY+KEY着/ANY->ANY>>u
+
+// 飞得
+KEY飞得/ANY->[飞得/ANY]MERGE[飞/v 得/u]
+KEY飞/ANY+得/ANY->ANY>>v
+飞/ANY+KEY得/ANY->ANY>>u
+
+// 刮得
+KEY刮/ANY+得/ANY->ANY>>v
+刮/ANY+KEY得/ANY->ANY>>u
+KEY刮得/ANY->[刮得/ANY]MERGE[刮/v 得/u]
+
+// 连扳
+KEY连扳/ANY->[连扳/ANY]MERGE[连/u 扳/v]
+KEY连/ANY+扳/ANY->ANY>>u
+连/ANY+KEY扳/ANY->ANY>>v
+
+// 豁得
+KEY豁得/ANY->[豁得/ANY]MERGE[豁/v 得/u]
+KEY豁/ANY+得/ANY->ANY>>v
+豁/ANY+KEY得/ANY->ANY>>u
+
+// 之辞
+KEY之辞/ANY->[之辞/ANY]MERGE[之/u 辞/Ng]
+KEY之/ANY+辞/ANY->ANY>>u
+之/ANY+KEY辞/ANY->ANY>>Ng
+
+// 护着
+KEY护/ANY+着/ANY->ANY>>v
+护/ANY+KEY着/ANY->ANY>>u
+KEY护着/ANY->[护着/ANY]MERGE[护/v 着/u]
+
+// 史诗般
+KEY史诗般/ANY->[史诗般/ANY]MERGE[史诗/n 般/u]
+KEY史诗/ANY+般/ANY->ANY>>n
+史诗/ANY+KEY般/ANY->ANY>>u
+
+// 梦幻般
+KEY梦幻般/ANY->[梦幻般/ANY]MERGE[梦幻/n 般/u]
+KEY梦幻/ANY+般/ANY->ANY>>n
+梦幻/ANY+KEY般/ANY->ANY>>u
+
+// 炸得
+KEY炸/ANY+得/ANY->ANY>>v
+炸/ANY+KEY得/ANY->ANY>>u
+KEY炸得/ANY->[炸得/ANY]MERGE[炸/v 得/u]
+
+// 蹬着
+KEY蹬/ANY+着/ANY->ANY>>v
+蹬/ANY+KEY着/ANY->ANY>>u
+KEY蹬着/ANY->[蹬着/ANY]MERGE[蹬/v 着/u]
+
+// 按着
+KEY按着/ANY->[按着/ANY]MERGE[按/p 着/u]
+KEY按/ANY+着/ANY->ANY>>p
+按/ANY+KEY着/ANY->ANY>>u
+
+// 连个
+KEY连个/ANY->[连个/ANY]MERGE[连/u 个/q]
+KEY连/ANY+个/ANY->ANY>>u
+连/ANY+KEY个/ANY->ANY>>q
+
+// 扫过
+KEY扫过/ANY->[扫过/ANY]MERGE[扫/v 过/u]
+KEY扫/ANY+过/ANY->ANY>>v
+扫/ANY+KEY过/ANY->ANY>>u
+
+// 瞄着
+KEY瞄着/ANY->[瞄着/ANY]MERGE[瞄/v 着/u]
+KEY瞄/ANY+着/ANY->ANY>>v
+瞄/ANY+KEY着/ANY->ANY>>u
+
+// 所选
+KEY所/ANY+选/ANY->ANY>>u
+所/ANY+KEY选/ANY->ANY>>v
+KEY所选/ANY->[所选/ANY]MERGE[所/u 选/v]
+
+// 换得
+KEY换/ANY+得/ANY->ANY>>v
+换/ANY+KEY得/ANY->ANY>>u
+KEY换得/ANY->[换得/ANY]MERGE[换/v 得/u]
+
+// 传过
+KEY传/ANY+过/ANY->ANY>>v
+传/ANY+KEY过/ANY->ANY>>u
+KEY传过/ANY->[传过/ANY]MERGE[传/v 过/u]
+
+// 涂着
+KEY涂着/ANY->[涂着/ANY]MERGE[涂/v 着/u]
+KEY涂/ANY+着/ANY->ANY>>v
+涂/ANY+KEY着/ANY->ANY>>u
+
+// 混得
+KEY混得/ANY->[混得/ANY]MERGE[混/v 得/u]
+KEY混/ANY+得/ANY->ANY>>v
+混/ANY+KEY得/ANY->ANY>>u
+
+// 之福
+KEY之/ANY+福/ANY->ANY>>u
+之/ANY+KEY福/ANY->ANY>>n
+KEY之福/ANY->[之福/ANY]MERGE[之/u 福/n]
+
+// 包着
+KEY包着/ANY->[包着/ANY]MERGE[包/v 着/u]
+KEY包/ANY+着/ANY->ANY>>v
+包/ANY+KEY着/ANY->ANY>>u
+
+// 离得
+KEY离/ANY+得/ANY->ANY>>v
+离/ANY+KEY得/ANY->ANY>>u
+KEY离得/ANY->[离得/ANY]MERGE[离/v 得/u]
+
+// 拿得
+KEY拿/ANY+得/ANY->ANY>>v
+拿/ANY+KEY得/ANY->ANY>>u
+KEY拿得/ANY->[拿得/ANY]MERGE[拿/v 得/u]
+
+// 扎得
+KEY扎/ANY+得/ANY->ANY>>v
+扎/ANY+KEY得/ANY->ANY>>u
+KEY扎得/ANY->[扎得/ANY]MERGE[扎/v 得/u]
+
+// 地平
+KEY地平/ANY->[地平/ANY]MERGE[地/u 平/v]
+KEY地/ANY+平/ANY->ANY>>u
+地/ANY+KEY平/ANY->ANY>>v
+
+// 干着
+KEY干着/ANY->[干着/ANY]MERGE[干/v 着/u]
+KEY干/ANY+着/ANY->ANY>>v
+干/ANY+KEY着/ANY->ANY>>u
+
+// 灌了
+KEY灌/ANY+了/ANY->ANY>>v
+灌/ANY+KEY了/ANY->ANY>>u
+KEY灌了/ANY->[灌了/ANY]MERGE[灌/v 了/u]
+
+// 之语
+KEY之语/ANY->[之语/ANY]MERGE[之/u 语/Ng]
+KEY之/ANY+语/ANY->ANY>>u
+之/ANY+KEY语/ANY->ANY>>Ng
+
+// 漂着
+KEY漂/ANY+着/ANY->ANY>>v
+漂/ANY+KEY着/ANY->ANY>>u
+KEY漂着/ANY->[漂着/ANY]MERGE[漂/v 着/u]
+
+// 赔得
+KEY赔/ANY+得/ANY->ANY>>v
+赔/ANY+KEY得/ANY->ANY>>u
+KEY赔得/ANY->[赔得/ANY]MERGE[赔/v 得/u]
+
+// 逮着
+KEY逮/ANY+着/ANY->ANY>>v
+逮/ANY+KEY着/ANY->ANY>>u
+KEY逮着/ANY->[逮着/ANY]MERGE[逮/v 着/u]
+
+// 拴着
+KEY拴/ANY+着/ANY->ANY>>v
+拴/ANY+KEY着/ANY->ANY>>u
+KEY拴着/ANY->[拴着/ANY]MERGE[拴/v 着/u]
+
+// ===========================================
+//
+//	Ictclas 有 y 共 17 词
+//
+// ===========================================
+
+// 干嘛
+KEY干/ANY+嘛/ANY->ANY>>v
+干/ANY+KEY嘛/ANY->ANY>>y
+KEY干嘛/ANY->[干嘛/ANY]MERGE[干/v 嘛/y]
+
+// 声呐
+KEY声/ANY+呐/ANY->ANY>>n
+声/ANY+KEY呐/ANY->ANY>>y
+KEY声呐/ANY->[声呐/ANY]MERGE[声/n 呐/y]
+
+// 唱吧
+KEY唱/ANY+吧/ANY->ANY>>v
+唱/ANY+KEY吧/ANY->ANY>>y
+KEY唱吧/ANY->[唱吧/ANY]MERGE[唱/v 吧/y]
+
+// 好吗
+KEY好吗/ANY->[好吗/ANY]MERGE[好/a 吗/y]
+KEY好/ANY+吗/ANY->ANY>>a
+好/ANY+KEY吗/ANY->ANY>>y
+
+// 好吧
+KEY好/ANY+吧/ANY->ANY>>a
+好/ANY+KEY吧/ANY->ANY>>y
+KEY好吧/ANY->[好吧/ANY]MERGE[好/a 吧/y]
+
+// 差不多了
+KEY差不多了/ANY->[差不多了/ANY]MERGE[差不多/l 了/y]
+KEY差不多/ANY+了/ANY->ANY>>l
+差不多/ANY+KEY了/ANY->ANY>>y
+
+// 好啦
+KEY好/ANY+啦/ANY->ANY>>a
+好/ANY+KEY啦/ANY->ANY>>y
+KEY好啦/ANY->[好啦/ANY]MERGE[好/a 啦/y]
+
+// 好嘛
+KEY好嘛/ANY->[好嘛/ANY]MERGE[好/a 嘛/y]
+KEY好/ANY+嘛/ANY->ANY>>a
+好/ANY+KEY嘛/ANY->ANY>>y
+
+// 好啊
+KEY好啊/ANY->[好啊/ANY]MERGE[好/a 啊/y]
+KEY好/ANY+啊/ANY->ANY>>a
+好/ANY+KEY啊/ANY->ANY>>y
+
+// 啦啦
+KEY啦啦/ANY->[啦啦/ANY]MERGE[啦/y 啦/y]
+KEY啦/ANY+啦/ANY->ANY>>y
+啦/ANY+KEY啦/ANY->ANY>>y
+
+// 骑呗
+KEY骑呗/ANY->[骑呗/ANY]MERGE[骑/v 呗/y]
+KEY骑/ANY+呗/ANY->ANY>>v
+骑/ANY+KEY呗/ANY->ANY>>y
+
+// 吧台
+KEY吧台/ANY->[吧台/ANY]MERGE[吧/y 台/n]
+KEY吧/ANY+台/ANY->ANY>>y
+吧/ANY+KEY台/ANY->ANY>>n
+
+// 氧吧
+KEY氧/ANY+吧/ANY->ANY>>n
+氧/ANY+KEY吧/ANY->ANY>>y
+KEY氧吧/ANY->[氧吧/ANY]MERGE[氧/n 吧/y]
+
+// 好呀
+KEY好呀/ANY->[好呀/ANY]MERGE[好/a 呀/y]
+KEY好/ANY+呀/ANY->ANY>>a
+好/ANY+KEY呀/ANY->ANY>>y
+
+// 管了
+KEY管了/ANY->[管了/ANY]MERGE[管/v 了/y]
+KEY管/ANY+了/ANY->ANY>>v
+管/ANY+KEY了/ANY->ANY>>y
+
+// 去吧
+KEY去吧/ANY->[去吧/ANY]MERGE[去/v 吧/y]
+KEY去/ANY+吧/ANY->ANY>>v
+去/ANY+KEY吧/ANY->ANY>>y
+
+// 看吧
+KEY看吧/ANY->[看吧/ANY]MERGE[看/v 吧/y]
+KEY看/ANY+吧/ANY->ANY>>v
+看/ANY+KEY吧/ANY->ANY>>y
+
+// =========================================
+//
+//	Stanford 有 f 共 8 个
+//
+// =========================================
+
+// 近年来
+KEY近年来/ANY->[近年来/ANY]MERGE[近年/t 来/f]
+KEY近年/ANY+来/ANY->ANY>>t
+近年/ANY+KEY来/ANY->ANY>>f
+
+// 迄今为止
+KEY迄今/ANY+为止/ANY->ANY>>d
+迄今/ANY+KEY为止/ANY->ANY>>f
+KEY迄今为止/ANY->[迄今为止/ANY]MERGE[迄今/d 为止/f]
+
+// 长期以来
+KEY长期/ANY+以来/ANY->ANY>>n
+长期/ANY+KEY以来/ANY->ANY>>f
+KEY长期以来/ANY->[长期以来/ANY]MERGE[长期/n 以来/f]
+
+// 去年底
+KEY去年底/ANY->[去年底/ANY]MERGE[去年/t 底/f]
+KEY去年/ANY+底/ANY->ANY>>t
+去年/ANY+KEY底/ANY->ANY>>f
+
+// 今年初
+KEY今年初/ANY->[今年初/ANY]MERGE[今年/t 初/f]
+KEY今年/ANY+初/ANY->ANY>>t
+今年/ANY+KEY初/ANY->ANY>>f
+
+// 相比之下
+KEY相比/ANY+之下/ANY->ANY>>v
+相比/ANY+KEY之下/ANY->ANY>>f
+KEY相比之下/ANY->[相比之下/ANY]MERGE[相比/v 之下/f]
+
+// 意料之中
+KEY意料/ANY+之中/ANY->ANY>>n
+意料/ANY+KEY之中/ANY->ANY>>f
+KEY意料之中/ANY->[意料之中/ANY]MERGE[意料/n 之中/f]
+
+// 历年来
+KEY历年/ANY+来/ANY->ANY>>t
+历年/ANY+KEY来/ANY->ANY>>f
+KEY历年来/ANY->[历年来/ANY]MERGE[历年/t 来/f]
+
+// ================================================
+//
+//	Stanford 有 m 共 80
+//
+// ================================================
+
+// 一个
+KEY一/ANY+个/ANY->ANY>>m
+一/ANY+KEY个/ANY->ANY>>q
+KEY一个/ANY->[一个/ANY]MERGE[一/m 个/q]
+
+// 两岸
+KEY两/ANY+岸/ANY->ANY>>m
+两/ANY+KEY岸/ANY->ANY>>n
+KEY两岸/ANY->[两岸/ANY]MERGE[两/m 岸/n]
+
+// 万达
+KEY万/ANY+达/ANY->ANY>>m
+万/ANY+KEY达/ANY->ANY>>v
+KEY万达/ANY->[万达/ANY]MERGE[万/m 达/v]
+
+// 2.
+KEY2/ANY+./ANY->ANY>>m
+2/ANY+KEY./ANY->ANY>>w
+KEY2./ANY->[2./ANY]MERGE[2/m ./w]
+
+// 1.
+KEY1./ANY->[1./ANY]MERGE[1/m ./w]
+KEY1/ANY+./ANY->ANY>>m
+1/ANY+KEY./ANY->ANY>>w
+
+// 3.
+KEY3/ANY+./ANY->ANY>>m
+3/ANY+KEY./ANY->ANY>>w
+KEY3./ANY->[3./ANY]MERGE[3/m ./w]
+
+// 二级
+KEY二级/ANY->[二级/ANY]MERGE[二/m 级/q]
+KEY二/ANY+级/ANY->ANY>>m
+二/ANY+KEY级/ANY->ANY>>q
+
+// 一两
+KEY一两/ANY->[一两/ANY]MERGE[一/m 两/m]
+KEY一/ANY+两/ANY->ANY>>m
+一/ANY+KEY两/ANY->ANY>>m
+
+// 两者
+KEY两/ANY+者/ANY->ANY>>m
+两/ANY+KEY者/ANY->ANY>>n
+KEY两者/ANY->[两者/ANY]MERGE[两/m 者/n]
+
+// 4.
+KEY4./ANY->[4./ANY]MERGE[4/m ./w]
+KEY4/ANY+./ANY->ANY>>m
+4/ANY+KEY./ANY->ANY>>w
+
+// 两三
+KEY两三/ANY->[两三/ANY]MERGE[两/m 三/m]
+KEY两/ANY+三/ANY->ANY>>m
+两/ANY+KEY三/ANY->ANY>>m
+
+// 二期
+KEY二期/ANY->[二期/ANY]MERGE[二/m 期/q]
+KEY二/ANY+期/ANY->ANY>>m
+二/ANY+KEY期/ANY->ANY>>q
+
+// 一阵
+KEY一/ANY+阵/ANY->ANY>>m
+一/ANY+KEY阵/ANY->ANY>>q
+KEY一阵/ANY->[一阵/ANY]MERGE[一/m 阵/q]
+
+// 一日
+KEY一日/ANY->[一日/ANY]MERGE[一/m 日/q]
+KEY一/ANY+日/ANY->ANY>>m
+一/ANY+KEY日/ANY->ANY>>q
+
+// 5.
+KEY5./ANY->[5./ANY]MERGE[5/m ./w]
+KEY5/ANY+./ANY->ANY>>m
+5/ANY+KEY./ANY->ANY>>w
+
+// 两边
+KEY两边/ANY->[两边/ANY]MERGE[两/m 边/q]
+KEY两/ANY+边/ANY->ANY>>m
+两/ANY+KEY边/ANY->ANY>>q
+
+// Mate10
+KEYMate10/ANY->[Mate10/ANY]MERGE[Mate/nx 10/m]
+KEYMate/ANY+10/ANY->ANY>>nx
+Mate/ANY+KEY10/ANY->ANY>>m
+
+// 6.
+KEY6./ANY->[6./ANY]MERGE[6/m ./w]
+KEY6/ANY+./ANY->ANY>>m
+6/ANY+KEY./ANY->ANY>>w
+
+// SNH48
+KEYSNH/ANY+48/ANY->ANY>>nx
+SNH/ANY+KEY48/ANY->ANY>>m
+KEYSNH48/ANY->[SNH48/ANY]MERGE[SNH/nx 48/m]
+
+// 7.
+KEY7./ANY->[7./ANY]MERGE[7/m ./w]
+KEY7/ANY+./ANY->ANY>>m
+7/ANY+KEY./ANY->ANY>>w
+
+// 3分
+KEY3分/ANY->[3分/ANY]MERGE[3/m 分/q]
+KEY3/ANY+分/ANY->ANY>>m
+3/ANY+KEY分/ANY->ANY>>q
+
+// 8.
+KEY8./ANY->[8./ANY]MERGE[8/m ./w]
+KEY8/ANY+./ANY->ANY>>m
+8/ANY+KEY./ANY->ANY>>w
+
+// iOS11
+KEYiOS/ANY+11/ANY->ANY>>nx
+iOS/ANY+KEY11/ANY->ANY>>m
+KEYiOS11/ANY->[iOS11/ANY]MERGE[iOS/nx 11/m]
+
+// vivoX20
+KEYvivoX/ANY+20/ANY->ANY>>nx
+vivoX/ANY+KEY20/ANY->ANY>>m
+KEYvivoX20/ANY->[vivoX20/ANY]MERGE[vivoX/nx 20/m]
+
+// TOP10
+KEYTOP/ANY+10/ANY->ANY>>nx
+TOP/ANY+KEY10/ANY->ANY>>m
+KEYTOP10/ANY->[TOP10/ANY]MERGE[TOP/nx 10/m]
+
+// 1分
+KEY1分/ANY->[1分/ANY]MERGE[1/m 分/q]
+KEY1/ANY+分/ANY->ANY>>m
+1/ANY+KEY分/ANY->ANY>>q
+
+// 9.
+KEY9./ANY->[9./ANY]MERGE[9/m ./w]
+KEY9/ANY+./ANY->ANY>>m
+9/ANY+KEY./ANY->ANY>>w
+
+// 30秒
+KEY30/ANY+秒/ANY->ANY>>m
+30/ANY+KEY秒/ANY->ANY>>q
+KEY30秒/ANY->[30秒/ANY]MERGE[30/m 秒/q]
+
+// 5分
+KEY5/ANY+分/ANY->ANY>>m
+5/ANY+KEY分/ANY->ANY>>q
+KEY5分/ANY->[5分/ANY]MERGE[5/m 分/q]
+
+// 360°
+KEY360°/ANY->[360°/ANY]MERGE[360/m °/q]
+KEY360/ANY+°/ANY->ANY>>m
+360/ANY+KEY°/ANY->ANY>>q
+
+// 一张张
+KEY一/ANY+张张/ANY->ANY>>m
+一/ANY+KEY张张/ANY->ANY>>q
+KEY一张张/ANY->[一张张/ANY]MERGE[一/m 张张/q]
+KEY一/ANY+张/ANY+张/ANY->[一/ANY 张/ANY 张/ANY]MERGE[一/m 张张/q]
+
+// 4分
+KEY4/ANY+分/ANY->ANY>>m
+4/ANY+KEY分/ANY->ANY>>q
+KEY4分/ANY->[4分/ANY]MERGE[4/m 分/q]
+
+// X20
+KEYX/ANY+20/ANY->ANY>>nx
+X/ANY+KEY20/ANY->ANY>>m
+KEYX20/ANY->[X20/ANY]MERGE[X/nx 20/m]
+
+// 10分
+KEY10分/ANY->[10分/ANY]MERGE[10/m 分/q]
+KEY10/ANY+分/ANY->ANY>>m
+10/ANY+KEY分/ANY->ANY>>q
+
+// 第一夫人
+KEY第一夫人/ANY->[第一夫人/ANY]MERGE[第一/m 夫人/n]
+KEY第一/ANY+夫人/ANY->ANY>>m
+第一/ANY+KEY夫人/ANY->ANY>>n
+
+// 6分
+KEY6/ANY+分/ANY->ANY>>m
+6/ANY+KEY分/ANY->ANY>>q
+KEY6分/ANY->[6分/ANY]MERGE[6/m 分/q]
+
+// 10.
+KEY10./ANY->[10./ANY]MERGE[10/m ./w]
+KEY10/ANY+./ANY->ANY>>m
+10/ANY+KEY./ANY->ANY>>w
+
+// 2分
+KEY2/ANY+分/ANY->ANY>>m
+2/ANY+KEY分/ANY->ANY>>q
+KEY2分/ANY->[2分/ANY]MERGE[2/m 分/q]
+
+// 万州
+KEY万州/ANY->[万州/ANY]MERGE[万/m 州/n]
+KEY万/ANY+州/ANY->ANY>>m
+万/ANY+KEY州/ANY->ANY>>n
+
+// 七分
+KEY七/ANY+分/ANY->ANY>>m
+七/ANY+KEY分/ANY->ANY>>q
+KEY七分/ANY->[七分/ANY]MERGE[七/m 分/q]
+
+// 十佳
+KEY十佳/ANY->[十佳/ANY]MERGE[十/m 佳/n]
+KEY十/ANY+佳/ANY->ANY>>m
+十/ANY+KEY佳/ANY->ANY>>n
+
+// 12分
+KEY12分/ANY->[12分/ANY]MERGE[12/m 分/q]
+KEY12/ANY+分/ANY->ANY>>m
+12/ANY+KEY分/ANY->ANY>>q
+
+// 一幕幕
+KEY一/ANY+幕幕/ANY->ANY>>m
+一/ANY+KEY幕幕/ANY->ANY>>q
+KEY一幕幕/ANY->[一幕幕/ANY]MERGE[一/m 幕幕/q]
+
+// 天下第一
+KEY天下/ANY+第一/ANY->ANY>>n
+天下/ANY+KEY第一/ANY->ANY>>m
+KEY天下第一/ANY->[天下第一/ANY]MERGE[天下/n 第一/m]
+
+// 第一线
+KEY第一线/ANY->[第一线/ANY]MERGE[第一/m 线/q]
+KEY第一/ANY+线/ANY->ANY>>m
+第一/ANY+KEY线/ANY->ANY>>q
+
+// 七旬
+KEY七/ANY+旬/ANY->ANY>>m
+七/ANY+KEY旬/ANY->ANY>>q
+KEY七旬/ANY->[七旬/ANY]MERGE[七/m 旬/q]
+
+// 一村
+KEY一/ANY+村/ANY->ANY>>m
+一/ANY+KEY村/ANY->ANY>>n
+KEY一村/ANY->[一村/ANY]MERGE[一/m 村/n]
+
+// 一块块
+KEY一/ANY+块块/ANY->ANY>>m
+一/ANY+KEY块块/ANY->ANY>>q
+KEY一块块/ANY->[一块块/ANY]MERGE[一/m 块块/q]
+KEY一块/ANY+块/ANY->[一块/ANY 块/ANY]MERGE[一/m 块块/q]
+
+// 两亿
+KEY两亿/ANY->[两亿/ANY]MERGE[两/m 亿/m]
+KEY两/ANY+亿/ANY->ANY>>m
+两/ANY+KEY亿/ANY->ANY>>m
+
+// 7分
+KEY7分/ANY->[7分/ANY]MERGE[7/m 分/q]
+KEY7/ANY+分/ANY->ANY>>m
+7/ANY+KEY分/ANY->ANY>>q
+
+// 一件件
+KEY一/ANY+件/ANY+件/ANY->[一/ANY 件/ANY 件/ANY]MERGE[一/m 件件/q]
+KEY一/ANY+件件/ANY->ANY>>m
+一/ANY+KEY件件/ANY->ANY>>q
+KEY一件件/ANY->[一件件/ANY]MERGE[一/m 件件/q]
+
+// 九阳
+KEY九/ANY+阳/ANY->ANY>>m
+九/ANY+KEY阳/ANY->ANY>>n
+KEY九阳/ANY->[九阳/ANY]MERGE[九/m 阳/n]
+
+// 8分
+KEY8/ANY+分/ANY->ANY>>m
+8/ANY+KEY分/ANY->ANY>>q
+KEY8分/ANY->[8分/ANY]MERGE[8/m 分/q]
+
+// 十二指肠
+KEY十二/ANY+指肠/ANY->ANY>>m
+十二/ANY+KEY指肠/ANY->ANY>>n
+KEY十二指肠/ANY->[十二指肠/ANY]MERGE[十二/m 指肠/n]
+
+// 9分
+KEY9分/ANY->[9分/ANY]MERGE[9/m 分/q]
+KEY9/ANY+分/ANY->ANY>>m
+9/ANY+KEY分/ANY->ANY>>q
+
+// 三两
+KEY三/ANY+两/ANY->ANY>>m
+三/ANY+KEY两/ANY->ANY>>m
+KEY三两/ANY->[三两/ANY]MERGE[三/m 两/m]
+
+// 十二生肖
+KEY十二/ANY+生肖/ANY->ANY>>m
+十二/ANY+KEY生肖/ANY->ANY>>n
+KEY十二生肖/ANY->[十二生肖/ANY]MERGE[十二/m 生肖/n]
+
+// 两性
+KEY两性/ANY->[两性/ANY]MERGE[两/m 性/n]
+KEY两/ANY+性/ANY->ANY>>m
+两/ANY+KEY性/ANY->ANY>>n
+
+// MH370
+KEYMH370/ANY->[MH370/ANY]MERGE[MH/nx 370/m]
+KEYMH/ANY+370/ANY->ANY>>nx
+MH/ANY+KEY370/ANY->ANY>>m
+
+// AKB48
+KEYAKB48/ANY->[AKB48/ANY]MERGE[AKB/nx 48/m]
+KEYAKB/ANY+48/ANY->ANY>>nx
+AKB/ANY+KEY48/ANY->ANY>>m
+
+// 八旬
+KEY八旬/ANY->[八旬/ANY]MERGE[八/m 旬/q]
+KEY八/ANY+旬/ANY->ANY>>m
+八/ANY+KEY旬/ANY->ANY>>q
+
+// 一批批
+KEY一/ANY+批批/ANY->ANY>>m
+一/ANY+KEY批批/ANY->ANY>>q
+KEY一批批/ANY->[一批批/ANY]MERGE[一/m 批批/q]
+
+// 第一手
+KEY第一/ANY+手/ANY->ANY>>m
+第一/ANY+KEY手/ANY->ANY>>q
+KEY第一手/ANY->[第一手/ANY]MERGE[第一/m 手/q]
+
+// 两两
+KEY两/ANY+两/ANY->ANY>>m
+两/ANY+KEY两/ANY->ANY>>m
+KEY两两/ANY->[两两/ANY]MERGE[两/m 两/m]
+
+// AG600
+KEYAG600/ANY->[AG600/ANY]MERGE[AG/nx 600/m]
+KEYAG/ANY+600/ANY->ANY>>nx
+AG/ANY+KEY600/ANY->ANY>>m
+
+// 百事
+KEY百事/ANY->[百事/ANY]MERGE[百/m 事/n]
+KEY百/ANY+事/ANY->ANY>>m
+百/ANY+KEY事/ANY->ANY>>n
+
+// 20秒
+KEY20/ANY+秒/ANY->ANY>>m
+20/ANY+KEY秒/ANY->ANY>>q
+KEY20秒/ANY->[20秒/ANY]MERGE[20/m 秒/q]
+
+// GTX1060
+KEYGTX/ANY+1060/ANY->ANY>>nx
+GTX/ANY+KEY1060/ANY->ANY>>m
+KEYGTX1060/ANY->[GTX1060/ANY]MERGE[GTX/nx 1060/m]
+
+// 五指
+KEY五/ANY+指/ANY->ANY>>m
+五/ANY+KEY指/ANY->ANY>>v
+KEY五指/ANY->[五指/ANY]MERGE[五/m 指/v]
+
+// 一根根
+KEY一/ANY+根根/ANY->ANY>>m
+一/ANY+KEY根根/ANY->ANY>>q
+KEY一根根/ANY->[一根根/ANY]MERGE[一/m 根根/q]
+
+// 15分
+KEY15分/ANY->[15分/ANY]MERGE[15/m 分/q]
+KEY15/ANY+分/ANY->ANY>>m
+15/ANY+KEY分/ANY->ANY>>q
+
+// 11分
+KEY11/ANY+分/ANY->ANY>>m
+11/ANY+KEY分/ANY->ANY>>q
+KEY11分/ANY->[11分/ANY]MERGE[11/m 分/q]
+
+// 12.
+KEY12/ANY+./ANY->ANY>>m
+12/ANY+KEY./ANY->ANY>>w
+KEY12./ANY->[12./ANY]MERGE[12/m ./w]
+
+// +1
+KEY+/ANY+1/ANY->ANY>>w
++/ANY+KEY1/ANY->ANY>>m
+KEY+1/ANY->[ 1/ANY]MERGE[+/w 1/m]
+
+// 10万+
+KEY10万/ANY++/ANY->ANY>>m
+10万/ANY+KEY+/ANY->ANY>>w
+KEY10万+/ANY->[10万 /ANY]MERGE[10万/m +/w]
+
+// 11.
+KEY11./ANY->[11./ANY]MERGE[11/m ./w]
+KEY11/ANY+./ANY->ANY>>m
+11/ANY+KEY./ANY->ANY>>w
+
+// 第41
+KEY第41/ANY->[第41/ANY]MERGE[第/m 41/m]
+KEY第/ANY+41/ANY->ANY>>m
+第/ANY+KEY41/ANY->ANY>>m
+
+// 13.
+KEY13./ANY->[13./ANY]MERGE[13/m ./w]
+KEY13/ANY+./ANY->ANY>>m
+13/ANY+KEY./ANY->ANY>>w
+
+// 第三产业
+KEY第三/ANY+产业/ANY->ANY>>m
+第三/ANY+KEY产业/ANY->ANY>>n
+KEY第三产业/ANY->[第三产业/ANY]MERGE[第三/m 产业/n]
+
+// 第40
+KEY第/ANY+40/ANY->ANY>>m
+第/ANY+KEY40/ANY->ANY>>m
+KEY第40/ANY->[第40/ANY]MERGE[第/m 40/m]
+
+// =================================================
+//
+//	Stanford 有 p 共 2 个
+//
+// =================================================
+
+// 直到
+KEY直到/ANY->[直到/ANY]MERGE[直/d 到/p]
+KEY直/ANY+到/ANY->ANY>>d
+直/ANY+KEY到/ANY->ANY>>p
+
+// 在农村
+KEY在农村/ANY->[在农村/ANY]MERGE[在/p 农村/n]
+KEY在/ANY+农村/ANY->ANY>>p
+在/ANY+KEY农村/ANY->ANY>>n
+
+// ==================================================
+//
+//	Stanford 有 u 共 12 个
+//
+// ==================================================
+
+// 意味着
+KEY意味/ANY+着/ANY->ANY>>v
+意味/ANY+KEY着/ANY->ANY>>u
+KEY意味着/ANY->[意味着/ANY]MERGE[意味/v 着/u]
+
+// 厚厚的
+KEY厚厚/ANY+的/ANY->ANY>>a
+厚厚/ANY+KEY的/ANY->ANY>>u
+KEY厚厚的/ANY->[厚厚的/ANY]MERGE[厚厚/a 的/u]
+
+// 的农村
+KEY的/ANY+农村/ANY->ANY>>u
+的/ANY+KEY农村/ANY->ANY>>n
+KEY的农村/ANY->[的农村/ANY]MERGE[的/u 农村/n]
+
+// 的乡村
+KEY的/ANY+乡村/ANY->ANY>>u
+的/ANY+KEY乡村/ANY->ANY>>n
+KEY的乡村/ANY->[的乡村/ANY]MERGE[的/u 乡村/n]
+
+// 短短的
+KEY短短的/ANY->[短短的/ANY]MERGE[短短/a 的/u]
+KEY短短/ANY+的/ANY->ANY>>a
+短短/ANY+KEY的/ANY->ANY>>u
+
+// 的村庄
+KEY的/ANY+村庄/ANY->ANY>>u
+的/ANY+KEY村庄/ANY->ANY>>n
+KEY的村庄/ANY->[的村庄/ANY]MERGE[的/u 村庄/n]
+
+// 薄薄的
+KEY薄薄的/ANY->[薄薄的/ANY]MERGE[薄薄/b 的/u]
+KEY薄薄/ANY+的/ANY->ANY>>b
+薄薄/ANY+KEY的/ANY->ANY>>u
+
+// 的乡镇
+KEY的乡镇/ANY->[的乡镇/ANY]MERGE[的/u 乡镇/n]
+KEY的/ANY+乡镇/ANY->ANY>>u
+的/ANY+KEY乡镇/ANY->ANY>>n
+
+// 远远地
+KEY远远地/ANY->[远远地/ANY]MERGE[远远/d 地/u]
+KEY远远/ANY+地/ANY->ANY>>d
+远远/ANY+KEY地/ANY->ANY>>u
+
+// 的城乡
+KEY的/ANY+城乡/ANY->ANY>>u
+的/ANY+KEY城乡/ANY->ANY>>n
+KEY的城乡/ANY->[的城乡/ANY]MERGE[的/u 城乡/n]
+
+// 等乡镇
+KEY等/ANY+乡镇/ANY->ANY>>u
+等/ANY+KEY乡镇/ANY->ANY>>n
+KEY等乡镇/ANY->[等乡镇/ANY]MERGE[等/u 乡镇/n]
+
+// 细细的
+KEY细细/ANY+的/ANY->ANY>>d
+细细/ANY+KEY的/ANY->ANY>>u
+KEY细细的/ANY->[细细的/ANY]MERGE[细细/d 的/u]
+

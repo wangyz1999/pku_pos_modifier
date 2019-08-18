@@ -64,124 +64,75 @@ KEY附加/ANY+赛/ANY->[附加/ANY 赛/ANY]MERGE[附加赛/n]
 
 // 不必要
 KEY不必要/ANY+的/ANY->[不必要/ANY+的/ANY]MERGE[不/d 必要/a 的/u]
-
 KEY不必要/a->[不必要/a]MERGE[不/d 必要/a]
 KEY不必/d+要/v+的/u->[不必/d 要/v]MERGE[不/d 必要/a]
 
 // 不容易
 //真的/a 不容易/a
-
 KEY不容易/ANY+EOS->[不容易/ANY]MERGE[不/d 容易/a]
 
-
 //很/d 不容易/d
-
 ANY/d+KEY不容易/ANY+ANY/v->[不容易/ANY]MERGE[不/d 容易/d]
 ANY/d+KEY不容易/ANY+ANY/p->[不容易/ANY]MERGE[不/d 容易/d]
 ANY/d+KEY不容易/ANY+ANY/d->[不容易/ANY]MERGE[不/d 容易/d]
-
 ANY/d+KEY不容易/a->[不容易/ANY]MERGE[不/d 容易/a]
 
-
 //不容易/n + 过敏/a
-
 KEY不容易/ANY+ANY/a->[不容易/ANY]MERGE[不/d 容易/d]
 
-
-
-
 //不容易/d 出/v 成果/n
-
 KEY不容易/d+ANY/v->[不容易/d]MERGE[不/d 容易/d]
-
 KEY不容易/d+ANY/p->[不容易/d]MERGE[不/d 容易/d]
-//不容易/d 再/d
 
+//不容易/d 再/d
 KEY不容易/d+ANY/d->[不容易/d]MERGE[不/d 容易/d]
 
 // 这样子
-
 KEY这样子/ANY->[这样子/ANY]MERGE[这/r 样子/n]
-
 KEY那样子/ANY->[那样子/ANY]MERGE[那/r 样子/n]
-
 KEY这样/ANY+子/ANY->[这样/ANY 子/ANY]MERGE[这/r 样子/n]
-
 KEY那样/ANY+子/ANY->[那样/ANY 子/ANY]MERGE[那/r 样子/n]
 
 // 留下来
-
 KEY留/ANY+下/ANY+来/ANY->[留/ANY 下/ANY 来/ANY]MERGE[留下/v 来/v]
-
 KEY留下来/ANY->[留下来/ANY]MERGE[留下/v 来/v]
 
 // 不只是：“不只”、“只是”是汉语词。但是，“不只是”不是词
-
-
 //不/d 只/d 是/vshi 投资/v 了/ule
-
 KEY不/d+只/ANY+是/ANY+ANY/v->[不/d 只/ANY 是/ANY]MERGE[不/d 只是/d]
 
-
 //不/d 只/d 是/vshi 高/a 配/v 版/n
-
 KEY不/d+只/ANY+是/ANY+ANY/a->[不/d 只/ANY 是/ANY]MERGE[不/d 只是/d]
 
-
 //不/d 只/d 是/vshi 对于/p 武汉/ns
-
 KEY不/d+只/ANY+是/ANY+ANY/p->[不/d 只/ANY 是/ANY]MERGE[不/d 只是/d]
 
-
 //双/m 11/m 不/d 只/d 是/vshi 个/q 讲/v 血/n 拼/v 的/ude1 节日/n
-
 KEY不/d+只/d+是/ANY+ANY/q->[不/d 只/d 是/ANY]MERGE[不只/d 是/v]
 
-
 //依靠/v 的/ude1 不/d 只/d 是/vshi 技术/n 、/wn 产品/n
-
 KEY不/d+只/d+是/ANY+ANY/n->[不/d 只/d 是/ANY]MERGE[不/d 只是/v]
-
-KEY不/d+只/d+是/ANY+ANY/ns->[不/d 只/d 是/ANY]MERGE[不/d 只是/v
-]
-KEY不/d+只/d+是/ANY+ANY/nsf->[不/d 只/d 是/ANY]MERGE[不/d 只是/v
-]
+KEY不/d+只/d+是/ANY+ANY/ns->[不/d 只/d 是/ANY]MERGE[不/d 只是/v]
+KEY不/d+只/d+是/ANY+ANY/nsf->[不/d 只/d 是/ANY]MERGE[不/d 只是/v]
 KEY不/d+只/d+是/ANY+ANY/r->[不/d 只/d 是/ANY]MERGE[不/d 只是/v]
-
 KEY不/d+只/d+是/ANY+ANY/r->[不/d 只/d 是/ANY]MERGE[不/d 只是/v]
-
-KEY不/d+只/d+是/ANY+ANY/m->[不/d 只/d 是/ANY]MERGE[不/d 只是/v
-]
+KEY不/d+只/d+是/ANY+ANY/m->[不/d 只/d 是/ANY]MERGE[不/d 只是/v]
 KEY不/d+只/d+是/ANY+ANY/q->[不/d 只/d 是/ANY]MERGE[不/d 只是/v]
 
-
 //不/d 只/d 是/vshi 最/d
-
 KEY不/d+只/ANY+是/ANY+ANY/d->[不/d 只/ANY 是/ANY]MERGE[不/d 只是/v]
+
 //不只是/d 要/v
-
 KEY不只是/ANY+ANY/v->[不只是/ANY]MERGE[不/d 只是/d]
-
-
-KEY不只是/ANY+ANY/d->[不只是/ANY]MERGE[不/d 只是/d
-]
+KEY不只是/ANY+ANY/d->[不只是/ANY]MERGE[不/d 只是/d]
 KEY不只是/ANY+ANY/p->[不只是/ANY]MERGE[不/d 只是/d]
 
-
 //不只是/d 宏大/a 的/u 国/n
-
 KEY不只是/d+ANY/a->[不只是/d]MERGE[不/d 只是/v]
 
-
 //不只是/d 身体/n
-
 KEY不只是/d+ANY/n->[不只是/d]MERGE[不/d 只是/v]
-
-KEY不只是/d+ANY/ns->[不只是/d]MERGE[不/d 只是/v
-]
-KEY不只是/d+ANY/nsf->[不只是/d]MERGE[不/d 只是/v
-]
-KEY不只是/d+ANY/q->[不只是/d]MERGE[不/d 只是/v
-]
-KEY不只是/d+ANY/r->[不只是/d]MERGE[不/d 只是/v
-]
+KEY不只是/d+ANY/ns->[不只是/d]MERGE[不/d 只是/v]
+KEY不只是/d+ANY/nsf->[不只是/d]MERGE[不/d 只是/v]
+KEY不只是/d+ANY/q->[不只是/d]MERGE[不/d 只是/v]
+KEY不只是/d+ANY/r->[不只是/d]MERGE[不/d 只是/v]

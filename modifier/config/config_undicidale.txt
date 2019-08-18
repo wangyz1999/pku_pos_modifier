@@ -1,0 +1,117 @@
+﻿//此事
+KEY此事/r->[此事/r]MERGE[此/r 事/n]
+
+//每人
+KEY每人/r->[每人/r]MERGE[每/r 人/n]
+
+//全天
+KEY全天/n->[全天/n]MERGE[全/r 天/n]
+
+//哪家
+KEY哪家/r->[哪家/r]MERGE[哪/r 家/n]
+
+//她家
+KEY她家/r->[她家/r]MERGE[她/r 家/n]
+
+//每期
+KEY每期/r->[每期/r]MERGE[每/r 期/n]
+
+//各处
+KEY各处/rzs->[各处/rzs]MERGE[各/r 处/n]
+
+//某人
+KEY某人/rr->[某人/rr]MERGE[某/r 人/n]
+
+// 就是
+KEY就是/v->[就是/v]MERGE[就/d 是/v]
+KEY就是/d->[就是/d]MERGE[就/d 是/v]
+
+// 不要
+KEY不要/d->[不要/d]MERGE[不/d 要/v]
+
+// 还要
+KEY还要/d->[还要/d]MERGE[还/d 要/v]
+KEY还要/v->[还要/v]MERGE[还/d 要/v]
+
+// 就要
+KEY就要/d->[就要/d]MERGE[就/d 要/v]
+
+// 不够
+KEY不够/a->[不够/a]MERGE[不/d 够/v]
+
+// 不用
+KEY不用/d->[不用/d]MERGE[不/d 用/p]
+
+// 不好
+KEY不好/ad->[不好/ad]MERGE[不/d 好/v]
+KEY不好/a->[不好/a]MERGE[不/d 好/v]
+
+// 即可
+KEY即可/v->[即可/v]MERGE[即/d 可/v]
+
+// 便是
+KEY便是/v->[便是/v]MERGE[便/d 是/v]
+
+// 不得
+KEY不得/vi->[不得/vi]MERGE[不/d 得/v]
+
+// 先是
+KEY先是/d->[先是/d]MERGE[先/d 是/v]
+
+// 不知
+KEY不知/v->[不知/v]MERGE[不/d 知/v]
+
+// 从小
+KEY从小/p->[从小/p]MERGE[从/d 小/a]
+KEY从小/d->[从小/d]MERGE[从/d 小/a]
+
+// 可见
+KEY可见/v->[可见/v]MERGE[可/d 见/v]
+KEY可见/c->[可见/c]MERGE[可/d 见/v]
+
+// 竟是
+KEY竟是/v->[竟是/v]MERGE[竟/d 是/v]
+
+// 不顾
+KEY不顾/v->[不顾/v]MERGE[不/d 顾/v]
+
+// 不对
+KEY不对/a->[不对/a]MERGE[不/d 对/a]
+
+// 直指
+KEY直指/v->[直指/v]MERGE[直/d 指/v]
+
+// 连着
+KEY连着/v->[连着/v]MERGE[连/d 着/v]
+KEY连着/d->[连着/d]MERGE[连/d 着/v]
+
+// 共用
+KEY共用/v->[共用/v]MERGE[共/d 用/p]
+KEY共用/b->[共用/b]MERGE[共/d 用/p]
+
+// 不通
+KEY不通/a->[不通/a]MERGE[不/d 通/a]
+KEY不通/v->[不通/v]MERGE[不/d 通/a]
+
+// 本该
+KEY本该/d->[本该/d]MERGE[本/d 该/v]
+
+// 上好
+KEY上好/b->[上好/b]MERGE[上/d 好/v]
+KEY上好/a->[上好/a]MERGE[上/d 好/v]
+
+// 不均
+KEY不均/a->[不均/a]MERGE[不/d 均/a]
+
+// 却说
+KEY却说/v->[却说/v]MERGE[却/d 说/v]
+
+// 不胜
+KEY不胜/d->[不胜/d]MERGE[不/d 胜/v]
+KEY不胜/vi->[不胜/vi]MERGE[不/d 胜/v]
+
+// 一品
+KEY一品/nr2->[一品/nr2]MERGE[一/d 品/v]
+KEY一品/nr->[一品/nr]MERGE[一/d 品/v]
+KEY一品/b->[一品/b]MERGE[一/d 品/v]
+
