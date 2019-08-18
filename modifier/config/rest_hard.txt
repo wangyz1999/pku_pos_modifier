@@ -1173,7 +1173,7 @@ KEY尊享/ANY->ANY>>b
 // =========================================
 
 
-KEY埃微/ANY->ANY>n
+KEY埃微/ANY->ANY>>n
 KEY埃/ANY+微/ANY->[埃/ANY 微/ANY]MERGE[埃微/n]
 
 KEY并/ANY+不断/ANY->ANY>>c

@@ -1,4 +1,4 @@
-﻿4
+﻿<line>4</line>
 <original_sent>曼图/ns 罗夫/ns 表示/v ，/w 中国/ns 一直/d 是/v 俄/ns 重要/a 的/u 战略/n 协作/n 伙伴/n 。/w 当前/t 俄中/ns 关系/n 保持/v 快速/b 发展/n ，/w 双方/r 不断/d 在/p 贸易/n 和/c 工业/n 领域/n 寻找/v 新/a 的/u 合作/n 点/n 。/w 据/p 他/r 介绍/v ，/w 今年/t 1月/t 至/c 7月/t ，/w 俄/ns 中/ns 双边/b 贸易额/n 同比/n 增长/v 超/v 25%/m ，/w 达/v 近/d 600亿/m 美元/q 。/w
 </original_sent>
 <modified_sent>曼图/ns 罗夫/ns 表示/v ，/w 中国/ns 一直/d 是/v 俄/ns 重要/a 的/u 战略/n 协作/n 伙伴/n 。/w 当前/t 俄/b 中/b 关系/n 保持/v 快速/b 发展/n ，/w 双方/r 不断/d 在/p 贸易/n 和/c 工业/n 领域/n 寻找/v 新/a 的/u 合作/n 点/n 。/w 据/p 他/r 介绍/v ，/w 今年/t 1月/t 至/c 7月/t ，/w 俄/ns 中/ns 双边/b 贸易额/n 同比/n 增长/v 超/v 25%/m ，/w 达/v 近/d 600亿/m 美元/q 。/w
@@ -8,13 +8,15 @@
 	<pattern>KEY俄中/ANY->[俄中/ANY]MERGE[俄/b 中/b]</pattern>
 </pos_modification>
 
-5
+<line>5</line>
 <original_sent>曼图/ns 罗夫/ns 说/v ，/w 俄/ns 中/ns 两/m 国/n 正在/d 飞机/n 轮船/n 和/c 其他/r 交通/n 工具/n 制造/v 、/w 无线电/n 设备/n 研发/n 、/w 制药/n 和/c 化工/n 等/u 工业/n 领域/n 开展/v 合作/n 。/w 俄中/n 投资/n 基金/n 支持/v 了/u 两/m 国/n 众多/b 开发/n 项目/n ，/w 投资/n 方对/n 该/v 基金/n 继续/v 注资/v 的/u 兴趣/n 十分/d 浓厚/a 。/w
 </original_sent>
-<modified_sent>曼图/ns 罗夫/ns 说/v ，/w 俄/ns 中/ns 两/m 国/n 正在/d 飞机/n 轮船/n 和/c 其他/r 交通/n 工具/n 制造/v 、/w 无线电/n 设备/n 研发/n 、/w 制药/n 和/c 化工/n 等/u 工业/n 领域/n 开展/v 合作/n 。/w 俄/b 中/b 投资/n 基金/n 支持/v 了/u 两/m 国/n 众多/b 开发/n 项目/n ，/w 投资/n 方对/n 该/v 基金/n 继续/v 注资/v 的/u 兴趣/n 十分/d 浓厚/a 。/w
+<modified_sent>曼图/ns 罗夫/ns 说/v ，/w 俄/ns 中/ns 两/m 国/n 正在/d 飞机/n 轮船/n 和/c 其他/r 交通/n 工具/n 制造/v 、/w 无线电/n 设备/n 研发/n 、/w 制药/n 和/c 化工/n 等/u 工业/n 领域/n 开展/v 合作/n 。/w 俄/b 中/b 投资/n 基金/n 支持/v 了/u 两/m 国/n 众多/b 开发/n 项目/n ，/w 投资/n 方/d 对/p 该/v 基金/n 继续/v 注资/v 的/u 兴趣/n 十分/d 浓厚/a 。/w
 </modified_sent>
 <pos_modification>
 	<result>[俄中/n]改为[俄/b 中/b]</result>
 	<pattern>KEY俄中/ANY->[俄中/ANY]MERGE[俄/b 中/b]</pattern>
+	<result>[方对/n]改为[方/d 对/p]</result>
+	<pattern>KEY方对/ANY->[方对/ANY]MERGE[方/d 对/p]</pattern>
 </pos_modification>
 

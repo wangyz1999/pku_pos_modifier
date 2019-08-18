@@ -28,7 +28,7 @@ KEY人手/n+持/v->[人手/n]MERGE[人/n 手/n]
 ANY/m+KEY人手/n->[人手/n]MERGE[人/n 手/n]
 ANY/m+ANY/q+KEY人手/n->[人手/n]MERGE[人/n 手/n]
 KEY人手/n+的/ANY->[人手/n]MERGE[人/n 手/n]
-KEY人/n+手/n+一/ANY->[人/n 手/n][人手/n]
+KEY人/n+手/n+一/ANY->[人/n 手/n]MERGE[人手/n]
 
 // 人为
 KEY人/ANY+为/ANY+因素/ANY->[人/ANY 为/ANY]MERGE[人为/d]
