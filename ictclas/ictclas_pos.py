@@ -188,7 +188,6 @@ def ictclas_to_pku(line):
     words = line.split(" ")
     for w in range(len(words)):
         sep = words[w].split("/")
-        print(sep[0])
         sep[1] = dic[sep[1]]
         words[w] = sep[0] + "/" + sep[1]
     # print(" ".join(words) + '\n')

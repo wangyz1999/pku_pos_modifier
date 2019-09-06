@@ -137,7 +137,7 @@ class PosModifier:
             "EOS", r"\n").replace("+", r"\s").replace("2ANY", r"\w\w+").replace("ANY", r"\w+")
         if has_tilde:
             temp = temp.replace("~", ".*")
-        return temp
+        return " " + temp + " "
 
     def letters_only(self, s):
         has_letter = False
@@ -186,10 +186,10 @@ class PosModifier:
                             else:
                                 re_str = self.pattern_to_re_string(
                                     rule['left_part'], has_tilde=True)
-                            re_obj = re.search(re_str, temp_line)
+                            re_obj = re.search(re_str, " " + temp_line + " ")
                             if re_obj is not None:
                                 # print(rule)
-                                k_s_idx = re_obj.regs[1][0]
+                                k_s_idx = re_obj.regs[1][0] - 1
                                 k_idx = 0
                                 for k_iter_idx in range(len(temp_line)):
                                     if k_iter_idx == k_s_idx:
@@ -235,9 +235,9 @@ class PosModifier:
             # KEY数字/t+年度/n->t正确
             if use_lock:
                 re_str = "()[\d|一二三四五六七八九十百千万亿]/t\s年度/n"
-                re_obj = re.search(re_str, temp_line)
+                re_obj = re.search(re_str, " " + temp_line + " ")
                 if re_obj is not None:
-                    k_s_idx = re_obj.regs[1][0]
+                    k_s_idx = re_obj.regs[1][0] - 1
                     k_idx = 0
                     for k_iter_idx in range(len(temp_line)):
                         if k_iter_idx == k_s_idx:
@@ -252,9 +252,9 @@ class PosModifier:
                     if wo_pos[idx] in self.lock_dict:
                         for rule in self.lock_dict[wo_pos[idx]]:
                             re_str = self.pattern_to_re_string(rule)
-                            re_obj = re.search(re_str, temp_line)
+                            re_obj = re.search(re_str, " " + temp_line + " ")
                             if re_obj is not None:
-                                k_s_idx = re_obj.regs[1][0]
+                                k_s_idx = re_obj.regs[1][0] - 1
                                 k_idx = 0
                                 for k_iter_idx in range(len(temp_line)):
                                     if k_iter_idx == k_s_idx:
@@ -268,9 +268,9 @@ class PosModifier:
                 if 'ANY' in self.lock_dict:
                     for rule in self.lock_dict['ANY']:
                         re_str = self.pattern_to_re_string(rule)
-                        re_obj = re.search(re_str, temp_line)
+                        re_obj = re.search(re_str, " " + temp_line + " ")
                         if re_obj is not None:
-                            k_s_idx = re_obj.regs[1][0]
+                            k_s_idx = re_obj.regs[1][0] - 1
                             k_idx = 0
                             for k_iter_idx in range(len(temp_line)):
                                 if k_iter_idx == k_s_idx:
@@ -294,9 +294,9 @@ class PosModifier:
                         else:
                             re_str = self.pattern_to_re_string(
                                 rule['left_part'], has_tilde=True)
-                        re_obj = re.search(re_str, temp_line)
+                        re_obj = re.search(re_str, " " + temp_line + " ")
                         if re_obj is not None:
-                            k_s_idx = re_obj.regs[1][0]
+                            k_s_idx = re_obj.regs[1][0] - 1
                             k_idx = 0
                             for k_iter_idx in range(len(temp_line)):
                                 if k_iter_idx == k_s_idx:
@@ -324,9 +324,9 @@ class PosModifier:
                     else:
                         re_str = self.pattern_to_re_string(
                             rule['left_part'], has_tilde=True)
-                    re_obj = re.search(re_str, temp_line)
+                    re_obj = re.search(re_str, " " + temp_line + " ")
                     if re_obj is not None:
-                        k_s_idx = re_obj.regs[1][0]
+                        k_s_idx = re_obj.regs[1][0] - 1
                         k_idx = 0
                         for k_iter_idx in range(len(temp_line)):
                             if k_iter_idx == k_s_idx:
@@ -346,9 +346,9 @@ class PosModifier:
             # Apply rule KEY数字/t+ANY/n->t>>m
             # Inclusing Chinese number 一二三四五六七八九十  百 千 万  >千万<  亿
             re_str = "()[\d|一二三四五六七八九十百千万亿]/t\s\w+/n"
-            re_obj = re.search(re_str, temp_line)
+            re_obj = re.search(re_str, " " + temp_line + " ")
             if re_obj is not None:
-                k_s_idx = re_obj.regs[1][0]
+                k_s_idx = re_obj.regs[1][0] - 1
                 k_idx = 0
                 for k_iter_idx in range(len(temp_line)):
                     if k_iter_idx == k_s_idx:
@@ -363,7 +363,10 @@ class PosModifier:
                     result_str += w_pos[k_idx] + ']'
                     self.result_list.append(result_str)
                     self.pattern_list.append("KEY数字/t+ANY/n->t>>m")
-        return temp_line
+        if temp_line[:3] == "@@ " and temp_line[-3:] == " @@":
+            return temp_line[3:-3]
+        else:
+            return temp_line
 
 
 if __name__ == '__main__':
@@ -383,8 +386,8 @@ if __name__ == '__main__':
         article_length = len(article_lines)
         for line in article_lines:
             p.line_number += 1
-            if p.line_number != 5310:
-                continue
+            # if p.line_number != 5310:
+            #     continue
             if p.line_number % 100 == 0:
                 print(str(p.line_number) + " / " + str(article_length))
             if line.isspace():
