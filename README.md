@@ -51,4 +51,201 @@
 
 
 
+##  此程序中的词性对照
+##### 注: 以下表格只有 Ictclas -> pku 或 Stanford -> pku 之间转换的对应， 并不存在 Ictclas 和 Stanford 之间的关系
+##### Stanford 的词性中, NR 代表了人名，地名，和机构名, 这里将其全部转换为了ns (待解决问题)
+
+| Ictclas | pku    | Stanford |
+| --------| ------ | -------- |
+| n       | n      | NN       |
+| nr      | nr     |          |
+| nr1     | nr     |          |
+| nr2     | nr     |          |
+| nrj     | nr     |          |
+| nrf     | nr     |          | 
+| nrf     | nr     |          |
+| ns      | ns     | NR       |
+| nsf     | ns     | NR       |
+| nt      | nt     |          |
+| nz      | nz     |          |
+| ng      | Ng     |          |
+| n_new   | n      | NN       |
+| njtgj   | n      | NN       |
+| ntbj    | n      | NN       |
+| ntsa    | n      | NN       |
+| ntzj    | n      | NN       |
+| 词性    | n      | NN       |
+| nthub   | n      | NN       |
+| ntyr    | n      | NN       |
+| ntsd    | n      | NN       |
+| ntyn    | n      | NN       |
+| ntsh    | n      | NN       |
+|n_newword| n      | NN       |
+| ntzy    | n      | NN       |
+| ntgm    | n      | NN       |
+| ntss    | n      | NN       |
+| ntxz    | n      | NN       |
+| nttj    | n      | NN       |
+| ntcq    | n      | NN       |
+| ntes    | n      | NN       |
+| ntuk    | n      | NN       |
+| ntsx    | n      | NN       |
+| ntme    | n      | NN       |
+| ntgx    | n      | NN       |
+| ntqc    | n      | NN       |
+| ntit    | n      | NN       |
+| ntsc    | n      | NN       |
+| ntqz    | n      | NN       |
+| nthun   | n      | NN       |
+| ntah    | n      | NN       |
+| ntcb    | n      | NN       |
+| ntrqg   | n      | NN       |
+| nthen   | n      | NN       |
+| nthan   | n      | NN       |
+| ntdc    | n      | NN       |
+| ntgd    | n      | NN       |
+| ntjs    | n      | NN       |
+| ntjj    | n      | NN       |
+| nswyy   | n      | NN       |
+| nthk    | n      | NN       |
+| 新增    | n      | NN       |
+| ntdb    | n      | NN       |
+| ntz     | n      | NN       |
+| nv      | n      | NN       |
+| ntan    | n      | NN       |
+| nthl    | n      | NN       |
+| ntgz    | n      | NN       |
+| ntau    | n      | NN       |
+| ntqg    | n      | NN       |
+| ntkr    | n      | NN       |
+| ntjx    | n      | NN       |
+| ntjd    | n      | NN       |
+| ntsz    | n      | NN       |
+| ntkrn   | n      | NN       |
+| nttc    | n      | NN       |
+| ntjp    | n      | NN       |
+| nms     | n      | NN       |
+| ntjk    | n      | NN       |
+| ntthk   | n      | NN       |
+| ntfj    | n      | NN       |
+| ntjl    | n      | NN       |
+| ntheb   | n      | NN       |
+| ntrs    | n      | NN       |
+| nttw    | n      | NN       |
+| ntcj    | n      | NN       |
+| ntus    | n      | NN       |
+| ntgs    | n      | NN       |
+| ntot    | n      | NN       |
+| ntcn    | n      | NN       |
+| nttqg   | n      | NN       |
+| ntln    | n      | NN       |
+| ntts    | n      | NN       |
+| ntfr    | n      | NN       |
+| dg      | Dg     |          |
+| yxz     | y      | SP       |
+| yxb     | y      | SP       |
+| t       | t      | NT       |
+| tg      | tg     |          |
+| s       | s      |          |
+| f       | f      | LC       |
+| v       | v      | VV       |
+| vshi    | v      | VC       |
+| vyou    | v      | VE       |
+| vf      | v      | VV       |
+| vx      | v      | VV       |
+| vi      | v      | VV       |
+| vd      | vd     |          |
+| vn      | vn     |          |
+| vg      | vg     |          |
+| a       | a      | VA       |
+| ad      | ad     |          |
+| an      | an     |          |
+| ag      | Ag     |          |
+| al      | l      |          |
+| nl      | l      |          |
+| vl      | l      |          |
+| dl      | l      |          |
+| bl      | l      |          |
+| b       | b      | JJ       |
+| z       | z      |          |
+| r       | r      | PN       |
+| rr      | r      | PN       |
+| rz      | r      | PN       |
+| rzt     | r      | PN       |
+| rzs     | r      | PN       |
+| rzv     | r      | PN       |
+| ry      | r      | PN       |
+| ryt     | r      | PN       |
+| rys     | r      | PN       |
+| ryv     | r      | PN       |
+| rg      | r      | PN       |
+| Rg      | r      | PN       |
+| R       | r      | PN       |
+|         | r      | DT       |
+| m       | m      | CD       |
+| mq      | m      | CD       |
+| Mg      | m      | CD       |
+|         | m      | OD       |
+| q       | q      | M        |
+| qv      | q      | M        |
+| qt      | q      | M        |
+| d       | d      | AD       |
+| p       | p      | P        |
+| P       | p      | P        |
+| pba     | p      | P        |
+| pbei    | p      | P        |
+| c       | c      | CS       |
+| cc      | c      | CS       |
+| u       | u      | DEC      |
+|         | u      | DEG      |
+|         | u      | DER      |
+|         | u      | DEV      |
+| uzhe    | u      |          |
+| ule     | u      |          |
+| uguo    | u      |          |
+| ude1    | u      |          |
+| ude2    | u      |          |
+| ude3    | u      |          |
+| usuo    | u      |          |
+| udeng   | u      |          |
+| uyy     | u      |          |
+| udh     | u      |          |
+| uls     | u      |          |
+| uzhi    | u      |          |
+| ulian   | u      |          |
+| e       | e      | IJ       |
+| y       | y      | SP       |
+| o       | o      | ON       |
+| h       | h      |          |
+| k       | k      |          |
+| x       | nx     | X        |
+| xx      | nx     | X        |
+| xu      | nx     | X        |
+| News    | nx     | X        |
+| xe      | nx     | X        |
+| 术      | nx     | X        |
+|         | nx     | FW       |
+|         | nx     | URL      |
+| w       | w      | PU       |
+| wkz     | w      | PU       |
+| wky     | w      | PU       |
+| wyz     | w      | PU       |
+| wyy     | w      | PU       |
+| wj      | w      | PU       |
+| ww      | w      | PU       |
+| wt      | w      | PU       |
+| wd      | w      | PU       |
+| wf      | w      | PU       |
+| wn      | w      | PU       |
+| wm      | w      | PU       |
+| ws      | w      | PU       |
+| wp      | w      | PU       |
+| wb      | w      | PU       |
+| wh      | w      | PU       |
+|         | P      | LB       |
+|         | P      | SB       |
+|         | P      | BA       |
+
+
+
 
